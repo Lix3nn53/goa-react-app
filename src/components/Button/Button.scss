@@ -1,0 +1,15 @@
+@import '../../styles/index';
+
+.Button {
+  padding: 1rem 2rem;
+
+  &-primary {
+    background-color: $color-primary;
+    color: $white-color;
+  }
+
+  &-secondary {
+    background-color: $color-secondary;
+    color: $black-color;
+  }
+}
