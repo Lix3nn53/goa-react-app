@@ -1,3 +1,38 @@
 {
-  "extends": ["@atolye15/stylelint-config", "stylelint-prettier/recommended"]
+	"extends": "stylelint-config-prettier",
+	"plugins": [
+		"stylelint-prettier"
+	],
+	"rules": {
+		"string-quotes": "single",
+		"indentation": 2,
+		"at-rule-no-vendor-prefix": true,
+		"media-feature-name-no-vendor-prefix": true,
+		"property-no-vendor-prefix": true,
+		"selector-no-vendor-prefix": true,
+		"value-no-vendor-prefix": true,
+		"declaration-no-important": true,
+		"selector-pseudo-class-no-unknown": [
+			true, { "ignorePseudoClasses": [ "global", "export", "import", "local" ] }
+		],
+		"property-no-unknown": [
+			true, { "ignoreProperties": [ "composes" ] }
+		],
+		"at-rule-no-unknown": [
+			true, { "ignoreAtRules": [ "value" ] }
+		],
+	},
+	"ignoreFiles": [
+		"node_modules",
+		"coverage",
+		"_public",
+		"**/__snapshots__/*",
+		"**/*.js",
+		"**/*.json",
+		"**/*.jpg",
+		"**/*.png",
+		"**/*.svg",
+		".*",
+		"**/*.md"
+	]
 }

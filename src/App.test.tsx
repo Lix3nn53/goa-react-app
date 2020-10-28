@@ -1,19 +1,23 @@
-// import React from 'react';
-// import { render, screen } from '@testing-library/react';
-// import App from './App';
-
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
-
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
 
-it('runs correctly', () => {
+import App from './App';
+import Routes from './routes';
+
+it('has a header', () => {
   const wrapper = shallow(<App />);
 
-  expect(wrapper).toMatchSnapshot();
+  expect(wrapper.find('header').exists()).toBe(true);
+});
+
+it('has a footer', () => {
+  const wrapper = shallow(<App />);
+
+  expect(wrapper.find('footer').exists()).toBe(true);
+});
+
+it('contains routes', () => {
+  const wrapper = shallow(<App />);
+
+  expect(wrapper.containsMatchingElement(<Routes />)).toBe(true);
 });

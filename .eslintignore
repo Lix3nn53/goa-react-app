@@ -1,5 +1,6 @@
 public
 build
 coverage
-!/.storybook
+storybook
+config-overrides.js
 react-app-env.d.ts

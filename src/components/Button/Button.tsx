@@ -6,9 +6,10 @@ import './Button.scss';
 type Props = JSX.IntrinsicElements['button'] & {
   primary?: boolean;
   secondary?: boolean;
+  type: 'button' | 'submit';
 };
 
-const Button: FC<Props> = ({ primary, secondary, className, children, onClick }) => {
+const Button: FC<Props> = ({ primary, secondary, className, children, onClick, type }) => {
   const classNames = cx(
     'Button',
     { 'Button-primary': primary, 'Button-secondary': secondary },
@@ -16,7 +17,7 @@ const Button: FC<Props> = ({ primary, secondary, className, children, onClick })
   );
 
   return (
-    <button className={classNames} onClick={onClick}>
+    <button className={classNames} onClick={onClick} type={type === 'button' ? 'button' : 'submit'}>
       {children}
     </button>
   );
