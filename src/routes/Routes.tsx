@@ -1,14 +1,17 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, Suspense, lazy } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Loading from '../components/Loading';
 
-import Home from './Home';
-import Feed from './Feed';
+const Home = lazy(() => import('./Home'));
+const Feed = lazy(() => import('./Feed'));
 
 const Routes: FunctionComponent = () => (
-  <Switch>
-    <Route path="/" exact component={Home} />
-    <Route path="/feed" exact component={Feed} />
-  </Switch>
+  <Suspense fallback={<Loading />}>
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/feed" exact component={Feed} />
+    </Switch>
+  </Suspense>
 );
 
 export default Routes;
