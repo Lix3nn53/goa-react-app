@@ -13,7 +13,6 @@
     "classnames": "^2.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-hot-loader": "^4.13.0",
     "react-loadable": "^5.5.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
@@ -21,10 +20,10 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "coverage": "yarn run test --coverage",
     "lint:ts": "tsc && eslint src/**/*.{ts,tsx}",
     "lint:css": "stylelint --syntax scss src/**/*.scss",
@@ -56,7 +55,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
-    "@hot-loader/react-dom": "^17.0.0",
     "@storybook/addon-actions": "^6.0.27",
     "@storybook/addon-essentials": "^6.0.27",
     "@storybook/addon-info": "^5.3.21",
@@ -70,7 +68,6 @@
     "@types/react-router-dom": "^5.1.6",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "babel-loader": "^8.1.0",
-    "customize-cra": "^1.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
@@ -84,14 +81,14 @@
     "eslint-plugin-react-hooks": "^4.0.8",
     "node-sass": "^4.14.1",
     "prettier": "^2.1.2",
-    "react-app-rewired": "^2.1.6",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-is": "^17.0.1",
     "react-test-renderer": "^17.0.1",
     "sass": "^1.27.0",
     "sass-loader": "^10.0.4",
     "stylelint": "^13.7.2",
-    "stylelint-config-prettier": "^8.0.2"
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-prettier": "^1.1.2"
   },
   "jest": {
     "snapshotSerializers": [
