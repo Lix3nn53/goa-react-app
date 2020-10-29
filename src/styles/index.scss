@@ -1,5 +1,270 @@
-$color-primary: #468888;
-$color-secondary: #deb887;
+/* NOTE:
+ * Grid layout stuff starts at line 224. 
+ * The stuff before is just boring old CSS to make content look not crappy.
+ */
 
-$white-color: #fff;
-$black-color: #333;
+/*--------------------------------------------------------------
+CSS Reset
+--------------------------------------------------------------*/
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+/*--------------------------------------------------------------
+General styles
+--------------------------------------------------------------*/
+
+.masthead {
+  padding: 2em;
+  background: #272427;
+  text-align: center;
+}
+
+.masthead img {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.site-title {
+  margin: 1em 0 0;
+  padding: 0;
+  font-size: 1.5625em;
+  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c96;
+}
+
+.site-description {
+  margin: 0 0 1em;
+  padding: 0;
+  font-size: 1em;
+  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.page-title {
+  text-align: center;
+  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+  background-color: #f5ebe0;
+}
+
+.main-content {
+  background: white;
+  padding: 2em;
+}
+
+.schedule-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.schedule-list li {
+  margin: 0.5em 0;
+  padding: 1em 0;
+  border-bottom: 1px dotted black;
+}
+
+.schedule-list li:last-child {
+  border-bottom: none;
+}
+
+.talk-title {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em;
+}
+
+.talk-speaker {
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+.talk-time {
+  margin: 0.5em 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.sidebar {
+  background: #f5ebe0;
+}
+
+.info {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: white;
+}
+
+.info li {
+  padding: 1em;
+  text-align: center;
+}
+
+.a11y {
+  color: #272427;
+  background: #f1e4d5;
+}
+
+.coc {
+  background: #e7ab46;
+}
+
+.contact {
+  background: #68470d;
+}
+
+.faq {
+  background: #cc9966;
+}
+
+.colophon {
+  padding: 1em 2em;
+  background: #272427;
+  color: white;
+}
+
+.colophon a {
+  color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+  border-bottom: 1px solid white;
+}
+
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+  .page-title,
+  .main-content,
+  .sidebar {
+    max-width: 50em;
+    margin: 0 auto;
+  }
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@supports (display: grid) {
+  @media screen and (min-width: 800px) {
+    .site {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr 3fr;
+      grid-template-areas:
+        'content-head content-head'
+        'main header'
+        'main sidebar'
+        'footer footer';
+    }
+
+    .masthead {
+      grid-area: header;
+    }
+
+    .page-title {
+      grid-area: content-head;
+    }
+
+    .main-content {
+      grid-area: main;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .colophon {
+      grid-area: footer;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .site {
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-areas:
+        'content-head content-head content-head'
+        'main header header'
+        'main sidebar footer';
+    }
+  }
+}

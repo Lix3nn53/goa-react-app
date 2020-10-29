@@ -11,8 +11,8 @@ type Props = JSX.IntrinsicElements['button'] & {
 
 const Button: FC<Props> = ({ primary, secondary, className, children, onClick, type }) => {
   const classNames = cx(
-    'Button',
-    { 'Button-primary': primary, 'Button-secondary': secondary },
+    'button',
+    { 'button-primary': primary, 'button-secondary': secondary },
     className,
   );
 
