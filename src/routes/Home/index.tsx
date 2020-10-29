@@ -1,22 +1,12 @@
-import React, { FunctionComponent, useState, useEffect } from 'react';
+import React, { FunctionComponent, Suspense, lazy } from 'react';
 import Loading from '../../components/Loading';
 
-const LoadableHome: FunctionComponent = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [component, setComponent] = useState<FunctionComponent>();
+const Feed = lazy(() => import('./Home'));
 
-  useEffect(() => {
-    import('./Home').then((loaded) => {
-      setIsLoaded(true);
-      setComponent(loaded.default);
-    });
-  }, []);
-
-  if (!isLoaded) {
-    return <Loading />;
-  }
-
-  return <div>{component}</div>;
-};
+const LoadableHome: FunctionComponent = () => (
+  <Suspense fallback={<Loading />}>
+    <Feed />
+  </Suspense>
+);
 
 export default LoadableHome;
