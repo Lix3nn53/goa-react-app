@@ -1,0 +1,60 @@
+@import '../../styles/colors';
+
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+  .feed-top,
+  .feed-main,
+  .feed-sidebar {
+    max-width: 50em;
+    margin: 0 auto;
+  }
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@supports (display: grid) {
+  .feed-top {
+    grid-area: feed-top;
+    background: black;
+  }
+
+  .feed-main {
+    grid-area: feed-main;
+    background: greenyellow;
+  }
+
+  .feed-sidebar-1 {
+    grid-area: feed-sidebar-1;
+    background: yellow;
+  }
+
+  .feed-sidebar-2 {
+    grid-area: feed-sidebar-2;
+    background: red;
+  }
+
+  @media screen and (min-width: 800px) {
+    .feed {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        'feed-sidebar-1 feed-top feed-top'
+        'feed-sidebar-1 feed-main feed-sidebar-2';
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .feed {
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        'feed-sidebar-1 feed-top feed-top'
+        'feed-sidebar-1 feed-main feed-sidebar-2';
+    }
+  }
+}

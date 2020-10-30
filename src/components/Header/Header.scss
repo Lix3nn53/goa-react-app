@@ -1,0 +1,19 @@
+@import '../../styles/colors';
+
+/*--------------------------------------------------------------
+General styles
+--------------------------------------------------------------*/
+
+header {
+  padding: 2em;
+  background: $black-color;
+  color: $white-color;
+  text-align: center;
+  height: 60px;
+  min-height: 60px;
+}
+
+header img {
+  width: 180px;
+  margin: 0 auto;
+}

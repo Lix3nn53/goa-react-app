@@ -1,0 +1,55 @@
+@import '../../styles/colors';
+
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+  .home-top,
+  .home-main,
+  .home-sidebar {
+    max-width: 50em;
+    margin: 0 auto;
+  }
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@supports (display: grid) {
+  .home-top {
+    grid-area: home-top;
+    background: black;
+  }
+
+  .home-main {
+    grid-area: home-main;
+    background: greenyellow;
+  }
+
+  .home-sidebar {
+    grid-area: home-sidebar;
+    background: yellow;
+  }
+
+  @media screen and (min-width: 800px) {
+    .home {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        'home-top home-top'
+        'home-main home-sidebar';
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .home {
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        'home-top home-top'
+        'home-main home-sidebar';
+    }
+  }
+}

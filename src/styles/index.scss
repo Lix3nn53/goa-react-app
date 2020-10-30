@@ -1,7 +1,4 @@
-/* NOTE:
- * Grid layout stuff starts at line 224. 
- * The stuff before is just boring old CSS to make content look not crappy.
- */
+@import './colors';
 
 /*--------------------------------------------------------------
 CSS Reset
@@ -38,11 +35,11 @@ Accessibility
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
+  background-color: $white-color;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  color: #21759b;
+  color: $color-primary;
   display: block;
   font-size: 14px;
   font-weight: bold;
@@ -64,7 +61,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: $black-color;
   font-family: 'Helvetica', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -86,137 +83,75 @@ p {
 General styles
 --------------------------------------------------------------*/
 
-.masthead {
-  padding: 2em;
-  background: #272427;
-  text-align: center;
-}
-
-.masthead img {
-  width: 180px;
-  margin: 0 auto;
-}
-
-.site-title {
-  margin: 1em 0 0;
-  padding: 0;
-  font-size: 1.5625em;
-  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #c96;
-}
-
-.site-description {
-  margin: 0 0 1em;
-  padding: 0;
-  font-size: 1em;
-  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 400;
-  color: hsla(0, 0%, 100%, 0.6);
-}
-
-.page-title {
-  text-align: center;
-  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
-  background-color: #f5ebe0;
+.fullpage {
+  min-height: 100vh;
 }
 
 .main-content {
-  background: white;
+  background: $white-color;
   padding: 2em;
-}
-
-.schedule-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.schedule-list li {
-  margin: 0.5em 0;
-  padding: 1em 0;
-  border-bottom: 1px dotted black;
-}
-
-.schedule-list li:last-child {
-  border-bottom: none;
-}
-
-.talk-title {
-  margin: 0;
-  padding: 0;
-  line-height: 1.3em;
-}
-
-.talk-speaker {
-  margin: 0.5em 0;
-  padding: 0;
-}
-
-.talk-time {
-  margin: 0.5em 0;
-  padding: 0;
-  font-weight: bold;
-}
-
-.sidebar {
-  background: #f5ebe0;
-}
-
-.info {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  color: white;
-}
-
-.info li {
-  padding: 1em;
-  text-align: center;
-}
-
-.a11y {
-  color: #272427;
-  background: #f1e4d5;
-}
-
-.coc {
-  background: #e7ab46;
-}
-
-.contact {
-  background: #68470d;
-}
-
-.faq {
-  background: #cc9966;
-}
-
-.colophon {
-  padding: 1em 2em;
-  background: #272427;
-  color: white;
-}
-
-.colophon a {
-  color: white;
-}
-
-.colophon a:hover,
-.colophon a:focus {
-  border-bottom: 1px solid white;
 }
 
 /*--------------------------------------------------------------
 If no grid support, limit width to 50em and center align
 --------------------------------------------------------------*/
 @supports not (display: grid) {
-  .page-title,
-  .main-content,
-  .sidebar {
+  .main-content {
     max-width: 50em;
     margin: 0 auto;
+  }
+}
+
+/*--------------------------------------------------------------
+CSS Flexbox layout for wider screens, when browser supports flexbox:
+--------------------------------------------------------------*/
+
+@supports (display: flex) {
+  .flex-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .flex-container.column {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .flex-item {
+    margin: 0;
+    display: inherit;
+    padding: 10px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .flex-item p {
+    width: 100%;
+    text-align: center;
+    color: $white-color;
+  }
+
+  .flex-header {
+    flex: 0;
+  }
+
+  .flex-main {
+    flex: 1;
+  }
+
+  .flex-footer {
+    flex: 0;
+  }
+
+  //use a second flex in main-content to force max available height
+  .main-content {
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -225,46 +160,8 @@ CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 
 @supports (display: grid) {
-  @media screen and (min-width: 800px) {
-    .site {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto 1fr 3fr;
-      grid-template-areas:
-        'content-head content-head'
-        'main header'
-        'main sidebar'
-        'footer footer';
-    }
-
-    .masthead {
-      grid-area: header;
-    }
-
-    .page-title {
-      grid-area: content-head;
-    }
-
-    .main-content {
-      grid-area: main;
-    }
-
-    .sidebar {
-      grid-area: sidebar;
-    }
-
-    .colophon {
-      grid-area: footer;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .site {
-      grid-template-columns: 2fr 1fr 1fr;
-      grid-template-areas:
-        'content-head content-head content-head'
-        'main header header'
-        'main sidebar footer';
-    }
+  .grid {
+    width: 100%;
+    flex: 1; //use all available height
   }
 }

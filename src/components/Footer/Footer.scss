@@ -1,0 +1,22 @@
+@import '../../styles/colors';
+
+/*--------------------------------------------------------------
+General styles
+--------------------------------------------------------------*/
+
+footer {
+  padding: 1em 2em;
+  background: $black-color;
+  color: $white-color;
+  height: 120px;
+  min-height: 120px;
+}
+
+footer a {
+  color: $white-color;
+}
+
+footer a:hover,
+footer a:focus {
+  border-bottom: 1px solid $white-color;
+}

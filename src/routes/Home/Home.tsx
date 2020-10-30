@@ -1,11 +1,15 @@
 import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 
-const Home: FunctionComponent = () => (
-  <div>
-    <h1>Home page</h1>
+import './Home.scss';
 
-    <Link to="/feed">Go to feed</Link>
+const Home: FunctionComponent = () => (
+  <div className="grid home">
+    <h1 className="home-top">Top</h1>
+    <div className="home-main">
+      Main<Link to="/feed">Go to feed</Link>
+    </div>
+    <div className="home-sidebar">Sidebar</div>
   </div>
 );
 

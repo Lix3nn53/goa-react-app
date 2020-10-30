@@ -9,8 +9,4 @@ storiesOf('Button', module)
       Primary Button
     </Button>
   ))
-  .add('Secondary', () => (
-    <Button secondary type="button">
-      Secondary Button
-    </Button>
-  ));
+  .add('Secondary', () => <Button type="button">Secondary Button</Button>);

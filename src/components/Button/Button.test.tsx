@@ -14,11 +14,7 @@ it('renders correctly primary button', () => {
 });
 
 it('renders correctly secondary button', () => {
-  const wrapper = shallow(
-    <Button secondary type="button">
-      Secondary Button
-    </Button>,
-  );
+  const wrapper = shallow(<Button type="button">Secondary Button</Button>);
 
   expect(wrapper).toMatchSnapshot();
 });
