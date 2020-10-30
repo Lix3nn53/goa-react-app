@@ -19,17 +19,17 @@ CSS Grid layout for wider screens, when browser supports grid:
 @supports (display: grid) {
   .home-top {
     grid-area: home-top;
-    background: black;
+    background: $color-primary;
   }
 
   .home-main {
     grid-area: home-main;
-    background: greenyellow;
+    background: $color-secondary;
   }
 
   .home-sidebar {
     grid-area: home-sidebar;
-    background: yellow;
+    background: $color-secondary-light;
   }
 
   @media screen and (min-width: 800px) {

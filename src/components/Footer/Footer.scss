@@ -6,17 +6,17 @@ General styles
 
 footer {
   padding: 1em 2em;
-  background: $black-color;
-  color: $white-color;
+  background: $color-black;
+  color: $color-white;
   height: 120px;
   min-height: 120px;
 }
 
 footer a {
-  color: $white-color;
+  color: $color-white;
 }
 
 footer a:hover,
 footer a:focus {
-  border-bottom: 1px solid $white-color;
+  border-bottom: 1px solid $color-white;
 }

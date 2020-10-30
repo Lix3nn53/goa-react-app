@@ -35,7 +35,7 @@ Accessibility
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
-  background-color: $white-color;
+  background-color: $color-white;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
@@ -61,7 +61,7 @@ button,
 input,
 select,
 textarea {
-  color: $black-color;
+  color: $color-black;
   font-family: 'Helvetica', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -88,7 +88,7 @@ General styles
 }
 
 .main-content {
-  background: $white-color;
+  background: $color-white;
   padding: 2em;
 }
 
@@ -122,7 +122,7 @@ CSS Flexbox layout for wider screens, when browser supports flexbox:
   .flex-item {
     margin: 0;
     display: inherit;
-    padding: 10px;
+    padding: 0;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
@@ -131,7 +131,7 @@ CSS Flexbox layout for wider screens, when browser supports flexbox:
   .flex-item p {
     width: 100%;
     text-align: center;
-    color: $white-color;
+    color: $color-white;
   }
 
   .flex-header {
