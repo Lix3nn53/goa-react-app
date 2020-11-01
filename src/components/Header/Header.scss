@@ -8,8 +8,12 @@ header {
   padding: 1em;
   background: $color-white;
   color: $color-white;
-  height: 60px;
   min-height: 60px;
+}
+
+header.homepage {
+  background: url('../../img/poster.jpg') no-repeat center/cover;
+  background-attachment: fixed;
 }
 
 header img {
@@ -19,7 +23,17 @@ header img {
 }
 
 header a {
-  color: $color-primary;
+  font-weight: bold;
+  font-size: 21px;
+  color: $color-black-dark;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+header a.active {
+  font-weight: bold;
+  font-size: 21px;
+  color: $color-black-dark;
   margin-left: 9px;
   margin-right: 9px;
 }
@@ -29,21 +43,21 @@ CSS Flexbox layout for wider screens, when browser supports flexbox:
 --------------------------------------------------------------*/
 
 @supports (display: flex) {
-  .flex-header-section-1 {
+  header .section-1 {
     flex: 1;
     align-items: center;
     justify-content: flex-start;
     display: flex;
   }
 
-  .flex-header-section-2 {
+  header .section-2 {
     flex: 1;
     align-items: center;
     justify-content: center;
     display: flex;
   }
 
-  .flex-header-section-3 {
+  header .section-3 {
     flex: 1;
     align-items: center;
     justify-content: flex-end;

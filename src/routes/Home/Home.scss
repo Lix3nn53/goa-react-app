@@ -1,12 +1,23 @@
 @import '../../styles/colors';
 
+.home .top {
+  background: url('../../img/poster.jpg') no-repeat center/cover;
+  background-attachment: fixed;
+}
+
+.home .logo {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+
 /*--------------------------------------------------------------
 If no grid support, limit width to 50em and center align
 --------------------------------------------------------------*/
 @supports not (display: grid) {
-  .home-top,
-  .home-main,
-  .home-sidebar {
+  .home .top,
+  .home .main,
+  .home .sidebar {
     max-width: 50em;
     margin: 0 auto;
   }
@@ -17,15 +28,15 @@ CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 
 @supports (display: grid) {
-  .home-top {
+  .home .top {
     grid-area: home-top;
   }
 
-  .home-main {
+  .home .main {
     grid-area: home-main;
   }
 
-  .home-sidebar {
+  .home .sidebar {
     grid-area: home-sidebar;
   }
 
@@ -33,7 +44,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     .home {
       display: grid;
       grid-template-columns: 3fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 2fr 1fr;
       grid-template-areas:
         'home-top home-top'
         'home-main home-sidebar';
@@ -43,7 +54,7 @@ CSS Grid layout for wider screens, when browser supports grid:
   @media screen and (min-width: 1200px) {
     .home {
       grid-template-columns: 3fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 2fr 1fr;
       grid-template-areas:
         'home-top home-top'
         'home-main home-sidebar';

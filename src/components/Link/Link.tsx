@@ -1,16 +1,16 @@
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import './CtaLink.scss';
+import './Link.scss';
 
-type Props = JSX.IntrinsicElements['button'] & {
-  button?: boolean;
+type Props = JSX.IntrinsicElements['a'] & {
+  cta?: boolean;
   to: string;
 };
 
-const CtaLink: FC<Props> = ({ button, className, children, to }) => {
-  const baseStyle = 'CtaLink';
-  const linkStyle = button ? `variant--Button` : `variant--Link`;
+const CustomLink: FC<Props> = ({ cta, className, children, to }) => {
+  const baseStyle = 'Link';
+  const linkStyle = cta ? `variant--Cta` : `variant--Link`;
   const classNames = className
     ? `${baseStyle}  ${linkStyle} ${className}`
     : `${baseStyle} ${linkStyle}`;
@@ -22,4 +22,4 @@ const CtaLink: FC<Props> = ({ button, className, children, to }) => {
   );
 };
 
-export default CtaLink;
+export default CustomLink;

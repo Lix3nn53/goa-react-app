@@ -3,16 +3,18 @@ import { storiesOf } from '@storybook/react';
 
 import { BrowserRouter } from 'react-router-dom';
 
-import Header from './Header';
+import Link from './Link';
 
-storiesOf('Header', module)
-  .add('Homepage', () => (
+storiesOf('Link', module)
+  .add('Link Cta', () => (
     <BrowserRouter>
-      <Header path="" />
+      <Link cta to="/login">
+        Link Cta
+      </Link>
     </BrowserRouter>
   ))
-  .add('Default', () => (
+  .add('Link', () => (
     <BrowserRouter>
-      <Header />
+      <Link to="/login">Link</Link>
     </BrowserRouter>
   ));
