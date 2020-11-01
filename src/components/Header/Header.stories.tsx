@@ -8,7 +8,7 @@ import Header from './Header';
 storiesOf('Header', module)
   .add('Homepage', () => (
     <BrowserRouter>
-      <Header path="" />
+      <Header />
     </BrowserRouter>
   ))
   .add('Default', () => (

@@ -5,9 +5,9 @@ import logo from '../../img/logo.png';
 
 const Home: FunctionComponent = () => (
   <div className="grid home">
-    <h1 className="top">
+    <div className="top">
       <img src={logo} alt="logo" className="logo" />
-    </h1>
+    </div>
     <div className="main">Main</div>
     <div className="sidebar">Sidebar</div>
   </div>

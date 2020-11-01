@@ -1,14 +1,17 @@
 import React, { FC } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import Link from '../Link';
 
 import './Header.scss';
 import brand from '../../img/favicon.png';
 
-type Props = JSX.IntrinsicElements['header'] & {
-  path?: string;
-};
+type Props = JSX.IntrinsicElements['header'];
 
-const Header: FC<Props> = ({ className, path }) => {
+const Header: FC<Props> = ({ className, style }) => {
+  const location = useLocation();
+  const path = location.pathname.split('/')[1];
+
   const baseStyle = 'flex-container';
   const headerStyle = path === '' ? `homepage` : ``;
   const classNames = className
@@ -16,7 +19,7 @@ const Header: FC<Props> = ({ className, path }) => {
     : `${baseStyle} ${headerStyle}`;
 
   return (
-    <header className={classNames}>
+    <header className={classNames} style={style}>
       <div className="section-1">
         <Link to="/">
           <img src={brand} alt="brand" className="brand" />

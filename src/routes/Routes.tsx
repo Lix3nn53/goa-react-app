@@ -4,12 +4,14 @@ import Loading from '../components/Loading';
 
 const Home = lazy(() => import('./Home'));
 const Feed = lazy(() => import('./Feed'));
+const PageNotFound = lazy(() => import('./PageNotFound'));
 
 const Routes: FunctionComponent = () => (
   <Suspense fallback={<Loading />}>
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/feed" exact component={Feed} />
+      <Route component={PageNotFound} />
     </Switch>
   </Suspense>
 );

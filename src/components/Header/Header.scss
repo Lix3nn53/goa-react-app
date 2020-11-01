@@ -6,8 +6,6 @@ General styles
 
 header {
   padding: 1em;
-  background: $color-white;
-  color: $color-white;
   min-height: 60px;
 }
 
@@ -42,22 +40,36 @@ CSS Flexbox layout for wider screens, when browser supports flexbox:
 @supports (display: flex) {
   header .section-1 {
     flex: 1;
-    align-items: center;
-    justify-content: flex-start;
     display: flex;
+    justify-content: center;
   }
 
   header .section-2 {
     flex: 1;
-    align-items: center;
-    justify-content: center;
     display: flex;
+    justify-content: center;
   }
 
   header .section-3 {
     flex: 1;
-    align-items: center;
-    justify-content: flex-end;
     display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 800px) {
+    header .section-1 {
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    header .section-2 {
+      align-items: center;
+      justify-content: center;
+    }
+
+    header .section-3 {
+      align-items: center;
+      justify-content: flex-end;
+    }
   }
 }

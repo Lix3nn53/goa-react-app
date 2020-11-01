@@ -110,6 +110,7 @@ CSS Flexbox layout for wider screens, when browser supports flexbox:
 
 @supports (display: flex) {
   .flex-container {
+    width: 100%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
