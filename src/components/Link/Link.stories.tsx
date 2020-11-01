@@ -17,4 +17,18 @@ storiesOf('Link', module)
     <BrowserRouter>
       <Link to="/login">Link</Link>
     </BrowserRouter>
+  ))
+  .add('Link Cta Large', () => (
+    <BrowserRouter>
+      <Link cta large to="/login">
+        Link
+      </Link>
+    </BrowserRouter>
+  ))
+  .add('Link Large', () => (
+    <BrowserRouter>
+      <Link large to="/login">
+        Link
+      </Link>
+    </BrowserRouter>
   ));

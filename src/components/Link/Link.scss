@@ -1,6 +1,7 @@
 @import '../../styles/colors';
 
 .Link {
+  font-weight: 600;
   padding-top: 4px;
   padding-right: 15px;
   padding-bottom: 6px;
@@ -15,13 +16,43 @@ a.Link {
 }
 
 .Link.variant--Cta {
-  background-color: $color-cta;
   color: $color-white;
+  background-color: $color-cta;
   -webkit-transition-property: background-color, opacity;
   transition-property: background-color, opacity;
+}
+
+.Link.variant--Cta:hover {
+  background-color: $color-cta-light;
 }
 
 .Link.variant--Link {
   -webkit-transition-property: color, opacity;
   transition-property: color, opacity;
+}
+
+.Link.variant--Link:hover {
+  color: $color-black-light;
+}
+
+.Link.variant--Large {
+  color: $color-white;
+  padding-top: 20px;
+  padding-right: 35px;
+  padding-bottom: 22px;
+  padding-left: 35px;
+}
+
+.Link.variant--Link.variant--Large {
+  color: $color-cta;
+  border: 1px solid $color-cta;
+  padding-top: 19px;
+  padding-right: 34px;
+  padding-bottom: 21px;
+  padding-left: 34px;
+}
+
+.Link.variant--Link.variant--Large:hover {
+  color: $color-white;
+  background-color: $color-cta;
 }

@@ -1,15 +1,37 @@
 @import '../../styles/colors';
 
 .button {
-  padding: 1rem 2rem;
+  font-weight: 600;
+  background-color: $color-secondary;
+  padding-top: 20px;
+  padding-right: 35px;
+  padding-bottom: 22px;
+  padding-left: 35px;
+  border-radius: 9px;
+  white-space: nowrap;
+  outline: none;
 
   &-primary {
-    background-color: $color-primary;
+    border: none;
     color: $color-white;
   }
 
+  &-primary:hover {
+    background-color: $color-secondary-light;
+  }
+
   &-secondary {
+    color: $color-secondary;
+    background-color: transparent;
+    border: 1px solid $color-secondary;
+    padding-top: 19px;
+    padding-right: 34px;
+    padding-bottom: 21px;
+    padding-left: 34px;
+  }
+
+  &-secondary:hover {
+    color: $color-white;
     background-color: $color-secondary;
-    color: $color-black;
   }
 }
