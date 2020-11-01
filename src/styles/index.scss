@@ -60,8 +60,9 @@ body,
 button,
 input,
 select,
-textarea {
-  color: $color-black;
+textarea,
+a {
+  color: $color-black-dark;
   font-family: 'Helvetica', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -79,6 +80,10 @@ p {
   padding: 1em 0;
 }
 
+a {
+  font-weight: bold;
+}
+
 /*--------------------------------------------------------------
 General styles
 --------------------------------------------------------------*/
@@ -89,7 +94,6 @@ General styles
 
 .main-content {
   background: $color-white;
-  padding: 2em;
 }
 
 /*--------------------------------------------------------------
@@ -107,51 +111,51 @@ CSS Flexbox layout for wider screens, when browser supports flexbox:
 --------------------------------------------------------------*/
 
 @supports (display: flex) {
-  .flex-container {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
+  @media screen and (min-width: 800px) {
+    .flex-container {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
 
-  .flex-container.column {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
+    .flex-container.column {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
 
-  .flex-item {
-    margin: 0;
-    display: inherit;
-    padding: 0;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
+    .flex-item {
+      display: inherit;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
 
-  .flex-item p {
-    width: 100%;
-    text-align: center;
-    color: $color-white;
-  }
+    .flex-item p {
+      width: 100%;
+      text-align: center;
+      color: $color-white;
+    }
 
-  .flex-header {
-    flex: 0;
-  }
+    .flex-header {
+      flex: 0;
+    }
 
-  .flex-main {
-    flex: 1;
-  }
+    .flex-main {
+      flex: 1;
+    }
 
-  .flex-footer {
-    flex: 0;
-  }
+    .flex-footer {
+      flex: 0;
+    }
 
-  //use a second flex in main-content to force max available height
-  .main-content {
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    //use a second flex in main-content to force max available height
+    .main-content {
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
   }
 }
 

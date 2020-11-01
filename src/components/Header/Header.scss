@@ -5,15 +5,48 @@ General styles
 --------------------------------------------------------------*/
 
 header {
-  padding: 2em;
-  background: $color-black;
+  padding: 1em;
+  background: $color-white;
   color: $color-white;
-  text-align: center;
   height: 60px;
   min-height: 60px;
 }
 
 header img {
-  width: 180px;
+  display: inline;
+  width: 80px;
   margin: 0 auto;
+}
+
+header a {
+  color: $color-primary;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+/*--------------------------------------------------------------
+CSS Flexbox layout for wider screens, when browser supports flexbox:
+--------------------------------------------------------------*/
+
+@supports (display: flex) {
+  .flex-header-section-1 {
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+  }
+
+  .flex-header-section-2 {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .flex-header-section-3 {
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+  }
 }

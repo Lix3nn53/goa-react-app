@@ -1,0 +1,27 @@
+@import '../../styles/colors';
+
+.CtaLink {
+  padding-top: 3px;
+  padding-right: 9px;
+  padding-bottom: 6px;
+  padding-left: 9px;
+  border-radius: 12px;
+  white-space: nowrap;
+  outline: none;
+}
+
+.CtaLink.variant--Button {
+  background-color: $color-cta;
+  color: $color-white;
+  -webkit-transition-property: background-color, opacity;
+  transition-property: background-color, opacity;
+}
+
+.CtaLink.variant--Link {
+  -webkit-transition-property: color, opacity;
+  transition-property: color, opacity;
+}
+
+a.CtaLink {
+  text-decoration: none;
+}
