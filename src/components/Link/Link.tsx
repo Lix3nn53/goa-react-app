@@ -9,7 +9,7 @@ type Props = JSX.IntrinsicElements['a'] & {
   to: string;
 };
 
-const CustomLink: FC<Props> = ({ className, children, to, cta, large }) => {
+const CustomLink: FC<Props> = ({ className, children, style, to, cta, large }) => {
   const baseStyle = 'Link';
   const linkStyle = cta ? `variant--Cta` : `variant--Link`;
   const linkStyle2 = large ? `variant--Large` : ``;
@@ -18,7 +18,7 @@ const CustomLink: FC<Props> = ({ className, children, to, cta, large }) => {
     : `${baseStyle} ${linkStyle} ${linkStyle2}`;
 
   return (
-    <Link className={classNames} to={to}>
+    <Link className={classNames} to={to} style={style}>
       {children}
     </Link>
   );

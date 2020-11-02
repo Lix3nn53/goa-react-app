@@ -11,6 +11,7 @@ html {
 
 body {
   margin: 0;
+  background-color: $color-white-dark;
 }
 
 img {
@@ -90,10 +91,6 @@ General styles
   min-height: 100vh;
 }
 
-.main-content {
-  background: $color-white;
-}
-
 /*--------------------------------------------------------------
 If no grid support, limit width to 50em and center align
 --------------------------------------------------------------*/
@@ -140,7 +137,6 @@ CSS Flexbox layout for wider screens, when browser supports flexbox:
   .flex-item p {
     width: 100%;
     text-align: center;
-    color: $color-white;
   }
 
   //use a second flex in main-content to force max available height

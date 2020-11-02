@@ -3,6 +3,7 @@ import React, { FunctionComponent } from 'react';
 import './Feed.scss';
 import Link from '../../components/Link';
 import Button from '../../components/Button';
+import Card from '../../components/Card';
 
 const Feed: FunctionComponent = () => (
   <div className="grid feed">
@@ -22,7 +23,11 @@ const Feed: FunctionComponent = () => (
         Take Product Tour
       </Button>
     </h1>
-    <div className="feed-main">Main</div>
+    <div className="feed-main">
+      <Card>
+        <p>ASD</p>
+      </Card>
+    </div>
     <div className="feed-sidebar-1">Sidebar1</div>
     <div className="feed-sidebar-2">Sidebar2</div>
     <div className="feed-bottom-1">Bottom1</div>

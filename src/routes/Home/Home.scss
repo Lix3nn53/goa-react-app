@@ -11,13 +11,18 @@
   margin: 0 auto;
 }
 
+.home .main {
+  .posts,
+  .sidebar {
+    margin-top: 20px;
+  }
+}
+
 /*--------------------------------------------------------------
 If no grid support, limit width to 50em and center align
 --------------------------------------------------------------*/
 @supports not (display: grid) {
-  .home .top,
-  .home .main,
-  .home .sidebar {
+  .home .main {
     max-width: 50em;
     margin: 0 auto;
   }
@@ -28,36 +33,26 @@ CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 
 @supports (display: grid) {
-  .home .top {
-    grid-area: home-top;
+  .home .main .banner {
+    grid-area: home-banner;
   }
 
-  .home .main {
-    grid-area: home-main;
+  .home .main .posts {
+    grid-area: home-posts;
   }
 
-  .home .sidebar {
+  .home .main .sidebar {
     grid-area: home-sidebar;
   }
 
   @media screen and (min-width: 800px) {
-    .home {
+    .home .main {
       display: grid;
-      grid-template-columns: 3fr 1fr;
-      grid-template-rows: 2fr 1fr;
+      grid-template-columns: 1fr 5fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr;
       grid-template-areas:
-        'home-top home-top'
-        'home-main home-sidebar';
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .home {
-      grid-template-columns: 3fr 1fr;
-      grid-template-rows: 2fr 1fr;
-      grid-template-areas:
-        'home-top home-top'
-        'home-main home-sidebar';
+        '. home-banner home-banner .'
+        '. home-posts home-sidebar .';
     }
   }
 }
