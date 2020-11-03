@@ -3,19 +3,13 @@
 .home .top {
   background: url('../../img/poster.jpg') no-repeat center/cover;
   background-attachment: fixed;
+  margin-bottom: 20px;
 }
 
 .home .logo {
   max-width: 1200px;
   display: block;
   margin: 0 auto;
-}
-
-.home .main {
-  .posts,
-  .sidebar {
-    margin-top: 20px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -48,11 +42,13 @@ CSS Grid layout for wider screens, when browser supports grid:
   @media screen and (min-width: 800px) {
     .home .main {
       display: grid;
-      grid-template-columns: 1fr 5fr 2fr 1fr;
-      grid-template-rows: 1fr 2fr;
+      grid-template-columns: 2fr 5fr 2fr 2fr;
+      grid-template-rows: 1fr 4fr;
       grid-template-areas:
         '. home-banner home-banner .'
         '. home-posts home-sidebar .';
+      column-gap: 16px;
+      row-gap: 16px;
     }
   }
 }

@@ -16,16 +16,23 @@ const Home: FunctionComponent = () => (
         <Banner />
         <div className="posts">
           <div className="flex-container column">
-            <Card className="flex-item">
+            <Card className="flex-item" footer={<p>A</p>}>
               <p>ASD</p>
             </Card>
-            <Card className="flex-item">
+            <Card className="flex-item" footer={<p>A</p>}>
+              <p>ASD</p>
+            </Card>
+            <Card className="flex-item" footer={<p>A</p>}>
               <p>ASD</p>
             </Card>
           </div>
         </div>
 
-        <div className="sidebar">Sidebar</div>
+        <div className="sidebar flex-container column">
+          <Card reverse className="flex-item" style={{ flex: '1' }}>
+            <p>ASD</p>
+          </Card>
+        </div>
       </div>
     </div>
   </div>

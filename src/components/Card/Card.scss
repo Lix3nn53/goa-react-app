@@ -1,50 +1,20 @@
 @import '../../styles/colors';
 
 .card {
-  position: relative;
-  display: inline-block;
-  background-color: $color-cta;
-  border-top-right-radius: 12px;
-  box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
-.card:before,
-.card:after {
-  content: '';
-  display: block;
-  background-color: $color-cta;
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  transition: all 0.2s ease;
-}
-
-.card:before {
-  top: 0;
-  left: 0;
-  transform-origin: top left;
-  transform: rotate(-45deg) scale(1);
-}
-
-.card:after {
-  right: 0;
-  bottom: 0;
-  transform-origin: bottom right;
-  transform: rotate(45deg) scale(1);
-}
-
-.card-content {
-  background-color: $color-white;
-  display: block;
-  transform: translate(0, 0);
-  transform: translate(9px, -9px);
-  position: relative;
-  z-index: 10;
+  border-radius: 12px;
+  background-color: $color-black;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
   min-width: 320px;
-  min-height: 180px;
-  border-top-right-radius: 12px;
+  min-height: 240px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+
+  .card-footer {
+    background-color: $color-black-light;
+    margin-top: auto;
+    border-top: 1px solid #2f3749;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    min-height: 60px;
+  }
 }

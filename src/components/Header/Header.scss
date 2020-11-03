@@ -12,6 +12,10 @@ header {
 header.homepage {
   background: url('../../img/poster.jpg') no-repeat center/cover;
   background-attachment: fixed;
+
+  a {
+    color: $color-black-dark;
+  }
 }
 
 header img {
@@ -22,13 +26,6 @@ header img {
 
 header a {
   font-size: 21px;
-  margin-left: 9px;
-  margin-right: 9px;
-}
-
-header a.active {
-  font-size: 21px;
-  color: $color-black-dark;
   margin-left: 9px;
   margin-right: 9px;
 }

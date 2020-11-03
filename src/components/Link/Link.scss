@@ -17,13 +17,13 @@ a.Link {
 
 .Link.variant--Cta {
   color: $color-white;
-  background-color: $color-cta;
+  background-color: $color-primary-dark;
   -webkit-transition-property: background-color, opacity;
   transition-property: background-color, opacity;
 }
 
 .Link.variant--Cta:hover {
-  background-color: $color-cta-light;
+  background-color: $color-primary;
 }
 
 .Link.variant--Link {
@@ -32,7 +32,7 @@ a.Link {
 }
 
 .Link.variant--Link:hover {
-  color: $color-black-light;
+  color: $color-primary-light;
 }
 
 .Link.variant--Large {
@@ -44,8 +44,8 @@ a.Link {
 }
 
 .Link.variant--Link.variant--Large {
-  color: $color-cta;
-  border: 1px solid $color-cta;
+  color: $color-primary-dark;
+  border: 1px solid $color-primary-dark;
   padding-top: 19px;
   padding-right: 34px;
   padding-bottom: 21px;
@@ -54,5 +54,5 @@ a.Link {
 
 .Link.variant--Link.variant--Large:hover {
   color: $color-white;
-  background-color: $color-cta;
+  background-color: $color-primary-dark;
 }

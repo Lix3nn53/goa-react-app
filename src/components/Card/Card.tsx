@@ -3,19 +3,29 @@ import React, { FC } from 'react';
 import './Card.scss';
 
 type Props = JSX.IntrinsicElements['div'] & {
-  large?: boolean;
+  reverse?: boolean;
+  footer?: React.ReactNode;
 };
 
-const Card: FC<Props> = ({ className, children, large, style }) => {
+const Card: FC<Props> = ({ className, children, style, reverse, footer }) => {
   const baseStyle = 'card';
-  const cardStyle = large ? `large` : ``;
+  const cardStyle = reverse ? `reverse` : ``;
   const classNames = className
     ? `${baseStyle}  ${cardStyle} ${className}`
     : `${baseStyle} ${cardStyle}`;
 
+  const renderFooter = () => {
+    if (!footer) return <div />;
+
+    return <div className="flex-item card-footer">{footer}</div>;
+  };
+
   return (
     <div className={classNames} style={style}>
-      <div className="card-content">{children}</div>
+      <div className="flex-container column">
+        <div className="flex-item card-content">{children}</div>
+        {renderFooter()}
+      </div>
     </div>
   );
 };

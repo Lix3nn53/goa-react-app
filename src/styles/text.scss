@@ -1,0 +1,27 @@
+@import './colors';
+
+.lined-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  padding: 0;
+}
+
+.lined-text::after,
+.lined-text::before {
+  content: '';
+  width: 70px;
+  height: 1px;
+  background-color: $color-white;
+  position: absolute;
+  top: 7px;
+}
+
+.lined-text::before {
+  left: 0;
+}
+
+.lined-text::after {
+  right: 0;
+}
