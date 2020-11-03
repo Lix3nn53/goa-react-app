@@ -16,7 +16,7 @@ const Button: FC<Props> = ({ primary, className, children, onClick, type }) => {
 
   return (
     <button className={classNames} onClick={onClick} type={type === 'button' ? 'button' : 'submit'}>
-      {children}
+      <div className="button-content">{children}</div>
     </button>
   );
 };

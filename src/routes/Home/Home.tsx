@@ -15,9 +15,14 @@ const Home: FunctionComponent = () => (
       <div className="grid main">
         <Banner />
         <div className="posts">
-          <Card>
-            <p>ASD</p>
-          </Card>
+          <div className="flex-container column">
+            <Card className="flex-item">
+              <p>ASD</p>
+            </Card>
+            <Card className="flex-item">
+              <p>ASD</p>
+            </Card>
+          </div>
         </div>
 
         <div className="sidebar">Sidebar</div>
