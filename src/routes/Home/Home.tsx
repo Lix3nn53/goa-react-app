@@ -5,6 +5,7 @@ import logo from '../../img/logo.png';
 
 import Banner from '../../components/Banner';
 import Card from '../../components/Card';
+import Loading from '../../components/Loading';
 
 const Home: FunctionComponent = () => (
   <div className="home flex-container column">
@@ -27,6 +28,7 @@ const Home: FunctionComponent = () => (
             <Card className="flex-item" footer={<p>A</p>}>
               <p>ASD</p>
             </Card>
+            <Loading />
           </div>
         </div>
 

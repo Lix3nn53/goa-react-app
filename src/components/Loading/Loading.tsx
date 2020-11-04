@@ -1,11 +1,18 @@
 import React, { FC } from 'react';
 
-type Props = JSX.IntrinsicElements['p'];
+import './Loading.scss';
 
-const Loading: FC<Props> = ({ className, children, style }) => (
-  <p className={className} style={style}>
-    Loading...{children}
-  </p>
+const Loading: FC = () => (
+  <div className="flex-container loader-bars">
+    <div className="flex-item loader-bar" />
+    <div className="flex-item loader-bar" />
+    <div className="flex-item loader-bar" />
+    <div className="flex-item loader-bar" />
+    <div className="flex-item loader-bar" />
+    <div className="flex-item loader-bar" />
+    <div className="flex-item loader-bar" />
+    <div className="flex-item loader-bar" />
+  </div>
 );
 
 export default Loading;
