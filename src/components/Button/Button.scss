@@ -77,21 +77,21 @@
   }
 
   &-primary {
-    background-color: $color-white-dark;
+    background-color: $color-primary-darker;
   }
 
   &-secondary {
-    background-color: $color-white-dark;
+    background-color: $color-secondary-darker;
   }
 
   &-primary:before,
   &-primary:after {
-    background-color: $color-white-dark;
+    background-color: $color-primary-darker;
   }
 
   &-secondary:before,
   &-secondary:after {
-    background-color: $color-white-dark;
+    background-color: $color-secondary-darker;
   }
 
   &-primary .button-content {

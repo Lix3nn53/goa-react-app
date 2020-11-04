@@ -6,7 +6,7 @@ import Form from '../../components/Form';
 
 const Register: FunctionComponent = () => (
   <div className="flex-container register-page">
-    <Card header={<p>Create your Account!</p>} style={{ maxWidth: '484px' }}>
+    <Card header={<p className="form-title">Create your Account!</p>} style={{ maxWidth: '484px' }}>
       <Form
         onSubmit={(event) => {
           event.preventDefault();
