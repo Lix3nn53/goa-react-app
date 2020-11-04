@@ -33,6 +33,10 @@ input:focus {
   border-color: $color-primary-light;
 }
 
+input:invalid {
+  border-color: $color-secondary-dark;
+}
+
 label {
   color: $color-white-dark;
   line-height: 1em;

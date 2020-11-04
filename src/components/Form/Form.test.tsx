@@ -3,14 +3,21 @@ import { shallow } from 'enzyme';
 
 import Form from './Form';
 
-it('renders correctly primary button', () => {
-  const wrapper = shallow(<Form>Primary Form</Form>);
-
-  expect(wrapper).toMatchSnapshot();
-});
-
-it('renders correctly secondary button', () => {
-  const wrapper = shallow(<Form>Secondary Form</Form>);
+it('renders correctly Register Form', () => {
+  const wrapper = shallow(
+    <Form
+      rowArray={[
+        [{ id: 'register-email', name: 'Email', type: 'email' }],
+        [{ id: 'register-nickname', name: 'Nickname', type: 'text' }],
+        [{ id: 'register-password', name: 'Password', type: 'password' }],
+        [{ id: 'register-repeat-password', name: 'Repeat Password', type: 'password' }],
+      ]}
+      buttonText="Register Now!"
+      onSubmit={(event) => {
+        event.preventDefault();
+      }}
+    />,
+  );
 
   expect(wrapper).toMatchSnapshot();
 });

@@ -4,59 +4,63 @@ import './Form.scss';
 
 import Button from '../Button';
 
-type Props = JSX.IntrinsicElements['form'] & {
-  hello?: boolean;
+type InputData = {
+  id: string;
+  name: string;
+  type: 'text' | 'password' | 'email';
 };
 
-const Form: FC<Props> = ({ className, children, hello, onSubmit }) => {
+type Props = JSX.IntrinsicElements['form'] & {
+  rowArray: InputData[][];
+  buttonText: string;
+  buttonText2?: string;
+};
+
+const Form: FC<Props> = ({ className, rowArray, buttonText, buttonText2, onSubmit }) => {
   const baseStyle = 'form';
   const classNames = className ? `${baseStyle}  ${className}` : `${baseStyle}`;
 
+  const createInput = (inputData: InputData, rowIndex: number, inputIndex: number) => {
+    const { id, name, type } = inputData;
+
+    return (
+      <div key={rowIndex} className="form-item" style={{ flex: '1' }}>
+        <div key={inputIndex} className="form-input">
+          <label htmlFor={id}>
+            {name}
+            {/* formNoValidate disables default css of browser */}
+            <input formNoValidate id={id} type={type} name={name} />
+          </label>
+        </div>
+      </div>
+    );
+  };
+
+  const renderInputs = () => {
+    const rows: Array<React.ReactNode> = [];
+
+    rowArray.forEach((inputArray, rowIndex) => {
+      inputArray.forEach((inputData, inputIndex) => {
+        rows.push(createInput(inputData, rowIndex, inputIndex));
+      });
+    });
+
+    return rows;
+  };
+
+  const renderSecondButton = () => {
+    if (!buttonText2) return <div />;
+
+    return <Button type="button">{buttonText2}</Button>;
+  };
+
   return (
     <form className={classNames} onSubmit={onSubmit}>
-      <div className="form-row flex-container">
-        <div className="form-item" style={{ flex: '1' }}>
-          <div className="form-input">
-            <label htmlFor="login-email">
-              Email
-              <input id="login-email" type="email" name="email" />
-            </label>
-          </div>
-        </div>
-      </div>
-      <div className="form-row flex-container">
-        <div className="form-item" style={{ flex: '1' }}>
-          <div className="form-input">
-            <label htmlFor="login-nickname">
-              Nickname
-              <input id="login-nickname" type="text" name="name" />
-            </label>
-          </div>
-        </div>
-      </div>
-      <div className="form-row flex-container">
-        <div className="form-item" style={{ flex: '1' }}>
-          <div className="form-input">
-            <label htmlFor="login-password">
-              Password
-              <input id="login-password" type="password" />
-            </label>
-          </div>
-        </div>
-      </div>
-      <div className="form-row flex-container">
-        <div className="form-item" style={{ flex: '1' }}>
-          <div className="form-input">
-            <label htmlFor="login-repeat-password">
-              Repeat password
-              <input id="login-repeat-password" type="password" />
-            </label>
-          </div>
-        </div>
-      </div>
+      {renderInputs()}
       <div className="form-buttons flex-container">
+        {renderSecondButton()}
         <Button primary type="submit">
-          Register Now!
+          {buttonText}
         </Button>
       </div>
     </form>
