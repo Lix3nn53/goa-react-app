@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly primary button 1`] = `
+<button
+  className="Button Button-primary"
+  type="button"
+>
+  Primary Button
+</button>
+`;
+
+exports[`renders correctly secondary button 1`] = `
+<button
+  className="Button Button-secondary"
+  type="button"
+>
+  Secondary Button
+</button>
+`;

@@ -9,6 +9,11 @@
   margin-top: 9px;
   margin-bottom: 9px;
 
+  .card-header {
+    font-weight: 700;
+    font-size: 1.625rem;
+  }
+
   .card-footer {
     background-color: $color-black-light;
     margin-top: auto;

@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Feed from './Feed';
+import Register from './Register';
 
 it('renders correctly', () => {
-  const wrapper = shallow(<Feed />);
+  const wrapper = shallow(<Register />);
 
   expect(wrapper).toMatchSnapshot();
 });

@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Loading from '../components/Loading';
 
 const Home = lazy(() => import('./Home'));
-const Feed = lazy(() => import('./Feed'));
+const Feed = lazy(() => import('./Register'));
 const PageNotFound = lazy(() => import('./PageNotFound'));
 
 const Routes: FunctionComponent = () => (

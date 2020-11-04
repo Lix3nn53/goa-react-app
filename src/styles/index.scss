@@ -79,7 +79,7 @@ textarea,
 a {
   color: $color-white;
   font-family: 'Exo', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -92,7 +92,9 @@ h3 {
 
 p {
   margin: 0;
-  padding: 1em 0;
+  padding: 12px 0;
+  width: 100%;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -137,15 +139,6 @@ CSS Flexbox layout for wider screens, when browser supports flexbox:
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .flex-item {
-    display: inherit;
-  }
-
-  .flex-item p {
-    width: 100%;
-    text-align: center;
   }
 
   //use a second flex in main-content to force max available height

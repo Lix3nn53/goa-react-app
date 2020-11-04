@@ -39,7 +39,6 @@
   }
 
   .button-content {
-    background-color: $color-black;
     display: block;
     transform: translate(6px, -6px);
     transition: all 0.2s ease;
@@ -78,20 +77,28 @@
   }
 
   &-primary {
-    background-color: $color-primary;
+    background-color: $color-white-dark;
+  }
+
+  &-secondary {
+    background-color: $color-white-dark;
   }
 
   &-primary:before,
   &-primary:after {
-    background-color: $color-primary;
-  }
-
-  &-secondary {
-    background-color: $color-secondary;
+    background-color: $color-white-dark;
   }
 
   &-secondary:before,
   &-secondary:after {
+    background-color: $color-white-dark;
+  }
+
+  &-primary .button-content {
+    background-color: $color-primary;
+  }
+
+  &-secondary .button-content {
     background-color: $color-secondary;
   }
 }

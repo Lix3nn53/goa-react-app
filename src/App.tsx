@@ -14,15 +14,13 @@ const App: FC = () => {
         Skip to content
       </a>
 
-      <div className="flex-item" style={{ flex: '0' }}>
-        <Header />
-      </div>
+      <Header style={{ flex: '0' }} />
 
-      <main id="content" className="flex-item main-content" style={{ flex: '1' }}>
+      <main id="content" className="main-content" style={{ flex: '1' }}>
         <Routes />
       </main>
 
-      <div className="flex-item" style={{ flex: '0' }}>
+      <div style={{ flex: '0' }}>
         <Footer />
       </div>
     </div>
