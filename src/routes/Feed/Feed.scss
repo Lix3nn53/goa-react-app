@@ -39,15 +39,15 @@ CSS Grid layout for wider screens, when browser supports grid:
 
   .feed-bottom-1 {
     grid-area: feed-bottom-1;
-    background: $color-black-light;
+    background: $color-secondary-dark;
   }
   .feed-bottom-2 {
     grid-area: feed-bottom-2;
-    background: $color-white;
+    background: $color-secondary;
   }
   .feed-bottom-3 {
     grid-area: feed-bottom-3;
-    background: $color-black;
+    background: $color-secondary-light;
   }
 
   @media screen and (min-width: 800px) {

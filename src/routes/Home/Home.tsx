@@ -13,7 +13,9 @@ const Home: FunctionComponent = () => (
     </div>
     <div className="flex-item" style={{ flex: '1' }}>
       <div className="grid main">
-        <Banner />
+        <Banner icon={<span className="icon-130" />} title="Latest News">
+          Check out what Adelia has been up to!
+        </Banner>
         <div className="posts">
           <div className="flex-container column">
             <Card className="flex-item" footer={<p>A</p>}>
