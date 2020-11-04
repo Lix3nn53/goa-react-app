@@ -6,7 +6,6 @@ import logo from '../../img/logo.png';
 import Banner from '../../components/Banner';
 import Card from '../../components/Card';
 import Loading from '../../components/Loading';
-import TwitterTimeline from '../../components/TwitterTimeline';
 
 const Home: FunctionComponent = () => (
   <div className="home flex-container column">
@@ -33,9 +32,12 @@ const Home: FunctionComponent = () => (
           </div>
         </div>
 
-        <div className="sidebar">
-          <Card>
-            <TwitterTimeline profile="Minecraft" />
+        <div className="sidebar flex-container column">
+          <Card reverse className="flex-item" style={{ flex: '2' }}>
+            <p>ASD</p>
+          </Card>
+          <Card reverse className="flex-item" style={{ flex: '1' }}>
+            <p>ASD</p>
           </Card>
         </div>
       </div>
