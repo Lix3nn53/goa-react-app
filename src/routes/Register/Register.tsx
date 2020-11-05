@@ -15,6 +15,7 @@ const Register: FunctionComponent = () => (
           [{ id: 'register-repeat-password', name: 'Repeat Password', type: 'password' }],
         ]}
         buttonText="Register Now!"
+        buttonSecondary
         onSubmit={(event) => {
           event.preventDefault();
         }}

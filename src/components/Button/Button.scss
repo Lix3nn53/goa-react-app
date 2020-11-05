@@ -76,19 +76,13 @@
     transform: rotate(45deg) scale(0);
   }
 
-  &-primary {
-    background-color: $color-primary-darker;
-  }
-
-  &-secondary {
-    background-color: $color-secondary-darker;
-  }
-
+  &-primary,
   &-primary:before,
   &-primary:after {
     background-color: $color-primary-darker;
   }
 
+  &-secondary,
   &-secondary:before,
   &-secondary:after {
     background-color: $color-secondary-darker;

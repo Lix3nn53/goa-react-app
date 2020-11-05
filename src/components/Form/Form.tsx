@@ -14,9 +14,17 @@ type Props = JSX.IntrinsicElements['form'] & {
   rowArray: InputData[][];
   buttonText: string;
   buttonText2?: string;
+  buttonSecondary?: boolean;
 };
 
-const Form: FC<Props> = ({ className, rowArray, buttonText, buttonText2, onSubmit }) => {
+const Form: FC<Props> = ({
+  className,
+  rowArray,
+  buttonText,
+  buttonText2,
+  buttonSecondary,
+  onSubmit,
+}) => {
   const baseStyle = 'form';
   const classNames = className ? `${baseStyle}  ${className}` : `${baseStyle}`;
 
@@ -51,7 +59,11 @@ const Form: FC<Props> = ({ className, rowArray, buttonText, buttonText2, onSubmi
   const renderSecondButton = () => {
     if (!buttonText2) return <div />;
 
-    return <Button type="button">{buttonText2}</Button>;
+    return (
+      <Button primary={buttonSecondary} type="button">
+        {buttonText2}
+      </Button>
+    );
   };
 
   return (
@@ -59,7 +71,7 @@ const Form: FC<Props> = ({ className, rowArray, buttonText, buttonText2, onSubmi
       {renderInputs()}
       <div className="form-buttons flex-container">
         {renderSecondButton()}
-        <Button primary type="submit">
+        <Button primary={!buttonSecondary} type="submit">
           {buttonText}
         </Button>
       </div>

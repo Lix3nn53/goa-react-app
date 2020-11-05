@@ -32,7 +32,7 @@ const Header: FC<Props> = ({ className, style }) => {
       </div>
       <div className="section-3">
         <Link to="/login">Login</Link>
-        <Link cta to="/feed">
+        <Link cta to="/register">
           Register
         </Link>
       </div>

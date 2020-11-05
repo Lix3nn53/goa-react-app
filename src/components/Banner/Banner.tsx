@@ -18,7 +18,7 @@ const Banner: FC<Props> = ({ className, children, large, style, icon, title }) =
   return (
     <div className={classNames} style={style}>
       <div className="flex-container banner-content">
-        <div className="banner-icon" style={{ flex: '1' }}>
+        <div className="flex-container banner-icon" style={{ flex: '1' }}>
           {icon}
         </div>
         <div style={{ flex: '4' }}>
