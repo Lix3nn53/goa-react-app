@@ -7,7 +7,7 @@ import Button from '../Button';
 type InputData = {
   id: string;
   name: string;
-  type: 'text' | 'password' | 'email';
+  type: 'text' | 'password' | 'email' | 'checkbox' | 'radio';
 };
 
 type Props = JSX.IntrinsicElements['form'] & {
@@ -28,17 +28,36 @@ const Form: FC<Props> = ({
   const baseStyle = 'form';
   const classNames = className ? `${baseStyle}  ${className}` : `${baseStyle}`;
 
-  const createInput = (inputData: InputData, rowIndex: number, inputIndex: number) => {
+  const createInput = (inputData: InputData) => {
     const { id, name, type } = inputData;
 
+    if (type === 'checkbox' || type === 'radio') {
+      const markType = type === 'checkbox' ? 'crossmark' : 'circle';
+
+      return (
+        <label className="input-box-wrap" htmlFor={id}>
+          {name}
+          {/* formNoValidate disables default css of browser */}
+          <input formNoValidate id={id} type={type} name={name} />
+          <span className={`mark ${markType}`} />
+        </label>
+      );
+    }
+
+    return (
+      <label htmlFor={id}>
+        {name}
+        {/* formNoValidate disables default css of browser */}
+        <input formNoValidate id={id} type={type} name={name} />
+      </label>
+    );
+  };
+
+  const createFormItem = (inputData: InputData, rowIndex: number, inputIndex: number) => {
     return (
       <div key={rowIndex} className="form-item" style={{ flex: '1' }}>
         <div key={inputIndex} className="form-input">
-          <label htmlFor={id}>
-            {name}
-            {/* formNoValidate disables default css of browser */}
-            <input formNoValidate id={id} type={type} name={name} />
-          </label>
+          {createInput(inputData)}
         </div>
       </div>
     );
@@ -49,7 +68,7 @@ const Form: FC<Props> = ({
 
     rowArray.forEach((inputArray, rowIndex) => {
       inputArray.forEach((inputData, inputIndex) => {
-        rows.push(createInput(inputData, rowIndex, inputIndex));
+        rows.push(createFormItem(inputData, rowIndex, inputIndex));
       });
     });
 

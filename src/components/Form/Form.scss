@@ -39,14 +39,92 @@ input:invalid {
 
 label {
   color: $color-white-dark;
-  line-height: 1em;
+  line-height: 1rem;
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
 }
 
-//not included directly in form component
+/* Not included directly in form component */
 
 .form-title {
   padding-top: 42px;
+}
+
+/* CUSTOM CHECKBOX */
+
+/* The container */
+.input-box-wrap {
+  display: block;
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 26px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.input-box-wrap input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.input-box-wrap .mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: $color-white;
+  border-radius: 6px;
+}
+
+/* On mouse-over, add a grey background color */
+.input-box-wrap:hover input ~ .mark {
+  background-color: $color-white-dark;
+}
+
+/* When the checkbox is checked, add a blue background */
+.input-box-wrap input:checked ~ .mark {
+  background-color: $color-primary-dark;
+}
+
+/* Create the mark/indicator (hidden when not checked) */
+.input-box-wrap .mark:after {
+  content: '';
+  display: none;
+}
+
+/* Show the mark when checked */
+.input-box-wrap input:checked ~ .mark:after {
+  display: block;
+}
+
+/* Style the mark/indicator */
+.input-box-wrap .mark:after {
+  font-weight: 700;
+  text-align: center;
+  font-size: 22px;
+}
+
+.input-box-wrap .crossmark:after {
+  content: '\2716';
+}
+
+.input-box-wrap .circle {
+  border-radius: 50%;
+}
+
+.input-box-wrap .circle:after {
+  content: '\2B24';
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
 }
