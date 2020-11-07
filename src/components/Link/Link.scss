@@ -16,7 +16,7 @@ a.Link {
 }
 
 .Link.variant--Cta {
-  color: $color-white-light;
+  color: $color-white;
   background-color: $color-primary-dark;
   -webkit-transition-property: background-color, opacity;
   transition-property: background-color, opacity;
@@ -43,7 +43,7 @@ a.Link {
 }
 
 .Link.variant--Large {
-  color: $color-white-light;
+  color: $color-white;
   padding-top: 20px;
   padding-right: 35px;
   padding-bottom: 22px;
@@ -60,6 +60,6 @@ a.Link {
 }
 
 .Link.variant--Link.variant--Large:hover {
-  color: $color-white-light;
+  color: $color-white;
   background-color: $color-primary-dark;
 }

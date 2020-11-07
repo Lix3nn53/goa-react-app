@@ -13,7 +13,7 @@ const Home: FunctionComponent = () => (
       <img src={logo} alt="logo" className="top logo" />
     </div>
     <div className="grid main" style={{ flex: '1' }}>
-      <Banner icon={<span className="icon-130" />} title="Latest News">
+      <Banner icon={<i className="far fa-newspaper" />} title="Latest News">
         Check out what Adelia has been up to!
       </Banner>
       <div className="posts">

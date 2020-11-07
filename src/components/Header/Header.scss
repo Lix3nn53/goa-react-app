@@ -14,11 +14,11 @@ header.homepage {
   background-attachment: fixed;
 
   a {
-    color: $color-black;
+    color: $color-black-dark;
   }
 
   .Link.variant--Link:hover {
-    color: $color-black-light;
+    color: $color-black;
     opacity: 0.8;
   }
 }

@@ -3,6 +3,7 @@ import React, { FunctionComponent } from 'react';
 import './Login.scss';
 import Card from '../../components/Card';
 import Form from '../../components/Form';
+import SocialLink from '../../components/SocialLink';
 
 const Login: FunctionComponent = () => (
   <div className="flex-container login-page">
@@ -18,6 +19,13 @@ const Login: FunctionComponent = () => (
           event.preventDefault();
         }}
       />
+      <p className="lined-text">Login with your Social Account</p>
+      <div className="flex-container social-links">
+        <SocialLink social="facebook" to="/login" />
+        <SocialLink social="twitter" to="/login" />
+        <SocialLink social="twitch" to="/login" />
+        <SocialLink social="google" to="/login" />
+      </div>
     </Card>
   </div>
 );

@@ -2,6 +2,7 @@
 
 .form {
   padding: 42px;
+  padding-bottom: 16px;
 }
 
 .form-input,
@@ -19,10 +20,10 @@
 }
 
 input {
-  color: $color-black-light;
+  color: $color-black;
   font-size: 1rem;
   font-weight: 700;
-  border: 4px solid $color-white;
+  border: 4px solid $color-white-dark;
   border-radius: 12px;
   height: 54px;
   padding: 0 18px;
@@ -47,8 +48,9 @@ label {
 
 /* Not included directly in form component */
 
-.form-title {
+p.form-title {
   padding-top: 42px;
+  text-align: center;
 }
 
 /* CUSTOM CHECKBOX */
@@ -118,7 +120,8 @@ label {
 }
 
 .input-box-wrap .crossmark:after {
-  content: '\2716';
+  content: '\f00d';
+  font-family: 'Font Awesome 5 Free';
 }
 
 .input-box-wrap .circle {
@@ -126,6 +129,7 @@ label {
 }
 
 .input-box-wrap .circle:after {
-  content: '\2B24';
+  content: '\f111';
+  font-family: 'Font Awesome 5 Free';
   font-size: 12px;
 }
