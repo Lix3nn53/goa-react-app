@@ -1,0 +1,31 @@
+@import './colors';
+
+/* USE SAME COLOR VALUES FROM ./colors.scss !!! */
+
+:root,
+[data-theme='dark'] {
+  --color-background-lighter: #2f3749;
+  --color-background-light: #21283b;
+  --color-background: #1d2333;
+  --color-background-dark: #161b28;
+  --color-text: #f2f2f8;
+  --color-text-dark: #dedeed;
+}
+
+[data-theme='light'] {
+  --color-background-lighter: #fff;
+  --color-background-light: #fff;
+  --color-background: #fff;
+  --color-background-dark: #f8f8fb;
+  --color-text: #2f3749;
+  --color-text-dark: #21283b;
+}
+
+[data-theme='brown'] {
+  --color-background-lighter: #ac766c;
+  --color-background-light: #a3675c;
+  --color-background: #935c53;
+  --color-background-dark: #7a4c44;
+  --color-text: #2f3749;
+  --color-text-dark: #21283b;
+}

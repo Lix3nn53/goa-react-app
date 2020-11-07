@@ -16,7 +16,7 @@ a.Link {
 }
 
 .Link.variant--Cta {
-  color: $color-white;
+  color: $color-white-light;
   background-color: $color-primary-dark;
   -webkit-transition-property: background-color, opacity;
   transition-property: background-color, opacity;
@@ -35,8 +35,15 @@ a.Link {
   color: $color-primary-light;
 }
 
+[data-theme='light'] {
+  .Link.variant--Link:hover {
+    color: var(--color-text-light);
+    opacity: 0.6;
+  }
+}
+
 .Link.variant--Large {
-  color: $color-white;
+  color: $color-white-light;
   padding-top: 20px;
   padding-right: 35px;
   padding-bottom: 22px;
@@ -53,6 +60,6 @@ a.Link {
 }
 
 .Link.variant--Link.variant--Large:hover {
-  color: $color-white;
+  color: $color-white-light;
   background-color: $color-primary-dark;
 }

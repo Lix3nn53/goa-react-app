@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 const App: FC = () => {
   return (
-    <div className="fullpage flex-container column">
+    <div id="fullpage" className="fullpage flex-container column" data-theme="dark">
       <a className="skip-link screen-reader-text" href="#content">
         Skip to content
       </a>

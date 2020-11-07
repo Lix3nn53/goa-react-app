@@ -37,8 +37,7 @@ const Form: FC<Props> = ({
       return (
         <label className="input-box-wrap" htmlFor={id}>
           {name}
-          {/* formNoValidate disables default css of browser */}
-          <input formNoValidate id={id} type={type} name={name} />
+          <input id={id} type={type} name={name} />
           <span className={`mark ${markType}`} />
         </label>
       );
@@ -47,8 +46,7 @@ const Form: FC<Props> = ({
     return (
       <label htmlFor={id}>
         {name}
-        {/* formNoValidate disables default css of browser */}
-        <input formNoValidate id={id} type={type} name={name} />
+        <input id={id} type={type} name={name} />
       </label>
     );
   };
