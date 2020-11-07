@@ -9,7 +9,13 @@
   margin-top: 9px;
   margin-bottom: 9px;
 
-  .card-header {
+  p {
+    text-align: start;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .card-header p {
     font-weight: 700;
     font-size: 1.625rem;
   }

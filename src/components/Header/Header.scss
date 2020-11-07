@@ -16,6 +16,11 @@ header.homepage {
   a {
     color: $color-black;
   }
+
+  .Link.variant--Link:hover {
+    color: $color-black-light;
+    opacity: 0.8;
+  }
 }
 
 header img {

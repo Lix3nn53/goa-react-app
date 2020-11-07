@@ -8,7 +8,7 @@ type Props = JSX.IntrinsicElements['div'] & {
 };
 
 const Card: FC<Props> = ({ className, children, style, header, footer }) => {
-  const baseStyle = 'card flex-container column';
+  const baseStyle = 'card';
   const classNames = className ? `${baseStyle}  ${className}` : `${baseStyle}`;
 
   const renderHeader = () => {

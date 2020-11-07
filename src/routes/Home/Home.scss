@@ -12,10 +12,6 @@
   margin: 0 auto;
 }
 
-.home .sidebar {
-  max-height: 720px;
-}
-
 /*--------------------------------------------------------------
 If no grid support, limit width to 50em and center align
 --------------------------------------------------------------*/
@@ -41,13 +37,18 @@ CSS Grid layout for wider screens, when browser supports grid:
 
   .home .main .sidebar {
     grid-area: home-sidebar;
+    display: none;
   }
 
   @media screen and (min-width: 800px) {
+    .home .main .sidebar {
+      display: block;
+    }
+
     .home .main {
       display: grid;
       grid-template-columns: 2fr 5fr 2fr 2fr;
-      grid-template-rows: 1fr 4fr;
+      grid-template-rows: 240px 4fr;
       grid-template-areas:
         '. home-banner home-banner .'
         '. home-posts home-sidebar .';
