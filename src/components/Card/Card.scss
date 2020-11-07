@@ -2,7 +2,7 @@
 
 .card {
   border-radius: 12px;
-  background-color: var(--color-background);
+  background-color: var(--color-base);
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
   min-width: 320px;
   min-height: 240px;
@@ -15,9 +15,9 @@
   }
 
   .card-footer {
-    background-color: var(--color-background-light);
+    background-color: var(--color-base-light);
     margin-top: auto;
-    border-top: 1px solid var(--color-background-lighter);
+    border-top: 1px solid var(--color-divider);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     min-height: 60px;

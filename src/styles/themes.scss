@@ -4,28 +4,28 @@
 
 :root,
 [data-theme='dark'] {
-  --color-background-lighter: #2f3749;
-  --color-background-light: #21283b;
-  --color-background: #1d2333;
-  --color-background-dark: #161b28;
+  --color-background: #161b28;
+  --color-base: #1d2333;
+  --color-base-light: #21283b;
+  --color-divider: #2f3749;
   --color-text: #f2f2f8;
   --color-text-dark: #dedeed;
 }
 
 [data-theme='light'] {
-  --color-background-lighter: #fff;
-  --color-background-light: #fff;
-  --color-background: #fff;
-  --color-background-dark: #f8f8fb;
+  --color-background: #f8f8fb;
+  --color-base: #fff;
+  --color-base-light: #fcfcfd;
+  --color-divider: #eaeaf5;
   --color-text: #2f3749;
   --color-text-dark: #21283b;
 }
 
 [data-theme='brown'] {
-  --color-background-lighter: #ac766c;
-  --color-background-light: #a3675c;
-  --color-background: #935c53;
-  --color-background-dark: #7a4c44;
+  --color-background: #5e60ce;
+  --color-base: #48bfe3;
+  --color-base-light: #64dfdf;
+  --color-divider: #80ffdb;
   --color-text: #2f3749;
   --color-text-dark: #21283b;
 }

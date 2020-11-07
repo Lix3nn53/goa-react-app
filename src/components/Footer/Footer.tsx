@@ -13,13 +13,19 @@ const Footer: FC<Props> = ({ className, style }) => {
     const htmlTag = document.getElementById('fullpage');
     if (!htmlTag) return;
     if (htmlTag.hasAttribute('data-theme')) {
-      const currentTheme = htmlTag.getAttribute('data-theme');
+      const themes = ['dark', 'light', 'brown'];
 
-      if (currentTheme === 'dark') {
-        htmlTag.setAttribute('data-theme', 'light');
-      } else {
-        htmlTag.setAttribute('data-theme', 'dark');
+      const currentTheme = htmlTag.getAttribute('data-theme');
+      if (!currentTheme) return;
+
+      const index = themes.indexOf(currentTheme);
+
+      if (index === themes.length - 1) {
+        htmlTag.setAttribute('data-theme', themes[0]);
+        return;
       }
+
+      htmlTag.setAttribute('data-theme', themes[index + 1]);
     }
   }
 
