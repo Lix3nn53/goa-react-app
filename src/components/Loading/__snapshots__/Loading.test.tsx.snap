@@ -1,7 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<p>
-  Loading...
-</p>
+<div
+  className="loader-bars flex-container"
+>
+  <div
+    className="loader-bar"
+  />
+  <div
+    className="loader-bar"
+  />
+  <div
+    className="loader-bar"
+  />
+  <div
+    className="loader-bar"
+  />
+  <div
+    className="loader-bar"
+  />
+  <div
+    className="loader-bar"
+  />
+  <div
+    className="loader-bar"
+  />
+  <div
+    className="loader-bar"
+  />
+</div>
 `;

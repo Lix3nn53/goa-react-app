@@ -2,18 +2,26 @@
 
 exports[`renders correctly primary button 1`] = `
 <button
-  className="Button Button-primary"
+  className="button button-primary"
   type="button"
 >
-  Primary Button
+  <div
+    className="button-content"
+  >
+    Primary Button
+  </div>
 </button>
 `;
 
 exports[`renders correctly secondary button 1`] = `
 <button
-  className="Button Button-secondary"
+  className="button button-secondary"
   type="button"
 >
-  Secondary Button
+  <div
+    className="button-content"
+  >
+    Secondary Button
+  </div>
 </button>
 `;

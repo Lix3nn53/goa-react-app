@@ -8,7 +8,7 @@
 		"indentation": 2,
 		"at-rule-no-vendor-prefix": true,
 		"media-feature-name-no-vendor-prefix": true,
-		"property-no-vendor-prefix": true,
+		"property-no-vendor-prefix": false,
 		"selector-no-vendor-prefix": true,
 		"value-no-vendor-prefix": true,
 		"declaration-no-important": true,
