@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import Link from '../Link';
 
-import './Header.scss';
+import './Header.css';
 import brand from '../../img/favicon.png';
 
 type Props = JSX.IntrinsicElements['header'];

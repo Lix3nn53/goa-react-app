@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 import Routes from './routes';
 
-import './styles/index.scss';
+import './styles/index.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';

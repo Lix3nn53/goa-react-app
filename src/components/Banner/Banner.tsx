@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import './Banner.scss';
+import './Banner.css';
 
 type Props = JSX.IntrinsicElements['div'] & {
   icon: React.ReactNode;

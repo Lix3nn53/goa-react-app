@@ -1,0 +1,71 @@
+header {
+  padding: 1em;
+  min-height: 60px;
+}
+
+header.homepage {
+  background: url('../../img/poster.jpg') no-repeat center/cover;
+  background-attachment: fixed;
+}
+
+header.homepage a {
+  color: var(--color-black-dark);
+}
+
+header.homepage .Link.variant--Link:hover {
+  color: var(--color-black);
+  opacity: 0.8;
+}
+
+header img {
+  display: inline;
+  width: 80px;
+  margin: 0 auto;
+}
+
+header a {
+  font-size: 21px;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+/*--------------------------------------------------------------
+CSS Flexbox layout for wider screens, when browser supports flexbox:
+--------------------------------------------------------------*/
+
+@supports (display: flex) {
+  header .section-1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  header .section-2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  header .section-3 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 800px) {
+    header .section-1 {
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    header .section-2 {
+      align-items: center;
+      justify-content: center;
+    }
+
+    header .section-3 {
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import './Card.scss';
+import './Card.css';
 
 type Props = JSX.IntrinsicElements['div'] & {
   header?: React.ReactNode;

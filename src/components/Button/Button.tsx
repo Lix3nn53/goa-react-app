@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import './Button.scss';
+import './Button.css';
 
 type Props = JSX.IntrinsicElements['button'] & {
   primary?: boolean;

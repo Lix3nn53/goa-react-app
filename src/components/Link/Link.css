@@ -1,0 +1,61 @@
+.Link {
+  font-weight: 600;
+  padding-top: 4px;
+  padding-right: 15px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  border-radius: 9px;
+  white-space: nowrap;
+  outline: none;
+}
+
+a.Link {
+  text-decoration: none;
+}
+
+.Link.variant--Cta {
+  color: var(--color-white);
+  background-color: var(--color-primary-dark);
+  -webkit-transition-property: background-color, opacity;
+  transition-property: background-color, opacity;
+}
+
+.Link.variant--Cta:hover {
+  background-color: var(--color-primary);
+}
+
+.Link.variant--Link {
+  -webkit-transition-property: color, opacity;
+  transition-property: color, opacity;
+}
+
+.Link.variant--Link:hover {
+  color: var(--color-primary-light);
+}
+
+[data-theme='light'] .Link.variant--Link:hover {
+  color: var(--color-text-light);
+  opacity: 0.6;
+}
+
+.Link.variant--Large {
+  color: var(--color-white);
+  padding-top: 20px;
+  padding-right: 35px;
+  padding-bottom: 22px;
+  padding-left: 35px;
+}
+
+.Link.variant--Link.variant--Large {
+  color: var(--color-primary-dark);
+  border: 1px solid var(--color-primary-dark);
+  padding-top: 19px;
+  padding-right: 34px;
+  padding-bottom: 21px;
+  padding-left: 34px;
+}
+
+.Link.variant--Link.variant--Large:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary-dark);
+}

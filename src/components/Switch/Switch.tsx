@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import './Switch.scss';
+import './Switch.css';
 
 type Props = JSX.IntrinsicElements['label'] & {
   id: string;

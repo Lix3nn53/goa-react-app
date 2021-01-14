@@ -1,0 +1,50 @@
+.social-links {
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.social-links .social-link {
+  margin-right: 12px;
+}
+
+.social-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+a.social-link {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.social-link:hover {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+.social-link.facebook {
+  background-color: #3763d2;
+}
+
+.social-link.twitter {
+  background-color: #1abcff;
+}
+
+.social-link.twitch {
+  background-color: #7b5dfa;
+}
+
+.social-link.google {
+  background-color: #fd434f;
+}

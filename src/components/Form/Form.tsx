@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import './Form.scss';
+import './Form.css';
 
 import Button from '../Button';
 

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import './SocialLink.scss';
+import './SocialLink.css';
 
 type Props = JSX.IntrinsicElements['a'] & {
   social: 'facebook' | 'twitter' | 'twitch' | 'google';

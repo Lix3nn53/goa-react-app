@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import './Footer.scss';
+import './Footer.css';
 import Switch from '../Switch';
 
 type Props = JSX.IntrinsicElements['footer'];

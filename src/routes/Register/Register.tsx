@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import './Register.scss';
+import './Register.css';
 import Card from '../../components/Card';
 import Form from '../../components/Form';
 

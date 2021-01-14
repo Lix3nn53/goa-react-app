@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import './Home.scss';
+import './Home.css';
 import logo from '../../img/logo.png';
 
 import Banner from '../../components/Banner';

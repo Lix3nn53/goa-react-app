@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import './Link.scss';
+import './Link.css';
 
 type Props = JSX.IntrinsicElements['a'] & {
   cta?: boolean;

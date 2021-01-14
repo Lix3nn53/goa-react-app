@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import './Loading.scss';
+import './Loading.css';
 
 const Loading: FC = () => (
   <div className="loader-bars flex-container">
