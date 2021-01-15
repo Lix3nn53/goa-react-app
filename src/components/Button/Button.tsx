@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 import './Button.css';
 
-type Props = JSX.IntrinsicElements['button'] & {
+export type Props = JSX.IntrinsicElements['button'] & {
   primary?: boolean;
   type: 'button' | 'submit';
 };

@@ -1,23 +1,44 @@
 import React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import { action } from '@storybook/addon-actions';
 
-import Button from './Button';
+import Button, { Props } from './Button';
+
+type StoryProps = Props & {
+  text: string;
+};
 
 export default {
+  component: Button,
   title: 'Button',
+  // creates specific argTypes with options
   argTypes: {
-    type: { control: 'select', options: ['button', 'submit'] },
-    primary: { control: 'boolean' },
+    text: {
+      defaultValue: 'Hello',
+      control: {
+        type: 'text',
+      },
+    },
+    type: {
+      defaultValue: 'button',
+      control: {
+        type: 'select',
+        options: ['button', 'submit'],
+      },
+    },
+    primary: {
+      defaultValue: true,
+      control: {
+        type: 'boolean',
+      },
+    },
   },
-};
+} as Meta;
 
-type Props = JSX.IntrinsicElements['button'] & {
-  primary?: boolean;
-  type: 'button' | 'submit';
-};
-
-export const Basic = (args: Props) => <Button primary={args.primary} type={args.type} />;
-
-Basic.args = {
-  type: 'button',
-  primary: true,
+export const Template: Story<StoryProps> = ({ text, primary, type }) => {
+  return (
+    <Button primary={primary} type={type} onClick={action('clicked')}>
+      {text}
+    </Button>
+  );
 };

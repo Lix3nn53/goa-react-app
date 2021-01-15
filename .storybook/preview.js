@@ -16,6 +16,18 @@ export const parameters = {
   },
 };
 
-const withGlobalStyle = (storyFn) => <>{storyFn()}</>;
+const withGlobalStyle = (storyFn) => (
+  <div id="fullpage" className="fullpage flex-container column" data-theme="dark">
+    <header style={{ flex: '0' }} />
+
+    <main id="content" className="main-content" style={{ flex: '1' }}>
+      <div>{storyFn()}</div>
+    </main>
+
+    <div style={{ flex: '0' }}>
+      <footer />
+    </div>
+  </div>
+);
 
 export const decorators = [withGlobalStyle];
