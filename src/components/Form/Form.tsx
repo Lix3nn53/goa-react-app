@@ -10,7 +10,7 @@ type InputData = {
   type: 'text' | 'password' | 'email' | 'checkbox' | 'radio';
 };
 
-type Props = JSX.IntrinsicElements['form'] & {
+export type Props = JSX.IntrinsicElements['form'] & {
   rowArray: InputData[][];
   buttonText: string;
   buttonText2?: string;

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 import './Card.css';
 
-type Props = JSX.IntrinsicElements['div'] & {
+export type Props = JSX.IntrinsicElements['div'] & {
   header?: React.ReactNode;
   footer?: React.ReactNode;
 };

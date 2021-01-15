@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './SocialLink.css';
 
-type Props = JSX.IntrinsicElements['a'] & {
+export type Props = JSX.IntrinsicElements['a'] & {
   social: 'facebook' | 'twitter' | 'twitch' | 'google';
   to: string;
 };

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 import './Banner.css';
 
-type Props = JSX.IntrinsicElements['div'] & {
+export type Props = JSX.IntrinsicElements['div'] & {
   icon: React.ReactNode;
   title: string;
   large?: boolean;

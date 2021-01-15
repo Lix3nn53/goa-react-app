@@ -6,7 +6,7 @@ import Link from '../Link';
 import './Header.css';
 import brand from '../../img/favicon.png';
 
-type Props = JSX.IntrinsicElements['header'];
+export type Props = JSX.IntrinsicElements['header'];
 
 const Header: FC<Props> = ({ className, style }) => {
   const location = useLocation();

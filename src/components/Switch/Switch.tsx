@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 import './Switch.css';
 
-type Props = JSX.IntrinsicElements['label'] & {
+export type Props = JSX.IntrinsicElements['label'] & {
   id: string;
   customIcon?: string;
   onSwitch?: () => void;

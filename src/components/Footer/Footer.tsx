@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import './Footer.css';
 import Switch from '../Switch';
 
-type Props = JSX.IntrinsicElements['footer'];
+export type Props = JSX.IntrinsicElements['footer'];
 
 const Footer: FC<Props> = ({ className, style }) => {
   const baseStyle = 'flex-container';

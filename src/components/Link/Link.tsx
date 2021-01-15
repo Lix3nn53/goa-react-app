@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './Link.css';
 
-type Props = JSX.IntrinsicElements['a'] & {
+export type Props = JSX.IntrinsicElements['a'] & {
   cta?: boolean;
   large?: boolean;
   to: string;
