@@ -1,12 +1,23 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
 import Button from './Button';
 
-storiesOf('Button', module)
-  .add('Primary', () => (
-    <Button primary type="button">
-      Primary Button
-    </Button>
-  ))
-  .add('Secondary', () => <Button type="button">Secondary Button</Button>);
+export default {
+  title: 'Button',
+  argTypes: {
+    type: { control: 'select', options: ['button', 'submit'] },
+    primary: { control: 'boolean' },
+  },
+};
+
+type Props = JSX.IntrinsicElements['button'] & {
+  primary?: boolean;
+  type: 'button' | 'submit';
+};
+
+export const Basic = (args: Props) => <Button primary={args.primary} type={args.type} />;
+
+Basic.args = {
+  type: 'button',
+  primary: true,
+};

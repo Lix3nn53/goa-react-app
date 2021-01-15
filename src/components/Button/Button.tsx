@@ -7,7 +7,7 @@ type Props = JSX.IntrinsicElements['button'] & {
   type: 'button' | 'submit';
 };
 
-const Button: FC<Props> = ({ primary, className, children, style, onClick, type }) => {
+const Button: FC<Props> = ({ className, children, style, onClick, primary, type }) => {
   const baseStyle = 'button';
   const buttonStyle = primary ? `button-primary` : `button-secondary`;
   const classNames = className
