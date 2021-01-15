@@ -5,7 +5,7 @@ import Switch from '../Switch';
 
 export type Props = JSX.IntrinsicElements['footer'];
 
-const Footer: FC<Props> = ({ className, style }) => {
+const Footer: FC<Props> = ({ className, style, children }) => {
   const baseStyle = 'flex-container';
   const classNames = className ? `${baseStyle} ${className}` : `${baseStyle}`;
 
@@ -31,6 +31,7 @@ const Footer: FC<Props> = ({ className, style }) => {
 
   return (
     <footer className={classNames} style={style}>
+      {children}
       <div style={{ marginTop: 'auto', marginLeft: 'auto' }}>
         <Switch id="theme" customIcon="theme" onSwitch={toggleTheme} />
       </div>

@@ -1,16 +1,42 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import Card from './Card';
+import Card, { Props } from './Card';
 
-storiesOf('Card', module)
-  .add('Primary', () => (
-    <Card header={<p>Title</p>} footer={<p>3:53 PM · Nov 6, 2020</p>}>
-      <p>Primary Card</p>
+type StoryProps = Props & {
+  text: string;
+};
+
+export default {
+  component: Card,
+  title: 'Card',
+  // creates specific argTypes with options
+  argTypes: {
+    text: {
+      defaultValue: 'Hello',
+      control: {
+        type: 'text',
+      },
+    },
+    header: {
+      defaultValue: 'Title',
+      control: {
+        type: 'text',
+      },
+    },
+    footer: {
+      defaultValue: '3:53 PM · Nov 6, 2020',
+      control: {
+        type: 'text',
+      },
+    },
+  },
+} as Meta;
+
+export const Template: Story<StoryProps> = ({ text, header, footer }) => {
+  return (
+    <Card header={<p>{header}</p>} footer={<p>{footer}</p>}>
+      <p>{text}</p>
     </Card>
-  ))
-  .add('Secondary', () => (
-    <Card header={<p>Title</p>} footer={<p>3:53 PM · Nov 6, 2020</p>}>
-      <p>Secondary Card</p>
-    </Card>
-  ));
+  );
+};
