@@ -1,34 +1,51 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-
 import { BrowserRouter } from 'react-router-dom';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import Link from './Link';
+import Link, { Props } from './Link';
 
-storiesOf('Link', module)
-  .add('Link Cta', () => (
+type StoryProps = Props & {
+  text: string;
+};
+
+export default {
+  component: Link,
+  title: '01 - Basic Link',
+  // creates specific argTypes with options
+  argTypes: {
+    text: {
+      defaultValue: 'Hello',
+      control: {
+        type: 'text',
+      },
+    },
+    to: {
+      defaultValue: '/login',
+      control: {
+        type: 'text',
+      },
+    },
+    cta: {
+      defaultValue: true,
+      control: {
+        type: 'boolean',
+      },
+    },
+    large: {
+      defaultValue: true,
+      control: {
+        type: 'boolean',
+      },
+    },
+  },
+} as Meta;
+
+export const LinkStory: Story<StoryProps> = ({ text, to, cta, large }) => {
+  return (
     <BrowserRouter>
-      <Link cta to="/login">
-        Link Cta
+      <Link to={to} cta={cta} large={large}>
+        {text}
       </Link>
     </BrowserRouter>
-  ))
-  .add('Link', () => (
-    <BrowserRouter>
-      <Link to="/login">Link</Link>
-    </BrowserRouter>
-  ))
-  .add('Link Cta Large', () => (
-    <BrowserRouter>
-      <Link cta large to="/login">
-        Link
-      </Link>
-    </BrowserRouter>
-  ))
-  .add('Link Large', () => (
-    <BrowserRouter>
-      <Link large to="/login">
-        Link
-      </Link>
-    </BrowserRouter>
-  ));
+  );
+};

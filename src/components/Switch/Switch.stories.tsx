@@ -1,28 +1,43 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import { action } from '@storybook/addon-actions';
 
-import { BrowserRouter } from 'react-router-dom';
+import Switch, { Props } from './Switch';
 
-import Switch from './Switch';
+type StoryProps = Props & {
+  text: string;
+};
 
-storiesOf('Switch', module)
-  .add('Switch Cta', () => (
-    <BrowserRouter>
-      <Switch id="test">Switch Cta</Switch>
-    </BrowserRouter>
-  ))
-  .add('Switch', () => (
-    <BrowserRouter>
-      <Switch id="test">Switch</Switch>
-    </BrowserRouter>
-  ))
-  .add('Switch Cta Large', () => (
-    <BrowserRouter>
-      <Switch id="test">Switch</Switch>
-    </BrowserRouter>
-  ))
-  .add('Switch Large', () => (
-    <BrowserRouter>
-      <Switch id="test">Switch</Switch>
-    </BrowserRouter>
-  ));
+export default {
+  component: Switch,
+  title: '01 - Basic Switch',
+  // creates specific argTypes with options
+  argTypes: {
+    text: {
+      defaultValue: 'Hello',
+      control: {
+        type: 'text',
+      },
+    },
+    id: {
+      defaultValue: 'id',
+      control: {
+        type: 'text',
+      },
+    },
+    customIcon: {
+      defaultValue: 'theme',
+      control: {
+        type: 'text',
+      },
+    },
+  },
+} as Meta;
+
+export const SwitchStory: Story<StoryProps> = ({ text, id, customIcon }) => {
+  return (
+    <Switch id={id} customIcon={customIcon} onSwitch={action('switched')}>
+      {text}
+    </Switch>
+  );
+};

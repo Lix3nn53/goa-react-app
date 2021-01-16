@@ -1,36 +1,46 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-
 import { BrowserRouter } from 'react-router-dom';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import SocialLink from './SocialLink';
+import SocialLink, { Props } from './SocialLink';
 
-storiesOf('SocialLink', module)
-  .add('SocialLink Cta', () => (
+type StoryProps = Props & {
+  text: string;
+};
+
+export default {
+  component: SocialLink,
+  title: '01 - Basic SocialLink',
+  // creates specific argTypes with options
+  argTypes: {
+    text: {
+      defaultValue: 'Hello',
+      control: {
+        type: 'text',
+      },
+    },
+    to: {
+      defaultValue: '/login',
+      control: {
+        type: 'text',
+      },
+    },
+    social: {
+      defaultValue: 'facebook',
+      control: {
+        type: 'select',
+        options: ['facebook', 'google', 'twitter', 'twitch'],
+      },
+    },
+  },
+} as Meta;
+
+export const SocialLinkStory: Story<StoryProps> = ({ text, to, social }) => {
+  return (
     <BrowserRouter>
-      <SocialLink social="facebook" to="/login">
-        SocialLink Cta
+      <SocialLink to={to} social={social}>
+        {text}
       </SocialLink>
     </BrowserRouter>
-  ))
-  .add('SocialLink', () => (
-    <BrowserRouter>
-      <SocialLink social="facebook" to="/login">
-        SocialLink
-      </SocialLink>
-    </BrowserRouter>
-  ))
-  .add('SocialLink Cta Large', () => (
-    <BrowserRouter>
-      <SocialLink social="facebook" to="/login">
-        SocialLink
-      </SocialLink>
-    </BrowserRouter>
-  ))
-  .add('SocialLink Large', () => (
-    <BrowserRouter>
-      <SocialLink social="facebook" to="/login">
-        SocialLink
-      </SocialLink>
-    </BrowserRouter>
-  ));
+  );
+};
