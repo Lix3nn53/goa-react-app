@@ -4,21 +4,11 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 import SocialLink, { Props } from './SocialLink';
 
-type StoryProps = Props & {
-  text: string;
-};
-
 export default {
   component: SocialLink,
   title: '01 - Basic SocialLink',
   // creates specific argTypes with options
   argTypes: {
-    text: {
-      defaultValue: 'Hello',
-      control: {
-        type: 'text',
-      },
-    },
     to: {
       defaultValue: '/login',
       control: {
@@ -35,12 +25,10 @@ export default {
   },
 } as Meta;
 
-export const SocialLinkStory: Story<StoryProps> = ({ text, to, social }) => {
+export const SocialLinkStory: Story<Props> = ({ to, social }) => {
   return (
     <BrowserRouter>
-      <SocialLink to={to} social={social}>
-        {text}
-      </SocialLink>
+      <SocialLink to={to} social={social} />
     </BrowserRouter>
   );
 };
