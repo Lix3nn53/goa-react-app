@@ -6,7 +6,7 @@ import Loading from './Loading';
 
 export default {
   component: Loading,
-  title: '01 - Basic Loading',
+  title: '01 - Basic/Loading',
   // creates specific argTypes with options
 } as Meta;
 

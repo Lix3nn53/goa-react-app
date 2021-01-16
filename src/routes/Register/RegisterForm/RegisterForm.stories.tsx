@@ -5,7 +5,7 @@ import RegisterForm from './RegisterForm';
 
 export default {
   component: RegisterForm,
-  title: '02 - Prepared Forms',
+  title: '02 - Prepared/Forms',
 } as Meta;
 
 export const RegisterFormStory: Story = () => {

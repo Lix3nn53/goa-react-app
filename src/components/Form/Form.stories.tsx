@@ -8,7 +8,7 @@ type StoryProps = Props;
 
 export default {
   component: Form,
-  title: '01 - Basic Form',
+  title: '01 - Basic/Form',
   // creates specific argTypes with options
   argTypes: {
     rowArray: {

@@ -9,7 +9,7 @@ type StoryProps = Props & {
 
 export default {
   component: Footer,
-  title: '01 - Basic Footer',
+  title: '01 - Basic/Footer',
   // creates specific argTypes with options
   argTypes: {
     text: {

@@ -5,7 +5,7 @@ import LoginForm from './LoginForm';
 
 export default {
   component: LoginForm,
-  title: '02 - Prepared Forms',
+  title: '02 - Prepared/Forms',
 } as Meta;
 
 export const LoginFormStory: Story = () => {

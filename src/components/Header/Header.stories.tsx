@@ -13,7 +13,7 @@ type StoryProps = Props & {
 
 export default {
   component: Header,
-  title: '01 - Basic Header',
+  title: '01 - Basic/Header',
   // creates specific argTypes with options
   argTypes: {
     style: {

@@ -6,7 +6,7 @@ import Switch, { Props } from './Switch';
 
 export default {
   component: Switch,
-  title: '01 - Basic Switch',
+  title: '01 - Basic/Switch',
   // creates specific argTypes with options
   argTypes: {
     id: {

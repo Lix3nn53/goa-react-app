@@ -6,7 +6,7 @@ import SocialLink, { Props } from './SocialLink';
 
 export default {
   component: SocialLink,
-  title: '01 - Basic SocialLink',
+  title: '01 - Basic/SocialLink',
   // creates specific argTypes with options
   argTypes: {
     to: {

@@ -10,7 +10,7 @@ type StoryProps = Props & {
 
 export default {
   component: Button,
-  title: '01 - Basic Button',
+  title: '01 - Basic/Button',
   // creates specific argTypes with options
   argTypes: {
     text: {
