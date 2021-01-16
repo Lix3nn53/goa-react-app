@@ -10,7 +10,7 @@ type StoryProps = Props & {
 
 export default {
   component: Button,
-  title: 'Button',
+  title: '01 - Basic Button',
   // creates specific argTypes with options
   argTypes: {
     text: {
@@ -35,7 +35,7 @@ export default {
   },
 } as Meta;
 
-export const Template: Story<StoryProps> = ({ text, primary, type }) => {
+export const ButtonStory: Story<StoryProps> = ({ text, primary, type }) => {
   return (
     <Button primary={primary} type={type} onClick={action('clicked')}>
       {text}

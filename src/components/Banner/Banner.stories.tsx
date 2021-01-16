@@ -9,7 +9,7 @@ type StoryProps = Props & {
 
 export default {
   component: Banner,
-  title: 'Banner',
+  title: '01 - Basic Banner',
   // creates specific argTypes with options
   argTypes: {
     icon: {
@@ -39,7 +39,7 @@ export default {
   },
 } as Meta;
 
-export const Template: Story<StoryProps> = ({ text, icon, title, large }) => {
+export const BannerStory: Story<StoryProps> = ({ text, icon, title, large }) => {
   return (
     <Banner icon={<i className={`far ${icon}`} />} title={title} large={large}>
       {text}

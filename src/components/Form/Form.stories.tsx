@@ -1,53 +1,61 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
+import { action } from '@storybook/addon-actions';
 
 import Form, { Props } from './Form';
 
-type StoryProps = Props & {
-  text: string;
-};
+type StoryProps = Props;
 
 export default {
   component: Form,
-  title: 'Form',
+  title: '01 - Basic Form',
   // creates specific argTypes with options
   argTypes: {
-    text: {
-      defaultValue: 'Hello',
+    rowArray: {
+      defaultValue: [
+        [{ id: 'register-email', name: 'Email', type: 'email' }],
+        [{ id: 'register-repeat-password', name: 'Repeat Password', type: 'password' }],
+      ],
+      control: {
+        type: 'object',
+      },
+    },
+    buttonText: {
+      defaultValue: 'Submit',
       control: {
         type: 'text',
       },
     },
-    header: {
-      defaultValue: 'Title',
+    buttonText2: {
       control: {
         type: 'text',
       },
     },
-    footer: {
-      defaultValue: '3:53 PM · Nov 6, 2020',
+    buttonSecondary: {
+      defaultValue: false,
       control: {
-        type: 'text',
+        type: 'boolean',
       },
     },
   },
 } as Meta;
 
-export const Template: Story<StoryProps> = ({ text, rowArray, buttonText, onSubmit }) => {
+export const FormStory: Story<StoryProps> = ({
+  rowArray,
+  buttonText,
+  buttonText2,
+  buttonSecondary,
+}) => {
   return (
     <Form
-      rowArray={[
-        [{ id: 'register-email', name: 'Email', type: 'email' }],
-        [{ id: 'register-nickname', name: 'Nickname', type: 'text' }],
-        [{ id: 'register-password', name: 'Password', type: 'password' }],
-        [{ id: 'register-repeat-password', name: 'Repeat Password', type: 'password' }],
-      ]}
-      buttonText="Register Now!"
+      rowArray={rowArray}
+      buttonText={buttonText}
+      buttonText2={buttonText2}
+      buttonSecondary={buttonSecondary}
       onSubmit={(event) => {
         event.preventDefault();
+        action('submitted');
       }}
-    >
-      <p>{text}</p>
-    </Form>
+    />
   );
 };

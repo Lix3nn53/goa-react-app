@@ -9,7 +9,7 @@ type StoryProps = Props & {
 
 export default {
   component: Footer,
-  title: 'Footer',
+  title: '01 - Basic Footer',
   // creates specific argTypes with options
   argTypes: {
     text: {
@@ -21,7 +21,7 @@ export default {
   },
 } as Meta;
 
-export const Template: Story<StoryProps> = ({ text }) => {
+export const FooterStory: Story<StoryProps> = ({ text }) => {
   return (
     <Footer>
       <p>{text}</p>

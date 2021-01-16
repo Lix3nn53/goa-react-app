@@ -1,14 +1,15 @@
-import React, { FC } from 'react';
+import React, { FC, ReactNode } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import Link from '../Link';
-
 import './Header.css';
-import brand from '../../img/favicon.png';
 
-export type Props = JSX.IntrinsicElements['header'];
+export type Props = JSX.IntrinsicElements['header'] & {
+  section1?: Array<ReactNode>;
+  section2?: Array<ReactNode>;
+  section3?: Array<ReactNode>;
+};
 
-const Header: FC<Props> = ({ className, style }) => {
+const Header: FC<Props> = ({ className, style, section1, section2, section3 }) => {
   const location = useLocation();
   const path = location.pathname.split('/')[1];
 
@@ -20,22 +21,9 @@ const Header: FC<Props> = ({ className, style }) => {
 
   return (
     <header className={classNames} style={style}>
-      <div className="section-1">
-        <Link to="/">
-          <img src={brand} alt="brand" className="brand" />
-        </Link>
-      </div>
-      <div className="section-2">
-        <Link to="/login">Wiki</Link>
-        <Link to="/login">Lore</Link>
-        <Link to="/login">Store</Link>
-      </div>
-      <div className="section-3">
-        <Link to="/login">Login</Link>
-        <Link cta to="/register">
-          Register
-        </Link>
-      </div>
+      <div className="section-1">{section1}</div>
+      <div className="section-2">{section2}</div>
+      <div className="section-3">{section3}</div>
     </header>
   );
 };
