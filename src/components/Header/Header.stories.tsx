@@ -24,7 +24,7 @@ export default {
     },
     section1: {
       defaultValue: [
-        <Link to="/">
+        <Link to="/" key="1">
           <img src={brand} alt="brand" className="brand" />
         </Link>,
       ],
@@ -34,9 +34,15 @@ export default {
     },
     section2: {
       defaultValue: [
-        <Link to="/login">Wiki</Link>,
-        <Link to="/login">Lore</Link>,
-        <Link to="/login">Store</Link>,
+        <Link to="/login" key="1">
+          Wiki
+        </Link>,
+        <Link to="/login" key="2">
+          Lore
+        </Link>,
+        <Link to="/login" key="3">
+          Store
+        </Link>,
       ],
       control: {
         type: 'array',
@@ -44,8 +50,10 @@ export default {
     },
     section3: {
       defaultValue: [
-        <Link to="/login">Login</Link>,
-        <Link cta to="/register">
+        <Link to="/login" key="1">
+          Login
+        </Link>,
+        <Link cta to="/register" key="2">
           Register
         </Link>,
       ],

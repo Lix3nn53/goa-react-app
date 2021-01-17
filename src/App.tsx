@@ -11,39 +11,49 @@ import Footer from './components/Footer';
 
 const App: FC = () => {
   return (
-    <div id="fullpage" className="fullpage flex-container column" data-theme="dark">
-      <a className="skip-link screen-reader-text" href="#content">
-        Skip to content
-      </a>
+    <React.StrictMode>
+      <div id="fullpage" className="fullpage flex-container column" data-theme="dark">
+        <a className="skip-link screen-reader-text" href="#content">
+          Skip to content
+        </a>
 
-      <Header
-        style={{ flex: '0' }}
-        section1={[
-          <Link to="/">
-            <img src={brand} alt="brand" className="brand" />
-          </Link>,
-        ]}
-        section2={[
-          <Link to="/login">Wiki</Link>,
-          <Link to="/login">Lore</Link>,
-          <Link to="/login">Store</Link>,
-        ]}
-        section3={[
-          <Link to="/login">Login</Link>,
-          <Link cta to="/register">
-            Register
-          </Link>,
-        ]}
-      />
+        <Header
+          style={{ flex: '0' }}
+          section1={[
+            <Link to="/" key="1">
+              <img src={brand} alt="brand" className="brand" />
+            </Link>,
+          ]}
+          section2={[
+            <Link to="/login" key="1">
+              Wiki
+            </Link>,
+            <Link to="/login" key="2">
+              Lore
+            </Link>,
+            <Link to="/login" key="3">
+              Store
+            </Link>,
+          ]}
+          section3={[
+            <Link to="/login" key="1">
+              Login
+            </Link>,
+            <Link cta to="/register" key="2">
+              Register
+            </Link>,
+          ]}
+        />
 
-      <main id="content" className="main-content" style={{ flex: '1' }}>
-        <Routes />
-      </main>
+        <main id="content" className="main-content" style={{ flex: '1' }}>
+          <Routes />
+        </main>
 
-      <div style={{ flex: '0' }}>
-        <Footer />
+        <div style={{ flex: '0' }}>
+          <Footer />
+        </div>
       </div>
-    </div>
+    </React.StrictMode>
   );
 };
 
