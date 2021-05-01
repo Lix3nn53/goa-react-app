@@ -29,8 +29,8 @@ const App: FC = () => {
             <Link to="/" key="1">
               <img src={brand} alt="brand" className="brand" />
             </Link>,
-            <span>
-              <i className="fas fa-globe" />
+            <span style={{ display: 'flex' }}>
+              <i className="fas fa-globe" style={{ flex: '0', alignSelf: 'center' }} />
               <Dropdown
                 options={['EN', 'TR']}
                 handleChange={(value: string) => {

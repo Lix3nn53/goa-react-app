@@ -4,7 +4,12 @@
   font-weight: 700;
   padding: 0 9px;
   background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
+  outline: 0;
+  box-shadow: none;
 }
 
 .dropdown option {
@@ -12,9 +17,37 @@
   border-radius: 12px;
 }
 
-.dropdown:after {
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+.dropdown {
+  position: relative;
+  display: flex;
+  width: 4.75rem;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  cursor: pointer;
+}
+
+/* Arrow */
+.dropdown::after {
   font-family: 'Font Awesome 5 Free';
-  content: '\f078';
   font-weight: 600;
+  content: '\f078';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  cursor: pointer;
   pointer-events: none;
 }
