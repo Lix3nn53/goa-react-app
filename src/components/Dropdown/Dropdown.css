@@ -1,0 +1,20 @@
+.dropdown select {
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0 9px 0 18px;
+  background-color: transparent;
+  appearance: none;
+}
+
+.dropdown option {
+  color: var(--color-black);
+  border-radius: 12px;
+}
+
+.dropdown:after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f078';
+  font-weight: 600;
+  pointer-events: none;
+}

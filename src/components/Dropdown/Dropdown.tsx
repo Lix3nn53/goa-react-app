@@ -14,23 +14,23 @@ const Dropdown: FC<Props> = ({ className, style, options, handleChange }) => {
   const classNames = className ? `${baseStyle} ${className}` : `${baseStyle}`;
 
   return (
-    <select
-      className={classNames}
-      style={style}
-      value={value}
-      onChange={(e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
-        setValue(e.currentTarget.value);
-        handleChange(e.currentTarget.value);
-      }}
-    >
-      {options.map((option) => {
-        return (
-          <option value={option} key={option}>
-            {option}
-          </option>
-        );
-      })}
-    </select>
+    <span className={classNames} style={style}>
+      <select
+        value={value}
+        onChange={(e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
+          setValue(e.currentTarget.value);
+          handleChange(e.currentTarget.value);
+        }}
+      >
+        {options.map((option) => {
+          return (
+            <option value={option} key={option}>
+              {option}
+            </option>
+          );
+        })}
+      </select>
+    </span>
   );
 };
 

@@ -11,9 +11,10 @@ import Header from './components/Header';
 import brand from './img/favicon.png';
 import Link from './components/Link';
 import Footer from './components/Footer';
+import Dropdown from './components/Dropdown';
 
 const App: FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <React.StrictMode>
@@ -28,6 +29,14 @@ const App: FC = () => {
             <Link to="/" key="1">
               <img src={brand} alt="brand" className="brand" />
             </Link>,
+            <Dropdown
+              options={['en', 'tr']}
+              handleChange={(value: string) => {
+                i18n.changeLanguage(value);
+              }}
+            >
+              Dropdown
+            </Dropdown>,
           ]}
           section2={[
             <Link to="/guide" key="1">

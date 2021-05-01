@@ -62,7 +62,7 @@ input:checked + .switch-button:before {
 }
 
 input:checked + .switch-button.theme:before {
-  content: '\f185';
+  content: '\f111';
   background-color: transparent;
   color: var(--color-black);
 }
