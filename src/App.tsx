@@ -1,5 +1,8 @@
 import React, { FC } from 'react';
 
+import './internationalization';
+import { useTranslation } from 'react-i18next';
+
 import Routes from './routes';
 
 import './styles/index.css';
@@ -10,6 +13,8 @@ import Link from './components/Link';
 import Footer from './components/Footer';
 
 const App: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <React.StrictMode>
       <div id="fullpage" className="fullpage flex-container column" data-theme="dark">
@@ -25,22 +30,22 @@ const App: FC = () => {
             </Link>,
           ]}
           section2={[
-            <Link to="/login" key="1">
-              Wiki
+            <Link to="/guide" key="1">
+              {t('header.guide')}
             </Link>,
-            <Link to="/login" key="2">
-              Lore
+            <Link to="/lore" key="2">
+              {t('header.lore')}
             </Link>,
-            <Link to="/login" key="3">
-              Store
+            <Link to="/store" key="3">
+              {t('header.store')}
             </Link>,
           ]}
           section3={[
             <Link to="/login" key="1">
-              Login
+              {t('header.login')}
             </Link>,
             <Link cta to="/register" key="2">
-              Register
+              {t('header.register')}
             </Link>,
           ]}
         />
