@@ -29,14 +29,17 @@ const App: FC = () => {
             <Link to="/" key="1">
               <img src={brand} alt="brand" className="brand" />
             </Link>,
-            <Dropdown
-              options={['en', 'tr']}
-              handleChange={(value: string) => {
-                i18n.changeLanguage(value);
-              }}
-            >
-              Dropdown
-            </Dropdown>,
+            <span>
+              <i className="fas fa-globe" />
+              <Dropdown
+                options={['EN', 'TR']}
+                handleChange={(value: string) => {
+                  i18n.changeLanguage(value.toLowerCase());
+                }}
+              >
+                Dropdown
+              </Dropdown>
+            </span>,
           ]}
           section2={[
             <Link to="/guide" key="1">
