@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { action } from '@storybook/addon-actions';
 
@@ -24,6 +24,20 @@ export default {
   },
 } as Meta;
 
+const Subcomponent: FunctionComponent = () => {
+  return <div>Subcomponent</div>;
+};
+
 export const SwitchStory: Story<Props> = ({ id, routes }) => {
-  return <Subrouter id={id} routes={routes} />;
+  return (
+    <Subrouter
+      routes={[
+        { name: 'One', id: 'one' },
+        { name: 'Two', id: 'two' },
+      ]}
+      subcomponent={Subcomponent}
+    >
+      Subrouter
+    </Subrouter>
+  );
 };

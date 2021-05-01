@@ -1,12 +1,35 @@
 import React, { FunctionComponent } from 'react';
-import { BrowserRouter as Router, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
 
 import './Guide.css';
+import Subrouter from '../../components/Subrouter';
+import GuideSubroute from './GuideSubroute';
+
+const topics = [
+  {
+    name: 'Welcome',
+    id: 'introduction',
+  },
+  {
+    name: 'React Router',
+    id: 'react-router',
+  },
+  {
+    name: 'React.js',
+    id: 'reactjs',
+  },
+  {
+    name: 'Functional Programming',
+    id: 'functional-programming',
+  },
+];
 
 const Guide: FunctionComponent = () => {
-  const { url, path } = useRouteMatch();
-
-  return <h1 className="page404">404</h1>;
+  return (
+    <div>
+      <h1>Topics</h1>
+      <Subrouter routes={topics} subcomponent={<GuideSubroute />} />
+    </div>
+  );
 };
 
 export default Guide;

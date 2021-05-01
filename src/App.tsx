@@ -29,7 +29,7 @@ const App: FC = () => {
             <Link to="/" key="1">
               <img src={brand} alt="brand" className="brand" />
             </Link>,
-            <span style={{ display: 'flex' }}>
+            <span style={{ display: 'flex' }} key="2">
               <i className="fas fa-globe" style={{ flex: '0', alignSelf: 'center' }} />
               <Dropdown
                 options={['EN', 'TR']}
@@ -42,7 +42,7 @@ const App: FC = () => {
             </span>,
           ]}
           section2={[
-            <Link to="/guide" key="1">
+            <Link to="/guide/introduction" key="1">
               {t('header.guide')}
             </Link>,
             <Link to="/lore" key="2">
