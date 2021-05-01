@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import './internationalization';
+import './locale';
 import { useTranslation } from 'react-i18next';
 
 import Routes from './routes';

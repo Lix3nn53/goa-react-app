@@ -13,8 +13,6 @@ export const resources = {
   tr,
 } as const;
 
-console.log(resources);
-
 i18n
   // load translation using http -> see /public/locales
   // learn more: https://github.com/i18next/i18next-http-backend
