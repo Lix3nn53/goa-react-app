@@ -21,13 +21,7 @@ const GuideSubroute: FunctionComponent = () => {
   const renderSubtourer = () => {
     if (topic.subroute == null) return <div />;
 
-    return (
-      <Subrouter
-        routes={topic.subroute}
-        subcomponent={<GuideSubrouteSubroute />}
-        parentPath={topic.id}
-      />
-    );
+    return <Subrouter routes={topic.subroute} subcomponent={<GuideSubrouteSubroute />} isChild />;
   };
 
   return (
