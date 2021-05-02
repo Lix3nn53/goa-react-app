@@ -18,7 +18,7 @@ it('renders correctly Subrouter', () => {
         { name: 'One', id: 'one' },
         { name: 'Two', id: 'two' },
       ]}
-      subcomponent={Subcomponent}
+      subcomponents={[Subcomponent]}
     >
       Subrouter
     </Subrouter>,

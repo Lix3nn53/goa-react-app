@@ -35,7 +35,7 @@ export const SwitchStory: Story<Props> = ({ id, routes }) => {
         { name: 'One', id: 'one' },
         { name: 'Two', id: 'two' },
       ]}
-      subcomponent={Subcomponent}
+      subcomponents={[Subcomponent]}
     >
       Subrouter
     </Subrouter>

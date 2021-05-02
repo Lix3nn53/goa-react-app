@@ -1,0 +1,51 @@
+.guide {
+  padding: 0 6rem;
+}
+
+.guideSubroute {
+}
+
+.guideSubrouteSubroute {
+}
+
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+  .guide .subrouter {
+    max-width: 50em;
+    margin: 0 auto;
+  }
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@supports (display: grid) {
+  .guide .subroute-list {
+    grid-area: guide-guide;
+    margin: auto;
+  }
+
+  .guide .guideSubroute {
+    grid-area: guide-subroute;
+  }
+
+  .guide .guideSubrouteSubroute {
+    grid-area: guide-subroute-subroute;
+  }
+
+  @media screen and (min-width: 800px) {
+    .guide .subrouter {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        'guide-guide guide-subroute'
+        'guide-guide guide-subroute-subroute';
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+  }
+}

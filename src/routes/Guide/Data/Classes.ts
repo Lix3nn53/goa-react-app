@@ -10,5 +10,15 @@ export default [
   {
     name: 'Mage',
     id: 'mage',
+    subroute: [
+      {
+        name: 'What are classes?',
+        id: 'introduction',
+      },
+      {
+        name: 'Warrior',
+        id: 'warrior',
+      },
+    ],
   },
 ];
