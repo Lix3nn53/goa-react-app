@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC, ReactNode, useState } from 'react';
 import { Link, Route, useRouteMatch } from 'react-router-dom';
 
 import './Subrouter.css';
@@ -15,6 +15,8 @@ export type Props = JSX.IntrinsicElements['div'] & {
 };
 
 const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
+  const [active, setActive] = useState('');
+
   const { url, path } = useRouteMatch();
 
   const baseStyle = 'subrouter';
@@ -23,21 +25,47 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
   const formLinks = (basePath: string, from: Array<Subroute>): ReactNode => {
     return from.map(({ name, id, subroute }) => {
       if (subroute) {
-        const sublist = (
-          <ul className="subroute-list">{formLinks(`${basePath}/${id}`, subroute)}</ul>
-        );
-
         return (
-          <li key={id}>
-            <Link to={`${url}${basePath}/${id}`}>{name}</Link>
-            {sublist}
+          <li id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
+            <Link
+              to={`${url}${basePath}/${id}`}
+              onClick={() => {
+                if (active.includes(`${basePath}/${id}`)) {
+                  const replace = active.replace(id, '');
+                  setActive(replace);
+                } else {
+                  setActive(`${basePath}/${id}`);
+                }
+              }}
+            >
+              {name}
+            </Link>
+
+            <ul
+              className={
+                active.includes(`${basePath}/${id}`) ? 'sub-sub-list' : 'sub-sub-list hidden'
+              }
+            >
+              {formLinks(`${basePath}/${id}`, subroute)}
+            </ul>
           </li>
         );
       }
 
       return (
-        <li key={id}>
-          <Link to={`${url}${basePath}/${id}`}>{name}</Link>
+        <li id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
+          <Link
+            to={`${url}${basePath}/${id}`}
+            onClick={() => {
+              if (active.includes(`${basePath}/${id}`)) {
+                setActive('');
+              } else {
+                setActive(`${basePath}/${id}`);
+              }
+            }}
+          >
+            {name}
+          </Link>
         </li>
       );
     });
@@ -82,7 +110,7 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
 
   return (
     <div className={classNames} style={style}>
-      <ul className="subroute-list">{formLinks('', routes)}</ul>
+      <ul className="sub-list">{formLinks('', routes)}</ul>
 
       {formRoutes()}
     </div>

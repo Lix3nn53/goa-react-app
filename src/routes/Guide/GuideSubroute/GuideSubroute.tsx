@@ -14,11 +14,11 @@ const GuideSubroute: FunctionComponent = () => {
 
   const topic = Data.find(({ id }) => id === subId0);
 
-  if (topic == null) return <h2>Welcome Subroute</h2>;
+  if (topic == null) return <h1>Error Subroute</h1>;
 
   return (
     <div className="guideSubroute">
-      <h2>{topic.name}</h2>
+      <h1>{topic.name}</h1>
     </div>
   );
 };

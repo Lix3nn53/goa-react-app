@@ -18,15 +18,15 @@ const GuideSubrouteSubroute: FunctionComponent = () => {
 
   const subTopic = topic?.subroute?.find(({ id }) => id === subId1);
 
-  if (subTopic == null) return <h2>Welcome SubrouteSubroute</h2>;
+  if (subTopic == null) return <h2>Error SubrouteSubroute</h2>;
 
   const subSubTopic = subTopic?.subroute?.find(({ id }) => id === subId2);
 
-  if (subSubTopic == null) return <h2>Welcome GuideSubrouteSubroute</h2>;
+  if (subSubTopic == null) return <h2>Error GuideSubrouteSubroute</h2>;
 
   return (
     <div className="guideSubroute">
-      <h2>{subSubTopic.name}</h2>
+      <h1>{subSubTopic.name}</h1>
     </div>
   );
 };

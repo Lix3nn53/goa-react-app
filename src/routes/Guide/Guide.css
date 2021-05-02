@@ -1,3 +1,9 @@
+.guide .sub-list {
+  border-right: 1px solid var(--color-white-dark);
+  padding: 18px 90px;
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
 If no grid support, limit width to 50em and center align
 --------------------------------------------------------------*/
@@ -13,7 +19,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 
 @supports (display: grid) {
-  .guide .subroute-list {
+  .guide .sub-list {
     grid-area: guide-guide;
     margin: auto;
   }
