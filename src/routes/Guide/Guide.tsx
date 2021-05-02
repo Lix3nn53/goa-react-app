@@ -5,12 +5,12 @@ import Subrouter from '../../components/Subrouter';
 
 import GuideSubroute from './GuideSubroute';
 
-import GuideData from './GuideData';
+import Data from './Data';
 
 const Guide: FunctionComponent = () => {
   return (
     <div>
-      <Subrouter routes={GuideData} subcomponent={<GuideSubroute />} />
+      <Subrouter routes={Data} subcomponent={<GuideSubroute />} />
     </div>
   );
 };

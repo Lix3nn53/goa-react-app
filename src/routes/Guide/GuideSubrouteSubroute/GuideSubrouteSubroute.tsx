@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { useParams } from 'react-router-dom';
 
 import './GuideSubrouteSubroute.css';
-import GuideData from '../GuideData';
+import Data from '../Data';
 
 interface RouteParams {
   subId: string;
@@ -12,9 +12,9 @@ interface RouteParams {
 const GuideSubrouteSubroute: FunctionComponent = () => {
   const { subId, subSubId } = useParams<RouteParams>();
 
-  console.log(subId, subSubId);
+  // console.log(subId, subSubId);
 
-  const topic = GuideData.find(({ id }) => id === subId);
+  const topic = Data.find(({ id }) => id === subId);
 
   const subTopic = topic?.subroute?.find(({ id }) => id === subSubId);
 

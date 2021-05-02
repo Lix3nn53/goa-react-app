@@ -6,6 +6,7 @@ import './Subrouter.css';
 export type Subroute = {
   name: string;
   id: string;
+  subroute?: Array<Subroute>;
 };
 
 export type Props = JSX.IntrinsicElements['div'] & {
@@ -29,11 +30,19 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponent, isChild 
   return (
     <div className={classNames} style={style}>
       <ul>
-        {routes.map(({ name, id }) => (
-          <li key={id}>
-            <Link to={`${url}/${id}`}>{name}</Link>
-          </li>
-        ))}
+        {routes.map(({ name, id, subroute }) => {
+          let toPath = `${url}/${id}`;
+
+          if (subroute) {
+            toPath = `${url}/${id}/${subroute[0].id}`;
+          }
+
+          return (
+            <li key={id}>
+              <Link to={toPath}>{name}</Link>
+            </li>
+          );
+        })}
       </ul>
 
       <Route path={routePath}>{subcomponent}</Route>
