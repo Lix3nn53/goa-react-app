@@ -11,7 +11,7 @@ interface RouteParams {
 const GuideSubrouteSubroute: FunctionComponent = () => {
   const { subId0, subId1 } = useParams<RouteParams>();
 
-  // console.log(subId, subSubId);
+  // console.log(subId0, subId1);
 
   const topic = Data.find(({ id }) => id === subId0);
 
@@ -20,7 +20,7 @@ const GuideSubrouteSubroute: FunctionComponent = () => {
   if (subTopic == null) return <h2>Welcome SubrouteSubroute</h2>;
 
   return (
-    <div className="guideSubrouteSubroute">
+    <div className="guideSubroute">
       <h2>{subTopic.name}</h2>
     </div>
   );

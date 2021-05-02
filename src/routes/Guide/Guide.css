@@ -2,12 +2,6 @@
   padding: 0 6rem;
 }
 
-.guideSubroute {
-}
-
-.guideSubrouteSubroute {
-}
-
 /*--------------------------------------------------------------
 If no grid support, limit width to 50em and center align
 --------------------------------------------------------------*/
@@ -40,10 +34,8 @@ CSS Grid layout for wider screens, when browser supports grid:
     .guide .subrouter {
       display: grid;
       grid-template-columns: 1fr 3fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas:
-        'guide-guide guide-subroute'
-        'guide-guide guide-subroute-subroute';
+      grid-template-rows: 1fr;
+      grid-template-areas: 'guide-guide guide-subroute';
       column-gap: 16px;
       row-gap: 16px;
     }

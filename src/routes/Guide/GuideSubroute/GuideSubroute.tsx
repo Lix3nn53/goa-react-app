@@ -10,6 +10,8 @@ interface RouteParams {
 const GuideSubroute: FunctionComponent = () => {
   const { subId0 } = useParams<RouteParams>();
 
+  // console.log(subId0);
+
   const topic = Data.find(({ id }) => id === subId0);
 
   if (topic == null) return <h2>Welcome Subroute</h2>;

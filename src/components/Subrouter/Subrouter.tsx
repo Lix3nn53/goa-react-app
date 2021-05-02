@@ -63,7 +63,7 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
     const list = [];
 
     const count = countSubroute(routes, 0);
-    console.log(count);
+    // console.log(count);
 
     let routePath = `${path}`;
 
@@ -71,7 +71,7 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
     for (let i = 0; i <= count; i++) {
       routePath += `/:subId${i}`;
       list.push(
-        <Route path={routePath} key={i}>
+        <Route exact path={routePath} key={i}>
           {subcomponents[i]}
         </Route>,
       );
