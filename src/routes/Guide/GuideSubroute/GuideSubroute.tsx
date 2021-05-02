@@ -1,26 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import { useParams } from 'react-router-dom';
 
-import './GuideSubroute.css';
+import Subrouter from '../../../components/Subrouter';
 
-const topics = [
-  {
-    name: 'Welcome',
-    id: 'introduction',
-  },
-  {
-    name: 'React Router',
-    id: 'react-router',
-  },
-  {
-    name: 'React.js',
-    id: 'reactjs',
-  },
-  {
-    name: 'Functional Programming',
-    id: 'functional-programming',
-  },
-];
+import './GuideSubroute.css';
+import GuideData from '../GuideData';
+import GuideSubrouteSubroute from '../GuideSubrouteSubroute';
 
 interface RouteParams {
   subId: string;
@@ -29,13 +14,26 @@ interface RouteParams {
 const GuideSubroute: FunctionComponent = () => {
   const { subId } = useParams<RouteParams>();
 
-  const topic = topics.find(({ id }) => id === subId);
+  const topic = GuideData.find(({ id }) => id === subId);
 
-  if (topic == null) return <h2>Welcome</h2>;
+  if (topic == null) return <h2>Welcome Subroute</h2>;
+
+  const renderSubtourer = () => {
+    if (topic.subroute == null) return <div />;
+
+    return (
+      <Subrouter
+        routes={topic.subroute}
+        subcomponent={<GuideSubrouteSubroute />}
+        parentPath={topic.id}
+      />
+    );
+  };
 
   return (
     <div>
       <h2>{topic.name}</h2>
+      {renderSubtourer()}
     </div>
   );
 };
