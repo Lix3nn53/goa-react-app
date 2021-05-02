@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { useParams } from 'react-router-dom';
 
-import Data from '../Data';
+import Data from '../Data/Data';
 
 interface RouteParams {
   subId0: string;
@@ -19,9 +19,14 @@ const GuideSubrouteSubroute: FunctionComponent = () => {
 
   if (subTopic == null) return <h2>Error SubrouteSubroute</h2>;
 
+  const renderComponent = () => {
+    return subTopic.component;
+  };
+
   return (
     <div className="guideSubroute">
       <h1>{subTopic.name}</h1>
+      {renderComponent()}
     </div>
   );
 };

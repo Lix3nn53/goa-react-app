@@ -1,5 +1,5 @@
 import React, { FC, ReactNode, useState } from 'react';
-import { Link, Route, useRouteMatch } from 'react-router-dom';
+import { Link, Route, useRouteMatch, useLocation } from 'react-router-dom';
 
 import './Subrouter.css';
 
@@ -15,9 +15,8 @@ export type Props = JSX.IntrinsicElements['div'] & {
 };
 
 const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
-  const [active, setActive] = useState('');
-
   const { url, path } = useRouteMatch();
+  const { pathname } = useLocation();
 
   const baseStyle = 'subrouter';
   const classNames = className ? `${baseStyle} ${className}` : `${baseStyle}`;
@@ -27,23 +26,11 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
       if (subroute) {
         return (
           <li id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
-            <Link
-              to={`${url}${basePath}/${id}`}
-              onClick={() => {
-                if (active.includes(`${basePath}/${id}`)) {
-                  const replace = active.replace(id, '');
-                  setActive(replace);
-                } else {
-                  setActive(`${basePath}/${id}`);
-                }
-              }}
-            >
-              {name}
-            </Link>
+            <Link to={`${url}${basePath}/${id}`}>{name}</Link>
 
             <ul
               className={
-                active.includes(`${basePath}/${id}`) ? 'sub-sub-list' : 'sub-sub-list hidden'
+                pathname.includes(`${basePath}/${id}`) ? 'sub-sub-list' : 'sub-sub-list hidden'
               }
             >
               {formLinks(`${basePath}/${id}`, subroute)}
@@ -54,18 +41,7 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
 
       return (
         <li id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
-          <Link
-            to={`${url}${basePath}/${id}`}
-            onClick={() => {
-              if (active.includes(`${basePath}/${id}`)) {
-                setActive('');
-              } else {
-                setActive(`${basePath}/${id}`);
-              }
-            }}
-          >
-            {name}
-          </Link>
+          <Link to={`${url}${basePath}/${id}`}>{name}</Link>
         </li>
       );
     });
