@@ -5,6 +5,7 @@ import Subrouter from '../../components/Subrouter';
 
 import GuideSubroute from './GuideSubroute';
 import GuideSubrouteSubroute from './GuideSubrouteSubroute';
+import GuideSubrouteSubrouteSubroute from './GuideSubrouteSubrouteSubroute';
 
 import Data from './Data';
 
@@ -14,7 +15,11 @@ const Guide: FunctionComponent = () => {
       <Subrouter
         className="grid"
         routes={Data}
-        subcomponents={[<GuideSubroute />, <GuideSubrouteSubroute />]}
+        subcomponents={[
+          <GuideSubroute />,
+          <GuideSubrouteSubroute />,
+          <GuideSubrouteSubrouteSubroute />,
+        ]}
       />
     </div>
   );
