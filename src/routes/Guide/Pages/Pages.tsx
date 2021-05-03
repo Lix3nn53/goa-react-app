@@ -2,7 +2,7 @@ import React from 'react';
 
 import GuidePage from './GuidePageComponent';
 
-import Classes from './SubPages/Classes';
+import Classes from './SubPages/Classes/index';
 
 export default [
   {
@@ -26,6 +26,7 @@ export default [
   {
     name: 'Attributes',
     id: 'attributes',
+    component: <GuidePage>Attr test</GuidePage>,
   },
   {
     name: 'Pets',
@@ -60,8 +61,8 @@ export default [
     id: 'revive',
   },
   {
-    name: 'Skills3',
-    id: 'skills10',
+    name: 'Items',
+    id: 'items',
   },
   {
     name: 'Skills3',

@@ -1,0 +1,16 @@
+img.skill-icon {
+  image-rendering: crisp-edges;
+  width: 100px;
+}
+
+.skills .section {
+  padding-bottom: 20px;
+}
+
+.skills h3 {
+  padding: 0;
+}
+
+.skills p {
+  padding-left: 20px;
+}

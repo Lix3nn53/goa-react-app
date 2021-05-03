@@ -1,7 +1,8 @@
 import React, { FunctionComponent, ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
-import Card from '../../../../components/Card';
-import Table from '../../../../components/Table';
+import Card from '../../../../../components/Card';
+import Table from '../../../../../components/Table';
 
 export type Props = JSX.IntrinsicElements['div'] & {
   name: string;
@@ -16,7 +17,7 @@ export type Props = JSX.IntrinsicElements['div'] & {
   mana: number;
 };
 
-const GuidePageComponent: FunctionComponent<Props> = ({
+const ClassCard: FunctionComponent<Props> = ({
   name,
   icon,
   classTier,
@@ -28,6 +29,8 @@ const GuidePageComponent: FunctionComponent<Props> = ({
   health,
   mana,
 }) => {
+  const { t } = useTranslation();
+
   const renderWeapons = () => {
     const list: Array<ReactNode> = [];
 
@@ -52,31 +55,31 @@ const GuidePageComponent: FunctionComponent<Props> = ({
     <Card header={<h2>{name}</h2>}>
       <img
         src={icon}
-        alt="icondragonslayer"
+        alt="icon"
         style={{ imageRendering: 'crisp-edges', width: '150px', margin: 'auto' }}
       />
       <Table
         style={{ paddingTop: '20px' }}
         cells={[
-          [<span style={{ fontWeight: 'bold' }}>Class Tier: </span>, classTier],
-          [<span style={{ fontWeight: 'bold' }}>Main Element: </span>, element],
+          [<span style={{ fontWeight: 'bold' }}>{t('classes.tier')}: </span>, classTier],
+          [<span style={{ fontWeight: 'bold' }}>{t('element.main')}: </span>, t(element)],
         ]}
       />
-      <h3 style={{ textAlign: 'center' }}>Weapons</h3>
+      <h3 style={{ textAlign: 'center' }}>{t('item.weapons')}</h3>
       <Table cells={[renderWeapons()]} />
-      <h3 style={{ textAlign: 'center' }}>Armors</h3>
+      <h3 style={{ textAlign: 'center' }}>{t('item.armors')}</h3>
       <Table cells={[renderArmors()]} />
       <h3 style={{ textAlign: 'center' }}>Attributes</h3>
       <Table
         cells={[
-          [<span style={{ fontWeight: 'bold' }}>Damage: </span>, damage],
-          [<span style={{ fontWeight: 'bold' }}>Defense: </span>, defense],
-          [<span style={{ fontWeight: 'bold' }}>Health: </span>, health],
-          [<span style={{ fontWeight: 'bold' }}>Mana: </span>, mana],
+          [<span style={{ fontWeight: 'bold' }}>{t('attribute.health')}: </span>, health],
+          [<span style={{ fontWeight: 'bold' }}>{t('attribute.mana')}: </span>, mana],
+          [<span style={{ fontWeight: 'bold' }}>{t('attribute.damage')}: </span>, damage],
+          [<span style={{ fontWeight: 'bold' }}>{t('attribute.defense')}: </span>, defense],
         ]}
       />
     </Card>
   );
 };
 
-export default GuidePageComponent;
+export default ClassCard;
