@@ -6,7 +6,31 @@ ul {
   padding-left: 25px;
 }
 
+ul a {
+  text-decoration: none;
+}
+
+ol a {
+  text-decoration: none;
+}
+
 .subrouter ul {
-  font-size: 1.2rem;
+  font-size: 24px;
   transition: all 0.5s ease-out;
+}
+
+.has-subroute {
+  font-weight: 900;
+}
+
+.no-subroute {
+  font-weight: 400;
+}
+
+.subrouter .active {
+  color: var(--color-secondary-light);
+}
+
+.subrouter .not-active {
+  color: var(--color-text);
 }

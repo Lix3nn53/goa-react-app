@@ -18,15 +18,25 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
   const { url, path } = useRouteMatch();
   const { pathname } = useLocation();
 
+  const lastPath = pathname.substring(pathname.lastIndexOf('/') + 1);
+
   const baseStyle = 'subrouter';
   const classNames = className ? `${baseStyle} ${className}` : `${baseStyle}`;
 
   const formLinks = (basePath: string, from: Array<Subroute>): ReactNode => {
     return from.map(({ name, id, subroute }) => {
+      const active = lastPath === id ? 'active' : 'not-active';
+
       if (subroute) {
         return (
-          <li id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
-            <Link to={`${url}${basePath}/${id}`}>{name}</Link>
+          <li
+            className={`has-subroute ${active}`}
+            id={`${basePath}/${id}`}
+            key={`${basePath}/${id}`}
+          >
+            <Link className={active} to={`${url}${basePath}/${id}`}>
+              {name}
+            </Link>
 
             <ul
               className={
@@ -40,8 +50,10 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
       }
 
       return (
-        <li id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
-          <Link to={`${url}${basePath}/${id}`}>{name}</Link>
+        <li className={`no-subroute ${active}`} id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
+          <Link className={active} to={`${url}${basePath}/${id}`}>
+            {name}
+          </Link>
         </li>
       );
     });
