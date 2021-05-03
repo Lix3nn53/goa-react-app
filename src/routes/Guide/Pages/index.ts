@@ -1,3 +1,3 @@
-import Data from './Data';
+import Pages from './Pages';
 
-export default Data;
+export default Pages;

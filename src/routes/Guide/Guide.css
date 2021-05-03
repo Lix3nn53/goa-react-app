@@ -2,7 +2,7 @@
   padding: 18px 0 0 40px;
   width: 100%;
   max-height: 300px;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 800px) {
@@ -41,11 +41,18 @@ CSS Grid layout for wider screens, when browser supports grid:
   @media screen and (min-width: 800px) {
     .guide .subrouter {
       display: grid;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1fr 1fr 4fr 1fr;
       grid-template-rows: 1fr;
-      grid-template-areas: 'guide-guide guide-subroute';
+      grid-template-areas: '. guide-guide guide-subroute .';
       column-gap: 16px;
       row-gap: 16px;
     }
   }
+}
+
+/* Subroutes */
+.guideSubroute h1 {
+  padding-bottom: 0;
+  margin-bottom: 1em;
+  border-bottom: solid 1px white;
 }
