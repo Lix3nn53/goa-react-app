@@ -7,7 +7,7 @@ import GuideSubroute from './GuideSubroute';
 import GuideSubrouteSubroute from './GuideSubrouteSubroute';
 import GuideSubrouteSubrouteSubroute from './GuideSubrouteSubrouteSubroute';
 
-import Data from './Data';
+import Data from './Pages';
 
 const Guide: FunctionComponent = () => {
   return (

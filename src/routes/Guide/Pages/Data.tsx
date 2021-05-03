@@ -1,13 +1,14 @@
 import React from 'react';
 
-import Classes from './Classes/index';
-import Introduction from './Introduction';
+import GuidePage from './GuidePageComponent';
+
+import Classes from './SubPages/Classes';
 
 export default [
   {
     name: 'Introduction',
     id: 'introduction',
-    component: <Introduction />,
+    component: <GuidePage />,
   },
   {
     name: 'How to play?',
@@ -23,40 +24,40 @@ export default [
     id: 'skills',
   },
   {
-    name: 'Skills1',
-    id: 'skills1',
+    name: 'Attributes',
+    id: 'attributes',
   },
   {
-    name: 'Skills2',
-    id: 'skills2',
+    name: 'Pets',
+    id: 'pets',
   },
   {
-    name: 'Skills3',
-    id: 'skills3',
+    name: 'Quests',
+    id: 'quests',
   },
   {
-    name: 'Skills3',
-    id: 'skills4',
+    name: 'RPG Inventory',
+    id: 'rpg-inventory',
   },
   {
-    name: 'Skills3',
-    id: 'skills5',
+    name: 'Economy',
+    id: 'economy',
   },
   {
-    name: 'Skills3',
-    id: 'skills6',
+    name: 'Dungeons',
+    id: 'dungeons',
   },
   {
-    name: 'Skills3',
-    id: 'skills7',
+    name: 'Social',
+    id: 'social',
   },
   {
-    name: 'Skills3',
-    id: 'skills8',
+    name: 'Crafting',
+    id: 'crafting',
   },
   {
-    name: 'Skills3',
-    id: 'skills9',
+    name: 'Revive',
+    id: 'revive',
   },
   {
     name: 'Skills3',

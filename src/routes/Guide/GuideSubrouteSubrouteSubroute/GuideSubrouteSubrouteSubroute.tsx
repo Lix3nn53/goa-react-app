@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { useParams } from 'react-router-dom';
 
-import Data from '../Data/Data';
+import Data from '../Pages/Data';
 
 interface RouteParams {
   subId0: string;

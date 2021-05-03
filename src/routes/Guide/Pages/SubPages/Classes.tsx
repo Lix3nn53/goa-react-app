@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Tier3 from './Tier3';
-
-import Warrior from './Tier3/Warrior';
+import GuidePage from '../GuidePageComponent';
 
 export default [
   {
@@ -16,12 +14,12 @@ export default [
   {
     name: 'Tier 3',
     id: 'tier-3',
-    component: <Tier3 />,
+    component: <GuidePage />,
     subroute: [
       {
         name: 'Warrior',
         id: 'warrior',
-        component: <Warrior />,
+        component: <GuidePage />,
       },
       {
         name: 'Mage',
