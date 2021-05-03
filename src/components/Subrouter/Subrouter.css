@@ -30,7 +30,3 @@ ol a {
 .subrouter .active {
   color: var(--color-secondary-light);
 }
-
-.subrouter .not-active {
-  color: var(--color-text);
-}
