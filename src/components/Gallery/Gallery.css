@@ -15,7 +15,6 @@
 .gallery .item:hover,
 .gallery .item:focus {
   transform: scale(1.1);
-  z-index: 50;
 }
 
 .gallery .item figure {
