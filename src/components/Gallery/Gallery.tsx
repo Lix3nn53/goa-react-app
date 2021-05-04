@@ -7,6 +7,7 @@ import Modal from './Modal';
 export type Picture = {
   src: string;
   name: string;
+  description: string;
 };
 
 export type Props = JSX.IntrinsicElements['div'] & {
@@ -14,7 +15,8 @@ export type Props = JSX.IntrinsicElements['div'] & {
 };
 
 const Gallery: FC<Props> = ({ className, children, style, pictures }) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [slideIndex, setSlideIndex] = useState(0);
 
   const baseStyle = 'gallery';
   const classNames = className ? `${baseStyle}  ${className}` : `${baseStyle}`;
@@ -22,11 +24,17 @@ const Gallery: FC<Props> = ({ className, children, style, pictures }) => {
   function renderPictures() {
     const list: Array<ReactNode> = [];
 
-    pictures.forEach((element) => {
+    pictures.forEach((element, index) => {
       const { src, name } = element;
       list.push(
         <div className="item">
-          <button type="button" onClick={() => setOpen(!open)}>
+          <button
+            type="button"
+            onClick={() => {
+              setOpen(!open);
+              setSlideIndex(index);
+            }}
+          >
             <figure>
               <img src={src} alt={name} />
               <figcaption>{name}</figcaption>
@@ -42,7 +50,13 @@ const Gallery: FC<Props> = ({ className, children, style, pictures }) => {
   return (
     <div className={classNames} style={style}>
       {renderPictures()}
-      <Modal open={open} setOpen={setOpen} slides={pictures} />
+      <Modal
+        open={open}
+        setOpen={setOpen}
+        slides={pictures}
+        slideIndex={slideIndex}
+        setSlideIndex={setSlideIndex}
+      />
       {children}
     </div>
   );

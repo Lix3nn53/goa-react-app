@@ -18,7 +18,7 @@
   margin: auto;
   padding: 0;
   width: 90%;
-  max-width: 1200px;
+  max-width: 940px;
 }
 
 .modal .columns {
@@ -101,6 +101,8 @@
 .modal .caption-container {
   text-align: center;
   padding: 2px 16px;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .modal-open {
@@ -112,5 +114,5 @@
 }
 
 .modal .modal-top {
-  min-height: 85vh;
+  min-height: 75vh;
 }

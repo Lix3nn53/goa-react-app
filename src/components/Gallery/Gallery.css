@@ -24,6 +24,7 @@
   padding: 0;
   margin: 0;
   position: relative;
+  cursor: pointer;
 }
 
 .gallery .item figure img {
@@ -36,26 +37,13 @@
   transition: all ease 400ms;
 }
 
-.gallery .item:hover figure img,
-.gallery .item:focus figure img {
-  transform: scale(1.4);
-  transition: all ease 1s;
-}
-
-.gallery.hover {
-  transition: all ease 1s;
-  /*   opacity:.7; */
-}
-
 .gallery.hover .item {
   opacity: 0.9;
-  filter: blur(1px);
 }
 
 .gallery.hover .item:hover,
 .gallery.hover .item:focus {
   opacity: 1;
-  filter: blur(0);
 }
 
 .gallery .item figcaption {
@@ -72,7 +60,6 @@
   top: 0;
   left: 0;
   transform: scale(1.3);
-  filter: blur(4px);
   opacity: 0;
   transition: 500ms;
   background-color: rgba(0, 0, 0, 0.4);
@@ -83,7 +70,6 @@
 .gallery .item:hover figcaption,
 .gallery .item:focus figcaption {
   transform: scale(1);
-  filter: blur(0);
   opacity: 1;
   transition: 300ms;
 }

@@ -5,17 +5,28 @@ import './Modal.css';
 export type Picture = {
   src: string;
   name: string;
+  description: string;
 };
 
 export type Props = JSX.IntrinsicElements['div'] & {
   slides: Array<Picture>;
   open: boolean;
   setOpen(value: boolean): void;
+  slideIndex: number;
+  setSlideIndex(value: number): void;
 };
 
-const Modal: FC<Props> = ({ className, children, style, slides, open, setOpen }) => {
-  const [slideIndex, setSlideIndex] = useState(0);
-  const [captionText, setCaptionText] = useState(slides[0].name);
+const Modal: FC<Props> = ({
+  className,
+  children,
+  style,
+  slides,
+  open,
+  setOpen,
+  slideIndex,
+  setSlideIndex,
+}) => {
+  const [captionText, setCaptionText] = useState(slides[0].description);
 
   let baseStyle = 'modal';
   if (open) {
@@ -36,7 +47,7 @@ const Modal: FC<Props> = ({ className, children, style, slides, open, setOpen })
     } else {
       setSlideIndex(slideIndex + 1);
     }
-    setCaptionText(slides[slideIndex].name);
+    setCaptionText(slides[slideIndex].description);
   }
 
   function previous() {
@@ -46,7 +57,7 @@ const Modal: FC<Props> = ({ className, children, style, slides, open, setOpen })
     } else {
       setSlideIndex(slideIndex - 1);
     }
-    setCaptionText(slides[slideIndex].name);
+    setCaptionText(slides[slideIndex].description);
   }
 
   function renderTop() {
