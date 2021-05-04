@@ -1,6 +1,7 @@
 import React from 'react';
 
 import GuidePage from './GuidePageComponent';
+import GuideCommon from './GuideCommon';
 
 import Classes from './SubPages/Classes/index';
 
@@ -18,6 +19,11 @@ export default [
     name: 'Classes',
     id: 'classes',
     subroute: Classes,
+    component: (
+      <GuidePage>
+        <GuideCommon paragraphs={['classes.tier1.description']} />
+      </GuidePage>
+    ),
   },
   {
     name: 'Skills',
