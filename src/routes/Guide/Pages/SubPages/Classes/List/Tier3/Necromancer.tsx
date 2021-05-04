@@ -54,7 +54,7 @@ export default (
           src:
             'https://cdn.discordapp.com/attachments/689794547101990922/815618175131320350/unknown.png',
           name: 'Freeze Range',
-          description: 'Split second after Frozen Colossus casted Freeze',
+          description: 'Split second after Frozen Colossus casted Freeze, showing effect range',
         },
         {
           src:

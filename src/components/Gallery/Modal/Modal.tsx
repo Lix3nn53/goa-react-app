@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, useState } from 'react';
+import React, { FC, ReactNode } from 'react';
 
 import './Modal.css';
 
@@ -26,8 +26,6 @@ const Modal: FC<Props> = ({
   slideIndex,
   setSlideIndex,
 }) => {
-  const [captionText, setCaptionText] = useState(slides[0].description);
-
   let baseStyle = 'modal';
   if (open) {
     baseStyle += ' modal-open';
@@ -47,7 +45,6 @@ const Modal: FC<Props> = ({
     } else {
       setSlideIndex(slideIndex + 1);
     }
-    setCaptionText(slides[slideIndex].description);
   }
 
   function previous() {
@@ -57,7 +54,6 @@ const Modal: FC<Props> = ({
     } else {
       setSlideIndex(slideIndex - 1);
     }
-    setCaptionText(slides[slideIndex].description);
   }
 
   function renderTop() {
@@ -114,7 +110,7 @@ const Modal: FC<Props> = ({
         </div>
 
         <div className="caption-container">
-          <p id="caption">{captionText}</p>
+          <p id="caption">{slides[slideIndex].description}</p>
         </div>
 
         <div className="flex-container columns">{renderBottom()}</div>
