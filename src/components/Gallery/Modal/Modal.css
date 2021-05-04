@@ -35,54 +35,70 @@
 }
 
 /* The Close Button */
-.close {
+.modal .close {
   position: absolute;
   top: 10px;
   right: 25px;
   font-size: 35px;
   font-weight: bold;
   background-color: transparent;
+  z-index: 2;
+  padding: 20px;
 }
 
-.close:hover,
-.close:focus {
+.modal .close:hover,
+.modal .close:focus {
   color: #999;
   cursor: pointer;
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  padding: 16px;
-  margin-top: -20%;
-  color: white;
+.modal .prev,
+.modal .next {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.modal .prev button,
+.modal .next button {
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
   background-color: rgba(0, 0, 0, 0.8);
+  padding: 80px 44px;
+  cursor: pointer;
 }
 
-/* Position the "next button" to the right */
-.next {
+.modal .next button {
+  border-radius: 0 10px 10px 0;
+}
+
+.modal .prev button {
+  border-radius: 10px 0 0 10px;
+  margin-left: auto;
+}
+
+.modal .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+}
+
+.modal .prev {
+  left: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.modal .prev button:hover,
+.modal .next button:hover {
   color: rgba(0, 0, 0, 0.8);
   background-color: rgba(255, 204, 0, 0.8);
 }
 
 /* Caption text */
-.caption-container {
+.modal .caption-container {
   text-align: center;
   padding: 2px 16px;
 }
@@ -93,4 +109,8 @@
 
 .modal-close {
   display: none;
+}
+
+.modal .modal-top {
+  min-height: 85vh;
 }

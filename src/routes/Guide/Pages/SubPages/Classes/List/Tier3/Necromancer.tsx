@@ -51,7 +51,11 @@ export default (
     <Gallery
       pictures={[
         { src: 'https://www.w3schools.com/howto/img_lights_wide.jpg', name: 'img_lights_wide' },
-        { src: 'https://www.w3schools.com/howto/img_nature_wide.jpg', name: 'img_nature_wide' },
+        {
+          src:
+            'https://images.unsplash.com/photo-1572985025058-f27aeca1b8bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80',
+          name: 'img_nature_wide',
+        },
         { src: 'https://www.w3schools.com/howto/img_snow_wide.jpg', name: 'img_snow_wide' },
         {
           src: 'https://www.w3schools.com/howto/img_mountains_wide.jpg',

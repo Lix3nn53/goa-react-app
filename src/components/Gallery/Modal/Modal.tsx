@@ -89,14 +89,18 @@ const Modal: FC<Props> = ({ className, children, style, slides, open, setOpen })
         <i className="fas fa-times" />
       </button>
       <div className="modal-content">
-        {renderTop()}
+        <div className="modal-top">{renderTop()}</div>
 
-        <button className="prev" onClick={() => previous()} type="button">
-          &#10094;
-        </button>
-        <button className="next" onClick={() => next()} type="button">
-          &#10095;
-        </button>
+        <div className="prev">
+          <button onClick={() => previous()} type="button">
+            &#10094;
+          </button>
+        </div>
+        <div className="next">
+          <button onClick={() => next()} type="button">
+            &#10095;
+          </button>
+        </div>
 
         <div className="caption-container">
           <p id="caption">{captionText}</p>
