@@ -2,3 +2,8 @@
 @import './fontawesome/regular';
 @import './fontawesome/solid';
 @import './fontawesome/brands';
+
+img.pixel-icon {
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}

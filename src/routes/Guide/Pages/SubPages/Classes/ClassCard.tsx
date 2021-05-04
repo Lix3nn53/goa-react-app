@@ -56,7 +56,8 @@ const ClassCard: FunctionComponent<Props> = ({
       <img
         src={icon}
         alt="icon"
-        style={{ imageRendering: 'crisp-edges', width: '150px', margin: 'auto' }}
+        className="pixel-icon"
+        style={{ width: '150px', margin: 'auto' }}
       />
       <Table
         style={{ paddingTop: '20px' }}

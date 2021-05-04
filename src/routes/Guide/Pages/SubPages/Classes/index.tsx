@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Dragonslayer from './List/Dragonslayer';
 
 export default [

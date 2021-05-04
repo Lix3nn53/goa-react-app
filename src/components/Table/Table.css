@@ -9,3 +9,7 @@ td {
 tr:nth-child(even) {
   background-color: var(--color-divider);
 }
+
+tr:nth-child(odd) {
+  background-color: var(--color-divider);
+}
