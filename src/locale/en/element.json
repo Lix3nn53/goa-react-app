@@ -1,4 +1,8 @@
 {
   "main": "Main Element",
-  "fire": "🔥 Fire"
+  "fire": "🔥 Fire",
+  "water": "🌊 Water",
+  "earth": "◎ Earth",
+  "air": "๑ Air",
+  "lightning": "⚡ Lightning"
 }

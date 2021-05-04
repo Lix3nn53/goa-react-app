@@ -56,3 +56,13 @@ CSS Grid layout for wider screens, when browser supports grid:
   margin-bottom: 1em;
   border-bottom: solid 1px white;
 }
+
+.guide-page h1,
+.guide-page h2,
+.guide-page h3 {
+  padding: 0;
+}
+
+.guide-page .section {
+  padding-bottom: 20px;
+}

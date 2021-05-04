@@ -2,13 +2,130 @@
   "tier": "Class Tier",
   "playstyle": "Playstyle",
   "skills": "Skills",
-  "dragonslayer": {
-    "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
-    "playstyle": "Dragonslayer&apos;s skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
-    "skill_one": "Deal damage to targets in cube area.",
-    "skill_two": "Shoot a flame-burst that launches a target into the sky.",
-    "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
-    "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
-    "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+  "tier1": {
+    "description": "Tier 1 classes are the weakest in Guardians of Adelia.",
+    "dragonslayer": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    }
+  },
+  "tier2": {
+    "description": "Tier 2 classes are avarage in terms of total power.",
+    "archer": {
+      "intro": "Archer is a tier 2 class in Guardians of Adelia.",
+      "playstyle": "Archer's deal avarage damage but have lots of mobility skills. The best class to utilize hit-and-run strategy.",
+      "skill_one": "Shoot an arrow that poisons target.",
+      "skill_two": "Gain movement speed.",
+      "skill_three": "Jump backwards into the sky and gain resistance to fall damage.",
+      "skill_passive": "Your every 2nd successful projectile hit gives you bonus critical chance. (This can exceed the critical chance cap)",
+      "skill_ultimate": "Reveal an area with a flurry of arrows, dealing waves of damage to opponents."
+    },
+    "hunter": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    },
+    "fire_mage": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    },
+    "frost_mage": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    },
+    "monk": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    },
+    "paladin": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    }
+  },
+  "tier3": {
+    "description": "Tier 3 classes are the strongest in Guardians of Adelia.",
+    "dragonslayer": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    },
+    "doom_knight": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    },
+    "engineer": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    },
+    "necromancer": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    },
+    "reaper": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    },
+    "shaman": {
+      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "skill_one": "Deal damage to targets in cube area.",
+      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
+      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
+      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+    }
   }
 }

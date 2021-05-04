@@ -1,7 +1,5 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 
-import './GuidePageComponent.css';
-
 export type Props = JSX.IntrinsicElements['div'] & {
   right?: ReactNode;
 };
