@@ -9,6 +9,7 @@ import Archer from './List/Tier2/Archer';
 // Tier 3
 import DoomKnight from './List/Tier3/Doom Knight';
 import Dragonslayer from './List/Tier3/Dragonslayer';
+import Engineer from './List/Tier3/Engineer';
 import Necromancer from './List/Tier3/Necromancer';
 import Reaper from './List/Tier3/Reaper';
 import Shaman from './List/Tier3/Shaman';
@@ -81,7 +82,7 @@ export default [
       {
         name: 'Engineer',
         id: 'engineer',
-        component: Dragonslayer,
+        component: Engineer,
       },
       {
         name: 'Shaman',

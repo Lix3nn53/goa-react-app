@@ -93,13 +93,13 @@
       "skill_ultimate": "Spawn a darkhole that pulls the targets in area to the center."
     },
     "engineer": {
-      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
-      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
-      "skill_one": "Deal damage to targets in cube area.",
-      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
-      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
-      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
-      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+      "intro": "Engineer is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Engineer's main ability is Turret. Spawn a turret and playaround it with your other skills.",
+      "skill_one": "Summon a turret that fires arrows. Turret changes it's head rotation to nearest enemy.",
+      "skill_two": "Launch a bomb that deals damage and pushes enemies. Bonus effect: it also pushes you but you don't take damage and fall damage.",
+      "skill_three": "Throw oil in to the ground. Enemies in the oil are slowed and silenced.",
+      "skill_passive": "After using a skill, gain barrier. A stack of barrier absorbs a damage completely.",
+      "skill_ultimate": "Launch a missile that follows the target. Deals area damage and stuns the enemies on hit."
     },
     "necromancer": {
       "intro": "Necromancer is a tier 3 class in Guardians of Adelia.",
