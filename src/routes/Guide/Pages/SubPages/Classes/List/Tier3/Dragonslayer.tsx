@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Gallery from '../../../../../../../components/Gallery';
+
 import GuidePage from '../../../../GuidePageComponent';
 import ClassCard from '../../ClassCard';
 import ClassBody from '../../ClassBody';
@@ -45,6 +47,30 @@ export default (
           ]}
         />
       }
+    />
+    <h2>Gallery</h2>
+    <Gallery
+      pictures={[
+        {
+          src:
+            'https://cdn.discordapp.com/attachments/689660026423345188/833656796135686164/unknown.png',
+          name: 'Power Slash',
+          description: "Split second after player casted Power Slash, showing it's range",
+        },
+        {
+          src:
+            'https://cdn.discordapp.com/attachments/689660026423345188/832086714927153152/unknown.png',
+          name: "Dragon's Charge",
+          description: "While Dragon's Charge is active, do not get too close to a Dragonslayer!",
+        },
+        {
+          src:
+            'https://cdn.discordapp.com/attachments/689660026423345188/833655789661978634/unknown.png',
+          name: 'Grand Skyfall Landing',
+          description:
+            "Split second after player landing after casting Grand Skyfall, showing it's range",
+        },
+      ]}
     />
   </GuidePage>
 );
