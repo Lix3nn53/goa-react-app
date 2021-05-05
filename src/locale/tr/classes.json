@@ -23,7 +23,7 @@
   },
   "tier2": {
     "description": "Tier 2 classes are avarage in terms of total power.",
-    "Okçu": {
+    "archer": {
       "intro": "Okçu, Guardians of Adelia'da 2. kademe bir sınıftır.",
       "playstyle": "Okçu'nun ortalama bir hasarı vardır ancak birçok hareket becerisine sahiptir. Vur-Kaç taktiğini kullanmak için en iyi sınıftır.",
       "skill_one": "Hedefi zehirleyen bir ok atar.",
