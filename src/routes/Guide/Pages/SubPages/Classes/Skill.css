@@ -1,5 +1,6 @@
 .skills img.pixel-icon {
   width: 100px;
+  height: max-content;
 }
 
 .skills p {

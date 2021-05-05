@@ -27,35 +27,35 @@
       "skill_ultimate": "Reveal an area with a flurry of arrows, dealing waves of damage to opponents."
     },
     "hunter": {
-      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
-      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
-      "skill_one": "Deal damage to targets in cube area.",
-      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
-      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
-      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
-      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+      "intro": "Hunter is a tier 2 class in Guardians of Adelia.",
+      "playstyle": "Hunter's main weapon is crossbow. It is slow but deals huge amount of damage. And with your Bear Traps placed carefully, your arrows will always find its target!",
+      "skill_one": "Shoot an arrow that deals area damage and pushes targets away on hit.",
+      "skill_two": "Fire multiple arrows in a cone.",
+      "skill_three": "Fire a grapple projectile. If it collides with terrain dash towards it, if it hits a target pull the target.",
+      "skill_passive": "Your arrows shot from crossbows pierces through targets.",
+      "skill_ultimate": "Place a trap that triggers when an enemy steps on it. Stuns the target when triggered. You can have multiple active traps at a time."
     },
     "fire_mage": {
-      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
-      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
-      "skill_one": "Deal damage to targets in cube area.",
-      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
-      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
-      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
-      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+      "intro": "Fire Mage is a tier 2 class in Guardians of Adelia.",
+      "playstyle": "Fire Mage has very high area damage at the cost of defense and mobility.",
+      "skill_one": "Shoot a fireball that deals damage to targets in area if it hits a target.",
+      "skill_two": "Deal damage to enemies in front of you in cone area.",
+      "skill_three": "Warp forward in location you are facing. After a small delay cause a explosion in your old location, dealing damage to enemies.",
+      "skill_passive": "Every time you cast a spell gain a fire spirit stack. If you have 4 stacks your next skill that deals damage to targets will also burn them.",
+      "skill_ultimate": "Summon a meteor from sky that damages and launches nearby enemies upwards."
     },
     "frost_mage": {
-      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
-      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
-      "skill_one": "Deal damage to targets in cube area.",
-      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
-      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
-      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
-      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+      "intro": "Frost Mage is a tier 2 class in Guardians of Adelia.",
+      "playstyle": "Frost Mage has high area damage and crowd control at the cost of defense and mobility.",
+      "skill_one": "Shoot a frostball that deals damage and slows enemies in area if it hits a target.",
+      "skill_two": "Summon a small ice meteor from the sky that deals damage and slows enemies in area.",
+      "skill_three": "Freeze yourself but restore health overtime.",
+      "skill_passive": "Every time you cast a spell gain a ice spirit stack. If you have 4 stacks your next skill that deals damage to targets will also freeze them.",
+      "skill_ultimate": "Summon a blizzard that deals damage to nearby enemies and slows them every second."
     },
     "monk": {
-      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
-      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
+      "intro": "Monk is a tier 2 class in Guardians of Adelia.",
+      "playstyle": "With their special weapon Spears, Monks can put up a fight from any distance.",
       "skill_one": "Deal damage to targets in cube area.",
       "skill_two": "Shoot a flame-burst that launches a target into the sky.",
       "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
@@ -63,7 +63,7 @@
       "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
     },
     "paladin": {
-      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
+      "intro": "Paladin is a tier 2 class in Guardians of Adelia.",
       "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
       "skill_one": "Deal damage to targets in cube area.",
       "skill_two": "Shoot a flame-burst that launches a target into the sky.",

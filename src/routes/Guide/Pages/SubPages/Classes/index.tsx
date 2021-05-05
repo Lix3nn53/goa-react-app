@@ -5,6 +5,11 @@ import GuideCommon from '../../GuideCommon';
 
 // Tier 2
 import Archer from './List/Tier2/Archer';
+import FireMage from './List/Tier2/Fire Mage';
+import FrostMage from './List/Tier2/Frost Mage';
+import Hunter from './List/Tier2/Hunter';
+import Monk from './List/Tier2/Monk';
+import Paladin from './List/Tier2/Paladin';
 
 // Tier 3
 import DoomKnight from './List/Tier3/Doom Knight';
@@ -41,27 +46,27 @@ export default [
       {
         name: 'Hunter',
         id: 'hunter',
-        component: Dragonslayer,
+        component: Hunter,
       },
       {
         name: 'Fire Mage',
         id: 'fire_mage',
-        component: Dragonslayer,
+        component: FireMage,
       },
       {
         name: 'Frost Mage',
         id: 'frost_mage',
-        component: Dragonslayer,
+        component: FrostMage,
       },
       {
         name: 'Monk',
         id: 'monk',
-        component: Dragonslayer,
+        component: Monk,
       },
       {
         name: 'Paladin',
         id: 'paladin',
-        component: Dragonslayer,
+        component: Paladin,
       },
     ],
   },
