@@ -1,8 +1,8 @@
 {
-  "main": "Main Element",
-  "fire": "🔥 Fire",
-  "water": "🌊 Water",
-  "earth": "◎ Earth",
-  "air": "๑ Air",
-  "lightning": "⚡ Lightning"
+  "main": "Ana Element",
+  "fire": "🔥 Ateş",
+  "water": "🌊 Su",
+  "earth": "◎ Toprak",
+  "air": "๑ Hava",
+  "lightning": "⚡ Elektrik"
 }
