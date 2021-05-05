@@ -7,9 +7,11 @@ import GuideCommon from '../../GuideCommon';
 import Archer from './List/Tier2/Archer';
 
 // Tier 3
+import DoomKnight from './List/Tier3/Doom Knight';
 import Dragonslayer from './List/Tier3/Dragonslayer';
 import Necromancer from './List/Tier3/Necromancer';
 import Reaper from './List/Tier3/Reaper';
+import Shaman from './List/Tier3/Shaman';
 
 export default [
   {
@@ -84,7 +86,7 @@ export default [
       {
         name: 'Shaman',
         id: 'shaman',
-        component: Dragonslayer,
+        component: Shaman,
       },
       {
         name: 'Reaper',
@@ -99,7 +101,7 @@ export default [
       {
         name: 'Doom Knight',
         id: 'doom_knight',
-        component: Dragonslayer,
+        component: DoomKnight,
       },
     ],
   },

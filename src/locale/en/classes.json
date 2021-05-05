@@ -84,13 +84,13 @@
       "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
     },
     "doom_knight": {
-      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
-      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
-      "skill_one": "Deal damage to targets in cube area.",
-      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
-      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
-      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
-      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+      "intro": "Doom Knight is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Doom Knight has high defense but lacks ranged and mobility skills. ",
+      "skill_one": "Deal damage to enemies in front of you, cone area.",
+      "skill_two": "Shoot a projectile that pulls the target to you. If target gets close enough to you, also launch target upwards.",
+      "skill_three": "Start flying very slowly and gain fall damage resistance. When you land to the ground, deal damage to nearby enemies and stun them.",
+      "skill_passive": "When you deal damage with normal attack gain a darkness stack. If you have more than 4 stacks, you will gain have area that deals damage to nearby enemies every second. You can gain up to 10 darkness stacks. You will lose darkness seconds overtime.",
+      "skill_ultimate": "Spawn a darkhole that pulls the targets in area to the center."
     },
     "engineer": {
       "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
@@ -120,13 +120,13 @@
       "skill_ultimate": "Stun yourself and a single enemy. After the duration of stun end, deal damage to enemy. Consumes souls to increase damage."
     },
     "shaman": {
-      "intro": "Dragonslayer is a tier 3 class in Guardians of Adelia.",
-      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
-      "skill_one": "Deal damage to targets in cube area.",
-      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
-      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
-      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
-      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+      "intro": "Shaman is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Shaman must play around his/her Totem skill. Every other skill requires an active Totem.",
+      "skill_one": "Spawn a totem.",
+      "skill_two": "Create a storm around your totem that deals damage to nearby enemies every 2 seconds.",
+      "skill_three": "Transform enemies nearby your totem to sheeps.",
+      "skill_passive": "Each time you spawn a new totem, it will create an aura which heals nearby allies every 2 seconds.",
+      "skill_ultimate": "Push your totem if it is nearby. After a small delay push yourself and enemies around you to your totem."
     }
   }
 }

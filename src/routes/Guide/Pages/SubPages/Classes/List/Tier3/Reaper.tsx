@@ -24,6 +24,7 @@ export default (
         element="element.lightning"
         weapons={['Dagger', 'Sword']}
         armors={['Feather', 'Light', 'Cloth']}
+        offhand={['Dagger']}
         damage={10}
         defense={6}
         health={8}

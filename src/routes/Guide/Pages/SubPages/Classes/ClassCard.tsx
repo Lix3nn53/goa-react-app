@@ -11,6 +11,7 @@ export type Props = JSX.IntrinsicElements['div'] & {
   element: string;
   weapons: Array<string>;
   armors: Array<string>;
+  offhand?: Array<string>;
   damage: number;
   defense: number;
   health: number;
@@ -24,6 +25,7 @@ const ClassCard: FunctionComponent<Props> = ({
   element,
   weapons,
   armors,
+  offhand,
   damage,
   defense,
   health,
@@ -51,6 +53,24 @@ const ClassCard: FunctionComponent<Props> = ({
     return list;
   };
 
+  const renderOffhandTitle = () => {
+    if (!offhand) return [];
+
+    return <h3 style={{ textAlign: 'center' }}>{t('item.offhand')}</h3>;
+  };
+
+  const renderOffhand = () => {
+    if (!offhand) return [];
+
+    const list: Array<ReactNode> = [];
+
+    offhand.forEach((str) => {
+      list.push([<span style={{ fontWeight: 'bold' }}>{str}</span>]);
+    });
+
+    return list;
+  };
+
   return (
     <Card header={<h2>{name}</h2>}>
       <img
@@ -70,6 +90,9 @@ const ClassCard: FunctionComponent<Props> = ({
       <Table cells={[renderWeapons()]} />
       <h3 style={{ textAlign: 'center' }}>{t('item.armors')}</h3>
       <Table cells={[renderArmors()]} />
+      {renderOffhandTitle()}
+      <Table cells={[renderOffhand()]} />
+
       <h3 style={{ textAlign: 'center' }}>Attributes</h3>
       <Table
         cells={[
