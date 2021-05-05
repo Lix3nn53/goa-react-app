@@ -1,5 +1,11 @@
 {
-  "intro": {},
+  "guide": {
+    "p0": "In Guardians of Adelia classes determine your playstyle. You do not need to change your character to change your class. There are lots of classes you can select but you have to unlock them first.",
+    "h1": "Changing your class from Menu",
+    "p1": "You can open menu by clicking the Menu Book in your inventory. (Open your inventory with E key) At the menu click Character and then Class. Here you can select from tier 1, 2 or 3. And finally select the class you want.",
+    "h2": "Unlocking classes",
+    "p2": "TODO"
+  },
   "tier": "Class Tier",
   "playstyle": "Playstyle",
   "skills": "Skills",

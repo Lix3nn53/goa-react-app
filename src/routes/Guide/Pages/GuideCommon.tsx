@@ -25,7 +25,7 @@ const GuideCommon: FunctionComponent<Props> = ({ headers, paragraphs }) => {
         const paragraph = paragraphs[i + 1];
         list.push(
           <div>
-            <h3>{t(header)}</h3>
+            <h2>{t(header)}</h2>
             <p>{t(paragraph)}</p>
           </div>,
         );

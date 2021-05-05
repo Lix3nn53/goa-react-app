@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Gallery from '../../../components/Gallery';
+
 import GuidePage from './GuidePageComponent';
 import GuideCommon from './GuideCommon';
 
@@ -21,7 +23,39 @@ export default [
     subroute: Classes,
     component: (
       <GuidePage>
-        <GuideCommon paragraphs={['classes.tier1.description']} />
+        <GuideCommon
+          paragraphs={['classes.guide.p0', 'classes.guide.p1']}
+          headers={['classes.guide.h1']}
+        />
+        <Gallery
+          pictures={[
+            {
+              src:
+                'https://cdn.discordapp.com/attachments/689660026423345188/839467612349005844/unknown.png',
+              name: 'Step 1: Open the Menu',
+              description: 'Step 1: Open the Menu',
+            },
+            {
+              src:
+                'https://cdn.discordapp.com/attachments/689660026423345188/839470177640906782/unknown.png',
+              name: 'Step 2: Click on Character',
+              description: 'Step 2: Click on Character',
+            },
+            {
+              src:
+                'https://cdn.discordapp.com/attachments/689660026423345188/839467838255267890/unknown.png',
+              name: 'Step 3: Click on Class',
+              description: 'Step 3: Click on Class',
+            },
+            {
+              src:
+                'https://cdn.discordapp.com/attachments/689660026423345188/839467967615074304/unknown.png',
+              name: 'Step 4: Select Class Tier',
+              description: 'Step 4: Select Class Tier',
+            },
+          ]}
+        />
+        <GuideCommon paragraphs={['', 'classes.guide.p2']} headers={['classes.guide.h2']} />
       </GuidePage>
     ),
   },
