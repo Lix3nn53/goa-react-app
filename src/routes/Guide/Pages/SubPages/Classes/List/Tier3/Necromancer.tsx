@@ -48,6 +48,7 @@ export default (
         />
       }
     />
+    <h2>Gallery</h2>
     <Gallery
       pictures={[
         {

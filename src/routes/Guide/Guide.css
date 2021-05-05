@@ -5,7 +5,7 @@
   overflow-y: scroll;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .guide .sub-list {
     max-height: 700px;
   }
@@ -38,7 +38,18 @@ CSS Grid layout for wider screens, when browser supports grid:
     grid-area: guide-subroute-subroute;
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1000px) {
+    .guide .subrouter {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'guide-guide guide-subroute';
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
     .guide .subrouter {
       display: grid;
       grid-template-columns: 1fr 1fr 4fr 1fr;

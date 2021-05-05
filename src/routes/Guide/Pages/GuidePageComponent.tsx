@@ -12,9 +12,9 @@ const GuidePageComponent: FunctionComponent<Props> = ({ children, right }) => {
   };
 
   return (
-    <div className="guide-page flex-container">
-      <div style={{ flex: '2' }}>{children}</div>
+    <div className="guide-page flex-container row-reverse">
       {renderCard()}
+      <div style={{ flex: '2' }}>{children}</div>
     </div>
   );
 };

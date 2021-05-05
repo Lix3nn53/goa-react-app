@@ -38,7 +38,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     display: none;
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1000px) {
     .home .main .sidebar {
       display: block;
     }

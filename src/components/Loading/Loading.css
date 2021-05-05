@@ -5,12 +5,6 @@
   margin: 48px auto 48px;
 }
 
-@media screen and (max-width: 800px) {
-  .loader-bars {
-    flex-direction: row !important;
-  }
-}
-
 @keyframes loader-bars {
   0% {
     transform: scaleY(0.2);
