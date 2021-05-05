@@ -18,7 +18,7 @@ export default (
       <ClassCard
         name="Paladin"
         icon={icon}
-        classTier={3}
+        classTier={2}
         element="element.air"
         weapons={['War Hammer', 'Great Sword', 'Sword']}
         armors={['Heavy', 'Plate', 'Light']}

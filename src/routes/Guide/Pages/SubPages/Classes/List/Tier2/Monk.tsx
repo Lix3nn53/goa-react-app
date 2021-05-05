@@ -20,7 +20,7 @@ export default (
       <ClassCard
         name="Monk"
         icon={icon}
-        classTier={3}
+        classTier={2}
         element="element.air"
         weapons={['Spear', 'Great Sword', 'Sword']}
         armors={['Plate', 'Feather', 'Light']}

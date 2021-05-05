@@ -20,7 +20,7 @@ export default (
       <ClassCard
         name="Hunter"
         icon={icon}
-        classTier={3}
+        classTier={2}
         element="element.earth"
         weapons={['Crossbow', 'Bow', 'Dagger']}
         armors={['Light', 'Feather', 'Cloth']}

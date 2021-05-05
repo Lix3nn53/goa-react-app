@@ -18,7 +18,7 @@ export default (
       <ClassCard
         name="Fire Mage"
         icon={icon}
-        classTier={3}
+        classTier={2}
         element="element.fire"
         weapons={['Wand', 'Staff', 'Dagger']}
         armors={['Cloth', 'Feather', 'Light']}

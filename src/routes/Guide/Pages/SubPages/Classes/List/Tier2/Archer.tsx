@@ -18,7 +18,7 @@ export default (
       <ClassCard
         name="Archer"
         icon={icon}
-        classTier={3}
+        classTier={2}
         element="element.air"
         weapons={['Bow', 'Crossbow', 'Dagger']}
         armors={['Light', 'Feather', 'Cloth']}

@@ -20,7 +20,7 @@ export default (
       <ClassCard
         name="Frost Mage"
         icon={icon}
-        classTier={3}
+        classTier={2}
         element="element.air"
         weapons={['Wand', 'Staff', 'Dagger']}
         armors={['Cloth', 'Feather', 'Light']}
