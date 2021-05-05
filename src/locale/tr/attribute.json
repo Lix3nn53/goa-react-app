@@ -1,9 +1,9 @@
 {
-  "health": "Health",
+  "health": "Can",
   "mana": "Mana",
-  "damage": "Damage",
-  "defense": "Defense",
-  "crit_chance": "Critical Chance",
-  "crit_damage": "Critical Damage",
-  "ability_haste": "Ability Haste"
+  "damage": "Hasar",
+  "defense": "Defans",
+  "crit_chance": "Kritik Şansı",
+  "crit_damage": "Kritik Hasarı",
+  "ability_haste": "Yetenek Hızı"
 }
