@@ -115,3 +115,7 @@
 .modal .modal-top {
   min-height: 75vh;
 }
+
+.modal .modal-top img {
+  margin: auto;
+}
