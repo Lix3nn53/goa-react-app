@@ -4,7 +4,7 @@
     "h1": "Menüden sınıf değiştirme",
     "p1": "Envanterindeki menü kitabına tıklayarak menüyü açabilirsin. (Envanterini E tuşuna basarak aç) Menüden karakter ve sınıfı seçin. Buradan 1,2 ve 3. Kademe sınıflar arasından istediğini seçebilirsin.",
     "h2": "Sınıfların Kilidini açma",
-    "p2": "TODO"
+    "p2": "Yapılacaklar"
   },
   "tier": "Sınıf kademesi",
   "playstyle": "Oynanış tarzı",
@@ -60,7 +60,7 @@
       "skill_ultimate": "Bir fırtına yaratırsın ve alan içindeki düşmanlara zamanla hasar alır ve yavaşlar."
     },
     "monk": {
-      "intro": "Leşiş Adelianın Koruyucularında 2. Kademe bir sınıftır.",
+      "intro": "Keşiş Adelianın Koruyucularında 2. Kademe bir sınıftır.",
       "playstyle": "Özel silahı olan mızrak ile keşiş mesafe fark etmeksizin savaş başlatabilir",
       "skill_one": "1 saniye içinde 5 yumruk savurur. Son yumruk hedefi geri savurur.",
       "skill_two": "Yana doğru atılır. Ne tarafa atılacağın yeteneği her kullanışında değişebilir.",
