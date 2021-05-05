@@ -1,0 +1,9 @@
+{
+  "health": "Health",
+  "mana": "Mana",
+  "damage": "Damage",
+  "defense": "Defense",
+  "crit_chance": "Critical Chance",
+  "crit_damage": "Critical Damage",
+  "ability_haste": "Ability Haste"
+}

@@ -1,4 +1,8 @@
 {
-  "main": "Ana Element",
-  "fire": "🔥 Ateş"
+  "main": "Main Element",
+  "fire": "🔥 Fire",
+  "water": "🌊 Water",
+  "earth": "◎ Earth",
+  "air": "๑ Air",
+  "lightning": "⚡ Lightning"
 }
