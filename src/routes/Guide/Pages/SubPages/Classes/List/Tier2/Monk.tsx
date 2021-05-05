@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Gallery from '../../../../../../../components/Gallery';
+
 import GuidePage from '../../../../GuidePageComponent';
 import ClassCard from '../../ClassCard';
 import ClassBody from '../../ClassBody';
@@ -45,6 +47,23 @@ export default (
           ]}
         />
       }
+    />
+    <h2>Gallery</h2>
+    <Gallery
+      pictures={[
+        {
+          src:
+            'https://cdn.discordapp.com/attachments/689660026423345188/839450168684445736/unknown.png',
+          name: 'Serenity',
+          description: 'Player during Serenity',
+        },
+        {
+          src:
+            'https://cdn.discordapp.com/attachments/689660026423345188/839450395067285534/unknown.png',
+          name: 'Aqua Prison',
+          description: 'A test monster in Aqua Prison',
+        },
+      ]}
     />
   </GuidePage>
 );

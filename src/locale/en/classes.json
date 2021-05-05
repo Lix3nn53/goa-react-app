@@ -56,20 +56,20 @@
     "monk": {
       "intro": "Monk is a tier 2 class in Guardians of Adelia.",
       "playstyle": "With their special weapon Spears, Monks can put up a fight from any distance.",
-      "skill_one": "Deal damage to targets in cube area.",
-      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
-      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
-      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
-      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+      "skill_one": "Throw 5 punches in a second. The last punch also pushes the target away.",
+      "skill_two": "Jump back towards a side. Which side you will jump to changes each cast.",
+      "skill_three": "Stun yourself but heal yourself and nearby allies overtime.",
+      "skill_passive": "Dealing damage with melee attack after dealing damage with ranged attack will stun the target.",
+      "skill_ultimate": "Imprison nearby enemies in water bubble. Enemies in bubble are stunned and goes up into the sky slowly."
     },
     "paladin": {
       "intro": "Paladin is a tier 2 class in Guardians of Adelia.",
-      "playstyle": "Dragonslayer's skills and passive focuses around hitting multiple enemies at once. So bring monsters together and crush them all at once!",
-      "skill_one": "Deal damage to targets in cube area.",
-      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
-      "skill_three": "Cover yourself with flames and start charging. Deal damage and push enemies got close to you.",
-      "skill_passive": "If your area of target skills hit 3 or more targets at a time heal yourself.",
-      "skill_ultimate": "Launch youreself into the air. When you land deal massive damage to nearby enemies."
+      "playstyle": "Paladin's skills focuses on protecting and buffing his/her allies.",
+      "skill_one": "Deal damage to targets in front of you and push them away.",
+      "skill_two": "Give barrier to yourself and nearby allies. A stack of barrier absorbs a damage completely.",
+      "skill_three": "Give bonus movement speed to yourself and nearby allies.",
+      "skill_passive": "After taking damage, if you have less health than 20% of your maximum health: You will get stunned and start flying like an angel. While flying heal yourself overtime and don't take fall damage on land.",
+      "skill_ultimate": "Spawn a victory flag which gives damage buff to nearby allies."
     }
   },
   "tier3": {

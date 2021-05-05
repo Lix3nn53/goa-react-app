@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Gallery from '../../../../../../../components/Gallery';
+
 import GuidePage from '../../../../GuidePageComponent';
 import ClassCard from '../../ClassCard';
 import ClassBody from '../../ClassBody';
@@ -45,6 +47,17 @@ export default (
           ]}
         />
       }
+    />
+    <h2>Gallery</h2>
+    <Gallery
+      pictures={[
+        {
+          src:
+            'https://cdn.discordapp.com/attachments/689660026423345188/795582339786473472/unknown.png',
+          name: 'A Frozen enemy',
+          description: 'A Frozen enemy',
+        },
+      ]}
     />
   </GuidePage>
 );
