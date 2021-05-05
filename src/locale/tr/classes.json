@@ -4,11 +4,11 @@
     "h1": "Changing your class from Menu",
     "p1": "You can open menu by clicking the Menu Book in your inventory. (Open your inventory with E key) At the menu click Character and then Class. Here you can select from tier 1, 2 or 3. And finally select the class you want.",
     "h2": "Unlocking classes",
-    "p2": "TODO"
+    "p2": "YAPILACAK"
   },
-  "tier": "Class Tier",
-  "playstyle": "Playstyle",
-  "skills": "Skills",
+  "tier": "Sınıf Derecesi",
+  "playstyle": "Oynayış Tarzı",
+  "skills": "Yetenekler",
   "tier1": {
     "description": "Tier 1 classes are the weakest in Guardians of Adelia.",
     "dragonslayer": {
