@@ -23,14 +23,14 @@
   },
   "tier2": {
     "description": "Tier 2 classes are avarage in terms of total power.",
-    "archer": {
-      "intro": "Archer is a tier 2 class in Guardians of Adelia.",
-      "playstyle": "Archer's deal avarage damage but have lots of mobility skills. The best class to utilize hit-and-run strategy.",
-      "skill_one": "Shoot an arrow that poisons target.",
-      "skill_two": "Gain movement speed.",
-      "skill_three": "Jump backwards into the sky and gain resistance to fall damage.",
-      "skill_passive": "Your every 2nd successful projectile hit gives you bonus critical chance. (This can exceed the critical chance cap)",
-      "skill_ultimate": "Reveal an area with a flurry of arrows, dealing waves of damage to opponents."
+    "Okçu": {
+      "intro": "Okçu, Guardians of Adelia'da 2. kademe bir sınıftır.",
+      "playstyle": "Okçu'nun ortalama bir hasarı vardır ancak birçok hareket becerisine sahiptir. Vur-Kaç taktiğini kullanmak için en iyi sınıftır.",
+      "skill_one": "Hedefi zehirleyen bir ok atar.",
+      "skill_two": "Hareket hızı kazandırır.",
+      "skill_three": "Oyuncuyu Havaya doğru geri bir şekilde kendini fırlatır ve düşme hasarına karşı direnç kazandırır.",
+      "skill_passive": "Her isabetli 2. okun vuruşu oyuncuya bonus kritik şansı verir (Bu kritik şans sınırını aşabilir).",
+      "skill_ultimate": "Rakiplere dalgalar halinde hasar veren bir ok yağmuru yağdırır."
     },
     "hunter": {
       "intro": "Hunter is a tier 2 class in Guardians of Adelia.",
