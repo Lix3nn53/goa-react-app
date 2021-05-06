@@ -1,0 +1,9 @@
+{
+  "guide": {
+    "p0": "Skills play huge role in your playstyle and changes according to your class. Each class has 3 active, 1 passive and 1 ultimate skill.",
+    "h1": "Skill Bar",
+    "p1": "First 4 slots of default minecraft hot bar are reserved for skills. Each class has 5 skills but 1 of them is passive so you see 3 active and 1 ultimate skill on your hotbar. Press 1-2-3-4 keys to cast skills. You can see the cooldown after casting a skill.",
+    "h2": "Unlocking Skills",
+    "p2": "You can open menu by clicking the Menu Book in your inventory. (Open your inventory with E key) At the menu click Character and then Skills. Here you can see your available skill point on GUI Name. Left Click on a skill to spend points on it or Right Click to take your points back."
+  }
+}

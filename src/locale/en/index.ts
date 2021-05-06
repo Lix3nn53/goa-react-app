@@ -4,6 +4,7 @@ import attribute from './attribute.json';
 import classes from './classes.json';
 import element from './element.json';
 import item from './item.json';
+import skills from './skills.json';
 
 export default {
   translation: {
@@ -12,5 +13,6 @@ export default {
     classes,
     element,
     item,
+    skills,
   },
 };
