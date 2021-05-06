@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import Data from '../Pages/Pages';
 
@@ -10,6 +11,7 @@ interface RouteParams {
 
 const GuideSubrouteSubroute: FunctionComponent = () => {
   const { subId0, subId1 } = useParams<RouteParams>();
+  const { t } = useTranslation();
 
   // console.log(subId0, subId1);
 
@@ -25,7 +27,7 @@ const GuideSubrouteSubroute: FunctionComponent = () => {
 
   return (
     <div className="guideSubroute">
-      <h1>{subTopic.name}</h1>
+      <h1>{t(subTopic.name)}</h1>
       {renderComponent()}
     </div>
   );

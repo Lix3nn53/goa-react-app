@@ -29,6 +29,13 @@ header a {
   margin-right: 9px;
 }
 
+header .Link {
+  padding-top: 4px;
+  padding-right: 15px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+}
+
 /*--------------------------------------------------------------
 CSS Flexbox layout for wider screens, when browser supports flexbox:
 --------------------------------------------------------------*/

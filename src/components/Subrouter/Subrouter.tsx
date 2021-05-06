@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from 'react';
 import { Link, Route, useRouteMatch, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import './Subrouter.css';
 
@@ -17,6 +18,7 @@ export type Props = JSX.IntrinsicElements['div'] & {
 const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
   const { url, path } = useRouteMatch();
   const { pathname } = useLocation();
+  const { t } = useTranslation();
 
   const lastPath = pathname.substring(pathname.lastIndexOf('/') + 1);
 
@@ -31,7 +33,7 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
         return (
           <li className="has-subroute" id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
             <Link className={active} to={`${url}${basePath}/${id}`}>
-              {name}
+              {t(name)}
             </Link>
 
             <ul
@@ -48,7 +50,7 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
       return (
         <li className="no-subroute" id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
           <Link className={active} to={`${url}${basePath}/${id}`}>
-            {name}
+            {t(name)}
           </Link>
         </li>
       );

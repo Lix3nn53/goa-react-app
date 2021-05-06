@@ -1,159 +1,73 @@
 import React from 'react';
 
-import Gallery from '../../../components/Gallery';
-
-import GuidePage from './GuidePageComponent';
-import GuideCommon from './GuideCommon';
-
+import Introduction from './SubPages/Introduction';
+import ClassesIntro from './SubPages/Classes/Intro';
 import Classes from './SubPages/Classes/index';
+import Skills from './SubPages/Skills';
 
 export default [
   {
-    name: 'Introduction',
+    name: 'guide.introduction.subject',
     id: 'introduction',
-    component: <GuidePage />,
+    component: <Introduction />,
   },
   {
-    name: 'How to play?',
+    name: 'guide.how-to-play.subject',
     id: 'how-to-play',
   },
   {
-    name: 'Classes',
+    name: 'guide.classes.subject',
     id: 'classes',
     subroute: Classes,
-    component: (
-      <GuidePage>
-        <GuideCommon
-          paragraphs={['classes.guide.p0', 'classes.guide.p1']}
-          headers={['classes.guide.h1']}
-        />
-        <Gallery
-          pictures={[
-            {
-              src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/839467612349005844/unknown.png',
-              name: 'Step 1: Open the Menu',
-              description: 'Step 1: Open the Menu',
-            },
-            {
-              src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/839470177640906782/unknown.png',
-              name: 'Step 2: Click on Character',
-              description: 'Step 2: Click on Character',
-            },
-            {
-              src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/839467838255267890/unknown.png',
-              name: 'Step 3: Click on Class',
-              description: 'Step 3: Click on Class',
-            },
-            {
-              src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/839467967615074304/unknown.png',
-              name: 'Step 4: Select Class Tier',
-              description: 'Step 4: Select Class Tier',
-            },
-          ]}
-        />
-        <GuideCommon paragraphs={['', 'classes.guide.p2']} headers={['classes.guide.h2']} />
-      </GuidePage>
-    ),
+    component: <ClassesIntro />,
   },
   {
-    name: 'Skills',
+    name: 'guide.skills.subject',
     id: 'skills',
-    component: (
-      <GuidePage>
-        <GuideCommon
-          paragraphs={['skills.guide.p0', 'skills.guide.p1', 'skills.guide.p2']}
-          headers={['skills.guide.h1', 'skills.guide.h2']}
-        />
-        <Gallery
-          pictures={[
-            {
-              src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/839467612349005844/unknown.png',
-              name: 'Step 1: Open the Menu',
-              description: 'Step 1: Open the Menu',
-            },
-            {
-              src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/839470177640906782/unknown.png',
-              name: 'Step 2: Click on Character',
-              description: 'Step 2: Click on Character',
-            },
-            {
-              src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/839542494177656862/unknown.png',
-              name: 'Step 3: Click on Skills',
-              description: 'Step 3: Click on Skills',
-            },
-            {
-              src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/839542615639851028/unknown.png',
-              name: 'Step 4: Spend your skill points',
-              description: 'Step 4: Spend your skill points',
-            },
-          ]}
-        />
-      </GuidePage>
-    ),
+    component: <Skills />,
   },
   {
-    name: 'Attributes',
+    name: 'guide.attributes.subject',
     id: 'attributes',
-    component: <GuidePage>Attr test</GuidePage>,
   },
   {
-    name: 'Pets',
-    id: 'pets',
-  },
-  {
-    name: 'Quests',
-    id: 'quests',
-  },
-  {
-    name: 'RPG Inventory',
-    id: 'rpg-inventory',
-  },
-  {
-    name: 'Economy',
-    id: 'economy',
-  },
-  {
-    name: 'Dungeons',
-    id: 'dungeons',
-  },
-  {
-    name: 'Social',
-    id: 'social',
-  },
-  {
-    name: 'Crafting',
-    id: 'crafting',
-  },
-  {
-    name: 'Revive',
-    id: 'revive',
-  },
-  {
-    name: 'Items',
+    name: 'guide.items.subject',
     id: 'items',
   },
   {
-    name: 'Skills3',
-    id: 'skills11',
+    name: 'guide.quests.subject',
+    id: 'quests',
   },
   {
-    name: 'Skills3',
-    id: 'skills12',
+    name: 'guide.rpg-inventory.subject',
+    id: 'rpg-inventory',
   },
   {
-    name: 'Skills3',
-    id: 'skills13',
+    name: 'guide.monsters.subject',
+    id: 'monsters',
   },
   {
-    name: 'Skills3',
-    id: 'skills14',
+    name: 'guide.dungeons.subject',
+    id: 'dungeons',
+  },
+  {
+    name: 'guide.crafting.subject',
+    id: 'crafting',
+  },
+  {
+    name: 'guide.economy.subject',
+    id: 'economy',
+  },
+  {
+    name: 'guide.pets.subject',
+    id: 'pets',
+  },
+  {
+    name: 'guide.social.subject',
+    id: 'social',
+  },
+  {
+    name: 'guide.revive.subject',
+    id: 'revive',
   },
 ];
