@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Introduction from './SubPages/Introduction';
+import HowToPlay from './SubPages/HowToPlay';
 import ClassesIntro from './SubPages/Classes/Intro';
 import Classes from './SubPages/Classes/index';
 import Skills from './SubPages/Skills';
@@ -14,6 +15,7 @@ export default [
   {
     name: 'guide.how-to-play.subject',
     id: 'how-to-play',
+    component: <HowToPlay />,
   },
   {
     name: 'guide.classes.subject',
