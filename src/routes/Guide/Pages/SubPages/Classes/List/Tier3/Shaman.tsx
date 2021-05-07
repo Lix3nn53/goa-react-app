@@ -21,7 +21,7 @@ const Shaman: FunctionComponent = () => {
           name="Shaman"
           icon={icon}
           classTier={3}
-          element="element.earth"
+          element="element.water"
           weapons={['Staff', 'Wand', 'Dagger']}
           armors={['Cloth', 'Feather', 'Light']}
           damage={10}

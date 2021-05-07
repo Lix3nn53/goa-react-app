@@ -6,3 +6,8 @@
 .skills p {
   padding-left: 20px;
 }
+
+.skills img {
+  border: solid 2px var(--color-text-dark);
+  border-radius: 9px;
+}

@@ -21,7 +21,7 @@ const FrostMage: FunctionComponent = () => {
           name="Frost Mage"
           icon={icon}
           classTier={2}
-          element="element.air"
+          element="element.water"
           weapons={['Wand', 'Staff', 'Dagger']}
           armors={['Cloth', 'Feather', 'Light']}
           damage={10}

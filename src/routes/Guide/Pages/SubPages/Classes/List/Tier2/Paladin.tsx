@@ -19,7 +19,7 @@ const Paladin: FunctionComponent = () => {
           name="Paladin"
           icon={icon}
           classTier={2}
-          element="element.air"
+          element="element.earth"
           weapons={['War Hammer', 'Great Sword', 'Sword']}
           armors={['Heavy', 'Plate', 'Light']}
           offhand={['Shield']}

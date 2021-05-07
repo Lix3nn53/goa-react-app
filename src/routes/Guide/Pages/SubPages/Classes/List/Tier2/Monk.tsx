@@ -21,7 +21,7 @@ const Monk: FunctionComponent = () => {
           name="Monk"
           icon={icon}
           classTier={2}
-          element="element.air"
+          element="element.water"
           weapons={['Spear', 'Great Sword', 'Sword']}
           armors={['Plate', 'Feather', 'Light']}
           damage={10}
