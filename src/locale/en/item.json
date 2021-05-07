@@ -1,5 +1,109 @@
 {
   "weapons": "Weapons",
   "armors": "Armors",
-  "offhand": "Offhand"
+  "offhand": "Offhand",
+  "guide": {
+    "p0": "Items section focuses on equipments. Equipments have the biggest impact on your character's attributes and elements.",
+    "h1": "Item Models",
+    "p1": "Each weapon has custom 3D model. You can see some of them in 3D view on sketchfab: ",
+    "weapon": {
+      "p0": "Each class can use multiple weapon type.",
+      "h1": "Weapon Types",
+      "p1": "There are 10 weapon types in Guardians of Adelia.",
+      "type": "Weapon Type",
+      "speed": "Attack Speed",
+      "range": "Range",
+      "bonus": "Bonus effect",
+      "sword": {
+        "h": "Sword",
+        "damage": "Normal",
+        "type": "One Handed",
+        "speed": "Normal",
+        "range": "Melee",
+        "bonus": "-",
+        "crit_chance": "+7%"
+      },
+      "dagger": {
+        "h": "Dagger",
+        "damage": "Low",
+        "type": "One Handed",
+        "speed": "Fast",
+        "range": "Melee",
+        "bonus": "-",
+        "crit_chance": "+5%"
+      },
+      "battle_axe": {
+        "h": "Battle Axe",
+        "damage": "Very High",
+        "type": "One Handed",
+        "speed": "Slow",
+        "range": "Melee",
+        "bonus": "-",
+        "crit_chance": "+9%"
+      },
+      "war_hammer": {
+        "h": "War Hammer",
+        "damage": "Normal",
+        "type": "One Handed",
+        "speed": "Slow",
+        "range": "Melee",
+        "bonus": "Sweep Attack",
+        "crit_chance": "+9%"
+      },
+      "great_sword": {
+        "h": "Great Sword",
+        "damage": "High",
+        "type": "One Handed",
+        "speed": "Normal",
+        "range": "Melee",
+        "bonus": "-",
+        "crit_chance": "+7%"
+      },
+      "spear": {
+        "h": "Spear",
+        "damage": "Normal",
+        "type": "One Handed",
+        "speed": "Normal",
+        "range": "Hybrid",
+        "bonus": "-",
+        "crit_chance": "+7%"
+      },
+      "bow": {
+        "h": "Bow",
+        "damage": "Normal",
+        "type": "One Handed",
+        "speed": "Normal",
+        "range": "Ranged",
+        "bonus": "-",
+        "crit_chance": "+7%"
+      },
+      "crossbow": {
+        "h": "Crossbow",
+        "damage": "High",
+        "type": "One Handed",
+        "speed": "Slow",
+        "range": "Ranged",
+        "bonus": "-",
+        "crit_chance": "+9%"
+      },
+      "staff": {
+        "h": "Staff",
+        "damage": "Normal",
+        "type": "One Handed",
+        "speed": "Fast",
+        "range": "Magic",
+        "bonus": "Ability Haste: +20",
+        "crit_chance": "+5%"
+      },
+      "wand": {
+        "h": "Wand",
+        "damage": "Very High",
+        "type": "One Handed",
+        "speed": "Normal",
+        "range": "Magic",
+        "bonus": "-",
+        "crit_chance": "+7%"
+      }
+    }
+  }
 }

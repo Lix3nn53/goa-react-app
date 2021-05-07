@@ -4,6 +4,13 @@ table {
 
 td {
   padding: 5px 20px;
+  text-align: center;
+  border: solid 2px var(--color-base);
+}
+
+th {
+  padding: 24px 0;
+  background-color: var(--color-base-light);
 }
 
 tr:nth-child(odd) {
