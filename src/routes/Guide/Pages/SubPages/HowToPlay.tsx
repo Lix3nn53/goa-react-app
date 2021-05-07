@@ -29,7 +29,10 @@ const HowToPlay: FunctionComponent = () => {
             },
           ]}
         />
-        <h2>{t('guide.how-to-play.h1')}</h2>
+        <h2>
+          <span>{t('guide.how-to-play.h1')}</span>
+        </h2>
+
         <ol>
           <li>{t('guide.how-to-play.p1.step1')}</li>
           <li>{t('guide.how-to-play.p1.step2')}</li>

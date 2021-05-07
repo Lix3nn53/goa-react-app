@@ -10,9 +10,13 @@ const Skills: FunctionComponent = () => {
     <div className="guide-page flex-container row-reverse">
       <div style={{ flex: '2' }}>
         <p>{t('skills.guide.p0')}</p>
-        <h2>{t('skills.guide.h1')}</h2>
+        <h2>
+          <span>{t('skills.guide.h1')}</span>
+        </h2>
         <p>{t('skills.guide.p1')}</p>
-        <h2>{t('skills.guide.h2')}</h2>
+        <h2>
+          <span>{t('skills.guide.h2')}</span>
+        </h2>
         <p>{t('skills.guide.p2')}</p>
         <Gallery
           pictures={[

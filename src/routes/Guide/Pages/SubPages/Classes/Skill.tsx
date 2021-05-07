@@ -1,8 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import './Skill.css';
-
 export type Props = JSX.IntrinsicElements['div'] & {
   icons: Array<string>;
   names: Array<string>;

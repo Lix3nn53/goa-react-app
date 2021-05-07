@@ -11,7 +11,9 @@ const Skills: FunctionComponent = () => {
     <div className="guide-page flex-container row-reverse">
       <div style={{ flex: '2' }}>
         <p>{t('attribute.guide.p0')}</p>
-        <h2>{t('attribute.guide.h1')}</h2>
+        <h2>
+          <span>{t('attribute.guide.h1')}</span>
+        </h2>
         <Table
           style={{ padding: '20px 0' }}
           cells={[
@@ -45,7 +47,9 @@ const Skills: FunctionComponent = () => {
             ],
           ]}
         />
-        <h2>{t('attribute.guide.h2')}</h2>
+        <h2>
+          <span>{t('attribute.guide.h2')}</span>
+        </h2>
         <p>{t('attribute.guide.p2')}</p>
         <p>
           <span style={{ padding: '0 4px' }}>{t('element.fire')}</span>
@@ -54,12 +58,15 @@ const Skills: FunctionComponent = () => {
           <span style={{ padding: '0 4px' }}>{t('element.lightning')}</span>
           <span style={{ padding: '0 4px' }}>{t('element.air')}</span>
         </p>
-        <h2>{t('attribute.guide.h3')}</h2>
+        <h2>
+          <span>{t('attribute.guide.h3')}</span>
+        </h2>
         <p>
           {t('attribute.guide.p3.text1')}
           {t('element.fire')}
         </p>
         <Table
+          style={{ paddingBottom: '20px' }}
           cells={[
             [
               <span style={{ fontWeight: 'bold' }}>{t('attribute.guide.p3.text2.part1')}</span>,
@@ -79,6 +86,10 @@ const Skills: FunctionComponent = () => {
             ],
           ]}
         />
+        <h2>
+          <span>{t('attribute.guide.h4')}</span>
+        </h2>
+        <p>{t('attribute.guide.p4')}</p>
         <Gallery
           pictures={[
             {
