@@ -96,9 +96,11 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
 
   return (
     <div className={classNames} style={style}>
+      <div className="filler-1" />
       <ul className="sub-list">{formLinks('', routes)}</ul>
 
       {formRoutes()}
+      <div className="filler-2" />
     </div>
   );
 };
