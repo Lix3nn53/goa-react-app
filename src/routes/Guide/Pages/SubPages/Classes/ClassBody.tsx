@@ -22,7 +22,7 @@ const ClassBody: FunctionComponent<Props> = ({ intro, playstyle, skillComponent 
       <h2>
         <span>{t('classes.skills')}</span>
       </h2>
-      <p>{skillComponent}</p>
+      {skillComponent}
     </div>
   );
 };

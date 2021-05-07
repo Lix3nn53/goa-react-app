@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from 'react';
 
 import './Table.css';
 
-export type Props = JSX.IntrinsicElements['div'] & {
+export type Props = JSX.IntrinsicElements['table'] & {
   cells: Array<Array<ReactNode>>;
 };
 
@@ -13,12 +13,14 @@ const Table: FC<Props> = ({ className, children, style, cells }) => {
   const renderCells = () => {
     const list: Array<ReactNode> = [];
 
-    cells.forEach((lines) => {
+    cells.forEach((lines, index) => {
       const innerList: Array<ReactNode> = [];
-      lines.forEach((str) => {
-        innerList.push(<td>{str}</td>);
+      lines.forEach((str, indexInner) => {
+        /* eslint-disable-next-line react/no-array-index-key */
+        innerList.push(<td key={`td${indexInner}`}>{str}</td>);
       });
-      list.push(<tr>{innerList}</tr>);
+      /* eslint-disable-next-line react/no-array-index-key */
+      list.push(<tr key={`tr${index}`}>{innerList}</tr>);
     });
 
     return list;
@@ -26,8 +28,10 @@ const Table: FC<Props> = ({ className, children, style, cells }) => {
 
   return (
     <table className={classNames} style={style}>
-      {renderCells()}
-      {children}
+      <tbody>
+        {renderCells()}
+        {children}
+      </tbody>
     </table>
   );
 };

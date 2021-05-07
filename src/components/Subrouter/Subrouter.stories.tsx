@@ -28,7 +28,7 @@ const Subcomponent: FunctionComponent = () => {
   return <div>Subcomponent</div>;
 };
 
-export const SwitchStory: Story<Props> = ({ id, routes }) => {
+export const SwitchStory: Story<Props> = ({ id, routes, deep }) => {
   return (
     <Subrouter
       routes={[
@@ -36,6 +36,7 @@ export const SwitchStory: Story<Props> = ({ id, routes }) => {
         { name: 'Two', id: 'two' },
       ]}
       subcomponents={[Subcomponent]}
+      deep={3}
     >
       Subrouter
     </Subrouter>

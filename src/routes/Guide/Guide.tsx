@@ -19,6 +19,7 @@ const Guide: FunctionComponent = () => {
           <GuideSubrouteSubroute />,
           <GuideSubrouteSubrouteSubroute />,
         ]}
+        deep={3}
       >
         <div className="filler-1" />
         <div className="filler-2" />

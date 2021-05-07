@@ -4,18 +4,18 @@ import { useTranslation } from 'react-i18next';
 
 import Data from '../Pages/Pages';
 
-export type Subroute = {
-  name: string;
-  id: string;
-  component?: ReactNode;
-  subroute?: Array<Subroute>;
-};
-
 interface RouteParams {
   subId0: string;
   subId1: string;
   subId2: string;
 }
+
+export type Pages = {
+  name: string;
+  id: string;
+  component?: ReactNode;
+  subroute?: Array<Pages>;
+};
 
 const GuideSubrouteSubroute: FunctionComponent = () => {
   const { subId0, subId1, subId2 } = useParams<RouteParams>();
@@ -23,9 +23,9 @@ const GuideSubrouteSubroute: FunctionComponent = () => {
 
   // console.log(subId0, subId1);
 
-  const topic = Data.find(({ id }) => id === subId0);
+  const topic: Pages | undefined = Data.find(({ id }) => id === subId0);
 
-  const subTopic: Subroute | undefined = topic?.subroute?.find(({ id }) => id === subId1);
+  const subTopic = topic?.subroute?.find(({ id }) => id === subId1);
 
   if (subTopic == null) return <h2>Error GuideSubrouteSubroute 1</h2>;
 

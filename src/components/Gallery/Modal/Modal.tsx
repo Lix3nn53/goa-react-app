@@ -63,7 +63,7 @@ const Modal: FC<Props> = ({
     slides.forEach((element, index) => {
       const { src, name } = element;
       list.push(
-        <div className={slideIndex === index ? '' : 'hidden'}>
+        <div className={slideIndex === index ? '' : 'hidden'} key={name}>
           <div className="numbertext">
             {index + 1} / {len}
           </div>
@@ -81,7 +81,7 @@ const Modal: FC<Props> = ({
     slides.forEach((element, index) => {
       const { src, name } = element;
       list.push(
-        <div className="column">
+        <div className="column" key={name}>
           <input type="image" src={src} onClick={() => setSlideIndex(index)} alt={name} />
         </div>,
       );

@@ -27,7 +27,7 @@ const Gallery: FC<Props> = ({ className, children, style, pictures }) => {
     pictures.forEach((element, index) => {
       const { src, name } = element;
       list.push(
-        <div className="item">
+        <div className="item" key={name}>
           <button
             type="button"
             onClick={() => {

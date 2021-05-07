@@ -36,8 +36,13 @@ const ClassCard: FunctionComponent<Props> = ({
   const renderWeapons = () => {
     const list: Array<ReactNode> = [];
 
-    weapons.forEach((str) => {
-      list.push([<span style={{ fontWeight: 'bold' }}>{str}</span>]);
+    weapons.forEach((str, index) => {
+      list.push([
+        /* eslint-disable-next-line react/no-array-index-key */
+        <span key={index} style={{ fontWeight: 'bold' }}>
+          {str}
+        </span>,
+      ]);
     });
 
     return list;
@@ -46,8 +51,13 @@ const ClassCard: FunctionComponent<Props> = ({
   const renderArmors = () => {
     const list: Array<ReactNode> = [];
 
-    armors.forEach((str) => {
-      list.push([<span style={{ fontWeight: 'bold' }}>{str}</span>]);
+    armors.forEach((str, index) => {
+      list.push([
+        /* eslint-disable-next-line react/no-array-index-key */
+        <span key={index} style={{ fontWeight: 'bold' }}>
+          {str}
+        </span>,
+      ]);
     });
 
     return list;
@@ -64,8 +74,13 @@ const ClassCard: FunctionComponent<Props> = ({
 
     const list: Array<ReactNode> = [];
 
-    offhand.forEach((str) => {
-      list.push([<span style={{ fontWeight: 'bold' }}>{str}</span>]);
+    offhand.forEach((str, index) => {
+      list.push([
+        /* eslint-disable-next-line react/no-array-index-key */
+        <span key={index} style={{ fontWeight: 'bold' }}>
+          {str}
+        </span>,
+      ]);
     });
 
     return list;

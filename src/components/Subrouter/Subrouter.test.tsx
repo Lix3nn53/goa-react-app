@@ -19,6 +19,7 @@ it('renders correctly Subrouter', () => {
         { name: 'Two', id: 'two' },
       ]}
       subcomponents={[Subcomponent]}
+      deep={3}
     >
       Subrouter
     </Subrouter>,
