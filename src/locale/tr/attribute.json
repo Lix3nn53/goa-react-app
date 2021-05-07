@@ -7,3 +7,12 @@
   "crit_damage": "Kritik Hasarı",
   "ability_haste": "Yetenek Hızı"
 }
+{
+  "attribute.guide.table.health": "Azâmi Sağlık",
+  "attribute.guide.table.mana": "Beceri kullanman için gereken, Azâmi Manan",
+  "attribute.guide.table.damage": "Element Hasarları eklenmeden önceki pür hasar",
+  "attribute.guide.table.defense": "Eelement Savunmaları eklenmeden önceki pür savunma",
+  "attribute.guide.table.crit_chance": "Hasarınızı kritik hasarınız oranında fazla vurma ihtimali",
+  "attribute.guide.table.crit_damage": "Temel değer %150'dür, bazı beceriler veya eşya setleri ile artırılabilir.",
+  "attribute.guide.table.ability_haste": "Becerilerinizin bekleme süresini azaltır. Formülü: 100/(100+yetenek hızı)"
+}
