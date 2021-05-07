@@ -5,6 +5,7 @@ import HowToPlay from './SubPages/HowToPlay';
 import ClassesIntro from './SubPages/Classes/Intro';
 import Classes from './SubPages/Classes/index';
 import Skills from './SubPages/Skills';
+import Attributes from './SubPages/Attributes';
 
 export default [
   {
@@ -31,6 +32,7 @@ export default [
   {
     name: 'guide.attributes.subject',
     id: 'attributes',
+    component: <Attributes />,
   },
   {
     name: 'guide.items.subject',

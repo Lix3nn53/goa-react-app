@@ -6,10 +6,10 @@ td {
   padding: 5px 20px;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
   background-color: var(--color-divider);
 }
 
-tr:nth-child(odd) {
+tr:nth-child(even) {
   background-color: var(--color-divider);
 }

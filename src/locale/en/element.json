@@ -4,5 +4,14 @@
   "water": "🌊 Water",
   "earth": "◎ Earth",
   "air": "๑ Air",
-  "lightning": "⚡ Lightning"
+  "lightning": "⚡ Lightning",
+  "guide": {
+    "table": {
+      "fire": "🔥 Fire",
+      "water": "🌊 Water",
+      "earth": "◎ Earth",
+      "air": "๑ Air",
+      "lightning": "⚡ Lightning"
+    }
+  }
 }
