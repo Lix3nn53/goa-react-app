@@ -65,7 +65,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 .guideSubroute h1 {
   padding-bottom: 0;
   margin-bottom: 16px;
-  border-bottom: solid 1px var(--color-text);
+  border-bottom: solid 2px var(--color-text);
 }
 
 .guideSubroute h2 span,

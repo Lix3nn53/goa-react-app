@@ -55,3 +55,11 @@ a.Link {
   color: var(--color-white);
   background-color: var(--color-primary-dark);
 }
+
+p .Link.variant--Link {
+  color: var(--color-primary);
+}
+
+p .Link.variant--Link:hover {
+  color: var(--color-primary-light);
+}
