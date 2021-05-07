@@ -8,7 +8,7 @@ const Introduction: FunctionComponent = () => {
 
   return (
     <div className="guide-page flex-container row-reverse">
-      <div style={{ flex: '2' }}>
+      <div style={{ flex: '10' }}>
         <p>{t('guide.introduction.p0')}</p>
         <p>
           {t('guide.introduction.p1.text1')}

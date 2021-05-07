@@ -9,7 +9,7 @@ const Skills: FunctionComponent = () => {
 
   return (
     <div className="guide-page flex-container row-reverse">
-      <div style={{ flex: '2' }}>
+      <div style={{ flex: '10' }}>
         <p>{t('attribute.guide.p0')}</p>
         <h2>
           <span>{t('attribute.guide.h1')}</span>

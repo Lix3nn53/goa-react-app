@@ -13,14 +13,16 @@ const Guide: FunctionComponent = () => {
   return (
     <div className="guide">
       <Subrouter
-        className="grid"
         routes={Data}
         subcomponents={[
           <GuideSubroute />,
           <GuideSubrouteSubroute />,
           <GuideSubrouteSubrouteSubroute />,
         ]}
-      />
+      >
+        <div className="filler-1" />
+        <div className="filler-2" />
+      </Subrouter>
     </div>
   );
 };

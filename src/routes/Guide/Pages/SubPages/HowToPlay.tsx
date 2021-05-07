@@ -8,17 +8,19 @@ const HowToPlay: FunctionComponent = () => {
 
   return (
     <div className="guide-page flex-container row-reverse">
-      <div style={{ flex: '2' }}>
+      <div style={{ flex: '10' }}>
         <p>{t('guide.how-to-play.p0')}</p>
-        <ol>
-          <li>
-            {t('guide.how-to-play.step1.text1')}
-            {t('guide.server-ip')}
-            {t('guide.how-to-play.step1.text2')}
-          </li>
-          <li>{t('guide.how-to-play.step2')}</li>
-          <li>{t('guide.how-to-play.step3')}</li>
-        </ol>
+        <p>
+          <ol>
+            <li>
+              {t('guide.how-to-play.step1.text1')}
+              {t('guide.server-ip')}
+              {t('guide.how-to-play.step1.text2')}
+            </li>
+            <li>{t('guide.how-to-play.step2')}</li>
+            <li>{t('guide.how-to-play.step3')}</li>
+          </ol>
+        </p>
         <Gallery
           pictures={[
             {
@@ -33,10 +35,12 @@ const HowToPlay: FunctionComponent = () => {
           <span>{t('guide.how-to-play.h1')}</span>
         </h2>
 
-        <ol>
-          <li>{t('guide.how-to-play.p1.step1')}</li>
-          <li>{t('guide.how-to-play.p1.step2')}</li>
-        </ol>
+        <p>
+          <ol>
+            <li>{t('guide.how-to-play.p1.step1')}</li>
+            <li>{t('guide.how-to-play.p1.step2')}</li>
+          </ol>
+        </p>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ import skillUltimate from '../../../../../../../img/guide/skills/49.png';
 const FrostMage: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
-      <div style={{ flex: '1' }}>
+      <div style={{ flex: '6' }}>
         <ClassCard
           name="Frost Mage"
           icon={icon}
@@ -30,7 +30,7 @@ const FrostMage: FunctionComponent = () => {
           mana={4}
         />
       </div>
-      <div style={{ flex: '2' }}>
+      <div style={{ flex: '10' }}>
         <ClassBody
           intro="classes.tier2.frost_mage.intro"
           playstyle="classes.tier2.frost_mage.playstyle"

@@ -14,7 +14,7 @@ import skillUltimate from '../../../../../../../img/guide/skills/30.png';
 const FireMage: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
-      <div style={{ flex: '1' }}>
+      <div style={{ flex: '6' }}>
         <ClassCard
           name="Fire Mage"
           icon={icon}
@@ -28,7 +28,7 @@ const FireMage: FunctionComponent = () => {
           mana={4}
         />
       </div>
-      <div style={{ flex: '2' }}>
+      <div style={{ flex: '10' }}>
         <ClassBody
           intro="classes.tier2.fire_mage.intro"
           playstyle="classes.tier2.fire_mage.playstyle"

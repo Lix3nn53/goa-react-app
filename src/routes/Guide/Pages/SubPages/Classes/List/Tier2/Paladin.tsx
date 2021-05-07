@@ -14,7 +14,7 @@ import skillUltimate from '../../../../../../../img/guide/skills/22.png';
 const Paladin: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
-      <div style={{ flex: '1' }}>
+      <div style={{ flex: '6' }}>
         <ClassCard
           name="Paladin"
           icon={icon}
@@ -29,7 +29,7 @@ const Paladin: FunctionComponent = () => {
           mana={4}
         />
       </div>
-      <div style={{ flex: '2' }}>
+      <div style={{ flex: '10' }}>
         <ClassBody
           intro="classes.tier2.paladin.intro"
           playstyle="classes.tier2.paladin.playstyle"

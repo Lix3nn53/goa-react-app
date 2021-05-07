@@ -16,7 +16,7 @@ import skillUltimate from '../../../../../../../img/guide/skills/35.png';
 const Hunter: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
-      <div style={{ flex: '1' }}>
+      <div style={{ flex: '6' }}>
         <ClassCard
           name="Hunter"
           icon={icon}
@@ -30,7 +30,7 @@ const Hunter: FunctionComponent = () => {
           mana={4}
         />
       </div>
-      <div style={{ flex: '2' }}>
+      <div style={{ flex: '10' }}>
         <ClassBody
           intro="classes.tier2.hunter.intro"
           playstyle="classes.tier2.hunter.playstyle"

@@ -16,7 +16,7 @@ import skillUltimate from '../../../../../../../img/guide/skills/62.png';
 const Engineer: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
-      <div style={{ flex: '1' }}>
+      <div style={{ flex: '6' }}>
         <ClassCard
           name="Engineer"
           icon={icon}
@@ -30,7 +30,7 @@ const Engineer: FunctionComponent = () => {
           mana={4}
         />
       </div>
-      <div style={{ flex: '2' }}>
+      <div style={{ flex: '10' }}>
         <ClassBody
           intro="classes.tier3.engineer.intro"
           playstyle="classes.tier3.engineer.playstyle"

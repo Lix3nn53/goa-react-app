@@ -6,7 +6,7 @@ const Tier2Intro: FunctionComponent = () => {
 
   return (
     <div className="guide-page flex-container row-reverse">
-      <div style={{ flex: '2' }}>{t('classes.tier3.description')}</div>
+      <div style={{ flex: '10' }}>{t('classes.tier3.description')}</div>
     </div>
   );
 };

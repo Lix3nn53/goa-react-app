@@ -17,6 +17,10 @@
 }
 
 .skills .section:nth-child(odd) {
+  background-color: var(--color-divider);
+}
+
+.skills .section:nth-child(even) {
   background-color: var(--color-base-light);
 }
 
@@ -28,4 +32,9 @@
 .skills .section:last-child {
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
+}
+
+.guide-page .card {
+  background-color: var(--color-base-light);
+  margin: 0 16px;
 }

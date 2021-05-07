@@ -8,7 +8,7 @@ const ClassesIntro: FunctionComponent = () => {
 
   return (
     <div className="guide-page flex-container row-reverse">
-      <div style={{ flex: '2' }}>
+      <div style={{ flex: '10' }}>
         <p>{t('classes.guide.p0')}</p>
         <h2>
           <span>{t('classes.guide.h1')}</span>

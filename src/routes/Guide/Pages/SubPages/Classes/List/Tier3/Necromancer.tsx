@@ -16,7 +16,7 @@ import skillUltimate from '../../../../../../../img/guide/skills/45.png';
 const Necromancer: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
-      <div style={{ flex: '1' }}>
+      <div style={{ flex: '6' }}>
         <ClassCard
           name="Necromancer"
           icon={icon}
@@ -30,7 +30,7 @@ const Necromancer: FunctionComponent = () => {
           mana={4}
         />
       </div>
-      <div style={{ flex: '2' }}>
+      <div style={{ flex: '10' }}>
         <ClassBody
           intro="classes.tier3.necromancer.intro"
           playstyle="classes.tier3.necromancer.playstyle"

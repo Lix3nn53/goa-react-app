@@ -15,7 +15,7 @@ export type Props = JSX.IntrinsicElements['div'] & {
   subcomponents: Array<ReactNode>;
 };
 
-const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
+const Subrouter: FC<Props> = ({ className, style, routes, subcomponents, children }) => {
   const { url, path } = useRouteMatch();
   const { pathname } = useLocation();
   const { t } = useTranslation();
@@ -96,11 +96,10 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents }) => {
 
   return (
     <div className={classNames} style={style}>
-      <div className="filler-1" />
       <ul className="sub-list">{formLinks('', routes)}</ul>
 
       {formRoutes()}
-      <div className="filler-2" />
+      {children}
     </div>
   );
 };
