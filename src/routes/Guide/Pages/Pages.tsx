@@ -6,6 +6,8 @@ import ClassesIntro from './SubPages/Classes/Intro';
 import Classes from './SubPages/Classes/index';
 import Skills from './SubPages/Skills';
 import Attributes from './SubPages/Attributes';
+import ItemsIntro from './SubPages/Items/Intro';
+import Items from './SubPages/Items/index';
 
 export default [
   {
@@ -37,6 +39,8 @@ export default [
   {
     name: 'guide.items.subject',
     id: 'items',
+    subroute: Items,
+    component: <ItemsIntro />,
   },
   {
     name: 'guide.quests.subject',

@@ -1,8 +1,15 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactNode } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import Data from '../Pages/Pages';
+
+export type Subroute = {
+  name: string;
+  id: string;
+  component?: ReactNode;
+  subroute?: Array<Subroute>;
+};
 
 interface RouteParams {
   subId0: string;
@@ -18,7 +25,7 @@ const GuideSubrouteSubroute: FunctionComponent = () => {
 
   const topic = Data.find(({ id }) => id === subId0);
 
-  const subTopic = topic?.subroute?.find(({ id }) => id === subId1);
+  const subTopic: Subroute | undefined = topic?.subroute?.find(({ id }) => id === subId1);
 
   if (subTopic == null) return <h2>Error GuideSubrouteSubroute 1</h2>;
 
