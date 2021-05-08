@@ -6,7 +6,7 @@
     "p0": "Eşyalar kısmının temelini ekipmanlar oluşturur. Ekipmanlar, karakterinizin nitelikleri ve elementleri üzerinde en büyük etkiye sahiptir.",
     "h1": "Eşya Kademeleri",
     "p1": {
-      "part1": "Eşyalar 4 kademeden oluşur, zayıftan güçlüye: Sıradan, nadir, mistik, efsanevi. Higher item tiers has better base stats and better chance get more bonus stats.",
+      "part1": "Eşyalar 4 kademeden oluşur, zayıftan güçlüye: Sıradan, nadir, mistik, efsanevi. Daha yüksek eşya kademeleri daha iyi temel istatistiklere sahiptir ve bonus özellik alma ihtimalleri daha yüksektir.",
       "part2": "Sıradan ve nadir eşyalar normal yaratıklardan düşebilir. ",
       "part3": "Mistik eşyalar zindanlardan düşebilir veya oyuncular tarafından üretilebilir.",
       "part4": "Efsanevi eşyalar sadece zindanlardan düşebilir."
