@@ -40,8 +40,8 @@
   "quests": {
     "subject": "Quests"
   },
-  "rpg-inventory": {
-    "subject": "RPG Inventory"
+  "npc": {
+    "subject": "NPCs"
   },
   "economy": {
     "subject": "Economy"

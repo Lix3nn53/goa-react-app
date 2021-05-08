@@ -47,8 +47,8 @@ export default [
     id: 'quests',
   },
   {
-    name: 'guide.rpg-inventory.subject',
-    id: 'rpg-inventory',
+    name: 'guide.npc.subject',
+    id: 'npc',
   },
   {
     name: 'guide.monsters.subject',

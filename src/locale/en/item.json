@@ -118,6 +118,8 @@
       "p1": "Wearing 4 pieces of same armor type activates a bonus effect. (Helmet, chestplate, leggings, boots)",
       "h2": "Armor Types",
       "p2": "There are 5 armor types in Guardians of Adelia.",
+      "h3": "Shields",
+      "p3": "Shield give the same stats as armors but they can also block attacks coming from front.",
       "type": "Armor Type",
       "material": "Material",
       "weight": "Weight",
@@ -169,6 +171,13 @@
       "p1": "There are 5 types of accessories; earrings, necklaces, rings, gloves and parrots. Accessories give bonus attributes and element points at random. Accessory types are identical but they fit into different slots.",
       "h2": "How to equip?",
       "p2": "You can equip accessories from RPG Inventory."
+    },
+    "enchanting": {
+      "p0": "Enhancing an item is simply upgrading it by adding extra attribute. You can enchant weapons to increase damage, armors and shields to increase maximum health.",
+      "h1": "Enchant Stones",
+      "p1": "An enchant stone is required for enchanting. There are 4 levels of enchant stones. Each tier is used for 3 enchantment levels. So 4 x 3, your items can be upgraded to +12 enchantment level.",
+      "h2": "How to enchant?",
+      "p2": "To enhance an item, you need enhancement stones, and a piece of equipment that you wish to enhance. This must be either a weapon, a shield, or a piece of armor. To enhance something you must go to a weapon or armor smith."
     }
   }
 }

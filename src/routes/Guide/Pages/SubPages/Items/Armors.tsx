@@ -86,6 +86,10 @@ const Armors: FunctionComponent = () => {
             ],
           ]}
         />
+        <h2>
+          <span>{t('item.guide.armor.h3')}</span>
+        </h2>
+        <p>{t('item.guide.armor.p3')}</p>
       </div>
     </div>
   );
