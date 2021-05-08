@@ -4,5 +4,14 @@
   "water": "🌊 Su",
   "earth": "◎ Toprak",
   "air": "๑ Hava",
-  "lightning": "⚡ Yıldırım"
+  "lightning": "⚡ Yıldırım",
+  "guide": {
+    "table": {
+      "fire": "🔥 Fire",
+      "water": "🌊 Water",
+      "earth": "◎ Earth",
+      "air": "๑ Air",
+      "lightning": "⚡ Lightning"
+    }
+  }
 }
