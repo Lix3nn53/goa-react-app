@@ -15,8 +15,17 @@ const ClassesIntro: FunctionComponent = () => {
         <h2>
           <span>{t('item.guide.h1')}</span>
         </h2>
+        <p>{t('item.guide.p1.part1')}</p>
+        <ul>
+          <li>{t('item.guide.p1.part2')}</li>
+          <li>{t('item.guide.p1.part3')}</li>
+          <li>{t('item.guide.p1.part4')}</li>
+        </ul>
+        <h2>
+          <span>{t('item.guide.h2')}</span>
+        </h2>
         <p>
-          {t('item.guide.p1')}
+          {t('item.guide.p2')}
           <a href="https://sketchfab.com/Lix3nn/models" target="_blank" rel="noreferrer">
             https://sketchfab.com/Lix3nn/models
           </a>

@@ -1,10 +1,9 @@
 import React, { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import Gallery from '../../../../../components/Gallery';
 import Table from '../../../../../components/Table';
 
-const ClassesIntro: FunctionComponent = () => {
+const Weapons: FunctionComponent = () => {
   const { t } = useTranslation();
 
   return (
@@ -24,7 +23,7 @@ const ClassesIntro: FunctionComponent = () => {
               </span>{' '}
               {t('attribute.damage')}
             </span>,
-            <span style={{ fontWeight: 'bold' }}>ø {t('item.guide.weapon.speed')}</span>,
+            <span style={{ fontWeight: 'bold' }}>{t('item.guide.weapon.speed')}</span>,
             <span style={{ fontWeight: 'bold' }}>☆ {t('attribute.crit_chance')}</span>,
             <span style={{ fontWeight: 'bold' }}>
               <span role="img" aria-label="Bow">
@@ -150,4 +149,4 @@ const ClassesIntro: FunctionComponent = () => {
   );
 };
 
-export default ClassesIntro;
+export default Weapons;
