@@ -110,8 +110,8 @@
     "necromancer": {
       "intro": "Adelianın Koruyucularında Ölüm Büyücüsü 3. kademe bir sınıftır.",
       "playstyle": "Ölüm büyücüsü olarak ölüme hükmedebilir ve yer altından ölüleri kaldırıp kendi ordunu kurabilirsin. Pasifin düşmanlarının çağırdığın ölüleri hedeflemesini sağlar. Ama ölülerini kontrol etmek zor olabilir. ve işler doğru gitmez ise 3. yeteneğini kullanarak fedailerini feda ederek kendini iyileştirebilirsin.",
-      "skill_one": "Hedeflediğin küp şeklindeki alana hasar verir.",
-      "skill_two": "Alev patlaması oluşturur ve hedefi havaya savurur.",
+      "skill_one": "İskelet çağır.",
+      "skill_two": "Kurukafa fırlat, isabet halinde ufak bir alana hasar verir ve hedefleri yavaşlatır. Çağrıların isabet alan düşmanı hedef alır ve bonus koşu hızı kazanır.",
       "skill_three": "Ölü fedailerinin hepsi hasar alır. Hasar alan her fedain için canın yenilenir.",
       "skill_passive": "Her canlanmış olan ölü fedain için element koruması kazanırsın. Ayrıca bu yeteneğe puan harcarsan canlandırabileceğin ölü fedai sayısı artar.",
       "skill_ultimate": "Bu yeteneğin 2 aşaması vardır. Eğer çağrılmış bir donmuş devin yoksa: Doğduğu anda tipi yeteneği kullanan bir donmuş dev çağırır. Eğer yaşayan en az 1 donmuş dev varsa: Onların tipi yeteneğini kullanmasını sağlar. Tipi: Yakındaki düşmanları dondurur."

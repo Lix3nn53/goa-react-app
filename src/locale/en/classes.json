@@ -110,8 +110,8 @@
     "necromancer": {
       "intro": "Necromancer is a tier 3 class in Guardians of Adelia.",
       "playstyle": "Necromancer playstyle focuses around summons. Your passive makes sure enemies have to focus your summons before you. But your summons are not so easy to deal with. And if things go wrong, you can make a decision to kill your summons to heal yourself with your 3rd skill.",
-      "skill_one": "Deal damage to targets in cube area.",
-      "skill_two": "Shoot a flame-burst that launches a target into the sky.",
+      "skill_one": "Spawn skeletons.",
+      "skill_two": "Shoot a skull that deals damage and slows enemies in a small area. Makes your summons run with movement speed boost towards target.",
       "skill_three": "Deal damage to all of your summons, heal yourself for each damaged summon.",
       "skill_passive": "For each active summon gain element defense. Also increases the max amount of summons you can have at a time.",
       "skill_ultimate": "This skill has 2 states. If you don't have any Frozen Colossus: Summons Frozen Colossuses which casts Freeze on summon. If at least one Frozen Colossus is alive: make them cast Freeze. Freeze: Stuns nearby enemies."
