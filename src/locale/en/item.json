@@ -162,6 +162,13 @@
         "weight": "Light",
         "set_effect": "+ Ability Haste"
       }
+    },
+    "accessory": {
+      "p0": "Accessories does not require any class.",
+      "h1": "Accessory Types",
+      "p1": "There are 5 types of accessories; earrings, necklaces, rings, gloves and parrots. Accessories give bonus attributes and element points at random. Accessory types are identical but they fit into different slots.",
+      "h2": "How to equip?",
+      "p2": "You can equip accessories from RPG Inventory."
     }
   }
 }

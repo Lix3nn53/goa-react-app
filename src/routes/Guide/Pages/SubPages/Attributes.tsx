@@ -95,13 +95,13 @@ const Skills: FunctionComponent = () => {
             {
               src:
                 'https://cdn.discordapp.com/attachments/689660026423345188/840015382706389022/unknown.png',
-              name: 'Step 1: Open the Menu',
-              description: 'Step 1: Open RPG Inventory',
+              name: 'Step 1: Open RPG Inventory by clicking the bag icon',
+              description: 'Step 1: Open RPG Inventory by clicking the bag icon',
             },
             {
               src:
                 'https://cdn.discordapp.com/attachments/689660026423345188/824373707593220168/unknown.png',
-              name: 'Step 2: Click on Character',
+              name: 'Step 2: Hover on player head',
               description: 'Step 2: Hover on player head',
             },
           ]}
