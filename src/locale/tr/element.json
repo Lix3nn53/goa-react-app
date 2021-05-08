@@ -7,11 +7,11 @@
   "lightning": "⚡ Yıldırım",
   "guide": {
     "table": {
-      "fire": "🔥 Fire",
-      "water": "🌊 Water",
-      "earth": "◎ Earth",
-      "air": "๑ Air",
-      "lightning": "⚡ Lightning"
+      "fire": "🔥 Ateş",
+      "water": "🌊 Su",
+      "earth": "◎ Toprak",
+      "air": "๑ Hava",
+      "lightning": "⚡ Yıldırım"
     }
   }
 }
