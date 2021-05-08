@@ -1,9 +1,9 @@
 {
   "guide": {
-    "p0": "Skills play huge role in your playstyle and changes according to your class. Each class has 3 active, 1 passive and 1 ultimate skill.",
-    "h1": "Skill Bar",
-    "p1": "First 4 slots of default minecraft hot bar are reserved for skills. Each class has 5 skills but 1 of them is passive so you see 3 active and 1 ultimate skill on your hotbar. Press 1-2-3-4 keys to cast skills. You can see the cooldown after casting a skill.",
-    "h2": "Unlocking Skills",
-    "p2": "You can open menu by clicking the Menu Book in your inventory. (Open your inventory with E key) At the menu click Character and then Skills. Here you can see your available skill point on GUI Name. Left Click on a skill to spend points on it or Right Click to take your points back."
+    "p0": "Beceriler, oyun tarzınızda büyük rol oynar ve sınıfınıza göre değişir. Her sınıfın 3 aktif, 1 pasif ve 1 ulti becerisi vardır.",
+    "h1": "Beceri Çubuğu",
+    "p1": "Varsayılan minecraft Eşya Çubuğunun ilk 4 yuvası beceriler için ayrılmıştır. Her sınıfın 5 yeteneği vardır, ancak bunlardan 1'i pasiftir. bu nedenle yetenek Çubuğunuzda 3 aktif ve 1 ulti yeteneği görürsünüz. Becerileri kullanmak için 1-2-3-4 tuşlarına basın.Bir beceri kullandıktan sonra bekleme süresini görebilirsiniz.",
+    "h2": "Beceri Açma",
+    "p2": "Envanterinizdeki Menü Kitabına tıklayarak menüyü açabilirsiniz.(Envanterinizi E tuşuyla açın) Menüde Karakter'e ve ardından Beceriler'e tıklayın. Burada GUI Adında mevcut becerilerinizi görebilirsiniz. Puan harcamak için bir beceriye Sol tıklayın veya puanlarınızı geri almak için Sağ Tıklayın."
   }
 }
