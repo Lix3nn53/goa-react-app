@@ -1,18 +1,18 @@
 {
   "server-ip": "play.guardiansofadelia.com",
   "introduction": {
-    "subject": "ÖnSöz",
-    "p0": "Guardians of Adelia bir MMORPG minecraft sunucusudur. oyun Devasa bir açık dünya barındır ve zindanları Yağmalamaya odaklanır. Şu anda benzersiz beceri setlerine sahip 12 oynanabilir sınıf Mevcut Ve tek bir karakterde tüm sınıfların kilidini açabilirsiniz Bu kılavuzda keşfedebileceğiniz görevler, evcil hayvanlar, Meslekler vb. Gibi birçok özellik var! ",
+    "subject": "Ön Söz",
+    "p0": "Guardians of Adelia bir MMORPG minecraft sunucusudur. Oynanışın ana odağı devasa bir açık dünyada zindanları keşfedip yağmalama üzerinedir. Şu anda benzersiz yetenek setlerine sahip 12 oynanabilir sınıf mevcut ve tek bir karakterde tüm sınıfların kilidini açabilirsiniz. Bu rehberde görevler, evcil hayvanlar, meslekler vb. gibi keşfedebileceğiniz birçok özellik var!",
     "p1": {
       "text1": "Buradan nasıl sunucuya girebileceğinizi görebilirsiniz ",
       "link1": "Nasıl oynanır? ",
-      "text2": "veya Sınıflar hakkında daha fazla bilgi edinmek için tıklayın ",
+      "text2": "veya sınıflar hakkında daha fazla bilgi edinmek için tıklayın ",
       "link2": "Sınıflar"
     }
   },
   "how-to-play": {
     "subject": "Nasıl oynanır?",
-    "p0": "Oynamak için sunucuya özel Kaynak paketini yüklemeniz gerekir, aksi taktirde çok fazla görsel hata ile karşılaşırsınız sunucu kaynak paketiyle sunucuya katılmak için şu adımları izleyin: ",
+    "p0": "Oynamak için sunucuya özel kaynak paketini yüklemeniz gerekir, aksi taktirde çok fazla görsel hata ile karşılaşırsınız. Sunucu kaynak paketiyle sunucuya katılmak için şu adımları izleyin: ",
     "step1": {
       "text1": " ",
       "text2": "'u sunucu listenize ekleyin"
