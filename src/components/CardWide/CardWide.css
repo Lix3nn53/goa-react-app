@@ -1,0 +1,88 @@
+.card-wide {
+  border-radius: 12px;
+  min-height: 400px;
+  position: relative;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  margin-top: 48px;
+  margin-bottom: 9px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.card-wide:nth-child(odd) {
+  background-position: right center;
+}
+
+.card-wide:nth-child(odd) .content {
+  left: 0px;
+}
+
+.card-wide:nth-child(even) .content {
+  right: 0px;
+}
+
+.card-wide .content {
+  position: absolute;
+  top: -36px;
+  padding: 42px;
+  width: 50%;
+  max-width: 100%;
+  background-color: var(--color-base-light);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 1500px) {
+  .card-wide .content {
+    width: 100%;
+    top: 300px;
+  }
+
+  .card-wide {
+    margin-top: 9px;
+    margin-bottom: 180px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card-wide {
+    margin-bottom: 280px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card-wide:nth-child(odd) {
+    background-position: center center;
+  }
+  .card-wide {
+    background-position: center center;
+  }
+  .card-wide {
+    margin-bottom: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-wide {
+    margin-bottom: 260px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card-wide {
+    margin-bottom: 320px;
+  }
+}
+
+.card-wide p {
+  text-align: start;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.card-wide .card-wide-header p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.625rem;
+}

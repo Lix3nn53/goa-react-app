@@ -45,8 +45,8 @@ const App: FC = () => {
             <Link to="/guide/introduction" key="1">
               {t('header.guide')}
             </Link>,
-            <Link to="/lore" key="2">
-              {t('header.lore')}
+            <Link to="/news" key="2">
+              {t('header.news')}
             </Link>,
             <Link to="/store" key="3">
               {t('header.store')}

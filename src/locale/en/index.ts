@@ -1,4 +1,5 @@
 import header from './header.json';
+import home from './home.json';
 
 import attribute from './attribute.json';
 import classes from './classes.json';
@@ -10,6 +11,7 @@ import skills from './skills.json';
 export default {
   translation: {
     header,
+    home,
     attribute,
     classes,
     element,

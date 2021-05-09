@@ -1,26 +1,8 @@
-.home .top {
-  background: url('../../img/poster.jpg') no-repeat center/cover;
-  background-attachment: fixed;
-  margin-bottom: 20px;
-}
-
-.home .info {
-  width: 100%;
-  text-align: center;
-}
-
-.home .logo {
-  max-width: 1200px;
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-
 /*--------------------------------------------------------------
 If no grid support, limit width to 50em and center align
 --------------------------------------------------------------*/
 @supports not (display: grid) {
-  .home .main {
+  .news .main {
     max-width: 50em;
     margin: 0 auto;
   }
@@ -31,25 +13,31 @@ CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 
 @supports (display: grid) {
-  .home .main .posts {
+  .news .main .banner {
+    grid-area: home-banner;
+  }
+
+  .news .main .posts {
     grid-area: home-posts;
   }
 
-  .home .main .sidebar {
+  .news .main .sidebar {
     grid-area: home-sidebar;
     display: none;
   }
 
   @media screen and (min-width: 1000px) {
-    .home .main .sidebar {
+    .news .main .sidebar {
       display: block;
     }
 
-    .home .main {
+    .news .main {
       display: grid;
-      grid-template-columns: 1fr 5fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: '. home-posts home-sidebar .';
+      grid-template-columns: 2fr 5fr 2fr 2fr;
+      grid-template-rows: 240px 4fr;
+      grid-template-areas:
+        '. home-banner home-banner .'
+        '. home-posts home-sidebar .';
       column-gap: 16px;
       row-gap: 16px;
     }
