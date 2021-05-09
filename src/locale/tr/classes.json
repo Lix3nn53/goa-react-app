@@ -25,29 +25,29 @@
     "description": "Kademe 2 sınıflar güç bakımından ortalama güçtedir.",
     "archer": {
       "intro": "Okçu Adelianın Koruyucularında 2. Kademe bir sınıftır.",
-      "playstyle": "Okçunun ortalama bir hasarı vardır ama çok fazla hareketlilik yeteneği vardır. Kaç ve vur taktiğini uygulamak için en uygun sınıftır.",
+      "playstyle": "Okçunun ortalama bir hasarı vardır ama çok fazla hareketlilik yeteneği vardır. Vur ve kaç taktiğini uygulamak için en uygun sınıftır.",
       "skill_one": "Hedefe zehirli bir ok fırlatır.",
       "skill_two": "Kullanıcıya hareket hızı verir.",
       "skill_three": "Geriye doğru hava atılır ve düşerken düşüş hasarından etkilenmez.",
       "skill_passive": "Hedefe tutturduğun her 2. vuruşun için kritik şansı kazanırsın. (Bununla kritik şansı sınırını aşabilirsin)",
-      "skill_ultimate": "Alevli oklar ortaya çıkarır, Rakibe dalgalar halinde hasar verir."
+      "skill_ultimate": "Alevli oklar ortaya çıkarır, rakibe dalgalar halinde hasar verir."
     },
     "hunter": {
       "intro": "Avcı Adelianın Koruyucularında 2. Kademe bir sınıftır.",
-      "playstyle": "Avcının ana silahı arbelettir. Okları yerleştirmesi uzun sürer ama fazla hasar verir. Ve dikkatli koyulmuş tuzakların ile, attığın oklar her zaman hedefini bulur!",
+      "playstyle": "Avcının ana silahı arbalettir. Okları yerleştirmesi uzun sürer ama fazla hasar verir. Ve dikkatli koyulmuş tuzakların ile, attığın oklar her zaman hedefini bulur!",
       "skill_one": "Alan hasarı veren bir ok fırlatır ve hedefi geri iter",
       "skill_two": "Koni şeklinde alana birden çok ok fırlatır",
       "skill_three": "hedef yöne kanca fırlatır. Eğer kanca bir yüzeye çarparsa ileri doğru atılır, eğer kanca bir hedefe çarparsa hedefi kendine çeker.",
       "skill_passive": "Arbalet ile attığın oklar hedefleri delip geçer.",
-      "skill_ultimate": "Düşmanlar basınca harekete geçen bir tuzak yerleştirir. Harekete geçtiğinde üstüne ki düşmanı hareketsiz kılar. Aynı zamanda birden çok tuzak yerleştirebilirsin."
+      "skill_ultimate": "Düşmanlar basınca harekete geçen bir tuzak yerleştirir. Harekete geçtiğinde üstündeki düşmanı hareketsiz kılar. Aynı zamanda birden çok tuzak yerleştirebilirsin."
     },
     "fire_mage": {
       "intro": "Ateş Büyücüsü Adelianın Koruyucularında 2. Kademe bir sınıftır.",
-      "playstyle": "Ateş büyücüsü hareketliliği ve zırhının az olması karşılığında yüksek alan hasarları verebilir.",
+      "playstyle": "Ateş büyücüsü hareketliliği ve zırhının az olmasına karşın yüksek alan hasarları verebilir.",
       "skill_one": "Hedefe doğru bir ateş topu atar eğer isabet ederse hedefin etrafındaki rakiplere hasar verir",
       "skill_two": "Önündeki koni şeklindeki alana ateş hasarı verir.",
       "skill_three": "Baktığın yöne doğru ışınlanır. Kısa bir süre sonra eski bulunduğun noktada küçük bir patlama ortaya çıkarır, patlama düşmanlara hasar verir",
-      "skill_passive": "Her yetenek kullanışında Ateş ruhu yükü biriktirirsin. Eğer 4 yükün varsa sıradaki yeteneğin hedefe daha fazla hasar verir ve onları yakar.",
+      "skill_passive": "Her yetenek kullanışında Ateş Ruhu yükü biriktirirsin. Eğer 4 yükün varsa sıradaki yeteneğin hedefe daha fazla hasar verir ve onları yakar.",
       "skill_ultimate": "Gökyüzünde bir meteor oluşturur ve düştüğü yerin yakınındaki düşmanlara hasar verir ve havaya savurur."
     },
     "frost_mage": {
@@ -56,7 +56,7 @@
       "skill_one": "Buz topu fırlatır ve hedefi yavaşlatır ve hasar verir eğer hedefe isabet ederse etrafındaki düşmanlara hasar verir",
       "skill_two": "Gökyüzünde küçük bir buz meteoru oluşturur. Meteor düştüğü alandaki düşmanlara hasar verir ve yavaşlatır",
       "skill_three": "Kendini dondurursun ve zamanla can yenilersin.",
-      "skill_passive": "Her yetenek kullanışında buz ruhu yükü biriktirirsin. Eğer 4 yükün varsa sıradaki yeteneğin hedefe daha fazla hasar verir ve onları dondurur.",
+      "skill_passive": "Her yetenek kullanışında Buz Ruhu yükü biriktirirsin. Eğer 4 yükün varsa sıradaki yeteneğin hedefe daha fazla hasar verir ve onları dondurur.",
       "skill_ultimate": "Bir fırtına yaratırsın ve alan içindeki düşmanlara zamanla hasar alır ve yavaşlar."
     },
     "monk": {
@@ -66,7 +66,7 @@
       "skill_two": "Yana doğru atılır. Ne tarafa atılacağın yeteneği her kullanışında değişebilir.",
       "skill_three": "Yeteneği kullandığında hareket edemezsin, kendini ve yakındaki dostları iyileştirmeye başlarsın.",
       "skill_passive": "Uzun menzilli bir hasar verdikten sonra yakın menzilli bir saldırı yapmak hedefi hareketsiz bırakır",
-      "skill_ultimate": "Yakındaki düşmanları su topu içine hapseder. Balona hapis olmuş düşmanlar hareketsiz kalır ve yavaşça hava doğru yükselir."
+      "skill_ultimate": "Yakındaki düşmanları su topu içine hapseder. Balona hapsolmuş düşmanlar hareketsiz kalır ve yavaşça hava doğru yükselir."
     },
     "paladin": {
       "intro": "Paladin Adelianın Koruyucularında 2. Kademe bir sınıftır.",
@@ -92,10 +92,10 @@
     "doom_knight": {
       "intro": "Kıyamet Şovalyesi Adelianın Koruyucularında 3. Kademe bir sınıftır.",
       "playstyle": "Kıyamet şovalyesi yüksek zırha sahiptir ama menzil ve hareketlilikten mahrumdur.",
-      "skill_one": "Önündeki konu şeklindeki alana hasar verir.",
+      "skill_one": "Önündeki koni şeklindeki alana hasar verir.",
       "skill_two": "Hedefi kendine çeken bir kanca fırlatırsın. Eğer hedef yeteri kadar yaklaşırsa ayrıca havaya savrulur.",
       "skill_three": "Yavaşça havada süzülmeye başlar ve düşüş hasarından etkilenmez hale gelir. Yere indiğinde, Yakındaki düşmanlara hasar verir ve onları hareketsiz bırakır.",
-      "skill_passive": "Düz saldırı yaptığında karanlık yükü biriktirirsin. Eğer 4 den fazla yükün varsa, Etrafındaki düşmanlara her saniye hasar veren bir alan kazanırsın. Karanlık yükü 10 yüke kadar birikebilir. Her saniye 1 Karanlık yükü kaybedersin.",
+      "skill_passive": "Düz saldırı yaptığında Karanlık yükü biriktirirsin. Eğer 4'ten fazla yükün varsa, Etrafındaki düşmanlara her saniye hasar veren bir alan kazanırsın. Karanlık yükü 10 yüke kadar birikebilir. Her saniye 1 Karanlık yükü kaybedersin.",
       "skill_ultimate": "Bir karadelik oluşturursun düşmanları içine doğru çeker."
     },
     "engineer": {
@@ -104,12 +104,12 @@
       "skill_one": "Ok fırlatan bir taret kur. Taret en yakındaki düşmanı hedef alır.",
       "skill_two": "Düşmanı iten ve hasar veren bir bomba ateşle. Ayrıca bu yetenek ile kendini fırlatabilir ve düşerken hasar almazsın.",
       "skill_three": "Zemine petrol dökersin. Petrolün içindeki düşmanlar susturulur ve yavaşlar.",
-      "skill_passive": "Bir yetenek kullandıktan sonra, Bir bariyer kazanırsın. Bir kaç bariyer gelen hasarın tamamını emebilir.",
+      "skill_passive": "Bir yetenek kullandıktan sonra bariyer kazanırsın. Yeterince bariyer gelen hasarın tamamını emebilir.",
       "skill_ultimate": "Hedefi takip eden bir füze fırlatırsın. Düşmana isabet ettiğinde onu hareketsiz bırakır ve alan hasarı verir."
     },
     "necromancer": {
       "intro": "Adelianın Koruyucularında Ölüm Büyücüsü 3. kademe bir sınıftır.",
-      "playstyle": "Ölüm büyücüsü olarak ölüme hükmedebilir ve yer altından ölüleri kaldırıp kendi ordunu kurabilirsin. Pasifin düşmanlarının çağırdığın ölüleri hedeflemesini sağlar. Ama ölülerini kontrol etmek zor olabilir. ve işler doğru gitmez ise 3. yeteneğini kullanarak fedailerini feda ederek kendini iyileştirebilirsin.",
+      "playstyle": "Ölüm büyücüsü olarak ölüme hükmedebilir ve yer altından ölüleri kaldırıp kendi ordunu kurabilirsin. Pasifin düşmanlarının çağırdığın ölüleri hedeflemesini sağlar. Ama ölülerini kontrol etmek zor olabilir. İşler doğru gitmezse 3. yeteneğini kullanarak fedailerini feda ederek kendini iyileştirebilirsin.",
       "skill_one": "İskelet çağır.",
       "skill_two": "Kurukafa fırlat, isabet halinde ufak bir alana hasar verir ve hedefleri yavaşlatır. Çağrıların isabet alan düşmanı hedef alır ve bonus koşu hızı kazanır.",
       "skill_three": "Ölü fedailerinin hepsi hasar alır. Hasar alan her fedain için canın yenilenir.",
@@ -120,7 +120,7 @@
       "intro": "Ölüm Meleği Adelianın Koruyucularında 3. Kademe bir sınıftır.",
       "playstyle": "Ölüm meleğinin pasifi diğer bütün yeteneklerini etkiler. Her düz saldırını kullandığında, bir ruh kazanırsın. Yeteneklerini kullanmadan önce yeteri kadar ruh topladıysan yeteneğin güçlenir.",
       "skill_one": "Tek bir hedefe hasar verir ve can yeniler. Can yenilemek için ruh kullanır.",
-      "skill_two": "Hedefe büyülü bir top atar ve hedef hasar alır aynı zamanda karanlığın kökleri ile sarılır. her vuruşta karanlık kökleri parçalarsın ve 2 Ruh toplarsın. Atılan büyülü topların sayısı topladığın ruh miktarına göre artar.",
+      "skill_two": "Hedefe büyülü bir top atar ve hedef hasar alır aynı zamanda karanlığın kökleri ile sarılır. her vuruşta karanlık kökleri parçalarsın ve 2 ruh toplarsın. Atılan büyülü topların sayısı topladığın ruh miktarına göre artar.",
       "skill_three": "Görünmez olursun ve hareket hızı kazanırsın. Herhangi bir yetenek kullanır yada düşmana saldırırsan etki sona erer. Topladığın ruh sayısına göre etkinin süresi artar",
       "skill_passive": "Düşmanlara düz saldırı yaptığında ruh toplarsın. Aktif yeteneklerin fazladan güçlendirmeler için ruhları tüketir. Bu yeteneğe puan verdiğinde toplayabileceğin ruhların sınırını arttırırsın.",
       "skill_ultimate": "Kendini ve seçtiğin bir düşmanı hareketsiz bırakırsın. Hareketsiz bırakma etkisi bittiğinde, düşman hasar yer. Hasarın artması için ruh tüketir."
