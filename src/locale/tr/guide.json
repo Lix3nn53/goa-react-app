@@ -12,7 +12,7 @@
   },
   "how-to-play": {
     "subject": "Nasıl oynanır?",
-    "p0": "Oynamak için sunucuya özel kaynak paketini yüklemeniz gerekir, aksi taktirde çok fazla görsel hata ile karşılaşırsınız. Sunucu kaynak paketiyle sunucuya katılmak için şu adımları izleyin: ",
+    "p0": "Oynamak için sunucuya özel kaynak paketini yüklemeniz gerekir, aksi takdirde çok fazla görsel hata ile karşılaşırsınız. Sunucu kaynak paketiyle sunucuya katılmak için şu adımları izleyin: ",
     "step1": {
       "text1": " ",
       "text2": "'u sunucu listenize ekleyin"
@@ -21,7 +21,7 @@
     "step3": "Sunucuya katılın ve kaynak paketinin yüklenmesini bekleyin. Bu adımda sorun yaşıyorsanız aşağıya bakın.",
     "h1": "Problem nedir?",
     "p1": {
-      "step1": "Minecraft launcher'inizi güncelleyin.",
+      "step1": "Minecraft Launcher'inizi güncelleyin.",
       "step2": "%Appdata% klasörünüze gidin ve .minecraft'a tıklayın. Sonra sunucu-kaynak paketlerine gidin ve Guardians of Adelia ile ilgili eski dosyaları silin."
     }
   },
