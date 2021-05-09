@@ -6,7 +6,8 @@
 
 .home .info {
   text-align: center;
-  margin: 16px;
+  margin: 24px;
+  font-weight: 600;
 }
 
 .home .info p span {

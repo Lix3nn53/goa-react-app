@@ -26,20 +26,20 @@
 
 [data-theme='dark'] {
   --color-background: #161b28;
-  --color-base: #1d2333;
-  --color-base-light: #21283b;
-  --color-divider: #2f3749;
+  --color-base: #21283b;
+  --color-base-light: #2e3752;
+  --color-divider: #3c465d;
   --color-text: #f2f2f8;
   --color-text-dark: #dedeed;
 }
 
 [data-theme='light'] {
-  --color-background: #f8f8fb;
-  --color-base: #fff;
-  --color-base-light: #fcfcfd;
-  --color-divider: #eaeaf5;
-  --color-text: #2f3749;
-  --color-text-dark: #21283b;
+  --color-background: #30271d;
+  --color-base: #403326;
+  --color-base-light: #604d39;
+  --color-divider: #6b5a47;
+  --color-text: #f2f2f8;
+  --color-text-dark: #dedeed;
 }
 
 [data-theme='brown'] {

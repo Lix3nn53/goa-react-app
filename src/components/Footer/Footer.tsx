@@ -29,11 +29,18 @@ const Footer: FC<Props> = ({ className, style, children }) => {
     }
   }
 
+  function renderYear() {
+    return new Date().getFullYear();
+  }
+
   return (
     <footer className={classNames} style={style}>
       {children}
-      <div style={{ marginTop: 'auto', marginLeft: 'auto' }}>
-        <Switch id="theme" customIcon="theme" onSwitch={toggleTheme} />
+      <div className="flex-container row" style={{ marginTop: 'auto' }}>
+        <p style={{ flex: '1' }}>Copyright Guardians of Adelia © 2017 - {renderYear()}</p>
+        <div style={{ flex: '0' }}>
+          <Switch id="theme" customIcon="theme" onSwitch={toggleTheme} />
+        </div>
       </div>
     </footer>
   );
