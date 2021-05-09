@@ -19,6 +19,11 @@ const Home: FunctionComponent = () => {
       <div className="top" style={{ flex: '1' }}>
         <img src={logo} alt="logo" className="top logo" />
       </div>
+      <div className="info" style={{ flex: '1' }}>
+        <p>
+          <span>{t('guide.server-ip')}</span>
+        </p>
+      </div>
       <div className="grid main" style={{ flex: '1' }}>
         <div className="posts">
           <div className="flex-container column">

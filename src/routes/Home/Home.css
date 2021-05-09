@@ -5,8 +5,15 @@
 }
 
 .home .info {
-  width: 100%;
   text-align: center;
+  margin: 16px;
+}
+
+.home .info p span {
+  padding: 16px;
+  border-radius: 12px;
+  background-color: var(--color-base);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
 }
 
 .home .logo {
