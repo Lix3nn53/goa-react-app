@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 
 import './Home.css';
 import logo from '../../img/logo.png';
-import twoh from '../../img/home/twoh.gif';
-import dungeonGate from '../../img/home/dungeon_gate.gif';
+import twoh from '../../img/home/twoh.webp';
+import dungeonGate from '../../img/home/dungeon_gate.webp';
 import campfire from '../../img/home/campfire.png';
 
 import Link from '../../components/Link';
