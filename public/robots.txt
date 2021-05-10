@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /news/
+Sitemap: https://wynncraft.com/sitemap.xml

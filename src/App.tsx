@@ -26,7 +26,7 @@ const App: FC = () => {
         <Header
           style={{ flex: '0' }}
           section1={[
-            <Link to="/" key="1">
+            <Link to="/" key="1" rel="home">
               <img src={brand} alt="brand" className="brand" />
             </Link>,
             <span style={{ display: 'flex' }} key="2">
