@@ -13,13 +13,13 @@ const ClassBody: FunctionComponent<Props> = ({ intro, playstyle, skillComponent 
   const { t } = useTranslation();
 
   return (
-    <div className="rpgclass">
+    <div style={{ paddingBottom: '9px' }}>
       <p>{t(intro)}</p>
       <h2>
         <span>{t('classes.playstyle')}</span>
       </h2>
       <p>{t(playstyle)}</p>
-      <h2>
+      <h2 style={{ paddingBottom: '9px' }}>
         <span>{t('classes.skills')}</span>
       </h2>
       {skillComponent}

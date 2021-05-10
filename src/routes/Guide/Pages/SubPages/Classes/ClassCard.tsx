@@ -87,7 +87,7 @@ const ClassCard: FunctionComponent<Props> = ({
   };
 
   return (
-    <Card header={<h2>{name}</h2>}>
+    <Card header={<h2>{name}</h2>} style={{ padding: '9px' }}>
       <img
         src={icon}
         alt="icon"

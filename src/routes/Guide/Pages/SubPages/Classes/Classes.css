@@ -36,5 +36,10 @@
 
 .guide-page .card {
   background-color: var(--color-base-light);
-  margin: 0 16px;
+}
+
+@media screen and (min-width: 800px) {
+  .guide-page .card {
+    margin: 0 0 0 16px;
+  }
 }
