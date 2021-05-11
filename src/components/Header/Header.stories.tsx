@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 import Header, { Props } from './Header';
 
-import brand from '../../img/favicon.png';
+import brand from '../../img/favicon.webp';
 import Link from '../Link';
 
 type StoryProps = Props & {

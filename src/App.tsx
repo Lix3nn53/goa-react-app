@@ -8,7 +8,7 @@ import Routes from './routes';
 import './styles/index.css';
 
 import Header from './components/Header';
-import brand from './img/favicon.png';
+import brand from './img/favicon.webp';
 import Link from './components/Link';
 import Footer from './components/Footer';
 import Dropdown from './components/Dropdown';

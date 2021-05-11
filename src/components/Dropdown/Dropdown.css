@@ -24,6 +24,7 @@ select::-ms-expand {
 
 /* Custom Select */
 .dropdown {
+  align-self: center;
   position: relative;
   display: flex;
   width: 4.75rem;

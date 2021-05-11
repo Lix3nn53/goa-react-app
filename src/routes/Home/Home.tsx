@@ -2,10 +2,10 @@ import React, { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import './Home.css';
-import logo from '../../img/logo.png';
+import logo from '../../img/logo.webp';
 import twoh from '../../img/home/twoh.webp';
 import dungeonGate from '../../img/home/dungeon_gate.webp';
-import campfire from '../../img/home/campfire.png';
+import campfire from '../../img/home/campfire.webp';
 
 import Link from '../../components/Link';
 import Card from '../../components/Card';
