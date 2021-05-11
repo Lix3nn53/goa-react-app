@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /news/
-Sitemap: https://guardiansofadelia.com/sitemap.xml
+Sitemap: https://www.guardiansofadelia.com/sitemap.xml
