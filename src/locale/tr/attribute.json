@@ -7,34 +7,34 @@
   "crit_damage": "Kritik Hasarı",
   "ability_haste": "Yetenek Hızı",
   "guide": {
-    "p0": "Attributes in Guardians of Adelia consists of primary attributes and elements.",
-    "h1": "Primary Attributes",
+    "p0": "Guardians of Adelia'daki nitelikler, birincil niteliklerden ve elementlerden oluşur.",
+    "h1": "Birincil Nitelikler",
     "table": {
-      "health": "Maximum health",
-      "mana": "Maximum mana, used for casting skills",
-      "damage": "Base damage, before adding elements",
-      "defense": "Base defense, before adding elements",
-      "crit_chance": "Chance to multiply your damage with critical damage",
-      "crit_damage": "Base value is 150%, can be increased with some skills or gear sets.",
-      "ability_haste": "Reduces cooldown of your skills. Formula: 100 / (100 + abilityHaste)"
+      "health": "Maksimum sağlık",
+      "mana": "Maksimum mana, yetenekleri kullanmaya yarar",
+      "damage": "Temel hasar, elementleri eklemeden önce",
+      "defense": "Temel savunma, elementleri eklemeden önce",
+      "crit_chance": "Hasarınızı kritik hasarla katlama şansı",
+      "crit_damage": "Temel değer 150%, bazı yetenekler ve setler ile arttırılabilir.",
+      "ability_haste": "Yeteneklerinizin bekleme süresini azaltır. Formül: 100 / (100 + yetenekBeklemeSüresi)"
     },
-    "h2": "Elements",
-    "p2": "Every damage in Guardians of Adelia has an element type and they effect the calculation of total damage and defense. There are 5 types of elements in Guardians of Adelia.",
-    "h3": "Damage & Defense Calculation",
+    "h2": "Elementler",
+    "p2": "Guardians of Adelia'daki her hasarın bir element tipi vardır ve bunlar toplam hasar ve defansını etkilerler. Guardians of Adelia'da 5 element vardır.",
+    "h3": "Hasar & Defans Hesaplaması",
     "p3": {
-      "text1": "For example if a damage's element is ",
+      "text1": "Örnek olarak eğer bir saldırının elementi bu ise ",
       "text2": {
-        "part1": "Total damage =",
-        "part2": "base damage of attacker + ",
-        "part3": " points of attacker"
+        "part1": "Toplam hasar =",
+        "part2": "saldıranın temel hasarı + ",
+        "part3": " saldıranın puanı"
       },
       "text3": {
-        "part1": "Total defense =",
-        "part2": "base defense of target + ",
-        "part3": " points of target"
+        "part1": "Toplam defans =",
+        "part2": "hedefin temel defansı + ",
+        "part3": " hedefin puanı"
       }
     },
-    "h4": "See your attributes in game",
-    "p4": "You can see your character's attributes from RPG Inventory."
+    "h4": "Niteliklerinizi oyunda görün",
+    "p4": "Karakterinizin niteliklerini RPG Envanterinden görebilirsiniz."
   }
 }
