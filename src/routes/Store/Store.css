@@ -1,0 +1,5 @@
+.register-page {
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* for max height */
+}

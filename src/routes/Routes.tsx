@@ -7,6 +7,7 @@ const Login = lazy(() => import('./Login'));
 const Register = lazy(() => import('./Register'));
 const Guide = lazy(() => import('./Guide'));
 const News = lazy(() => import('./News'));
+const Store = lazy(() => import('./Store'));
 const PageNotFound = lazy(() => import('./PageNotFound'));
 
 const Routes: FunctionComponent = () => (
@@ -17,6 +18,7 @@ const Routes: FunctionComponent = () => (
       <Route path="/register" exact component={Register} />
       <Route path="/guide" component={Guide} /> {/* Guide has subroutes so we do not use exact */}
       <Route path="/news" exact component={News} />
+      <Route path="/store" exact component={Store} />
       <Route component={PageNotFound} />
     </Switch>
   </Suspense>
