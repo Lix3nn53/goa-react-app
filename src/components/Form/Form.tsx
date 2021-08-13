@@ -15,6 +15,7 @@ export type Props = JSX.IntrinsicElements['form'] & {
   buttonText: string;
   buttonText2?: string;
   buttonSecondary?: boolean;
+  disabled?: boolean;
 };
 
 const Form: FC<Props> = ({
@@ -24,6 +25,7 @@ const Form: FC<Props> = ({
   buttonText2,
   buttonSecondary,
   onSubmit,
+  disabled,
 }) => {
   const baseStyle = 'form';
   const classNames = className ? `${baseStyle}  ${className}` : `${baseStyle}`;
@@ -88,7 +90,7 @@ const Form: FC<Props> = ({
       {renderInputs()}
       <div className="form-buttons flex-container">
         {renderSecondButton()}
-        <Button primary={!buttonSecondary} type="submit">
+        <Button primary={!buttonSecondary} type="submit" disabled={disabled}>
           {buttonText}
         </Button>
       </div>

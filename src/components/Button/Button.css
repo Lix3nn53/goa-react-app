@@ -12,6 +12,11 @@
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
 }
 
 .button-content {
@@ -82,14 +87,30 @@ button:active:after {
   background-color: var(--color-primary-darker);
 }
 
+.button-primary:disabled,
+.button-primary:disabled:before,
+.button-primary:disabled:after {
+  background-color: var(--color-base-light);
+}
+
 .button-secondary,
 .button-secondary:before,
 .button-secondary:after {
   background-color: var(--color-secondary-darker);
 }
 
+.button-secondary:disabled,
+.button-secondary:disabled:before,
+.button-secondary:disabled:after {
+  background-color: var(--color-base-light);
+}
+
 .button-primary .button-content {
   background-color: var(--color-primary);
+}
+
+.button-primary:disabled .button-content {
+  background-color: var(--color-divider);
 }
 
 .button-secondary .button-content {

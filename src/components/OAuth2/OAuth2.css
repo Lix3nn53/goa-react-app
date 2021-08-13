@@ -23,9 +23,15 @@
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
-a.social-link {
+button.social-link {
   text-decoration: none;
   color: var(--color-white);
+  cursor: pointer;
+}
+
+button.social-link:disabled {
+  cursor: default;
+  background-color: var(--color-divider);
 }
 
 .social-link:hover {

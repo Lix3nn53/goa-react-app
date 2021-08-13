@@ -7,7 +7,7 @@ export type Props = JSX.IntrinsicElements['button'] & {
   type: 'button' | 'submit';
 };
 
-const Button: FC<Props> = ({ className, children, style, onClick, primary, type }) => {
+const Button: FC<Props> = ({ className, children, style, onClick, primary, type, disabled }) => {
   const baseStyle = 'button';
   const buttonStyle = primary ? `button-primary` : `button-secondary`;
   const classNames = className
@@ -20,6 +20,7 @@ const Button: FC<Props> = ({ className, children, style, onClick, primary, type 
       style={style}
       onClick={onClick}
       type={type === 'button' ? 'button' : 'submit'}
+      disabled={disabled}
     >
       <div className="button-content">{children}</div>
     </button>

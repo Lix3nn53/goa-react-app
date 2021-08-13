@@ -1,11 +1,18 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import SocialLink from './SocialLink';
+import SocialLink from './OAuth2';
 
 it('renders correctly SocialLink Cta', () => {
   const wrapper = shallow(
-    <SocialLink social="facebook" to="/register">
+    <SocialLink
+      social="facebook"
+      authUrl=""
+      parameters={{}}
+      onCallback={() => {}}
+      disabled={false}
+      setDisabled={(param: boolean) => {}}
+    >
       SocialLink Cta
     </SocialLink>,
   );
@@ -15,7 +22,14 @@ it('renders correctly SocialLink Cta', () => {
 
 it('renders correctly SocialLink default', () => {
   const wrapper = shallow(
-    <SocialLink social="facebook" to="/login">
+    <SocialLink
+      social="facebook"
+      authUrl=""
+      parameters={{}}
+      onCallback={() => {}}
+      disabled={false}
+      setDisabled={(param: boolean) => {}}
+    >
       SocialLink default
     </SocialLink>,
   );

@@ -1,8 +1,12 @@
-import React, { FunctionComponent } from 'react';
+import React, { FC } from 'react';
 
 import Form from '../../../components/Form';
 
-const LoginForm: FunctionComponent = () => (
+export type Props = {
+  disabled?: boolean;
+};
+
+const LoginForm: FC<Props> = ({ disabled }) => (
   <Form
     rowArray={[
       [{ id: 'login-email', name: 'Email', type: 'email' }],
@@ -13,6 +17,7 @@ const LoginForm: FunctionComponent = () => (
     onSubmit={(event) => {
       event.preventDefault();
     }}
+    disabled={disabled}
   />
 );
 
