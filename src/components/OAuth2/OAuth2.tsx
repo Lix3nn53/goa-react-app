@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import { openSignInWindow } from './PopupHandler';
 
-import './SocialLink.css';
+import './OAuth2.css';
 
 export type Props = JSX.IntrinsicElements['button'] & {
   social: 'facebook' | 'twitter' | 'twitch' | 'google';
