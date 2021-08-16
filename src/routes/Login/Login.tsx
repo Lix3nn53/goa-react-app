@@ -14,7 +14,7 @@ const Login: FC = () => {
       <Card header={<p className="form-title">Account Login</p>} style={{ maxWidth: '484px' }}>
         <LoginForm disabled={loginsDisabled} />
         <p className="lined-text">Login with your Social Account</p>
-        <Strategies />
+        <Strategies disabled={loginsDisabled} setDisabled={setLoginsDisabled} />
       </Card>
     </div>
   );

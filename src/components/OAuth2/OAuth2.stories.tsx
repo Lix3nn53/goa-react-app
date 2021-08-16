@@ -15,7 +15,7 @@ export default {
         type: 'text',
       },
     },
-    social: {
+    provider: {
       defaultValue: 'facebook',
       control: {
         type: 'select',
@@ -25,11 +25,11 @@ export default {
   },
 } as Meta;
 
-export const SocialLinkStory: Story<Props> = ({ social, authUrl, parameters }) => {
+export const SocialLinkStory: Story<Props> = ({ provider, authUrl, parameters }) => {
   return (
     <BrowserRouter>
       <OAuth2
-        social={social}
+        provider={provider}
         authUrl={authUrl}
         parameters={parameters}
         onCallback={() => {}}

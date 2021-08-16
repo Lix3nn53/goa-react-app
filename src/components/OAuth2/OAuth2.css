@@ -1,14 +1,14 @@
-.social-links {
+.oauth-links {
   justify-content: center;
   padding-top: 24px;
   padding-bottom: 32px;
 }
 
-.social-links .social-link {
+.oauth-links .oauth-link {
   margin-right: 12px;
 }
 
-.social-link {
+.oauth-link {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -23,34 +23,34 @@
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
-button.social-link {
+button.oauth-link {
   text-decoration: none;
   color: var(--color-white);
   cursor: pointer;
 }
 
-button.social-link:disabled {
+button.oauth-link:disabled {
   cursor: default;
   background-color: var(--color-divider);
 }
 
-.social-link:hover {
+.oauth-link:hover {
   -webkit-transform: translateY(-4px);
   transform: translateY(-4px);
 }
 
-.social-link.facebook {
+.oauth-link.facebook {
   background-color: #3763d2;
 }
 
-.social-link.twitter {
+.oauth-link.twitter {
   background-color: #1abcff;
 }
 
-.social-link.twitch {
+.oauth-link.twitch {
   background-color: #7b5dfa;
 }
 
-.social-link.google {
+.oauth-link.google {
   background-color: #fd434f;
 }

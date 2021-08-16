@@ -33,8 +33,8 @@ button:disabled {
   padding-left: 34px;
 }
 
-button:before,
-button:after {
+.button:before,
+.button:after {
   content: '';
   display: block;
   width: 8px;
@@ -43,41 +43,41 @@ button:after {
   transition: all 0.2s ease;
 }
 
-button:before {
+.button:before {
   top: 0;
   left: 0;
   transform-origin: top left;
   transform: rotate(-45deg) scale(1);
 }
 
-button:after {
+.button:after {
   right: 0;
   bottom: 0;
   transform-origin: bottom right;
   transform: rotate(45deg) scale(1);
 }
 
-button:hover .button-content {
+.button:hover .button-content {
   transform: translate(4px, -4px);
 }
 
-button:hover:before {
+.button:hover:before {
   transform: rotate(-45deg) scale(0.66);
 }
 
-button:hover:after {
+.button:hover:after {
   transform: rotate(45deg) scale(0.66);
 }
 
-button:active .button-content {
+.button:active .button-content {
   transform: translate(0, 0);
 }
 
-button:active:before {
+.button:active:before {
   transform: rotate(-45deg) scale(0);
 }
 
-button:active:after {
+.button:active:after {
   transform: rotate(45deg) scale(0);
 }
 

@@ -4,7 +4,7 @@ import { openSignInWindow } from './PopupHandler';
 import './OAuth2.css';
 
 export type Props = JSX.IntrinsicElements['button'] & {
-  social: 'facebook' | 'twitter' | 'twitch' | 'google';
+  provider: 'facebook' | 'twitter' | 'twitch' | 'google';
   authUrl: string;
   parameters: any;
   onCallback: any;
@@ -15,16 +15,19 @@ export type Props = JSX.IntrinsicElements['button'] & {
 const SocialLink: FC<Props> = ({
   className,
   style,
-  social,
+  provider,
   authUrl,
   parameters,
   onCallback,
   disabled,
+  setDisabled,
 }) => {
   const [paramaterString, setParamaterString] = useState('');
 
-  const baseStyle = 'social-link';
-  const classNames = className ? `${baseStyle} ${social} ${className}` : `${baseStyle} ${social}`;
+  const baseStyle = 'oauth-link';
+  const classNames = className
+    ? `${baseStyle} ${provider} ${className}`
+    : `${baseStyle} ${provider}`;
 
   // create paramater string to use at url from paramaters obj
   useEffect(() => {
@@ -51,9 +54,12 @@ const SocialLink: FC<Props> = ({
       style={style}
       type="button"
       disabled={disabled}
-      onClick={() => openSignInWindow(authUrl + paramaterString, 'oauth', onCallback)}
+      onClick={() => {
+        setDisabled(true);
+        openSignInWindow(authUrl + paramaterString, 'oauth', onCallback);
+      }}
     >
-      <i className={`fab fa-${social}`} />
+      <i className={`fab fa-${provider}`} />
     </button>
   );
 };

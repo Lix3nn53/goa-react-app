@@ -2,37 +2,40 @@ import React, { FC, useState } from 'react';
 import OAuth2 from '../OAuth2';
 import AuthAPI from '../../../api/AuthAPI';
 
-const OAuth2Strategies: FC = () => {
-  const [loginsDisabled, setLoginsDisabled] = useState(false);
+export type Props = {
+  disabled: boolean;
+  setDisabled: { (param: boolean): void };
+};
 
+const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
   return (
-    <div className="flex-container social-links">
+    <div className="flex-container oauth-links">
       <OAuth2
-        social="facebook"
+        provider="facebook"
         authUrl=""
         parameters={{}}
-        disabled={loginsDisabled}
-        setDisabled={setLoginsDisabled}
-        onCallback={() => {}}
+        disabled={disabled}
+        setDisabled={setDisabled}
+        onCallback={() => setDisabled(false)}
       />
       <OAuth2
-        social="twitter"
+        provider="twitter"
         authUrl=""
         parameters={{}}
-        disabled={loginsDisabled}
-        setDisabled={setLoginsDisabled}
-        onCallback={() => {}}
+        disabled={disabled}
+        setDisabled={setDisabled}
+        onCallback={() => setDisabled(false)}
       />
       <OAuth2
-        social="twitch"
+        provider="twitch"
         authUrl=""
         parameters={{}}
-        disabled={loginsDisabled}
-        setDisabled={setLoginsDisabled}
-        onCallback={() => {}}
+        disabled={disabled}
+        setDisabled={setDisabled}
+        onCallback={() => setDisabled(false)}
       />
       <OAuth2
-        social="google"
+        provider="google"
         authUrl="https://accounts.google.com/o/oauth2/v2/auth"
         parameters={{
           client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
@@ -43,14 +46,16 @@ const OAuth2Strategies: FC = () => {
           include_granted_scopes: true,
           state: 'myteststate123',
         }}
-        disabled={loginsDisabled}
-        setDisabled={setLoginsDisabled}
+        disabled={disabled}
+        setDisabled={setDisabled}
         onCallback={async (params: any) => {
           console.log('Google', params);
           const authRes = await AuthAPI.googleAuth(params);
 
           if (authRes.success) {
             window.location.href = '/';
+          } else {
+            setDisabled(false);
           }
         }}
       />
