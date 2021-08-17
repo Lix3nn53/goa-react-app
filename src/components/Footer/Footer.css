@@ -10,7 +10,6 @@ footer a {
   color: var(--color-text);
 }
 
-footer a:hover,
-footer a:focus {
-  border-bottom: 1px solid var(--color-text);
+footer p {
+  padding: 0;
 }
