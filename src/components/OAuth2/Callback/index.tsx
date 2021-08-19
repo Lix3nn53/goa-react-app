@@ -11,7 +11,7 @@ const OAuth2Callback: FC = () => {
       // close the popup
       window.close();
     }
-  });
+  }, []);
 
   return <p>Redirecting...</p>;
 };

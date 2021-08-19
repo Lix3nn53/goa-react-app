@@ -1,7 +1,12 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 
+// i18
 import './locale';
 import { useTranslation } from 'react-i18next';
+
+// redux
+import { useDispatch } from 'react-redux';
+import actions from './store/actions';
 
 import Routes from './routes';
 
@@ -15,6 +20,11 @@ import Dropdown from './components/Dropdown';
 
 const App: FC = () => {
   const { t, i18n } = useTranslation();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(actions.fetchUser());
+  }, []);
 
   return (
     <React.StrictMode>
