@@ -53,7 +53,7 @@ const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
           const authRes = await AuthAPI.googleAuth(params);
 
           if (!authRes.error) {
-            // window.location.href = '/';
+            window.location.href = '/';
           } else {
             setDisabled(false);
           }

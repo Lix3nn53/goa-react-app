@@ -64,10 +64,22 @@ export default {
   },
 } as Meta;
 
-export const HeaderStory: Story<StoryProps> = ({ style, section1, section2, section3 }) => {
+export const HeaderStory: Story<StoryProps> = ({
+  style,
+  section1,
+  section2,
+  section3,
+  section3User,
+}) => {
   return (
     <BrowserRouter>
-      <Header style={style} section1={section1} section2={section2} section3={section3} />
+      <Header
+        style={style}
+        section1={section1}
+        section2={section2}
+        section3={section3}
+        section3User={section3User}
+      />
     </BrowserRouter>
   );
 };

@@ -7,7 +7,7 @@ import Header from './Header';
 it('renders correctly header', () => {
   const wrapper = shallow(
     <MemoryRouter initialEntries={['/']}>
-      <Header />
+      <Header section1={[]} section2={[]} section3={[]} section3User={[]} />
     </MemoryRouter>,
   );
 
