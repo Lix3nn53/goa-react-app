@@ -1,9 +1,26 @@
-import axios from 'axios';
+import api from './api';
+import TokenService from './TokenService';
+
+const logout = async () => {
+  try {
+    const res = await api.get(`/auth/logout`);
+    TokenService.removeLocalAccessToken();
+    TokenService.removeLocalRefreshToken();
+
+    return res;
+  } catch (error) {
+    if (error.response) {
+      return { error: error.response };
+    }
+
+    return { error: true };
+  }
+};
 
 const handleAuthResponse = (res: any) => {
   if (res.data.refresh_token && res.data.access_token) {
-    localStorage.setItem('refresh_token', res.data.refresh_token);
-    localStorage.setItem('access_token', res.data.access_token);
+    TokenService.setLocalAccessToken(res.data.access_token);
+    TokenService.setLocalRefreshToken(res.data.refresh_token);
 
     return { error: false };
   }
@@ -12,7 +29,7 @@ const handleAuthResponse = (res: any) => {
 
 const googleAuth = async (params: any) => {
   try {
-    const res = await axios.get(`/v1/auth/google${params}`);
+    const res = await api.get(`/auth/google${params}`);
     console.log(res.data);
 
     return handleAuthResponse(res);
@@ -26,5 +43,6 @@ const googleAuth = async (params: any) => {
 };
 
 export default {
+  logout,
   googleAuth,
 };

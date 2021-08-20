@@ -6,7 +6,7 @@ export default function (t: any) {
   return [
     [
       <Link to="/login" key="1">
-        {t('header.loginnn')}
+        AAA{t('header.loginnn')}
       </Link>,
       <Link cta to="/register" key="2">
         {t('header.registerrrr')}

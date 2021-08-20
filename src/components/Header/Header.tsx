@@ -14,6 +14,7 @@ export type Props = JSX.IntrinsicElements['header'] & {
 };
 
 const Header: FC<Props> = ({ className, style, section1, section2, section3, section3User }) => {
+  const user = useSelector((state: any) => state.user);
   const location = useLocation();
   const path = location.pathname.split('/')[1];
 
@@ -23,7 +24,7 @@ const Header: FC<Props> = ({ className, style, section1, section2, section3, sec
     ? `${baseStyle} ${headerStyle}  ${className}`
     : `${baseStyle} ${headerStyle}`;
 
-  const user = useSelector((state: any) => state.user);
+  console.log('header user', user);
 
   const renderSection3 = () => {
     switch (user) {

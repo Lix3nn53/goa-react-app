@@ -4,23 +4,20 @@ import UserAPI from '../../api/UsersAPI';
 const { FETCH_USER } = types;
 
 const fetchUser = () => async (dispatch: any) => {
-  const accessToken = localStorage.getItem('access_token');
+  try {
+    const res = await UserAPI.userInfo();
 
-  console.log('accessToken');
-  console.log(accessToken);
+    let userData = false;
+    if (res) {
+      userData = res.data;
+      console.log('fetchUser', res.data);
+    }
 
-  if (accessToken) {
-    try {
-      const res = await UserAPI.userInfo(accessToken);
-
-      const userData = res.data;
-
-      dispatch({ type: FETCH_USER, payload: userData });
-      return;
-    } catch (error) {
-      if (error.response) {
-        console.log(error.response);
-      }
+    dispatch({ type: FETCH_USER, payload: userData });
+    return;
+  } catch (error) {
+    if (error.response) {
+      console.log(error.response);
     }
   }
 

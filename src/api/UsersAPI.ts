@@ -1,20 +1,16 @@
-import axios from 'axios';
+import api from './api';
 
-const userInfo = async (accessToken: string) => {
+const userInfo = async () => {
   try {
-    const res = await axios.get('/v1/users/info', {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    });
+    const res = await api.get('/users/info');
 
-    return res.data;
+    return res;
   } catch (error) {
     if (error.response) {
-      return { error: error.response };
+      return false;
     }
 
-    return { error: true };
+    return false;
   }
 };
 
