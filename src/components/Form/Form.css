@@ -46,7 +46,7 @@ label {
 
 /* Not included directly in form component */
 
-p.form-title {
+.form-title {
   padding-top: 42px;
   text-align: center;
 }

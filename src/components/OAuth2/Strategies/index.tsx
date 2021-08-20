@@ -14,7 +14,7 @@ const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
         provider="facebook"
         authUrl=""
         parameters={{}}
-        disabled={disabled}
+        disabled
         setDisabled={setDisabled}
         onCallback={() => setDisabled(false)}
       />
@@ -22,7 +22,7 @@ const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
         provider="twitter"
         authUrl=""
         parameters={{}}
-        disabled={disabled}
+        disabled
         setDisabled={setDisabled}
         onCallback={() => setDisabled(false)}
       />
@@ -30,7 +30,7 @@ const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
         provider="twitch"
         authUrl=""
         parameters={{}}
-        disabled={disabled}
+        disabled
         setDisabled={setDisabled}
         onCallback={() => setDisabled(false)}
       />
@@ -53,7 +53,7 @@ const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
           const authRes = await AuthAPI.googleAuth(params);
 
           if (!authRes.error) {
-            // window.location.href = '/';
+            window.location.href = '/';
           } else {
             setDisabled(false);
           }
