@@ -8,13 +8,13 @@ export default function (t: any, user: any) {
   return [
     [
       <span key="1">
-        {t('header.credits')}: {user.credits}
+        {t('header.credits')}: {user ? user.credits : '?'}
       </span>,
       <Link to="/buy_credits" cta secondary key="2">
         {t('header.buy_credits')}
       </Link>,
       <Dropdown
-        text={user.mc_username}
+        text={user ? user.mc_username : 'Loading...'}
         elements={[
           <Link to="/profile">{t('header.profile')}</Link>,
           <Link to="/characters">{t('header.characters')}</Link>,
