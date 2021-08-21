@@ -23,3 +23,7 @@ button.button-text:disabled {
 button.button-text:hover {
   color: var(--color-primary-light);
 }
+
+button.button-text.secondary:hover {
+  color: var(--color-secondary-light);
+}

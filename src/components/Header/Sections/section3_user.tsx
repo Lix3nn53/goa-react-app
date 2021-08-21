@@ -18,7 +18,7 @@ export default function (t: any, user: any) {
         elements={[
           <Link to="/profile">{t('header.profile')}</Link>,
           <Link to="/characters">{t('header.characters')}</Link>,
-          <ButtonText type="button" onClick={() => console.log('logout')}>
+          <ButtonText type="button" secondary onClick={() => console.log('logout')}>
             {t('header.logout')}
           </ButtonText>,
         ]}
