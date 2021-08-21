@@ -7,10 +7,10 @@ import ButtonText from '../../ButtonText';
 export default function (t: any, user: any) {
   return [
     [
-      <span key="1">
+      <span key="21">
         {t('header.credits')}: {user ? user.credits : '?'}
       </span>,
-      <Link to="/buy_credits" cta secondary key="2">
+      <Link to="/buy_credits" cta secondary key="22">
         {t('header.buy_credits')}
       </Link>,
       <Dropdown
@@ -23,6 +23,7 @@ export default function (t: any, user: any) {
           </ButtonText>,
         ]}
         keys={['profile', 'characters', 'logout']}
+        key="23"
       />,
     ],
   ];

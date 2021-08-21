@@ -12,9 +12,7 @@ const RegisterForm: FunctionComponent = () => (
     ]}
     buttonText="Register Now!"
     buttonSecondary
-    onSubmit={(event) => {
-      event.preventDefault();
-    }}
+    onSubmit={(event) => {}}
   />
 );
 

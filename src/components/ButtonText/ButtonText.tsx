@@ -28,7 +28,7 @@ const ButtonText: FC<Props> = ({
       type={type === 'button' ? 'button' : 'submit'}
       disabled={disabled}
     >
-      <div className="button-content">{children}</div>
+      <div className="button-text-content">{children}</div>
     </button>
   );
 };

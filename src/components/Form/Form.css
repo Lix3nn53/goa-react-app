@@ -36,6 +36,11 @@ input:invalid {
   border-color: var(--color-danger);
 }
 
+input:disabled {
+  border-color: var(--color-divider);
+  cursor: not-allowed;
+}
+
 label {
   color: var(--color-text-dark);
   line-height: 1rem;

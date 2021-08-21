@@ -5,7 +5,7 @@
   background-color: var(--color-primary-dark);
   border-radius: 9px;
   cursor: pointer;
-  color: var(--color-white);
+  color: var(--color-text);
   text-align: center;
   transition: 0.3s;
 }
@@ -45,7 +45,11 @@
   transform: translateX(5px);
 }
 
-.dropdown-content .Link.variant--Link:hover {
+.dropdown-content .Link.variant--Link {
+  color: var(--color-text);
+}
+
+.dropdown-content a.Link.variant--Link:hover {
   color: var(--color-secondary);
 }
 

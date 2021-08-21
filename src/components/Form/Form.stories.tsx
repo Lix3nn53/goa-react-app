@@ -53,7 +53,6 @@ export const FormStory: Story<StoryProps> = ({
       buttonText2={buttonText2}
       buttonSecondary={buttonSecondary}
       onSubmit={(event) => {
-        event.preventDefault();
         action('submitted');
       }}
     />

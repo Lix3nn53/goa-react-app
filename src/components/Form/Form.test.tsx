@@ -13,9 +13,7 @@ it('renders correctly Register Form', () => {
         [{ id: 'register-repeat-password', name: 'Repeat Password', type: 'password' }],
       ]}
       buttonText="Register Now!"
-      onSubmit={(event) => {
-        event.preventDefault();
-      }}
+      onSubmit={(event) => {}}
     />,
   );
 

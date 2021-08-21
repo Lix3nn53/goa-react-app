@@ -14,9 +14,7 @@ const LoginForm: FC<Props> = ({ disabled }) => (
       [{ id: 'login-remember', name: 'Remember Me', type: 'checkbox' }],
     ]}
     buttonText="Login Now!"
-    onSubmit={(event) => {
-      event.preventDefault();
-    }}
+    onSubmit={(event) => {}}
     disabled={disabled}
   />
 );
