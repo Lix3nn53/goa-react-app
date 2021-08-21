@@ -2,11 +2,11 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { action } from '@storybook/addon-actions';
 
-import Dropdown, { Props } from './Dropdown';
+import DropdownSelection, { Props } from './DropdownSelection';
 
 export default {
-  component: Dropdown,
-  title: '01 - Basic/Dropdown',
+  component: DropdownSelection,
+  title: '01 - Basic/DropdownSelection',
   // creates specific argTypes with options
   argTypes: {
     id: {
@@ -24,6 +24,6 @@ export default {
   },
 } as Meta;
 
-export const SwitchStory: Story<Props> = ({ id, text, elements, keys }) => {
-  return <Dropdown text={text} id={id} elements={elements} keys={keys} />;
+export const SwitchStory: Story<Props> = ({ id, options }) => {
+  return <DropdownSelection id={id} options={options} handleChange={action('handleChange')} />;
 };

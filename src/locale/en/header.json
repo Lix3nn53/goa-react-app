@@ -3,5 +3,9 @@
   "news": "News",
   "store": "Store",
   "login": "Login",
-  "register": "Register"
+  "register": "Register",
+  "profile": "Profile",
+  "characters": "Characters",
+  "credits": "Credits",
+  "logout": "Logout"
 }

@@ -1,36 +1,39 @@
-import React, { FC, useState } from 'react';
+import React, { FC, ReactNode, useState } from 'react';
 
 import './Dropdown.css';
 
 export type Props = JSX.IntrinsicElements['div'] & {
-  options: Array<string>;
-  handleChange(value: string): void;
+  text: string;
+  elements: Array<ReactNode>;
+  keys: Array<string>;
 };
 
-const Dropdown: FC<Props> = ({ className, style, options, handleChange }) => {
-  const [value, setValue] = useState(options[0]);
+const Dropdown: FC<Props> = ({ className, style, text, elements, keys }) => {
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const baseStyle = 'dropdown';
   const classNames = className ? `${baseStyle} ${className}` : `${baseStyle}`;
 
+  const handleClick = () => {
+    setShowDropdown(!showDropdown);
+  };
+
   return (
-    <span className={classNames} style={style}>
-      <select
-        value={value}
-        onChange={(e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
-          setValue(e.currentTarget.value);
-          handleChange(e.currentTarget.value);
-        }}
-      >
-        {options.map((option) => {
-          return (
-            <option value={option} key={option}>
-              {option}
-            </option>
-          );
+    <div
+      className={showDropdown ? `${classNames} show` : classNames}
+      style={style}
+      onClick={handleClick}
+      onKeyDown={handleClick}
+      role="button"
+      tabIndex={0}
+    >
+      <span>{text}</span>
+      <ul className="dropdown-content">
+        {elements.map((element, i) => {
+          return <li key={keys[i]}>{element}</li>;
         })}
-      </select>
-    </span>
+      </ul>
+    </div>
   );
 };
 
