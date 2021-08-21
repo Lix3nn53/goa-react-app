@@ -23,13 +23,16 @@ header img {
   margin: 0 auto;
 }
 
-header a {
+header a,
+header button,
+header span {
   font-size: 21px;
   margin-left: 9px;
   margin-right: 9px;
 }
 
-header .Link {
+header .Link,
+header button {
   padding-top: 4px;
   padding-right: 15px;
   padding-bottom: 6px;

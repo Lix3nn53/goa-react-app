@@ -10,6 +10,10 @@
   transition: 0.3s;
 }
 
+.dropdown span {
+  font-weight: 600;
+}
+
 .dropdown-content {
   padding: 0 16px;
   border-radius: 12px;

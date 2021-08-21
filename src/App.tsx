@@ -5,7 +5,7 @@ import './locale';
 import { useTranslation } from 'react-i18next';
 
 // redux
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import actions from './store/actions';
 
 import Routes from './routes';
@@ -27,6 +27,8 @@ const App: FC = () => {
     dispatch(actions.fetchUser());
   }, []);
 
+  const user = useSelector((state: any) => state.user);
+
   return (
     <React.StrictMode>
       <div id="fullpage" className="fullpage flex-container column" data-theme="dark">
@@ -39,7 +41,7 @@ const App: FC = () => {
           section1={HeaderSection1(i18n)}
           section2={HeaderSection2(t)}
           section3={HeaderSection3(t)}
-          section3User={HeaderSection3User(t)}
+          section3User={HeaderSection3User(t, user)}
         />
 
         <main id="content" className="main-content" style={{ flex: '1' }}>

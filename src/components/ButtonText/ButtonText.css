@@ -1,0 +1,25 @@
+.button-text {
+  background-color: transparent;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+button.button-text {
+  text-decoration: none;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+button.button-text:disabled {
+  cursor: default;
+  background-color: var(--color-divider);
+}
+
+button.button-text:hover {
+  color: var(--color-primary-light);
+}

@@ -16,8 +16,16 @@ a.Link {
   transition-property: background-color, opacity;
 }
 
+.Link.variant--Cta.secondary {
+  background-color: var(--color-secondary-dark);
+}
+
 .Link.variant--Cta:hover {
   background-color: var(--color-primary);
+}
+
+.Link.variant--Cta.secondary:hover {
+  background-color: var(--color-secondary);
 }
 
 .Link.variant--Link {
@@ -26,6 +34,10 @@ a.Link {
 }
 
 .Link.variant--Link:hover {
+  color: var(--color-primary-light);
+}
+
+.Link.variant--Link.secondary:hover {
   color: var(--color-primary-light);
 }
 
@@ -51,9 +63,18 @@ a.Link {
   padding-left: 34px;
 }
 
+.Link.variant--Link.variant--Large.secondary {
+  color: var(--color-secondary-dark);
+  border: 1px solid var(--color-secondary-dark);
+}
+
 .Link.variant--Link.variant--Large:hover {
   color: var(--color-white);
   background-color: var(--color-primary-dark);
+}
+
+.Link.variant--Link.variant--Large.secondary:hover {
+  background-color: var(--color-secondary-dark);
 }
 
 p .Link.variant--Link {
