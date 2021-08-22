@@ -4,6 +4,8 @@ import Link from '../../Link';
 import Dropdown from '../../Dropdown';
 import ButtonText from '../../ButtonText';
 
+import AuthAPI from '../../../api/AuthAPI';
+
 export default function (t: any, user: any) {
   return [
     [
@@ -17,12 +19,21 @@ export default function (t: any, user: any) {
         text={user ? user.mc_username : 'Loading...'}
         elements={[
           <Link to="/profile">{t('header.profile')}</Link>,
+          <Link to="/player">{t('header.player')}</Link>,
           <Link to="/characters">{t('header.characters')}</Link>,
-          <ButtonText type="button" secondary onClick={() => console.log('logout')}>
+          <ButtonText
+            type="button"
+            secondary
+            onClick={async () => {
+              await AuthAPI.logout();
+
+              // window.location.href = '/';
+            }}
+          >
             {t('header.logout')}
           </ButtonText>,
         ]}
-        keys={['profile', 'characters', 'logout']}
+        keys={['profile', 'player', 'characters', 'logout']}
         key="23"
       />,
     ],

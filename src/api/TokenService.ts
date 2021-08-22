@@ -1,11 +1,9 @@
 const getLocalAccessToken = (): string | null => {
-  const accessToken = window.localStorage.getItem('accessToken');
-  return accessToken;
+  return window.localStorage.getItem('accessToken');
 };
 
 const getLocalRefreshToken = (): string | null => {
-  const refreshToken = window.localStorage.getItem('refreshToken');
-  return refreshToken;
+  return window.localStorage.getItem('refreshToken');
 };
 
 const setLocalAccessToken = (accessToken: string) => {

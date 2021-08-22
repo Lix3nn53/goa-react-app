@@ -9,6 +9,9 @@ const logout = async () => {
 
     return res;
   } catch (error) {
+    TokenService.removeLocalAccessToken();
+    TokenService.removeLocalRefreshToken();
+
     if (error.response) {
       return { error: error.response };
     }

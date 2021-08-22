@@ -9,6 +9,17 @@ const instance = axios.create({
 
 instance.interceptors.request.use(
   (config) => {
+    if (config.url === '/auth/logout') {
+      const token = TokenService.getLocalRefreshToken();
+      if (token) {
+        /* eslint-disable-next-line no-param-reassign */
+        config.headers.Authorization = `Bearer ${token}`; // for Spring Boot back-end
+        // config.headers['x-access-token'] = token; // for Node.js Express back-end
+      }
+
+      return config;
+    }
+
     const token = TokenService.getLocalAccessToken();
     if (token) {
       /* eslint-disable-next-line no-param-reassign */

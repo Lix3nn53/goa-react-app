@@ -14,23 +14,30 @@ const ProfileForm: FunctionComponent = () => {
       rowArray={[
         [
           {
-            id: 'register-email',
-            name: 'Email',
-            type: 'email',
-            defaultValue: user.email,
+            id: 'profile-uuid',
+            name: 'UUID',
+            type: 'text',
+            defaultValue: user.uuid,
+            disabled: true,
           },
         ],
         [
           {
-            id: 'register-username',
+            id: 'profile-username',
             name: 'Username',
             type: 'text',
             defaultValue: user.mc_username,
             disabled: true,
           },
         ],
-        [{ id: 'register-password', name: 'Password', type: 'password' }],
-        [{ id: 'register-repeat-password', name: 'Repeat Password', type: 'password' }],
+        [
+          {
+            id: 'profile-email',
+            name: 'Email',
+            type: 'email',
+            defaultValue: user.email,
+          },
+        ],
       ]}
       buttonText="Save!"
       buttonText2="Reset"
@@ -40,16 +47,13 @@ const ProfileForm: FunctionComponent = () => {
           0: { value: string };
           1: { value: string };
           2: { value: string };
-          3: { value: string };
         };
-        const email = target['0'].value;
+        const uuid = target['0'].value;
         const username = target['1'].value;
-        const password = target['2'].value;
-        const repeatPassword = target['3'].value;
-        console.log('email', email);
+        const email = target['2'].value;
+        console.log('uuid', uuid);
         console.log('username', username);
-        console.log('password', password);
-        console.log('repeatPassword', repeatPassword);
+        console.log('email', email);
       }}
       onButton2={() => {
         console.log('reset');
