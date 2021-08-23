@@ -11,7 +11,7 @@ const Login: FC = () => {
 
   return (
     <div className="flex-container login-page">
-      <Card header={<h3 className="form-title">Account Login</h3>} style={{ maxWidth: '484px' }}>
+      <Card header={<h3 className="form-title">Account Login</h3>} width="small">
         <LoginForm disabled={loginsDisabled} />
         <p className="lined-text">Login with your Social Account</p>
         <Strategies disabled={loginsDisabled} setDisabled={setLoginsDisabled} />

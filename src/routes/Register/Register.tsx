@@ -7,10 +7,7 @@ import RegisterForm from './RegisterForm';
 
 const Register: FunctionComponent = () => (
   <div className="flex-container register-page">
-    <Card
-      header={<h3 className="form-title">Create your Account!</h3>}
-      style={{ maxWidth: '484px' }}
-    >
+    <Card header={<h3 className="form-title">Create your Account!</h3>} width="small">
       <RegisterForm />
     </Card>
   </div>

@@ -1,0 +1,30 @@
+.player-page {
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* for max height */
+  padding: 0 128px;
+}
+
+.player-page .card {
+  min-height: 0;
+  flex: 1;
+  margin: 0 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .player-page .card {
+    margin: 12px 0;
+  }
+}
+
+.player-page .card .card-header {
+  padding: 0 12px;
+}
+
+.player-page .card .card-header p {
+  text-align: center;
+}
+
+.player-page .card .card-content p {
+  text-align: center;
+}

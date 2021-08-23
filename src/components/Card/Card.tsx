@@ -5,11 +5,13 @@ import './Card.css';
 export type Props = JSX.IntrinsicElements['div'] & {
   header?: React.ReactNode;
   footer?: React.ReactNode;
+  width?: 'small' | 'medium' | 'large';
 };
 
-const Card: FC<Props> = ({ className, children, style, header, footer }) => {
+const Card: FC<Props> = ({ className, children, style, header, footer, width }) => {
   const baseStyle = 'card';
-  const classNames = className ? `${baseStyle}  ${className}` : `${baseStyle}`;
+  const widthStyle = width;
+  const classNames = className ? `${baseStyle}  ${widthStyle} ${className}` : `${baseStyle}`;
 
   const renderHeader = () => {
     if (!header) return <div />;

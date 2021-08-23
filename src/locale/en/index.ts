@@ -6,6 +6,7 @@ import classes from './classes.json';
 import element from './element.json';
 import guide from './guide.json';
 import item from './item.json';
+import player from './player.json';
 import skills from './skills.json';
 
 export default {
@@ -17,6 +18,7 @@ export default {
     element,
     guide,
     item,
+    player,
     skills,
   },
 };
