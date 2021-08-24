@@ -9,6 +9,8 @@
   "tier": "Class Tier",
   "playstyle": "Playstyle",
   "skills": "Skills",
+  "total_exp": "Total Exp",
+  "unlocked": "Unlocked Classes",
   "tier1": {
     "description": "Tier 1 classes are the weakest in Guardians of Adelia.",
     "dragonslayer": {

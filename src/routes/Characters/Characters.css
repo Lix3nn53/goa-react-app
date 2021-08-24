@@ -1,0 +1,5 @@
+.characters-page {
+  align-items: center;
+  flex: 1; /* for max height */
+  padding: 0 128px;
+}

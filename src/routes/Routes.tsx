@@ -10,6 +10,7 @@ const News = lazy(() => import('./News'));
 // User
 const Profile = lazy(() => import('./Profile'));
 const Player = lazy(() => import('./Player'));
+const Characters = lazy(() => import('./Characters'));
 
 // Store
 const Store = lazy(() => import('./Store'));
@@ -32,6 +33,7 @@ const Routes: FunctionComponent = () => (
       <Route path="/register" exact component={Register} />
       <Route path="/profile" exact component={Profile} />
       <Route path="/player" exact component={Player} />
+      <Route path="/characters" exact component={Characters} />
       <Route path="/guide" component={Guide} /> {/* Guide has subroutes so we do not use exact */}
       <Route path="/news" exact component={News} />
       <Route path="/store" exact component={Store} />
