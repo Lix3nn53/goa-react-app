@@ -45,7 +45,23 @@ const googleAuth = async (params: any) => {
   }
 };
 
+const minecraftAuth = async (params: any) => {
+  try {
+    const res = await api.get(`/auth/minecraft${params}`);
+    console.log(res.data);
+
+    return handleAuthResponse(res);
+  } catch (error) {
+    if (error.response) {
+      return { error: error.response };
+    }
+
+    return { error: true };
+  }
+};
+
 export default {
   logout,
   googleAuth,
+  minecraftAuth,
 };

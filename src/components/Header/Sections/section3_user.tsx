@@ -27,7 +27,7 @@ export default function (t: any, user: any) {
             onClick={async () => {
               await AuthAPI.logout();
 
-              // window.location.href = '/';
+              window.location.href = '/';
             }}
           >
             {t('header.logout')}

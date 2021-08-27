@@ -16,10 +16,10 @@ export default {
       },
     },
     provider: {
-      defaultValue: 'facebook',
+      defaultValue: 'google',
       control: {
         type: 'select',
-        options: ['facebook', 'google', 'twitter', 'twitch'],
+        options: ['facebook', 'google', 'twitter', 'twitch', 'minecraft'],
       },
     },
   },

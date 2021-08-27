@@ -54,3 +54,7 @@ button.oauth-link:disabled {
 .oauth-link.google {
   background-color: #fd434f;
 }
+
+.oauth-link.minecraft {
+  background-color: #00aa00;
+}

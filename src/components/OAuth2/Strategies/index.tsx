@@ -59,6 +59,31 @@ const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
           }
         }}
       />
+      <OAuth2
+        provider="minecraft"
+        icon="fas fa-cube"
+        authUrl="https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+        parameters={{
+          client_id: process.env.REACT_APP_MICROSOFT_CLIENT_ID,
+          redirect_uri: process.env.REACT_APP_OAUTH2_REDIRECT_URI,
+          response_type: 'code',
+          response_mode: 'query',
+          scope: 'XboxLive.signin%20offline_access',
+          state: 'myteststate123',
+        }}
+        disabled={disabled}
+        setDisabled={setDisabled}
+        onCallback={async (params: any) => {
+          console.log('Minecraft', params);
+          const authRes = await AuthAPI.minecraftAuth(params);
+
+          if (!authRes.error) {
+            window.location.href = '/';
+          } else {
+            setDisabled(false);
+          }
+        }}
+      />
     </div>
   );
 };

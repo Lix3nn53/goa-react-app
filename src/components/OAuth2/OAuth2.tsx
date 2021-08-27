@@ -4,7 +4,8 @@ import { openSignInWindow } from './PopupHandler';
 import './OAuth2.css';
 
 export type Props = JSX.IntrinsicElements['button'] & {
-  provider: 'facebook' | 'twitter' | 'twitch' | 'google';
+  provider: 'facebook' | 'twitter' | 'twitch' | 'google' | 'minecraft';
+  icon?: string;
   authUrl: string;
   parameters: any;
   onCallback: any;
@@ -16,6 +17,7 @@ const SocialLink: FC<Props> = ({
   className,
   style,
   provider,
+  icon,
   authUrl,
   parameters,
   onCallback,
@@ -28,6 +30,7 @@ const SocialLink: FC<Props> = ({
   const classNames = className
     ? `${baseStyle} ${provider} ${className}`
     : `${baseStyle} ${provider}`;
+  const iconClass = icon || `fab fa-${provider}`;
 
   // create paramater string to use at url from paramaters obj
   useEffect(() => {
@@ -59,7 +62,7 @@ const SocialLink: FC<Props> = ({
         openSignInWindow(authUrl + paramaterString, 'oauth', onCallback);
       }}
     >
-      <i className={`fab fa-${provider}`} />
+      <i className={iconClass} />
     </button>
   );
 };
