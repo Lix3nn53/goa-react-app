@@ -1,13 +1,3 @@
-.oauth-links {
-  justify-content: center;
-  padding-top: 24px;
-  padding-bottom: 32px;
-}
-
-.oauth-links .oauth-link {
-  margin-right: 12px;
-}
-
 .oauth-link {
   display: -ms-flexbox;
   display: flex;
@@ -57,4 +47,31 @@ button.oauth-link:disabled {
 
 .oauth-link.minecraft {
   background-color: #00aa00;
+}
+
+/*
+Strategies
+*/
+.oauth-strategies {
+  max-width: 484px;
+}
+
+.oauth-strategies-top,
+.oauth-strategies-bottom {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 24px;
+}
+
+.oauth-strategies-bottom {
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.oauth-strategies-bottom .oauth-badges {
+  justify-content: center;
+}
+
+.oauth-badges .oauth-link {
+  margin-right: 12px;
 }

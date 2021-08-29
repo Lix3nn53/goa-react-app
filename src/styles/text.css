@@ -3,7 +3,7 @@
   font-weight: 700;
   text-align: center !important;
   position: relative;
-  padding: 0;
+  padding: 10px;
 }
 
 .lined-text::after,
@@ -13,7 +13,7 @@
   height: 1px;
   background-color: var(--color-divider);
   position: absolute;
-  top: 7px;
+  top: 20px;
 }
 
 .lined-text::before {

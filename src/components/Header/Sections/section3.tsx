@@ -8,7 +8,7 @@ export default function (t: any) {
       <Link to="/login" key="1">
         {t('header.login')}
       </Link>,
-      <Link cta to="/register" key="2">
+      <Link cta to="/login" key="2">
         {t('header.register')}
       </Link>,
     ],
