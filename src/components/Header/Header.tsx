@@ -4,8 +4,6 @@ import { useSelector } from 'react-redux';
 
 import './Header.css';
 
-import Loading from '../Loading';
-
 export type Props = JSX.IntrinsicElements['header'] & {
   section1: Array<ReactNode>;
   section2: Array<ReactNode>;
@@ -29,7 +27,7 @@ const Header: FC<Props> = ({ className, style, section1, section2, section3, sec
   const renderSection3 = () => {
     switch (user) {
       case null:
-        return <Loading />;
+        return <span>Loading...</span>;
       case false:
         return section3;
       default:
