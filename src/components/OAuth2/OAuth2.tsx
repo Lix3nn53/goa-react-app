@@ -1,12 +1,24 @@
 import React, { FC, useEffect, useState } from 'react';
-import { openSignInWindow } from './PopupHandler';
+
+// Font awesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import {
+  faMicrosoft,
+  faFacebook,
+  faDiscord,
+  faTwitch,
+  faGoogle,
+  faReact,
+} from '@fortawesome/free-brands-svg-icons';
 
 import './OAuth2.css';
 import Button from '../Button';
 
+import { openSignInWindow } from './PopupHandler';
+
 export type Props = JSX.IntrinsicElements['button'] & {
-  provider: 'facebook' | 'twitter' | 'twitch' | 'google' | 'minecraft';
-  icon?: string;
+  provider: 'minecraft' | 'facebook' | 'discord' | 'twitch' | 'google';
   button?: boolean;
   authUrl: string;
   parameters: any;
@@ -19,7 +31,6 @@ const SocialLink: FC<Props> = ({
   className,
   style,
   provider,
-  icon,
   button,
   authUrl,
   parameters,
@@ -34,7 +45,6 @@ const SocialLink: FC<Props> = ({
   const classNames = className
     ? `${baseStyle} ${provider} ${className}`
     : `${baseStyle} ${provider}`;
-  const iconClass = icon || `fab fa-${provider}`;
 
   // create paramater string to use at url from paramaters obj
   useEffect(() => {
@@ -55,6 +65,23 @@ const SocialLink: FC<Props> = ({
     console.log(paramaterString);
   }, [parameters, paramaterString]);
 
+  const getIcon = () => {
+    switch (provider) {
+      case 'minecraft':
+        return faMicrosoft;
+      case 'facebook':
+        return faFacebook;
+      case 'discord':
+        return faDiscord;
+      case 'twitch':
+        return faTwitch;
+      case 'google':
+        return faGoogle;
+      default:
+        return faReact;
+    }
+  };
+
   if (button) {
     return (
       <Button
@@ -67,7 +94,7 @@ const SocialLink: FC<Props> = ({
           openSignInWindow(authUrl + paramaterString, 'oauth', onCallback);
         }}
       >
-        <i className={iconClass} />
+        <FontAwesomeIcon icon={getIcon()} size="lg" />
         {children}
       </Button>
     );
@@ -84,7 +111,7 @@ const SocialLink: FC<Props> = ({
         openSignInWindow(authUrl + paramaterString, 'oauth', onCallback);
       }}
     >
-      <i className={iconClass} />
+      <FontAwesomeIcon icon={getIcon()} />
       {children}
     </button>
   );

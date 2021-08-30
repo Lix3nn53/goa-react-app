@@ -1,4 +1,5 @@
 import api from './api';
+import errors from './errors';
 import TokenService from './TokenService';
 
 const logout = async () => {
@@ -12,11 +13,7 @@ const logout = async () => {
     TokenService.removeLocalAccessToken();
     TokenService.removeLocalRefreshToken();
 
-    if (error.response) {
-      return { error: error.response };
-    }
-
-    return { error: true };
+    return errors.errorHandler(error);
   }
 };
 
@@ -37,11 +34,7 @@ const googleAuth = async (params: any) => {
 
     return handleAuthResponse(res);
   } catch (error) {
-    if (error.response) {
-      return { error: error.response };
-    }
-
-    return { error: true };
+    return errors.errorHandler(error);
   }
 };
 
@@ -52,11 +45,7 @@ const minecraftAuth = async (params: any) => {
 
     return handleAuthResponse(res);
   } catch (error) {
-    if (error.response) {
-      return { error: error.response };
-    }
-
-    return { error: true };
+    return errors.errorHandler(error);
   }
 };
 

@@ -1,16 +1,17 @@
 import types from './types';
 import UserAPI from '../../api/UsersAPI';
+import errors from '../../api/errors';
 
 const { FETCH_USER } = types;
 
 const fetchUser = () => async (dispatch: any) => {
   try {
-    const res = await UserAPI.userInfo();
+    const response = await UserAPI.userInfo();
 
     let userData = false;
-    if (res) {
-      userData = res.data;
-      console.log('fetchUser', res.data);
+    if (!errors.isError(response)) {
+      userData = response.data;
+      console.log('fetchUser', response.data);
     }
 
     dispatch({ type: FETCH_USER, payload: userData });

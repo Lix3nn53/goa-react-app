@@ -1,4 +1,5 @@
 import axios from 'axios';
+import errors from './errors';
 
 const nameHistory = async (uuid: string) => {
   try {
@@ -6,11 +7,7 @@ const nameHistory = async (uuid: string) => {
 
     return res;
   } catch (error) {
-    if (error.response) {
-      return false;
-    }
-
-    return false;
+    return errors.errorHandler(error);
   }
 };
 

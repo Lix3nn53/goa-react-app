@@ -8,6 +8,7 @@ import Loading from '../../components/Loading';
 import './Characters.css';
 
 import CharacterAPI from '../../api/CharacterAPI';
+import errors from '../../api/errors';
 
 interface ICharacter {
   character_no: string;
@@ -32,7 +33,7 @@ const Characters: FC = () => {
     async function fetchCharacters() {
       const response = await CharacterAPI.characterInfo();
 
-      if (!response) return;
+      if (errors.isError(response)) return;
 
       setCharacters(response.data);
     }

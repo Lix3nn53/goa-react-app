@@ -11,6 +11,7 @@ import Loading from '../../components/Loading';
 import './Player.css';
 
 import PlayerAPI from '../../api/PlayerAPI';
+import errors from '../../api/errors';
 
 interface IPlayer {
   uuid: string;
@@ -32,7 +33,7 @@ const Player: FC = () => {
     async function fetchPlayer() {
       const response = await PlayerAPI.playerInfo();
 
-      if (!response) return;
+      if (errors.isError(response)) return;
 
       setPLayer(response.data);
     }

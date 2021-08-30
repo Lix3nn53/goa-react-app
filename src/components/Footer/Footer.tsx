@@ -39,12 +39,16 @@ const Footer: FC<Props> = ({ className, style, children }) => {
       {children}
       <div className="flex-container column" style={{ marginTop: 'auto' }}>
         <div className="flex-container column" style={{ paddingBottom: '8px' }}>
-          <Link style={{ flex: '1' }} to="/privacy">
-            Privacy Policy
-          </Link>
-          <Link style={{ flex: '1' }} to="/tos">
-            Terms of Service
-          </Link>
+          <div>
+            <Link style={{ flex: '1' }} to="/privacy">
+              Privacy Policy
+            </Link>
+          </div>
+          <div>
+            <Link style={{ flex: '1' }} to="/tos">
+              Terms of Service
+            </Link>
+          </div>
         </div>
         <div className="flex-container row" style={{ paddingBottom: '8px' }}>
           <p style={{ flex: '1' }}>Copyright Guardians of Adelia © 2017 - {renderYear()}</p>

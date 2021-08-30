@@ -1,4 +1,5 @@
 import api from './api';
+import errors from './errors';
 
 const userInfo = async () => {
   try {
@@ -6,11 +7,7 @@ const userInfo = async () => {
 
     return res;
   } catch (error) {
-    if (error.response) {
-      return false;
-    }
-
-    return false;
+    return errors.errorHandler(error);
   }
 };
 

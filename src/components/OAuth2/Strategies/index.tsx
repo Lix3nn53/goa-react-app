@@ -2,14 +2,19 @@ import React, { FC, useState } from 'react';
 import OAuth2 from '../OAuth2';
 import AuthAPI from '../../../api/AuthAPI';
 
-export type Props = {
-  disabled: boolean;
-  setDisabled: { (param: boolean): void };
-};
+const OAuth2Strategies: FC = () => {
+  const [disabled, setDisabled] = useState(false);
+  const [error, setError] = useState('');
 
-const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
+  const renderError = () => {
+    if (error === '') return <span />;
+
+    return <p className="error">{error}</p>;
+  };
+
   return (
     <div className="oauth-strategies">
+      {renderError()}
       <div className="oauth-strategies-top flex-container column">
         <p style={{ flex: '1', paddingBottom: '20px', fontStyle: 'italic' }}>
           Login with microsoft account which owns minecraft to directly link your minecraft account.
@@ -17,7 +22,6 @@ const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
         <OAuth2
           style={{ flex: '1' }}
           provider="minecraft"
-          icon="fas fa-cube"
           button
           className="button-primary"
           authUrl="https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize"
@@ -34,12 +38,13 @@ const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
           setDisabled={setDisabled}
           onCallback={async (params: any) => {
             console.log('Minecraft', params);
-            const authRes = await AuthAPI.minecraftAuth(params);
+            const response = await AuthAPI.minecraftAuth(params);
 
-            if (!authRes.error) {
+            if (!response.error) {
               window.location.href = '/';
             } else {
               setDisabled(false);
+              setError(response.error);
             }
           }}
         >
@@ -52,7 +57,7 @@ const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
         <p style={{ flex: '1', paddingBottom: '20px', fontStyle: 'italic' }}>
           You will have to link your minecraft account manually with in-game command.
         </p>
-        <div className="oauth-badges flex-container row">
+        <div className="oauth-badges flex-container">
           <OAuth2
             provider="facebook"
             authUrl=""
@@ -62,7 +67,7 @@ const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
             onCallback={() => setDisabled(false)}
           />
           <OAuth2
-            provider="twitter"
+            provider="discord"
             authUrl=""
             parameters={{}}
             disabled
@@ -93,12 +98,13 @@ const OAuth2Strategies: FC<Props> = ({ disabled, setDisabled }) => {
             setDisabled={setDisabled}
             onCallback={async (params: any) => {
               console.log('Google', params);
-              const authRes = await AuthAPI.googleAuth(params);
+              const response = await AuthAPI.googleAuth(params);
 
-              if (!authRes.error) {
+              if (!response.error) {
                 window.location.href = '/';
               } else {
                 setDisabled(false);
+                setError(response.error);
               }
             }}
           />

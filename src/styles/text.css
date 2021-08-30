@@ -23,3 +23,7 @@
 .lined-text::after {
   right: 0;
 }
+
+.error {
+  color: var(--color-danger);
+}

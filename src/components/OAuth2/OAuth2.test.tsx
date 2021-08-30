@@ -6,7 +6,7 @@ import SocialLink from './OAuth2';
 it('renders correctly SocialLink Cta', () => {
   const wrapper = shallow(
     <SocialLink
-      social="facebook"
+      provider="facebook"
       authUrl=""
       parameters={{}}
       onCallback={() => {}}
@@ -23,7 +23,7 @@ it('renders correctly SocialLink Cta', () => {
 it('renders correctly SocialLink default', () => {
   const wrapper = shallow(
     <SocialLink
-      social="facebook"
+      provider="facebook"
       authUrl=""
       parameters={{}}
       onCallback={() => {}}

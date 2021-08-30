@@ -53,7 +53,7 @@ button.oauth-link:disabled {
 Strategies
 */
 .oauth-strategies {
-  max-width: 484px;
+  max-width: 435px;
 }
 
 .oauth-strategies-top,
@@ -70,6 +70,9 @@ Strategies
 
 .oauth-strategies-bottom .oauth-badges {
   justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .oauth-badges .oauth-link {
