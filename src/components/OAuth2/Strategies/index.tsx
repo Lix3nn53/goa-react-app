@@ -9,7 +9,11 @@ const OAuth2Strategies: FC = () => {
   const renderError = () => {
     if (error === '') return <span />;
 
-    return <p className="error">{error}</p>;
+    return (
+      <p className="error" style={{ textAlign: 'center' }}>
+        {error}
+      </p>
+    );
   };
 
   return (
