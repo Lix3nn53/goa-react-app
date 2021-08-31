@@ -29,26 +29,6 @@ button.oauth-link:disabled {
   transform: translateY(-4px);
 }
 
-.oauth-link.facebook {
-  background-color: #3763d2;
-}
-
-.oauth-link.twitter {
-  background-color: #1abcff;
-}
-
-.oauth-link.twitch {
-  background-color: #7b5dfa;
-}
-
-.oauth-link.google {
-  background-color: #fd434f;
-}
-
-.oauth-link.minecraft {
-  background-color: #00aa00;
-}
-
 /*
 Strategies
 */
@@ -77,4 +57,31 @@ Strategies
 
 .oauth-badges .oauth-link {
   margin-right: 12px;
+}
+
+/*
+Brand Colors
+*/
+.oauth-link.facebook {
+  background-color: #3763d2;
+}
+
+.oauth-link.twitter {
+  background-color: #1abcff;
+}
+
+.oauth-link.twitch {
+  background-color: #7b5dfa;
+}
+
+.oauth-link.google {
+  background-color: #fd434f;
+}
+
+.oauth-link.minecraft {
+  background-color: #00aa00;
+}
+
+.oauth-link.discord {
+  background-color: #7289da;
 }

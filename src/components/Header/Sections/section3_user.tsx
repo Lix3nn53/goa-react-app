@@ -6,7 +6,7 @@ import ButtonText from '../../ButtonText';
 
 import AuthAPI from '../../../api/AuthAPI';
 
-export default function (t: any, user: any) {
+export default function (t: any, user: any, mcUsername: string) {
   return [
     [
       <span key="21">
@@ -16,7 +16,7 @@ export default function (t: any, user: any) {
         {t('header.buy_credits')}
       </Link>,
       <Dropdown
-        text={user ? user.mc_username : 'Loading...'}
+        text={user ? mcUsername : 'Loading...'}
         elements={[
           <Link to="/profile">{t('header.profile')}</Link>,
           <Link to="/player">{t('header.player')}</Link>,

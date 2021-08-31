@@ -66,7 +66,7 @@ const OAuth2Strategies: FC = () => {
             provider="facebook"
             authUrl=""
             parameters={{}}
-            disabled
+            disabled={disabled}
             setDisabled={setDisabled}
             onCallback={() => setDisabled(false)}
           />
@@ -74,7 +74,7 @@ const OAuth2Strategies: FC = () => {
             provider="discord"
             authUrl=""
             parameters={{}}
-            disabled
+            disabled={disabled}
             setDisabled={setDisabled}
             onCallback={() => setDisabled(false)}
           />
@@ -82,7 +82,7 @@ const OAuth2Strategies: FC = () => {
             provider="twitch"
             authUrl=""
             parameters={{}}
-            disabled
+            disabled={disabled}
             setDisabled={setDisabled}
             onCallback={() => setDisabled(false)}
           />

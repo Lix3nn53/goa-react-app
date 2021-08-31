@@ -1,9 +1,9 @@
-import axios from 'axios';
+import api from './api';
 import errors from './errors';
 
 const nameHistory = async (uuid: string) => {
   try {
-    const res = await axios.get(`https://api.mojang.com/user/profiles/${uuid}/names`);
+    const res = await api.post(`/mojang/profiles`, { uuid });
 
     return res;
   } catch (error) {

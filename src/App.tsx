@@ -29,6 +29,14 @@ const App: FC = () => {
 
   const user = useSelector((state: any) => state.user);
 
+  useEffect(() => {
+    if (!user || !user.uuid) return;
+
+    dispatch(actions.fetchMcUsername(user.uuid));
+  }, [user]);
+
+  const mcUsername = useSelector((state: any) => state.mc_username);
+
   return (
     <React.StrictMode>
       <div id="fullpage" className="fullpage flex-container column" data-theme="dark">
@@ -41,7 +49,7 @@ const App: FC = () => {
           section1={HeaderSection1(i18n)}
           section2={HeaderSection2(t)}
           section3={HeaderSection3(t)}
-          section3User={HeaderSection3User(t, user)}
+          section3User={HeaderSection3User(t, user, mcUsername)}
         />
 
         <main id="content" className="main-content" style={{ flex: '1' }}>
