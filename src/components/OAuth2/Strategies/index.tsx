@@ -98,11 +98,29 @@ const OAuth2Strategies: FC = () => {
           />
           <OAuth2
             provider="twitch"
-            authUrl=""
-            parameters={{}}
-            disabled
+            authUrl="https://id.twitch.tv/oauth2/authorize"
+            parameters={{
+              client_id: process.env.REACT_APP_TWITCH_CLIENT_ID,
+              redirect_uri: process.env.REACT_APP_OAUTH2_REDIRECT_URI,
+              response_type: 'code',
+              scope: 'user:read:email',
+              prompt: 'select_account',
+              include_granted_scopes: true,
+              state: 'myteststate123',
+            }}
+            disabled={disabled}
             setDisabled={setDisabled}
-            onCallback={() => setDisabled(false)}
+            onCallback={async (params: any) => {
+              console.log('Discord', params);
+              const response = await AuthAPI.twitchAuth(params);
+
+              if (!response.error) {
+                window.location.href = '/';
+              } else {
+                setDisabled(false);
+                setError(response.error);
+              }
+            }}
           />
           <OAuth2
             provider="google"

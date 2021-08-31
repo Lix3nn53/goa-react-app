@@ -38,6 +38,17 @@ const googleAuth = async (params: any) => {
   }
 };
 
+const twitchAuth = async (params: any) => {
+  try {
+    const res = await api.get(`/auth/twitch${params}`);
+    console.log(res.data);
+
+    return handleAuthResponse(res);
+  } catch (error) {
+    return errors.errorHandler(error);
+  }
+};
+
 const discordAuth = async (params: any) => {
   try {
     const res = await api.get(`/auth/discord${params}`);
@@ -63,6 +74,7 @@ const minecraftAuth = async (params: any) => {
 export default {
   logout,
   googleAuth,
+  twitchAuth,
   discordAuth,
   minecraftAuth,
 };
