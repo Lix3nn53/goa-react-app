@@ -6,7 +6,23 @@ import ButtonText from '../../ButtonText';
 
 import AuthAPI from '../../../api/AuthAPI';
 
-export default function (t: any, user: any, mcUsername: string) {
+export default function (t: any, user: any, mcUsername: any) {
+  console.log('MCUSERNAME: ', mcUsername);
+
+  const getText = () => {
+    if (!user) return 'Loading...';
+    if (!user.uuid) return 'NULL';
+
+    switch (mcUsername) {
+      case null:
+        return 'Loading...';
+      case false:
+        return 'NULL';
+      default:
+        return mcUsername;
+    }
+  };
+
   return [
     [
       <span key="21">
@@ -16,7 +32,7 @@ export default function (t: any, user: any, mcUsername: string) {
         {t('header.buy_credits')}
       </Link>,
       <Dropdown
-        text={user ? mcUsername : 'Loading...'}
+        text={getText()}
         elements={[
           <Link to="/profile">{t('header.profile')}</Link>,
           <Link to="/player">{t('header.player')}</Link>,
