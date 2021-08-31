@@ -66,23 +66,41 @@ const OAuth2Strategies: FC = () => {
             provider="facebook"
             authUrl=""
             parameters={{}}
-            disabled={disabled}
+            disabled
             setDisabled={setDisabled}
             onCallback={() => setDisabled(false)}
           />
           <OAuth2
             provider="discord"
-            authUrl=""
-            parameters={{}}
+            authUrl="https://discord.com/api/oauth2/authorize"
+            parameters={{
+              client_id: process.env.REACT_APP_DISCORD_CLIENT_ID,
+              redirect_uri: process.env.REACT_APP_OAUTH2_REDIRECT_URI,
+              response_type: 'code',
+              scope: 'identify email',
+              prompt: 'select_account',
+              include_granted_scopes: true,
+              state: 'myteststate123',
+            }}
             disabled={disabled}
             setDisabled={setDisabled}
-            onCallback={() => setDisabled(false)}
+            onCallback={async (params: any) => {
+              console.log('Discord', params);
+              const response = await AuthAPI.discordAuth(params);
+
+              if (!response.error) {
+                window.location.href = '/';
+              } else {
+                setDisabled(false);
+                setError(response.error);
+              }
+            }}
           />
           <OAuth2
             provider="twitch"
             authUrl=""
             parameters={{}}
-            disabled={disabled}
+            disabled
             setDisabled={setDisabled}
             onCallback={() => setDisabled(false)}
           />
