@@ -1,17 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
 
-// Font awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import {
-  faMicrosoft,
-  faFacebook,
-  faDiscord,
-  faTwitch,
-  faGoogle,
-  faReact,
-} from '@fortawesome/free-brands-svg-icons';
-
 import './OAuth2.css';
 import Button from '../Button';
 
@@ -68,17 +56,17 @@ const SocialLink: FC<Props> = ({
   const getIcon = () => {
     switch (provider) {
       case 'minecraft':
-        return faMicrosoft;
+        return <i className="fab fa-microsoft" />;
       case 'facebook':
-        return faFacebook;
+        return <i className="fab fa-facebook" />;
       case 'discord':
-        return faDiscord;
+        return <i className="fab fa-discord" />;
       case 'twitch':
-        return faTwitch;
+        return <i className="fab fa-twitch" />;
       case 'google':
-        return faGoogle;
+        return <i className="fab fa-google" />;
       default:
-        return faReact;
+        return <i className="fab fa-react" />;
     }
   };
 
@@ -94,7 +82,7 @@ const SocialLink: FC<Props> = ({
           openSignInWindow(authUrl + paramaterString, 'oauth', onCallback);
         }}
       >
-        <FontAwesomeIcon icon={getIcon()} size="lg" />
+        {getIcon()}
         {children}
       </Button>
     );
@@ -111,7 +99,7 @@ const SocialLink: FC<Props> = ({
         openSignInWindow(authUrl + paramaterString, 'oauth', onCallback);
       }}
     >
-      <FontAwesomeIcon icon={getIcon()} />
+      {getIcon()}
       {children}
     </button>
   );
