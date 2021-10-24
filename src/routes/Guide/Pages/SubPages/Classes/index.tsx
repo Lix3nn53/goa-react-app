@@ -20,6 +20,7 @@ import Engineer from './List/Tier3/Engineer';
 import Necromancer from './List/Tier3/Necromancer';
 import Reaper from './List/Tier3/Reaper';
 import Shaman from './List/Tier3/Shaman';
+import Vampire from './List/Tier3/Vampire';
 
 export default [
   {
@@ -88,6 +89,11 @@ export default [
         name: 'Reaper',
         id: 'reaper',
         component: <Reaper />,
+      },
+      {
+        name: 'Vampire',
+        id: 'vampire',
+        component: <Vampire />,
       },
       {
         name: 'Dragonslayer',

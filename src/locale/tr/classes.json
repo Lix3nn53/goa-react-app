@@ -125,6 +125,15 @@
       "skill_passive": "Düşmanlara düz saldırı yaptığında ruh toplarsın. Aktif yeteneklerin fazladan güçlendirmeler için ruhları tüketir. Bu yeteneğe puan verdiğinde toplayabileceğin ruhların sınırını arttırırsın.",
       "skill_ultimate": "Kendini ve seçtiğin bir düşmanı hareketsiz bırakırsın. Hareketsiz bırakma etkisi bittiğinde, düşman hasar yer. Hasarın artması için ruh tüketir."
     },
+    "vampire": {
+      "intro": "Vampire is a tier 3 class in Guardians of Adelia.",
+      "playstyle": "Vampire has a special passive which effects all of other skills. While standing in dark areas, you will gain a blood reserve. What you want to do is collect enough souls before using your skills to get powerful effects.",
+      "skill_one": "Leap forward and bite an enemy near your landing. Consumes blood reserves to increase leap range. Refreshes 2 blood reserves on successful hit.",
+      "skill_two": "Focus for 2.5 seconds to form a bubble of blood. You are invincible and stunned while focusing. After 2.5 seconds pop the bubble and deal damage to nearby enemies. Consumes blood reserves to increase radius. Refreshes 1 blood reserve for each enemy hit.",
+      "skill_three": "Transform into a bat with the ability to fly. Effect is canceled if you cast spell or attack an enemy. Consumes souls to increase effect duration.",
+      "skill_passive": "Gain lifesteal buff which heals you when you deal damage equal to a percentage of the damage dealt. Gain blood reserves while standing on blocks that has less than 5 light level. Your active skills consumes blood reserves for bonus effects. Level up this skill to increase max blood reserve capacity.",
+      "skill_ultimate": "Start floating upwards into the sky. Create blood bolts on top of your head and fire. Consumes blood reserves to increase float duration and repeat firing blood bolts. Blood bolts explodes on hit dealing damage and pushing enemies on area."
+    },
     "shaman": {
       "intro": "Şaman Adelianın Koruyucularında 3. Kademe bir sınıftır.",
       "playstyle": "Şaman bir totem çağırır ve yetenekleri ile onu hareket ettirebilir. Yetenekleri ile totemlerinin nasıl etkiler uygulayacağını seçebilir.",
