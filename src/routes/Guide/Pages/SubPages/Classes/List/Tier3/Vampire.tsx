@@ -53,9 +53,10 @@ const Vampire: FunctionComponent = () => {
         <Gallery
           pictures={[
             {
-              src: 'https://media.giphy.com/media/vVnIh1ZhwHmrasKKlE/source.gif',
-              name: "Assassin's Execution",
-              description: "Player casting Assassin's Execution on Test monster",
+              src:
+                'https://cdn.discordapp.com/attachments/689660026423345188/901783690995171328/unknown.png',
+              name: 'Bat Form',
+              description: 'Player is flying in bat form',
             },
           ]}
         />
