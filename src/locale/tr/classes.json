@@ -38,7 +38,7 @@
       "skill_passive": "Hasar aldıktan sonra, eğer canın toplam canının %20'nin altındaysa: Hareket edemezsin ve bir melek gibi havaya yükselirsin. Havadayken zamanla iyileşirsin ve yere inerken düşüş hasarı almazsın.",
       "skill_ultimate": "Zemine bir zafer sancağı yerleştirirsin ve yakındaki dostların verdiği hasarı arttırırsın."
     },
-    "berserker": {
+    "fighter": {
       "intro": "Keşiş Adelianın Koruyucularında 2. Kademe bir sınıftır.",
       "playstyle": "Özel silahı olan mızrak ile keşiş mesafe fark etmeksizin savaş başlatabilir",
       "skill_one": "1 saniye içinde 5 yumruk savurur. Son yumruk hedefi geri savurur.",

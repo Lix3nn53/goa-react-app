@@ -7,11 +7,11 @@ import ClassBody from '../../ClassBody';
 import Skill from '../../Skill';
 
 import icon from '../../../../../../../img/guide/classes/tier2/witch_doctor/icon.png';
-import skillOne from '../../../../../../../img/guide/skills/60.png';
-import skillTwo from '../../../../../../../img/guide/skills/64.png';
-import skillThree from '../../../../../../../img/guide/skills/45.png';
-import skillPassive from '../../../../../../../img/guide/skills/63.png';
-import skillUltimate from '../../../../../../../img/guide/skills/59.png';
+import skillOne from '../../../../../../../img/guide/skills/39.png';
+import skillTwo from '../../../../../../../img/guide/skills/33.png';
+import skillThree from '../../../../../../../img/guide/skills/47.png';
+import skillPassive from '../../../../../../../img/guide/skills/52.png';
+import skillUltimate from '../../../../../../../img/guide/skills/62.png';
 
 const WitchDoctor: FunctionComponent = () => {
   return (
@@ -39,7 +39,13 @@ const WitchDoctor: FunctionComponent = () => {
           skillComponent={
             <Skill
               icons={[skillOne, skillTwo, skillThree, skillPassive, skillUltimate]}
-              names={['Bite', 'Blood Spray', 'Bat Form', 'Blood Reserves', 'Blood Bolts']}
+              names={[
+                'Poison Potion',
+                'Heal Potion',
+                'Buff Potion',
+                'Drink Potion',
+                'Explosive Potion',
+              ]}
               descriptions={[
                 'classes.tier2.witch_doctor.skill_one',
                 'classes.tier2.witch_doctor.skill_two',

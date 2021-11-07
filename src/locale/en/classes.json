@@ -12,9 +12,9 @@
   "total_exp": "Total Exp",
   "unlocked": "Unlocked Classes",
   "tier1": {
-    "description": "Tier 1 classes are the weakest in Guardians of Adelia.",
+    "description": "Tier 1 classes are unlocked at level 1. Class tiers does not show their their power.",
     "fire_mage": {
-      "intro": "Fire Mage is a tier 2 class in Guardians of Adelia.",
+      "intro": "Fire Mage is a tier 1 class in Guardians of Adelia.",
       "playstyle": "Fire Mage has very high area damage at the cost of defense and mobility.",
       "skill_one": "Shoot a fireball that deals damage to targets in area if it hits a target.",
       "skill_two": "Deal damage to enemies in front of you in cone area.",
@@ -23,7 +23,7 @@
       "skill_ultimate": "Summon a meteor from sky that damages and launches nearby enemies upwards."
     },
     "monk": {
-      "intro": "Monk is a tier 2 class in Guardians of Adelia.",
+      "intro": "Monk is a tier 1 class in Guardians of Adelia.",
       "playstyle": "With their special weapon Spears, Monks can put up a fight from any distance.",
       "skill_one": "Throw 5 punches in a second. The last punch also pushes the target away.",
       "skill_two": "Jump back towards a side. Which side you will jump to changes each cast.",
@@ -32,7 +32,7 @@
       "skill_ultimate": "Imprison nearby enemies in water bubble. Enemies in bubble are stunned and goes up into the sky slowly."
     },
     "paladin": {
-      "intro": "Paladin is a tier 2 class in Guardians of Adelia.",
+      "intro": "Paladin is a tier 1 class in Guardians of Adelia.",
       "playstyle": "Paladin's skills focuses on protecting and buffing his/her allies.",
       "skill_one": "Deal damage to targets in front of you and push them away.",
       "skill_two": "Give barrier to yourself and nearby allies. A stack of barrier absorbs a damage completely.",
@@ -41,7 +41,7 @@
       "skill_ultimate": "Spawn a victory flag which gives damage buff to nearby allies."
     },
     "ranger": {
-      "intro": "Ranger is a tier 2 class in Guardians of Adelia.",
+      "intro": "Ranger is a tier 1 class in Guardians of Adelia.",
       "playstyle": "Ranger's deal avarage damage but have lots of mobility skills. The best class to utilize hit-and-run strategy.",
       "skill_one": "Shoot an arrow that poisons target.",
       "skill_two": "Gain movement speed.",
@@ -49,14 +49,14 @@
       "skill_passive": "Your every 2nd successful projectile hit gives you bonus critical chance. (This can exceed the critical chance cap)",
       "skill_ultimate": "Reveal an area with a flurry of arrows, dealing waves of damage to opponents."
     },
-    "berserker": {
-      "intro": "Ranger is a tier 2 class in Guardians of Adelia.",
-      "playstyle": "Ranger's deal avarage damage but have lots of mobility skills. The best class to utilize hit-and-run strategy.",
-      "skill_one": "Shoot an arrow that poisons target.",
-      "skill_two": "Gain movement speed.",
-      "skill_three": "Jump backwards into the sky and gain resistance to fall damage.",
-      "skill_passive": "Your every 2nd successful projectile hit gives you bonus critical chance. (This can exceed the critical chance cap)",
-      "skill_ultimate": "Reveal an area with a flurry of arrows, dealing waves of damage to opponents."
+    "fighter": {
+      "intro": "Fighter is a tier 1 class in Guardians of Adelia.",
+      "playstyle": "Fighter's skills has low cooldown. Gain combo stacks with your skills and use your ulti to get into the zone!",
+      "skill_one": "Leap forward and deal moderate damage. If you are in the zone, gain lifesteal buff.",
+      "skill_two": "Throw a heavy punch and launch your target into the air. If you are in the zone, also stun the target.",
+      "skill_three": "Jump backwards and gain resistance to fall damage. If you are in the zone gain barrier. A stack of barrier absorbs a damage completely.",
+      "skill_passive": "When you cast a skill gain a combo stack. Your ultimate skill consumes stacks to increases effect duration. Level up this skill to increase combo capacity.",
+      "skill_ultimate": "Get in the zone! You gain bonus movement speed and your other skills gains bonus effects."
     }
   },
   "tier2": {
@@ -80,7 +80,7 @@
       "skill_ultimate": "Summon a blizzard that deals damage to nearby enemies and slows them every second."
     },
     "doom_knight": {
-      "intro": "Doom Knight is a tier 3 class in Guardians of Adelia.",
+      "intro": "Doom Knight is a tier 2 class in Guardians of Adelia.",
       "playstyle": "Doom Knight has high defense but lacks ranged and mobility skills. ",
       "skill_one": "Deal damage to enemies in front of you, cone area.",
       "skill_two": "Shoot a projectile that pulls the target to you. If target gets close enough to you, also launch target upwards.",
@@ -89,7 +89,7 @@
       "skill_ultimate": "Spawn a darkhole that pulls the targets in area to the center."
     },
     "vampire": {
-      "intro": "Vampire is a tier 3 class in Guardians of Adelia.",
+      "intro": "Vampire is a tier 2 class in Guardians of Adelia.",
       "playstyle": "Vampire has a special passive which effects all of other skills. While standing in dark areas, you will gain a blood reserve. What you want to do is collect enough blood reserves before using your skills to get powerful effects.",
       "skill_one": "Leap forward and bite an enemy near your landing. Consumes blood reserves to increase leap range. Refreshes 2 blood reserves on successful hit.",
       "skill_two": "Focus for 2.5 seconds to form a bubble of blood. You are invincible and stunned while focusing. After 2.5 seconds pop the bubble and deal damage to nearby enemies. Consumes blood reserves to increase radius. Refreshes 1 blood reserve for each enemy hit.",
@@ -98,13 +98,13 @@
       "skill_ultimate": "Start floating upwards into the sky. Create blood bolts on top of your head and fire. Consumes blood reserves to increase float duration and repeat firing blood bolts. Blood bolts explodes on hit dealing damage and pushing enemies on area."
     },
     "witch_doctor": {
-      "intro": "Ranger is a tier 2 class in Guardians of Adelia.",
+      "intro": "Witch doctor is a tier 2 class in Guardians of Adelia.",
       "playstyle": "Ranger's deal avarage damage but have lots of mobility skills. The best class to utilize hit-and-run strategy.",
-      "skill_one": "Shoot an arrow that poisons target.",
-      "skill_two": "Gain movement speed.",
-      "skill_three": "Jump backwards into the sky and gain resistance to fall damage.",
-      "skill_passive": "Your every 2nd successful projectile hit gives you bonus critical chance. (This can exceed the critical chance cap)",
-      "skill_ultimate": "Reveal an area with a flurry of arrows, dealing waves of damage to opponents."
+      "skill_one": "Throw a potion which explode on impact and create a cloud. The cloud deals damage to enemies every second.",
+      "skill_two": "Throw a potion which explode on impact. The explosion heals allies and gives life steal to allies.",
+      "skill_three": "Throw a potion which explode on impact. The explosion gives defense buff to allies and defense debuff to enemies.",
+      "skill_passive": "Every time you cast a skill gain a stack. If you have 4 stacks next time you cast a skill, drink a potion to gain bonus movement speed.",
+      "skill_ultimate": "Throw a potion which explode on impact. The explosion deals damage, ignites and pushes enemies away."
     }
   },
   "tier3": {

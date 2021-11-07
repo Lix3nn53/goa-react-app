@@ -2,7 +2,7 @@ import React from 'react';
 
 // Tier 1
 import Tier1Intro from './List/Tier1/Intro';
-import Berserker from './List/Tier1/Berserker';
+import Fighter from './List/Tier1/Fighter';
 import FireMage from './List/Tier1/Fire Mage';
 import Monk from './List/Tier1/Monk';
 import Paladin from './List/Tier1/Paladin';
@@ -31,9 +31,9 @@ export default [
     component: <Tier1Intro />,
     subroute: [
       {
-        name: 'Berserker',
-        id: 'berserker',
-        component: <Berserker />,
+        name: 'Fighter',
+        id: 'fighter',
+        component: <Fighter />,
       },
       {
         name: 'Ranger',

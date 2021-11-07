@@ -6,19 +6,19 @@ import ClassCard from '../../ClassCard';
 import ClassBody from '../../ClassBody';
 import Skill from '../../Skill';
 
-import icon from '../../../../../../../img/guide/classes/tier1/berserker/icon.png';
-import skillOne from '../../../../../../../img/guide/skills/36.png';
-import skillTwo from '../../../../../../../img/guide/skills/57.png';
-import skillThree from '../../../../../../../img/guide/skills/24.png';
-import skillPassive from '../../../../../../../img/guide/skills/10.png';
-import skillUltimate from '../../../../../../../img/guide/skills/54.png';
+import icon from '../../../../../../../img/guide/classes/tier1/fighter/icon.png';
+import skillOne from '../../../../../../../img/guide/skills/62.png';
+import skillTwo from '../../../../../../../img/guide/skills/36.png';
+import skillThree from '../../../../../../../img/guide/skills/57.png';
+import skillPassive from '../../../../../../../img/guide/skills/58.png';
+import skillUltimate from '../../../../../../../img/guide/skills/32.png';
 
-const Berserker: FunctionComponent = () => {
+const Fighter: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
       <div style={{ flex: '6' }}>
         <ClassCard
-          name="Berserker"
+          name="Fighter"
           icon={icon}
           classTier={2}
           element="element.fire"
@@ -33,18 +33,18 @@ const Berserker: FunctionComponent = () => {
       </div>
       <div style={{ flex: '10' }}>
         <ClassBody
-          intro="classes.tier1.berserker.intro"
-          playstyle="classes.tier1.berserker.playstyle"
+          intro="classes.tier1.fighter.intro"
+          playstyle="classes.tier1.fighter.playstyle"
           skillComponent={
             <Skill
               icons={[skillOne, skillTwo, skillThree, skillPassive, skillUltimate]}
-              names={['Fists of Thunder', 'Tumble', 'Serenity', 'Crippling Wave', 'Aqua Prison']}
+              names={['Jab', 'Uppercut', 'Dodge', 'Combo', 'In the zone']}
               descriptions={[
-                'classes.tier1.berserker.skill_one',
-                'classes.tier1.berserker.skill_two',
-                'classes.tier1.berserker.skill_three',
-                'classes.tier1.berserker.skill_passive',
-                'classes.tier1.berserker.skill_ultimate',
+                'classes.tier1.fighter.skill_one',
+                'classes.tier1.fighter.skill_two',
+                'classes.tier1.fighter.skill_three',
+                'classes.tier1.fighter.skill_passive',
+                'classes.tier1.fighter.skill_ultimate',
               ]}
             />
           }
@@ -71,4 +71,4 @@ const Berserker: FunctionComponent = () => {
   );
 };
 
-export default Berserker;
+export default Fighter;
