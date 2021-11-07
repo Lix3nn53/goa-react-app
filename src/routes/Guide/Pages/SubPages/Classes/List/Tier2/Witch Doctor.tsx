@@ -6,45 +6,46 @@ import ClassCard from '../../ClassCard';
 import ClassBody from '../../ClassBody';
 import Skill from '../../Skill';
 
-import icon from '../../../../../../../img/guide/classes/tier3/vampire/icon.png';
+import icon from '../../../../../../../img/guide/classes/tier2/witch_doctor/icon.png';
 import skillOne from '../../../../../../../img/guide/skills/60.png';
 import skillTwo from '../../../../../../../img/guide/skills/64.png';
 import skillThree from '../../../../../../../img/guide/skills/45.png';
 import skillPassive from '../../../../../../../img/guide/skills/63.png';
 import skillUltimate from '../../../../../../../img/guide/skills/59.png';
 
-const Vampire: FunctionComponent = () => {
+const WitchDoctor: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
       <div style={{ flex: '6' }}>
         <ClassCard
-          name="Vampire"
+          name="WitchDoctor"
           icon={icon}
           classTier={3}
-          element="element.lightning"
+          element="element.water"
           weapons={['Dagger', 'Crossbow']}
           armors={['Feather', 'Light', 'Cloth']}
           offhand={['Dagger']}
-          damage={10}
-          defense={6}
-          health={8}
-          mana={4}
+          damage={7}
+          defense={5}
+          health={5}
+          mana={6}
+          critChance={2}
         />
       </div>
       <div style={{ flex: '10' }}>
         <ClassBody
-          intro="classes.tier3.vampire.intro"
-          playstyle="classes.tier3.vampire.playstyle"
+          intro="classes.tier2.witch_doctor.intro"
+          playstyle="classes.tier2.witch_doctor.playstyle"
           skillComponent={
             <Skill
               icons={[skillOne, skillTwo, skillThree, skillPassive, skillUltimate]}
               names={['Bite', 'Blood Spray', 'Bat Form', 'Blood Reserves', 'Blood Bolts']}
               descriptions={[
-                'classes.tier3.vampire.skill_one',
-                'classes.tier3.vampire.skill_two',
-                'classes.tier3.vampire.skill_three',
-                'classes.tier3.vampire.skill_passive',
-                'classes.tier3.vampire.skill_ultimate',
+                'classes.tier2.witch_doctor.skill_one',
+                'classes.tier2.witch_doctor.skill_two',
+                'classes.tier2.witch_doctor.skill_three',
+                'classes.tier2.witch_doctor.skill_passive',
+                'classes.tier2.witch_doctor.skill_ultimate',
               ]}
             />
           }
@@ -65,4 +66,4 @@ const Vampire: FunctionComponent = () => {
   );
 };
 
-export default Vampire;
+export default WitchDoctor;

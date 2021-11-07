@@ -24,10 +24,11 @@ const Necromancer: FunctionComponent = () => {
           element="element.lightning"
           weapons={['Wand', 'Staff', 'Dagger']}
           armors={['Cloth', 'Feather', 'Light']}
-          damage={10}
-          defense={6}
-          health={8}
-          mana={4}
+          damage={9}
+          defense={4}
+          health={4}
+          mana={6}
+          critChance={2}
         />
       </div>
       <div style={{ flex: '10' }}>

@@ -6,7 +6,7 @@ import ClassCard from '../../ClassCard';
 import ClassBody from '../../ClassBody';
 import Skill from '../../Skill';
 
-import icon from '../../../../../../../img/guide/classes/tier2/monk/icon.png';
+import icon from '../../../../../../../img/guide/classes/tier1/monk/icon.png';
 import skillOne from '../../../../../../../img/guide/skills/36.png';
 import skillTwo from '../../../../../../../img/guide/skills/57.png';
 import skillThree from '../../../../../../../img/guide/skills/24.png';
@@ -24,26 +24,27 @@ const Monk: FunctionComponent = () => {
           element="element.water"
           weapons={['Spear', 'Great Sword', 'Sword']}
           armors={['Plate', 'Feather', 'Light']}
-          damage={10}
-          defense={6}
-          health={8}
+          damage={6}
+          defense={4}
+          health={4}
           mana={4}
+          critChance={7}
         />
       </div>
       <div style={{ flex: '10' }}>
         <ClassBody
-          intro="classes.tier2.monk.intro"
-          playstyle="classes.tier2.monk.playstyle"
+          intro="classes.tier1.monk.intro"
+          playstyle="classes.tier1.monk.playstyle"
           skillComponent={
             <Skill
               icons={[skillOne, skillTwo, skillThree, skillPassive, skillUltimate]}
               names={['Fists of Thunder', 'Tumble', 'Serenity', 'Crippling Wave', 'Aqua Prison']}
               descriptions={[
-                'classes.tier2.monk.skill_one',
-                'classes.tier2.monk.skill_two',
-                'classes.tier2.monk.skill_three',
-                'classes.tier2.monk.skill_passive',
-                'classes.tier2.monk.skill_ultimate',
+                'classes.tier1.monk.skill_one',
+                'classes.tier1.monk.skill_two',
+                'classes.tier1.monk.skill_three',
+                'classes.tier1.monk.skill_passive',
+                'classes.tier1.monk.skill_ultimate',
               ]}
             />
           }

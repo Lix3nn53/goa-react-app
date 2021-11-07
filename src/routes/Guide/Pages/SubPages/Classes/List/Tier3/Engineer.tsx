@@ -24,10 +24,11 @@ const Engineer: FunctionComponent = () => {
           element="element.fire"
           weapons={['War Hammer', 'Great Sword', 'Sword']}
           armors={['Plate', 'Feather', 'Light']}
-          damage={10}
-          defense={6}
-          health={8}
+          damage={7}
+          defense={5}
+          health={5}
           mana={4}
+          critChance={4}
         />
       </div>
       <div style={{ flex: '10' }}>

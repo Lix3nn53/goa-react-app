@@ -16,6 +16,7 @@ export type Props = JSX.IntrinsicElements['div'] & {
   defense: number;
   health: number;
   mana: number;
+  critChance: number;
 };
 
 const ClassCard: FunctionComponent<Props> = ({
@@ -30,6 +31,7 @@ const ClassCard: FunctionComponent<Props> = ({
   defense,
   health,
   mana,
+  critChance,
 }) => {
   const { t } = useTranslation();
 
@@ -115,6 +117,7 @@ const ClassCard: FunctionComponent<Props> = ({
           [<span style={{ fontWeight: 'bold' }}>{t('attribute.mana')}: </span>, mana],
           [<span style={{ fontWeight: 'bold' }}>{t('attribute.damage')}: </span>, damage],
           [<span style={{ fontWeight: 'bold' }}>{t('attribute.defense')}: </span>, defense],
+          [<span style={{ fontWeight: 'bold' }}>{t('attribute.crit_chance')}: </span>, critChance],
         ]}
       />
     </Card>

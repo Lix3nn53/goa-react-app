@@ -4,7 +4,7 @@ import ClassCard from '../../ClassCard';
 import ClassBody from '../../ClassBody';
 import Skill from '../../Skill';
 
-import icon from '../../../../../../../img/guide/classes/tier2/paladin/icon.png';
+import icon from '../../../../../../../img/guide/classes/tier1/paladin/icon.png';
 import skillOne from '../../../../../../../img/guide/skills/4.png';
 import skillTwo from '../../../../../../../img/guide/skills/25.png';
 import skillThree from '../../../../../../../img/guide/skills/26.png';
@@ -23,16 +23,17 @@ const Paladin: FunctionComponent = () => {
           weapons={['War Hammer', 'Great Sword', 'Sword']}
           armors={['Heavy', 'Plate', 'Light']}
           offhand={['Shield']}
-          damage={10}
-          defense={6}
-          health={8}
-          mana={4}
+          damage={4}
+          defense={9}
+          health={9}
+          mana={2}
+          critChance={1}
         />
       </div>
       <div style={{ flex: '10' }}>
         <ClassBody
-          intro="classes.tier2.paladin.intro"
-          playstyle="classes.tier2.paladin.playstyle"
+          intro="classes.tier1.paladin.intro"
+          playstyle="classes.tier1.paladin.playstyle"
           skillComponent={
             <Skill
               icons={[skillOne, skillTwo, skillThree, skillPassive, skillUltimate]}
@@ -44,11 +45,11 @@ const Paladin: FunctionComponent = () => {
                 'Victory Flag',
               ]}
               descriptions={[
-                'classes.tier2.paladin.skill_one',
-                'classes.tier2.paladin.skill_two',
-                'classes.tier2.paladin.skill_three',
-                'classes.tier2.paladin.skill_passive',
-                'classes.tier2.paladin.skill_ultimate',
+                'classes.tier1.paladin.skill_one',
+                'classes.tier1.paladin.skill_two',
+                'classes.tier1.paladin.skill_three',
+                'classes.tier1.paladin.skill_passive',
+                'classes.tier1.paladin.skill_ultimate',
               ]}
             />
           }

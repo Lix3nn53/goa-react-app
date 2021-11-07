@@ -6,7 +6,7 @@ import ClassCard from '../../ClassCard';
 import ClassBody from '../../ClassBody';
 import Skill from '../../Skill';
 
-import icon from '../../../../../../../img/guide/classes/tier3/doom_knight/icon.png';
+import icon from '../../../../../../../img/guide/classes/tier2/doom_knight/icon.png';
 import skillOne from '../../../../../../../img/guide/skills/3.png';
 import skillTwo from '../../../../../../../img/guide/skills/46.png';
 import skillThree from '../../../../../../../img/guide/skills/40.png';
@@ -25,16 +25,17 @@ const DoomKnight: FunctionComponent = () => {
           weapons={['Sword', 'Great Sword', 'War Hammer']}
           armors={['Heavy', 'Plate', 'Light']}
           offhand={['Shield']}
-          damage={10}
-          defense={6}
-          health={8}
-          mana={4}
+          damage={4}
+          defense={9}
+          health={9}
+          mana={2}
+          critChance={1}
         />
       </div>
       <div style={{ flex: '10' }}>
         <ClassBody
-          intro="classes.tier3.doom_knight.intro"
-          playstyle="classes.tier3.doom_knight.playstyle"
+          intro="classes.tier2.doom_knight.intro"
+          playstyle="classes.tier2.doom_knight.playstyle"
           skillComponent={
             <Skill
               icons={[skillOne, skillTwo, skillThree, skillPassive, skillUltimate]}
@@ -46,11 +47,11 @@ const DoomKnight: FunctionComponent = () => {
                 'Blackhole',
               ]}
               descriptions={[
-                'classes.tier3.doom_knight.skill_one',
-                'classes.tier3.doom_knight.skill_two',
-                'classes.tier3.doom_knight.skill_three',
-                'classes.tier3.doom_knight.skill_passive',
-                'classes.tier3.doom_knight.skill_ultimate',
+                'classes.tier2.doom_knight.skill_one',
+                'classes.tier2.doom_knight.skill_two',
+                'classes.tier2.doom_knight.skill_three',
+                'classes.tier2.doom_knight.skill_passive',
+                'classes.tier2.doom_knight.skill_ultimate',
               ]}
             />
           }

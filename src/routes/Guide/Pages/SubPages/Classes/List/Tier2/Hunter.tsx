@@ -24,10 +24,11 @@ const Hunter: FunctionComponent = () => {
           element="element.earth"
           weapons={['Crossbow', 'Bow', 'Dagger']}
           armors={['Light', 'Feather', 'Cloth']}
-          damage={10}
-          defense={6}
-          health={8}
+          damage={6}
+          defense={4}
+          health={4}
           mana={4}
+          critChance={7}
         />
       </div>
       <div style={{ flex: '10' }}>

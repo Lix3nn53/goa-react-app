@@ -4,7 +4,7 @@ import ClassCard from '../../ClassCard';
 import ClassBody from '../../ClassBody';
 import Skill from '../../Skill';
 
-import icon from '../../../../../../../img/guide/classes/tier2/fire_mage/icon.png';
+import icon from '../../../../../../../img/guide/classes/tier1/fire_mage/icon.png';
 import skillOne from '../../../../../../../img/guide/skills/27.png';
 import skillTwo from '../../../../../../../img/guide/skills/28.png';
 import skillThree from '../../../../../../../img/guide/skills/62.png';
@@ -22,26 +22,27 @@ const FireMage: FunctionComponent = () => {
           element="element.fire"
           weapons={['Wand', 'Staff', 'Dagger']}
           armors={['Cloth', 'Feather', 'Light']}
-          damage={10}
-          defense={6}
-          health={8}
-          mana={4}
+          damage={9}
+          defense={4}
+          health={4}
+          mana={6}
+          critChance={2}
         />
       </div>
       <div style={{ flex: '10' }}>
         <ClassBody
-          intro="classes.tier2.fire_mage.intro"
-          playstyle="classes.tier2.fire_mage.playstyle"
+          intro="classes.tier1.fire_mage.intro"
+          playstyle="classes.tier1.fire_mage.playstyle"
           skillComponent={
             <Skill
               icons={[skillOne, skillTwo, skillThree, skillPassive, skillUltimate]}
               names={['Fireball', 'Dragon Breath', 'Blasting Warp', 'Fire Spirit', 'Chaos Meteor']}
               descriptions={[
-                'classes.tier2.fire_mage.skill_one',
-                'classes.tier2.fire_mage.skill_two',
-                'classes.tier2.fire_mage.skill_three',
-                'classes.tier2.fire_mage.skill_passive',
-                'classes.tier2.fire_mage.skill_ultimate',
+                'classes.tier1.fire_mage.skill_one',
+                'classes.tier1.fire_mage.skill_two',
+                'classes.tier1.fire_mage.skill_three',
+                'classes.tier1.fire_mage.skill_passive',
+                'classes.tier1.fire_mage.skill_ultimate',
               ]}
             />
           }

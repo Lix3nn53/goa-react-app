@@ -24,10 +24,11 @@ const Dragonslayer: FunctionComponent = () => {
           element="element.fire"
           weapons={['Battleaxe', 'Great Sword', 'Sword']}
           armors={['Plate', 'Feather', 'Light']}
-          damage={10}
-          defense={6}
-          health={8}
-          mana={4}
+          damage={7}
+          defense={5}
+          health={7}
+          mana={2}
+          critChance={2}
         />
       </div>
       <div style={{ flex: '10' }}>

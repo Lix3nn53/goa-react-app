@@ -21,14 +21,15 @@ const Reaper: FunctionComponent = () => {
           name="Reaper"
           icon={icon}
           classTier={3}
-          element="element.lightning"
+          element="element.air"
           weapons={['Dagger', 'Sword']}
           armors={['Feather', 'Light', 'Cloth']}
           offhand={['Dagger']}
-          damage={10}
-          defense={6}
-          health={8}
-          mana={4}
+          damage={8}
+          defense={4}
+          health={4}
+          mana={2}
+          critChance={7}
         />
       </div>
       <div style={{ flex: '10' }}>
