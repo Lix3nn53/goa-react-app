@@ -12,14 +12,17 @@ export type Picture = {
 
 export type Props = JSX.IntrinsicElements['div'] & {
   pictures: Array<Picture>;
+  size?: 'small' | 'large';
 };
 
-const Gallery: FC<Props> = ({ className, children, style, pictures }) => {
+const Gallery: FC<Props> = ({ className, children, style, pictures, size }) => {
   const [open, setOpen] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
 
   const baseStyle = 'gallery';
   const classNames = className ? `${baseStyle}  ${className}` : `${baseStyle}`;
+
+  const itemStyle = size ? `item ${size}` : 'item';
 
   function renderPictures() {
     const list: Array<ReactNode> = [];
@@ -27,7 +30,7 @@ const Gallery: FC<Props> = ({ className, children, style, pictures }) => {
     pictures.forEach((element, index) => {
       const { src, name } = element;
       list.push(
-        <div className="item" key={name}>
+        <div className={itemStyle} key={name}>
           <button
             type="button"
             onClick={() => {

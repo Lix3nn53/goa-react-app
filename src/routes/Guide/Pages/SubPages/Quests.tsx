@@ -15,6 +15,7 @@ const Quests: FunctionComponent = () => {
         </h2>
         <p>{t('quests.guide.p1')}</p>
         <Gallery
+          size="small"
           pictures={[
             {
               src:

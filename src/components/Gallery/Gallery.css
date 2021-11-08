@@ -12,6 +12,16 @@
   padding: 4px;
 }
 
+.gallery .item.small {
+  flex: 20%;
+  max-width: 20%;
+}
+
+.gallery .item.large {
+  flex: 50%;
+  max-width: 50%;
+}
+
 .gallery .item:hover,
 .gallery .item:focus {
   transform: scale(1.1);

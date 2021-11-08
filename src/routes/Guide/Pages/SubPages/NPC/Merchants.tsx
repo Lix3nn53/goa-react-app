@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Link from '../../../../../components/Link';
 import Gallery from '../../../../../components/Gallery';
 
 const Merchants: FunctionComponent = () => {
@@ -11,6 +12,7 @@ const Merchants: FunctionComponent = () => {
       <div className="npcs" style={{ flex: '10' }}>
         <p>{t('npc.guide.merchant.p0')}</p>
         <Gallery
+          size="small"
           pictures={[
             {
               src:
@@ -29,40 +31,60 @@ const Merchants: FunctionComponent = () => {
         <h2>
           <span>{t('npc.guide.merchant.h1')}</span>
         </h2>
-        <p>{t('npc.guide.merchant.p1')}</p>
+        <p>
+          {t('npc.guide.merchant.p1.part1')}
+          <Link style={{ flex: '1' }} to="/guide/items/enchanting">
+            Item Enchanting
+          </Link>
+          {t('npc.guide.merchant.p1.part2')}
+        </p>
         <Gallery
+          size="small"
           pictures={[
             {
               src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/840015382706389022/unknown.png',
-              name: 'Step 1: Open RPG Inventory by clicking the bag icon',
-              description: 'Step 1: Open RPG Inventory by clicking the bag icon',
+                'https://cdn.discordapp.com/attachments/689660026423345188/907211413544652800/unknown.png',
+              name: 'Buy Weapons',
+              description: 'Click to buy weapons.',
             },
             {
               src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/840504455727284254/unknown.png',
-              name: 'Step 2: Equip the merchant',
-              description: 'Step 2: Equip the merchant',
+                'https://cdn.discordapp.com/attachments/689660026423345188/907211588522635304/unknown.png',
+              name: 'Enchant Items',
+              description: 'Click to enchant items.',
             },
           ]}
         />
         <h2>
           <span>{t('npc.guide.merchant.h2')}</span>
         </h2>
-        <p>{t('npc.guide.merchant.p2')}</p>
+        <p>
+          {t('npc.guide.merchant.p2.part1')}
+          <Link style={{ flex: '1' }} to="/guide/items/enchanting">
+            Item Enchanting
+          </Link>
+          {t('npc.guide.merchant.p2.part2')}
+        </p>
         <Gallery
+          size="small"
           pictures={[
             {
               src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/840015382706389022/unknown.png',
-              name: 'Step 1: Open RPG Inventory by clicking the bag icon',
-              description: 'Step 1: Open RPG Inventory by clicking the bag icon',
+                'https://cdn.discordapp.com/attachments/689660026423345188/907214648179310632/unknown.png',
+              name: 'Buy Armors',
+              description: 'Click to buy armors.',
             },
             {
               src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/840504455727284254/unknown.png',
-              name: 'Step 2: Equip the merchant',
-              description: 'Step 2: Equip the merchant',
+                'https://cdn.discordapp.com/attachments/689660026423345188/907214760431456296/unknown.png',
+              name: 'Buy Shields',
+              description: 'Click to buy shields.',
+            },
+            {
+              src:
+                'https://cdn.discordapp.com/attachments/689660026423345188/907211588522635304/unknown.png',
+              name: 'Enchant Items',
+              description: 'Click to enchant items.',
             },
           ]}
         />

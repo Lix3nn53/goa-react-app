@@ -4,7 +4,16 @@
     "p1": "Player type NPCs are often gives quests while villager type NPCs are merchants. You can interract with them with right click.",
     "merchant": {
       "p0": "Merchants are NPCs which you can buy and sell items from. There are 5 types of merchants: weaponsmith, armorsmith, storage keeper, tool merchant and magical item merchant. You can sell items to and convert coins from all types of merchants.",
-      "h1": "Weaponsmith"
+      "h1": "Weaponsmith",
+      "p1": {
+        "part1": "Apart from the basic sell and convert coin operations, you can buy weapons and enchant items from weaponsmiths. See ",
+        "part2": " for more information about enchanting."
+      },
+      "h2": "Armorsmith",
+      "p2": {
+        "part1": "Apart from the basic sell and convert coin operations, you can buy armors & shields and enchant items from armorsmiths. See ",
+        "part2": " for more information about enchanting."
+      }
     }
   }
 }
