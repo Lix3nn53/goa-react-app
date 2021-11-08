@@ -8,6 +8,7 @@ import Skills from './SubPages/Skills';
 import Attributes from './SubPages/Attributes';
 import ItemsIntro from './SubPages/Items/Intro';
 import Items from './SubPages/Items/index';
+import Quests from './SubPages/Quests';
 
 export default [
   {
@@ -45,6 +46,7 @@ export default [
   {
     name: 'guide.quests.subject',
     id: 'quests',
+    component: <Quests />,
   },
   {
     name: 'guide.npc.subject',
