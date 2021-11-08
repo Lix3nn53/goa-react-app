@@ -7,6 +7,7 @@ import crafting from './crafting.json';
 import element from './element.json';
 import guide from './guide.json';
 import item from './item.json';
+import monsters from './monsters.json';
 import npc from './npc.json';
 import player from './player.json';
 import quests from './quests.json';
@@ -22,6 +23,7 @@ export default {
     element,
     guide,
     item,
+    monsters,
     npc,
     player,
     quests,
