@@ -1,0 +1,10 @@
+{
+  "guide": {
+    "p0": "An NPC (Non-Player Character) is any character you encounter and interact with that is not controlled by other human players — they are generated and controlled by the game server.",
+    "p1": "Player type NPCs are often gives quests while villager type NPCs are merchants. You can interract with them with right click.",
+    "merchant": {
+      "p0": "Merchants are NPCs which you can buy and sell items from. There are 5 types of merchants: weaponsmith, armorsmith, storage keeper, tool merchant and magical item merchant. You can sell items to and convert coins from all types of merchants.",
+      "h1": "Weaponsmith"
+    }
+  }
+}

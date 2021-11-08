@@ -9,6 +9,8 @@ import Attributes from './SubPages/Attributes';
 import ItemsIntro from './SubPages/Items/Intro';
 import Items from './SubPages/Items/index';
 import Quests from './SubPages/Quests';
+import NPCIntro from './SubPages/NPC/Intro';
+import NPC from './SubPages/NPC/index';
 
 export default [
   {
@@ -51,6 +53,8 @@ export default [
   {
     name: 'guide.npc.subject',
     id: 'npc',
+    subroute: NPC,
+    component: <NPCIntro />,
   },
   {
     name: 'guide.monsters.subject',
