@@ -2,6 +2,8 @@
   "weapons": "Weapons",
   "armors": "Armors",
   "offhand": "Offhand",
+  "enchanting": "Enchanting",
+  "accessory": "Accessories",
   "guide": {
     "p0": "Items section focuses on equipments. Equipments have the biggest impact on your character's attributes and elements.",
     "h1": "Item Tiers",

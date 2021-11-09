@@ -40,7 +40,7 @@ const Merchants: FunctionComponent = () => {
         <p>
           {t('npc.guide.merchant.p1.part1')}
           <Link style={{ flex: '1' }} to="/guide/items/enchanting">
-            Item Enchanting
+            {t('item.enchanting')}
           </Link>
           {t('npc.guide.merchant.p1.part2')}
         </p>
@@ -67,7 +67,7 @@ const Merchants: FunctionComponent = () => {
         <p>
           {t('npc.guide.merchant.p2.part1')}
           <Link style={{ flex: '1' }} to="/guide/items/enchanting">
-            Item Enchanting
+            {t('item.enchanting')}
           </Link>
           {t('npc.guide.merchant.p2.part2')}
         </p>

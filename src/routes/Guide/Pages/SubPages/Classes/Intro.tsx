@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Link from '../../../../../components/Link';
 import Gallery from '../../../../../components/Gallery';
 
 const ClassesIntro: FunctionComponent = () => {
@@ -15,6 +16,7 @@ const ClassesIntro: FunctionComponent = () => {
         </h2>
         <p>{t('classes.guide.p1')}</p>
         <Gallery
+          size="small"
           pictures={[
             {
               src:
@@ -42,8 +44,19 @@ const ClassesIntro: FunctionComponent = () => {
             },
           ]}
         />
-        <h2>{t('classes.guide.h2')}</h2>
+        <h2>
+          <span>{t('classes.guide.h2')}</span>
+        </h2>
         <p>{t('classes.guide.p2')}</p>
+        <h2>
+          <span>{t('classes.guide.h3')}</span>
+        </h2>
+        <p>
+          {t('classes.guide.p3')}
+          <Link style={{ flex: '1' }} to="/guide/skills">
+            {t('skills.subject')}
+          </Link>
+        </p>
       </div>
     </div>
   );

@@ -3,9 +3,15 @@ import home from './home.json';
 
 import attribute from './attribute.json';
 import classes from './classes.json';
+import crafting from './crafting.json';
+import dungeons from './dungeons.json';
 import element from './element.json';
 import guide from './guide.json';
 import item from './item.json';
+import monsters from './monsters.json';
+import npc from './npc.json';
+import player from './player.json';
+import quests from './quests.json';
 import skills from './skills.json';
 
 export default {
@@ -14,9 +20,15 @@ export default {
     home,
     attribute,
     classes,
+    crafting,
+    dungeons,
     element,
     guide,
     item,
+    monsters,
+    npc,
+    player,
+    quests,
     skills,
   },
 };

@@ -35,11 +35,13 @@
   margin: 0;
   position: relative;
   cursor: pointer;
+  height: 100%;
 }
 
 .gallery .item figure img {
   transform: scale(1.4);
   transition: all ease 1s;
+  object-fit: cover;
 }
 
 .gallery .item:hover figure,
@@ -82,4 +84,8 @@
   transform: scale(1);
   opacity: 1;
   transition: 300ms;
+}
+
+.gallery button {
+  background: transparent;
 }

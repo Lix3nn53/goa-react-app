@@ -22,7 +22,7 @@ const Gallery: FC<Props> = ({ className, children, style, pictures, size }) => {
   const baseStyle = 'gallery';
   const classNames = className ? `${baseStyle}  ${className}` : `${baseStyle}`;
 
-  const itemStyle = size ? `item ${size}` : 'item';
+  const itemStyle = size ? `item ${size} flex-container row` : 'item flex-container row';
 
   function renderPictures() {
     const list: Array<ReactNode> = [];
@@ -38,7 +38,7 @@ const Gallery: FC<Props> = ({ className, children, style, pictures, size }) => {
               setSlideIndex(index);
             }}
           >
-            <figure>
+            <figure className="flex-container row">
               <img src={src} alt={name} />
               <figcaption>{name}</figcaption>
             </figure>

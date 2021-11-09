@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Link from '../../../../components/Link';
 import Gallery from '../../../../components/Gallery';
 
 const Skills: FunctionComponent = () => {
@@ -17,7 +18,17 @@ const Skills: FunctionComponent = () => {
         <h2>
           <span>{t('skills.guide.h2')}</span>
         </h2>
-        <p>{t('skills.guide.p2')}</p>
+        <p>
+          {t('skills.guide.p2')}{' '}
+          <Link style={{ flex: '1' }} to="/guide/classes">
+            {t('classes.subject')}
+          </Link>
+        </p>
+
+        <h2>
+          <span>{t('skills.guide.h3')}</span>
+        </h2>
+        <p>{t('skills.guide.p3')}</p>
         <Gallery
           pictures={[
             {

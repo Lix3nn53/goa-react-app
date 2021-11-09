@@ -1,14 +1,19 @@
 {
+  "subject": "Sınıflar",
+  "tier": "Sınıf kademesi",
+  "playstyle": "Oynanış tarzı",
+  "skills": "Yetenekler",
+  "total_exp": "Total Exp",
+  "unlocked": "Unlocked Classes",
   "guide": {
     "p0": "Adelianın Koruyucularında sınıflar senin oynama tarzını belirler. Sınıfını değiştirmek için karakterini değiştirmen gerekmez. Seçebileceğin bir sürü sınıf vardır ama önce onları açman gerekir.",
     "h1": "Menüden sınıf değiştirme",
     "p1": "Envanterindeki menü kitabına tıklayarak menüyü açabilirsin. (Envanterini E tuşuna basarak aç) Menüden karakter ve sınıfı seçin. Buradan 1,2 ve 3. Kademe sınıflar arasından istediğini seçebilirsin.",
     "h2": "Sınıfların Kilidini açma",
-    "p2": "Yapılacaklar"
+    "p2": "All classes at a tier are unlocked when you reach a certain level. So all of the tier-1 classes are unlocked at the start.",
+    "h3": "Class levels",
+    "p3": "Each class has it's own experience point, which can only be earned by killing monsters. When your class level ups, you will gain a skill point. You can fine more about skills here: "
   },
-  "tier": "Sınıf kademesi",
-  "playstyle": "Oynanış tarzı",
-  "skills": "Yetenekler",
   "tier1": {
     "description": "Adelianın Koruyucularında kademe 1 sınıflar en zayıf sınıflardır",
     "ranger": {
@@ -39,13 +44,13 @@
       "skill_ultimate": "Zemine bir zafer sancağı yerleştirirsin ve yakındaki dostların verdiği hasarı arttırırsın."
     },
     "fighter": {
-      "intro": "Keşiş Adelianın Koruyucularında 2. Kademe bir sınıftır.",
-      "playstyle": "Özel silahı olan mızrak ile keşiş mesafe fark etmeksizin savaş başlatabilir",
-      "skill_one": "1 saniye içinde 5 yumruk savurur. Son yumruk hedefi geri savurur.",
-      "skill_two": "Yana doğru atılır. Ne tarafa atılacağın yeteneği her kullanışında değişebilir.",
-      "skill_three": "Yeteneği kullandığında hareket edemezsin, kendini ve yakındaki dostları iyileştirmeye başlarsın.",
-      "skill_passive": "Uzun menzilli bir hasar verdikten sonra yakın menzilli bir saldırı yapmak hedefi hareketsiz bırakır",
-      "skill_ultimate": "Yakındaki düşmanları su topu içine hapseder. Balona hapsolmuş düşmanlar hareketsiz kalır ve yavaşça hava doğru yükselir."
+      "intro": "Fighter is a tier 1 class in Guardians of Adelia.",
+      "playstyle": "Fighter's skills has low cooldown. Gain combo stacks with your skills and use your ulti to get into the zone!",
+      "skill_one": "Leap forward and deal moderate damage. If you are in the zone, gain lifesteal buff.",
+      "skill_two": "Throw a heavy punch and launch your target into the air. If you are in the zone, also stun the target.",
+      "skill_three": "Jump backwards and gain resistance to fall damage. If you are in the zone gain barrier. A stack of barrier absorbs a damage completely.",
+      "skill_passive": "When you cast a skill gain a combo stack. Your ultimate skill consumes stacks to increases effect duration. Level up this skill to increase combo capacity.",
+      "skill_ultimate": "Get in the zone! You gain bonus movement speed and your other skills gains bonus effects."
     },
     "fire_mage": {
       "intro": "Ateş Büyücüsü Adelianın Koruyucularında 2. Kademe bir sınıftır.",
@@ -78,13 +83,13 @@
       "skill_ultimate": "Bir fırtına yaratırsın ve alan içindeki düşmanlara zamanla hasar alır ve yavaşlar."
     },
     "witch_doctor": {
-      "intro": "Büz Büyücüsü Adelianın Koruyucularında 2. Kademe bir sınıftır.",
-      "playstyle": "Buz büyücüsü hareketliliği ve zırhının az olması karşılığında yüksek alan hasarı ve kitle kontrolü vardır ",
-      "skill_one": "Buz topu fırlatır ve hedefi yavaşlatır ve hasar verir eğer hedefe isabet ederse etrafındaki düşmanlara hasar verir",
-      "skill_two": "Gökyüzünde küçük bir buz meteoru oluşturur. Meteor düştüğü alandaki düşmanlara hasar verir ve yavaşlatır",
-      "skill_three": "Kendini dondurursun ve zamanla can yenilersin.",
-      "skill_passive": "Her yetenek kullanışında Buz Ruhu yükü biriktirirsin. Eğer 4 yükün varsa sıradaki yeteneğin hedefe daha fazla hasar verir ve onları dondurur.",
-      "skill_ultimate": "Bir fırtına yaratırsın ve alan içindeki düşmanlara zamanla hasar alır ve yavaşlar."
+      "intro": "Witch doctor is a tier 2 class in Guardians of Adelia.",
+      "playstyle": "Ranger's deal avarage damage but have lots of mobility skills. The best class to utilize hit-and-run strategy.",
+      "skill_one": "Throw a potion which explode on impact and create a cloud. The cloud deals damage to enemies every second.",
+      "skill_two": "Throw a potion which explode on impact. The explosion heals allies and gives life steal to allies.",
+      "skill_three": "Throw a potion which explode on impact. The explosion gives defense buff to allies and defense debuff to enemies.",
+      "skill_passive": "Every time you cast a skill gain a stack. If you have 4 stacks next time you cast a skill, drink a potion to gain bonus movement speed.",
+      "skill_ultimate": "Throw a potion which explode on impact. The explosion deals damage, ignites and pushes enemies away."
     },
     "vampire": {
       "intro": "Vampire is a tier 3 class in Guardians of Adelia.",

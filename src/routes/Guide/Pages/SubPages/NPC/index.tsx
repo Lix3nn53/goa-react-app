@@ -4,7 +4,7 @@ import Merchants from './Merchants';
 
 export default [
   {
-    name: 'Merchants',
+    name: 'npc.merchants',
     id: 'merchants',
     component: <Merchants />,
   },

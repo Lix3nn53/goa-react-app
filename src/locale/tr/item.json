@@ -2,6 +2,8 @@
   "weapons": "Silahlar",
   "armors": "Zırhlar",
   "offhand": "Sol El",
+  "enchanting": "Efsun",
+  "accessory": "Takılar",
   "guide": {
     "p0": "Eşyalar kısmının temelini ekipmanlar oluşturur. Ekipmanlar, karakterinizin nitelikleri ve elementleri üzerinde en büyük etkiye sahiptir.",
     "h1": "Eşya Kademeleri",

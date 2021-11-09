@@ -7,22 +7,22 @@ import Enchanting from './Enchanting';
 
 export default [
   {
-    name: 'Weapons',
+    name: 'item.weapons',
     id: 'weapons',
     component: <Weapons />,
   },
   {
-    name: 'Armors',
+    name: 'item.armors',
     id: 'armors',
     component: <Armors />,
   },
   {
-    name: 'Accessories',
+    name: 'item.accessory',
     id: 'accessories',
     component: <Accessories />,
   },
   {
-    name: 'Enchanting',
+    name: 'item.enchanting',
     id: 'enchanting',
     component: <Enchanting />,
   },
