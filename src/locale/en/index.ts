@@ -4,6 +4,7 @@ import home from './home.json';
 import attribute from './attribute.json';
 import classes from './classes.json';
 import crafting from './crafting.json';
+import dungeons from './dungeons.json';
 import element from './element.json';
 import guide from './guide.json';
 import item from './item.json';
@@ -20,6 +21,7 @@ export default {
     attribute,
     classes,
     crafting,
+    dungeons,
     element,
     guide,
     item,

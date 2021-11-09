@@ -12,6 +12,7 @@ import Quests from './SubPages/Quests';
 import NPCIntro from './SubPages/NPC/Intro';
 import NPC from './SubPages/NPC/index';
 import Monsters from './SubPages/Monsters';
+import Dungeons from './SubPages/Dungeons';
 
 export default [
   {
@@ -65,6 +66,7 @@ export default [
   {
     name: 'guide.dungeons.subject',
     id: 'dungeons',
+    component: <Dungeons />,
   },
   {
     name: 'guide.crafting.subject',
