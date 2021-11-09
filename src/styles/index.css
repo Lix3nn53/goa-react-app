@@ -122,6 +122,10 @@ If no grid support, limit width to 50em and center align
 CSS Flexbox layout for wider screens, when browser supports flexbox:
 --------------------------------------------------------------*/
 
+.flex-one {
+  flex: 1 1 auto;
+}
+
 @supports (display: flex) {
   .flex-container {
     width: 100%;

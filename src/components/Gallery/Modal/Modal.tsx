@@ -63,11 +63,13 @@ const Modal: FC<Props> = ({
     slides.forEach((element, index) => {
       const { src, name } = element;
       list.push(
-        <div className={slideIndex === index ? '' : 'hidden'} key={name}>
+        <div className={slideIndex === index ? 'flex-container column' : 'hidden'} key={name}>
           <div className="numbertext">
             {index + 1} / {len}
           </div>
-          <img src={src} alt={name} />
+          <div className="flex-container flex-one">
+            <img src={src} alt={name} />
+          </div>
         </div>,
       );
     });
@@ -96,7 +98,7 @@ const Modal: FC<Props> = ({
         <i className="fas fa-times" />
       </button>
       <div className="modal-content">
-        <div className="modal-top">{renderTop()}</div>
+        <div className="modal-top flex-container">{renderTop()}</div>
 
         <div className="prev">
           <button onClick={() => previous()} type="button">

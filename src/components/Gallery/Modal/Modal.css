@@ -25,9 +25,10 @@
   flex-wrap: wrap;
 }
 
-.modal .column {
+.modal .columns .column {
   flex: 33.3%;
   max-width: 33.3%;
+  padding: 12px;
 }
 
 .modal .column input {
