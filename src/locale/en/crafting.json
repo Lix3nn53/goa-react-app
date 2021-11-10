@@ -1,4 +1,13 @@
 {
   "subject": "Crafting",
-  "gathering": "Gathering"
+  "gathering": "Gathering",
+  "guide": {
+    "p0": "Crafting is a core gameplay element in Guardians of Adelia. There are 8 types of crafting types: melee & ranged weapons, heavy & light armors, potions, foods, jewels, enchant stones.",
+    "h1": "How to start crafting?",
+    "p1": "To start crafting you need to open a crafting gui by interracting with(right click) a crafting block. Each crafting type has a different crafting block.",
+    "h2": "Crafting Gui",
+    "p2": "First, you have to choose a crafting level to open the gui where you will actually craft items. After choosing a level, you will see the items you can craft and the materials they need. Each row represents an item you can craft, you will see required materials on the left and the item on the right of the yellow pane.",
+    "h3": "Crafting Experience",
+    "p3": "3"
+  }
 }
