@@ -10,30 +10,41 @@ const Gathering: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
       <div style={{ flex: '10' }}>
-        <p>{t('crafting.guide.merchant.p0')}</p>
+        <p>{t('crafting.guide.gathering.p0')}</p>
         <Gallery
           size="small"
           pictures={[
             {
-              src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/907342252471377930/unknown.png',
-              name: 'A Weaponsmith NPC',
-              description: 'A Weaponsmith NPC, right click to interract.',
-            },
-            {
-              src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/907208264121475102/unknown.png',
-              name: 'Sell Items',
-              description: 'Click to sell items from your inventory.',
-            },
-            {
-              src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/907208348548608020/unknown.png',
-              name: 'Convert Coins',
-              description: 'Click to convert between coin types.',
+              src: 'https://media.giphy.com/media/ptyfS1B477AGZ0pQhC/giphy.gif',
+              name: 'Gathering GIF',
+              description: 'Gathering a copper ore.',
             },
           ]}
         />
+        <h2>
+          <span>{t('crafting.guide.gathering.h1')}</span>
+        </h2>
+        <p>{t('crafting.guide.gathering.p1')}</p>
+        <h4>
+          <span>{t('crafting.guide.gathering.tools.h1')}</span>
+        </h4>
+        <p>{t('crafting.guide.gathering.tools.p1')}</p>
+        <h4>
+          <span>{t('crafting.guide.gathering.tools.h2')}</span>
+        </h4>
+        <p>{t('crafting.guide.gathering.tools.p2')}</p>
+        <h4>
+          <span>{t('crafting.guide.gathering.tools.h3')}</span>
+        </h4>
+        <p>{t('crafting.guide.gathering.tools.p3')}</p>
+        <h4>
+          <span>{t('crafting.guide.gathering.tools.h4')}</span>
+        </h4>
+        <p>{t('crafting.guide.gathering.tools.p4')}</p>
+        <h4>
+          <span>{t('crafting.guide.gathering.tools.h5')}</span>
+        </h4>
+        <p>{t('crafting.guide.gathering.tools.p5')}</p>
       </div>
     </div>
   );

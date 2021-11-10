@@ -19,9 +19,16 @@ const CraftingIntro: FunctionComponent = () => {
           pictures={[
             {
               src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/839775943789903873/unknown.png',
-              name: `2. ${t('guide.how-to-play.step2')}`,
-              description: `2. ${t('guide.how-to-play.step2')}`,
+                'https://cdn.discordapp.com/attachments/689660026423345188/908125486872424508/unknown.png',
+              name: 'Campfire',
+              description: 'Campfire, the cooking block',
+            },
+            {
+              src:
+                'https://cdn.discordapp.com/attachments/689660026423345188/908124751887728640/unknown.png',
+              name: 'Grindstone & fletching table',
+              description:
+                'Grindstone is for melee weaponsmith and fletching table is for ranged weaponsmith.',
             },
           ]}
         />
@@ -34,9 +41,15 @@ const CraftingIntro: FunctionComponent = () => {
           pictures={[
             {
               src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/839775943789903873/unknown.png',
-              name: `2. ${t('guide.how-to-play.step2')}`,
-              description: `2. ${t('guide.how-to-play.step2')}`,
+                'https://cdn.discordapp.com/attachments/689660026423345188/907955538707496970/unknown.png',
+              name: 'Select Level',
+              description: 'Select crafting level',
+            },
+            {
+              src:
+                'https://cdn.discordapp.com/attachments/689660026423345188/907955610140692550/unknown.png',
+              name: 'Crafting Gui',
+              description: 'Crafting Gui',
             },
           ]}
         />
@@ -45,13 +58,12 @@ const CraftingIntro: FunctionComponent = () => {
         </h2>
         <p>{t('crafting.guide.p3')}</p>
         <Gallery
-          size="small"
           pictures={[
             {
               src:
-                'https://cdn.discordapp.com/attachments/689660026423345188/839775943789903873/unknown.png',
-              name: `2. ${t('guide.how-to-play.step2')}`,
-              description: `2. ${t('guide.how-to-play.step2')}`,
+                'https://cdn.discordapp.com/attachments/689660026423345188/907956807824191528/unknown.png',
+              name: 'Crafting Info',
+              description: 'Crafting Info',
             },
           ]}
         />
