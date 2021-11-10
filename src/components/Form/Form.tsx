@@ -73,7 +73,7 @@ const Form: FC<Props> = ({
 
   const createFormItem = (inputData: InputData, rowIndex: number, inputIndex: number) => {
     return (
-      <div key={rowIndex} className="form-item" style={{ flex: '1' }}>
+      <div key={rowIndex} className="form-item flex-one">
         <div key={inputIndex} className="form-input">
           {createInput(inputData)}
         </div>

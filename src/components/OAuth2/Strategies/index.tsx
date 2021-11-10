@@ -24,10 +24,9 @@ const OAuth2Strategies: FC = () => {
           Login with microsoft account which owns minecraft to directly link your minecraft account.
         </p>
         <OAuth2
-          style={{ flex: '1' }}
           provider="minecraft"
           button
-          className="button-primary"
+          className="button-primary flex-one"
           authUrl="https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize"
           parameters={{
             client_id: process.env.REACT_APP_MICROSOFT_CLIENT_ID,

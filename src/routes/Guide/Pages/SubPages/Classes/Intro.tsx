@@ -53,7 +53,7 @@ const ClassesIntro: FunctionComponent = () => {
         </h2>
         <p>
           {t('classes.guide.p3')}
-          <Link style={{ flex: '1' }} to="/guide/skills">
+          <Link className="flex-one" to="/guide/skills">
             {t('skill.subject')}
           </Link>
         </p>

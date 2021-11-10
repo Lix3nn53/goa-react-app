@@ -16,15 +16,15 @@ const Home: FunctionComponent = () => {
 
   return (
     <div className="home flex-container column">
-      <div className="top" style={{ flex: '1' }}>
+      <div className="top flex-one">
         <img src={logo} alt="logo" className="top logo" />
       </div>
-      <div className="info" style={{ flex: '1' }}>
+      <div className="info flex-one">
         <p>
           <span>{t('guide.server-ip')}</span>
         </p>
       </div>
-      <div className="grid main" style={{ flex: '1' }}>
+      <div className="grid main flex-one">
         <div className="posts">
           <div className="flex-container column">
             <CardWide header={<p>{t('home.h1')}</p>} image={twoh}>

@@ -8,7 +8,7 @@ import Loading from '../../components/Loading';
 
 const News: FunctionComponent = () => (
   <div className="news flex-container column">
-    <div className="grid main" style={{ flex: '1' }}>
+    <div className="grid main flex-one">
       <Banner icon={<i className="far fa-newspaper" />} title="Latest News">
         Check out what Adelia has been up to!
       </Banner>

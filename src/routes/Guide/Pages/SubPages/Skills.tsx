@@ -20,7 +20,7 @@ const Skills: FunctionComponent = () => {
         </h2>
         <p>
           {t('skill.guide.p2')}{' '}
-          <Link style={{ flex: '1' }} to="/guide/classes">
+          <Link className="flex-one" to="/guide/classes">
             {t('classes.subject')}
           </Link>
         </p>

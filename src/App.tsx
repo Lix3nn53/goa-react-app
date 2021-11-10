@@ -52,7 +52,7 @@ const App: FC = () => {
           section3User={HeaderSection3User(t, user, mcUsername)}
         />
 
-        <main id="content" className="main-content" style={{ flex: '1' }}>
+        <main id="content" className="main-content flex-one">
           <Routes />
         </main>
 
