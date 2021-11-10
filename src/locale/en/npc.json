@@ -1,4 +1,5 @@
 {
+  "subject": "NPCs",
   "merchants": "Merchants",
   "guide": {
     "p0": "An NPC (Non-Player Character) is any character you encounter and interact with that is not controlled by other human players — they are generated and controlled by the game server.",

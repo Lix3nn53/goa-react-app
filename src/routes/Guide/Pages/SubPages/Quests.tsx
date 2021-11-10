@@ -9,11 +9,11 @@ const Quests: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
       <div style={{ flex: '10' }}>
-        <p>{t('quests.guide.p0')}</p>
+        <p>{t('quest.guide.p0')}</p>
         <h2>
-          <span>{t('quests.guide.h1')}</span>
+          <span>{t('quest.guide.h1')}</span>
         </h2>
-        <p>{t('quests.guide.p1')}</p>
+        <p>{t('quest.guide.p1')}</p>
         <Gallery
           size="small"
           pictures={[
@@ -38,9 +38,9 @@ const Quests: FunctionComponent = () => {
           ]}
         />
         <h2>
-          <span>{t('quests.guide.h2')}</span>
+          <span>{t('quest.guide.h2')}</span>
         </h2>
-        <p>{t('quests.guide.p2')}</p>
+        <p>{t('quest.guide.p2')}</p>
         <Gallery
           pictures={[
             {
@@ -58,9 +58,9 @@ const Quests: FunctionComponent = () => {
           ]}
         />
         <h2>
-          <span>{t('quests.guide.h3')}</span>
+          <span>{t('quest.guide.h3')}</span>
         </h2>
-        <p>{t('quests.guide.p3')}</p>
+        <p>{t('quest.guide.p3')}</p>
         <Gallery
           pictures={[
             {

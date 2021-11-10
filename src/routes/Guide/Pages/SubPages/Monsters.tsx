@@ -9,19 +9,19 @@ const Monsters: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
       <div style={{ flex: '10' }}>
-        <p>{t('monsters.guide.p0')}</p>
+        <p>{t('monster.guide.p0')}</p>
         <h2>
-          <span>{t('monsters.guide.h1')}</span>
+          <span>{t('monster.guide.h1')}</span>
         </h2>
-        <p>{t('monsters.guide.p1')}</p>
+        <p>{t('monster.guide.p1')}</p>
         <h2>
-          <span>{t('monsters.guide.h2')}</span>
+          <span>{t('monster.guide.h2')}</span>
         </h2>
-        <p>{t('monsters.guide.p2')}</p>
+        <p>{t('monster.guide.p2')}</p>
         <h2>
-          <span>{t('monsters.guide.h3')}</span>
+          <span>{t('monster.guide.h3')}</span>
         </h2>
-        <p>{t('monsters.guide.p3')}</p>
+        <p>{t('monster.guide.p3')}</p>
       </div>
     </div>
   );

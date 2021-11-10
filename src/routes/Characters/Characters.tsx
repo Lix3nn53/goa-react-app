@@ -73,10 +73,10 @@ const Characters: FC = () => {
           <span style={{ fontWeight: 'bold' }}>Chat Tag</span>,
           <span style={{ fontWeight: 'bold' }}>{t('crafting.subject')}</span>,
           <span style={{ fontWeight: 'bold' }}>
-            {t('quests.turnedin')} {t('quests.subject')}
+            {t('quest.turnedin')} {t('quest.subject')}
           </span>,
           <span style={{ fontWeight: 'bold' }}>
-            {t('quests.active')} {t('quests.subject')}
+            {t('quest.active')} {t('quest.subject')}
           </span>,
         ]}
       />

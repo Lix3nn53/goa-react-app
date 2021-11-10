@@ -2,17 +2,21 @@ import header from './header.json';
 import home from './home.json';
 
 import attribute from './attribute.json';
-import classes from './classes.json';
+import classes from './class.json';
 import crafting from './crafting.json';
-import dungeons from './dungeons.json';
+import dungeon from './dungeon.json';
+import economy from './economy.json';
 import element from './element.json';
 import guide from './guide.json';
 import item from './item.json';
-import monsters from './monsters.json';
+import monster from './monster.json';
 import npc from './npc.json';
+import pet from './pet.json';
 import player from './player.json';
-import quests from './quests.json';
-import skills from './skills.json';
+import quest from './quest.json';
+import revive from './revive.json';
+import skill from './skill.json';
+import social from './social.json';
 
 export default {
   translation: {
@@ -21,14 +25,18 @@ export default {
     attribute,
     classes,
     crafting,
-    dungeons,
+    dungeon,
+    economy,
     element,
     guide,
     item,
-    monsters,
+    monster,
     npc,
+    pet,
     player,
-    quests,
-    skills,
+    quest,
+    revive,
+    skill,
+    social,
   },
 };

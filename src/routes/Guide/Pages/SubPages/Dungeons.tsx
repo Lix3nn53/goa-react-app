@@ -9,11 +9,11 @@ const Dungeons: FunctionComponent = () => {
   return (
     <div className="guide-page flex-container row-reverse">
       <div style={{ flex: '10' }}>
-        <p>{t('dungeons.guide.p0')}</p>
+        <p>{t('dungeon.guide.p0')}</p>
         <h2>
-          <span>{t('dungeons.guide.h1')}</span>
+          <span>{t('dungeon.guide.h1')}</span>
         </h2>
-        <p>{t('dungeons.guide.p1')}</p>
+        <p>{t('dungeon.guide.p1')}</p>
         <Gallery
           size="small"
           pictures={[
@@ -26,9 +26,9 @@ const Dungeons: FunctionComponent = () => {
           ]}
         />
         <h2>
-          <span>{t('dungeons.guide.h2')}</span>
+          <span>{t('dungeon.guide.h2')}</span>
         </h2>
-        <p>{t('dungeons.guide.p2')}</p>
+        <p>{t('dungeon.guide.p2')}</p>
         <Gallery
           size="small"
           pictures={[
@@ -47,9 +47,9 @@ const Dungeons: FunctionComponent = () => {
           ]}
         />
         <h2>
-          <span>{t('dungeons.guide.h3')}</span>
+          <span>{t('dungeon.guide.h3')}</span>
         </h2>
-        <p>{t('dungeons.guide.p3')}</p>
+        <p>{t('dungeon.guide.p3')}</p>
         <Gallery
           size="small"
           pictures={[
@@ -62,17 +62,17 @@ const Dungeons: FunctionComponent = () => {
           ]}
         />
         <h2>
-          <span>{t('dungeons.guide.h4')}</span>
+          <span>{t('dungeon.guide.h4')}</span>
         </h2>
-        <p>{t('dungeons.guide.p4')}</p>
+        <p>{t('dungeon.guide.p4')}</p>
         <h2>
-          <span>{t('dungeons.guide.h5')}</span>
+          <span>{t('dungeon.guide.h5')}</span>
         </h2>
-        <p>{t('dungeons.guide.p5')}</p>
+        <p>{t('dungeon.guide.p5')}</p>
         <h2>
-          <span>{t('dungeons.guide.h6')}</span>
+          <span>{t('dungeon.guide.h6')}</span>
         </h2>
-        <p>{t('dungeons.guide.p6')}</p>
+        <p>{t('dungeon.guide.p6')}</p>
         <Gallery
           pictures={[
             {

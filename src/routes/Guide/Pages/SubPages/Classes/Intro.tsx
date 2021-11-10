@@ -54,7 +54,7 @@ const ClassesIntro: FunctionComponent = () => {
         <p>
           {t('classes.guide.p3')}
           <Link style={{ flex: '1' }} to="/guide/skills">
-            {t('skills.subject')}
+            {t('skill.subject')}
           </Link>
         </p>
       </div>

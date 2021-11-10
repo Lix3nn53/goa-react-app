@@ -24,44 +24,5 @@
       "step1": "Update your Minecraft launcher.",
       "step2": "Go to your %appdata% folder and click on .minecraft. Then go to server-resource-packs and delete 'legacy' or anything Guardians of Adelia related."
     }
-  },
-  "classes": {
-    "subject": "Classes"
-  },
-  "skills": {
-    "subject": "Skills"
-  },
-  "attributes": {
-    "subject": "Attributes"
-  },
-  "pets": {
-    "subject": "Pets"
-  },
-  "quests": {
-    "subject": "Quests"
-  },
-  "npc": {
-    "subject": "NPCs"
-  },
-  "economy": {
-    "subject": "Economy"
-  },
-  "dungeons": {
-    "subject": "Dungeons"
-  },
-  "social": {
-    "subject": "Social"
-  },
-  "crafting": {
-    "subject": "Crafting"
-  },
-  "revive": {
-    "subject": "Revive"
-  },
-  "items": {
-    "subject": "Items"
-  },
-  "monsters": {
-    "subject": "Monsters"
   }
 }
