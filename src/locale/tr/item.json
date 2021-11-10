@@ -129,32 +129,32 @@
       "set_effect": "Set Özelliği",
       "heavy": {
         "h": "Ağır",
-        "health": "Çok Yüksek",
-        "defense": "Çok Yüksek",
+        "health": "Yüksek",
+        "defense": "Yüksek",
         "material": "Netherite",
         "weight": "Ağır",
         "set_effect": "+ Geri Tepme Direnci"
       },
       "plate": {
         "h": "Plaka",
-        "health": "Yüksek",
-        "defense": "Yüksek",
+        "health": "Normal",
+        "defense": "Normal",
         "material": "Elmas",
         "weight": "Ağır",
         "set_effect": "+ Kritik Hasarı"
       },
       "light": {
         "h": "Hafif",
-        "health": "Normal",
-        "defense": "Normal",
+        "health": "Düşük",
+        "defense": "Düşük",
         "material": "Demir",
         "weight": "Hafif",
-        "set_effect": "+ Zıplama Gücü"
+        "set_effect": "+ Kritik Şansı"
       },
       "feather": {
         "h": "Tüy",
-        "health": "Normal",
-        "defense": "Normal",
+        "health": "Düşük",
+        "defense": "Düşük",
         "material": "Zincir",
         "weight": "Hafif",
         "set_effect": "+ Hareket Hızı"

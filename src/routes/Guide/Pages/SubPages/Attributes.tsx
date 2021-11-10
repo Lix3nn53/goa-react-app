@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Gallery from '../../../../components/Gallery';
 import Table from '../../../../components/Table';
 
-const Skills: FunctionComponent = () => {
+const Attributes: FunctionComponent = () => {
   const { t } = useTranslation();
 
   return (
@@ -111,4 +111,4 @@ const Skills: FunctionComponent = () => {
   );
 };
 
-export default Skills;
+export default Attributes;

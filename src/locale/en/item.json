@@ -129,32 +129,32 @@
       "set_effect": "Set Effect",
       "heavy": {
         "h": "Heavy",
-        "health": "Maximum",
-        "defense": "Maximum",
+        "health": "High",
+        "defense": "High",
         "material": "Netherite",
         "weight": "Heavy",
         "set_effect": "+ Knockback Resistance"
       },
       "plate": {
         "h": "Plate",
-        "health": "High",
-        "defense": "High",
+        "health": "Normal",
+        "defense": "Normal",
         "material": "Diamond",
         "weight": "Heavy",
         "set_effect": "+ Critical Damage"
       },
       "light": {
         "h": "Light",
-        "health": "Normal",
-        "defense": "Normal",
+        "health": "Low",
+        "defense": "Low",
         "material": "Iron",
         "weight": "Light",
-        "set_effect": "+ Jump"
+        "set_effect": "+ Critical Chance"
       },
       "feather": {
         "h": "Feather",
-        "health": "Normal",
-        "defense": "Normal",
+        "health": "Low",
+        "defense": "Low",
         "material": "Chainmail",
         "weight": "Light",
         "set_effect": "+ Movement Speed"

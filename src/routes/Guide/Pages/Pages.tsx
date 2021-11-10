@@ -13,6 +13,12 @@ import NPCIntro from './SubPages/NPC/Intro';
 import NPC from './SubPages/NPC/index';
 import Monsters from './SubPages/Monsters';
 import Dungeons from './SubPages/Dungeons';
+import Economy from './SubPages/Economy';
+import Pets from './SubPages/Pets';
+import Revive from './SubPages/Revive';
+import Social from './SubPages/Social';
+import CraftingIntro from './SubPages/Crafting/Intro';
+import Crafting from './SubPages/Crafting';
 
 export default [
   {
@@ -71,21 +77,27 @@ export default [
   {
     name: 'crafting.subject',
     id: 'crafting',
+    subroute: Crafting,
+    component: <CraftingIntro />,
   },
   {
     name: 'economy.subject',
     id: 'economy',
+    component: <Economy />,
   },
   {
     name: 'pet.subject',
     id: 'pets',
+    component: <Pets />,
   },
   {
     name: 'social.subject',
     id: 'social',
+    component: <Social />,
   },
   {
     name: 'revive.subject',
     id: 'revive',
+    component: <Revive />,
   },
 ];
