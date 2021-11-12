@@ -3,5 +3,11 @@
   "news": "Haberler",
   "store": "Market",
   "login": "Giriş Yap",
-  "register": "Kayıt Ol"
+  "register": "Kayıt Ol",
+  "profile": "Profile",
+  "player": "Player",
+  "characters": "Characters",
+  "credits": "Credits",
+  "buy_credits": "Buy Credits",
+  "logout": "Logout"
 }

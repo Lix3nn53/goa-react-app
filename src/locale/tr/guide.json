@@ -24,44 +24,5 @@
       "step1": "Minecraft Launcher'inizi güncelleyin.",
       "step2": "%Appdata% klasörünüze gidin ve .minecraft'a tıklayın. Sonra sunucu-kaynak paketlerine gidin ve Guardians of Adelia ile ilgili eski dosyaları silin."
     }
-  },
-  "classes": {
-    "subject": "Sınıflar"
-  },
-  "skills": {
-    "subject": "Yetenekler"
-  },
-  "attributes": {
-    "subject": "Nitelikler"
-  },
-  "pets": {
-    "subject": "Evcil Hayvanlar"
-  },
-  "quests": {
-    "subject": "Görevler"
-  },
-  "npc": {
-    "subject": "NPCs"
-  },
-  "economy": {
-    "subject": "Ekonomi"
-  },
-  "dungeons": {
-    "subject": "Dungeons"
-  },
-  "social": {
-    "subject": "Sosyal"
-  },
-  "crafting": {
-    "subject": "Crafting"
-  },
-  "revive": {
-    "subject": "Canlanmak"
-  },
-  "items": {
-    "subject": "Eşyalar"
-  },
-  "monsters": {
-    "subject": "Canavarlar"
   }
 }
