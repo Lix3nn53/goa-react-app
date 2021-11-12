@@ -14,6 +14,32 @@ const Pets: FunctionComponent = () => {
         <h2>
           <span>{t('pet.guide.h1')}</span>
         </h2>
+        <p>{t('pet.guide.p1')}</p>
+        <h2>
+          <span>{t('pet.guide.h2')}</span>
+        </h2>
+        <p>{t('pet.guide.p2')}</p>
+        <Gallery
+          size="small"
+          pictures={[
+            {
+              src:
+                'https://cdn.discordapp.com/attachments/689660026423345188/908731000425701506/unknown.png',
+              name: 'Equiping an egg',
+              description: 'Equiping an egg',
+            },
+            {
+              src: 'https://media.giphy.com/media/emp3uLQ0hPfEC873wk/giphy.gif',
+              name: 'Minidragon GIF',
+              description: 'Minidragon GIF',
+            },
+            {
+              src: 'https://media.giphy.com/media/egUf00meY4Pv6M20yr/giphy-downsized-large.gif',
+              name: 'Pet Follow GIF',
+              description: 'Pet Follow GIF',
+            },
+          ]}
+        />
       </div>
     </div>
   );
