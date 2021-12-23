@@ -1,0 +1,43 @@
+.fullpage-bg {
+  background-color: var(--color-background);
+  position: fixed;
+  padding: 0;
+  margin: 0;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}
+
+.page-bg,
+.page-bg::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.page-bg::after {
+  content: '';
+  bottom: 0;
+}
+
+.page-bg[data-page='home'] {
+  min-height: 880px;
+  height: 880px;
+  z-index: -1;
+  background: url('../img/poster2.jpg') bottom no-repeat;
+  background-size: cover;
+}
+
+.page-bg[data-page='home']::after {
+  background: linear-gradient(
+    180deg,
+    var(--color-black-dark),
+    rgba(33, 40, 59, 0.4) 33.33%,
+    var(--color-background) 98%
+  );
+}

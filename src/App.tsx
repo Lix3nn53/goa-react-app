@@ -1,4 +1,5 @@
 import React, { FC, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 // i18
 import './locale';
@@ -23,6 +24,21 @@ const App: FC = () => {
   const { t, i18n } = useTranslation();
   const dispatch = useDispatch();
 
+  const location = useLocation();
+  const path = location.pathname.split('/')[1];
+  console.log(path);
+
+  let dataPage = path;
+  if (path === '') {
+    dataPage = 'home';
+  }
+
+  useEffect(() => {
+    const htmlTag = document.getElementById('root');
+    if (htmlTag == null) return;
+    htmlTag.setAttribute('data-theme', 'dark');
+  }, []);
+
   useEffect(() => {
     dispatch(actions.fetchUser());
   }, []);
@@ -39,7 +55,9 @@ const App: FC = () => {
 
   return (
     <React.StrictMode>
-      <div id="fullpage" className="fullpage flex-container column" data-theme="dark">
+      <div className="fullpage-bg" />
+      <div data-page={dataPage} className="page-bg" />
+      <div id="fullpage" className="fullpage flex-container column">
         <a className="skip-link screen-reader-text" href="#content">
           Skip to content
         </a>

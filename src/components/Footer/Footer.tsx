@@ -11,7 +11,7 @@ const Footer: FC<Props> = ({ className, style, children }) => {
   const classNames = className ? `${baseStyle} ${className}` : `${baseStyle}`;
 
   function toggleTheme() {
-    const htmlTag = document.getElementById('fullpage');
+    const htmlTag = document.getElementById('root');
     if (!htmlTag) return;
     if (htmlTag.hasAttribute('data-theme')) {
       const themes = ['dark', 'light'];

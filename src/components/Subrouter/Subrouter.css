@@ -18,6 +18,10 @@ ul.sub-list {
   font-size: 24px;
 }
 
+ul.sub-list li:last-child {
+  margin-bottom: 16px;
+}
+
 .has-subroute {
   font-weight: 900;
 }

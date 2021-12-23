@@ -1,14 +1,11 @@
 .home .top {
-  background: linear-gradient(
-      180deg,
-      #21283b 0%,
-      rgba(33, 40, 59, 0.4) 33.33%,
-      rgba(33, 40, 59, 1) 100%
-    ),
-    url('../../img/poster.jpg');
-  background-attachment: fixed;
-  margin-bottom: 16px;
+  margin-bottom: 64px;
   height: 75vh;
+  flex: 1 1 0%;
+}
+
+.home .main {
+  flex: 1 1 0%;
 }
 
 .home .welcome {
@@ -26,9 +23,20 @@
   margin-bottom: 64px;
   color: #f0bd24;
 }
+
 .home .welcome .online span {
   color: #8ce830;
   margin-right: 6px;
+}
+
+/* 
+.home .welcome span.ip {
+  background-color: #f5d470;
+} 
+*/
+
+.home .welcome span.join {
+  background-color: #ffc61a;
 }
 
 .home .info p span {

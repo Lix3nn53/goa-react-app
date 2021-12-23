@@ -3,17 +3,6 @@ header {
   min-height: 60px;
 }
 
-header.homepage {
-  background: linear-gradient(
-      180deg,
-      #21283b 0%,
-      rgba(33, 40, 59, 0.4) 33.33%,
-      rgba(33, 40, 59, 1) 100%
-    ),
-    url('../../img/poster.jpg');
-  background-attachment: fixed;
-}
-
 header img {
   display: inline;
   width: 80px;

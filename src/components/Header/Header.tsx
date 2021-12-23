@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import './Header.css';
@@ -13,14 +13,12 @@ export type Props = JSX.IntrinsicElements['header'] & {
 
 const Header: FC<Props> = ({ className, style, section1, section2, section3, section3User }) => {
   const user = useSelector((state: any) => state.user);
-  const location = useLocation();
-  const path = location.pathname.split('/')[1];
+  // const location = useLocation();
+  // const path = location.pathname.split('/')[1];
 
   const baseStyle = 'flex-container';
-  const headerStyle = path === '' ? `homepage` : ``;
-  const classNames = className
-    ? `${baseStyle} ${headerStyle}  ${className}`
-    : `${baseStyle} ${headerStyle}`;
+  // const headerStyle = path === '' ? `homepage` : ``;
+  const classNames = className ? `${baseStyle} ${className}` : `${baseStyle}`;
 
   console.log('header user', user);
 
