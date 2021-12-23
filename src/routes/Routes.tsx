@@ -36,7 +36,7 @@ const Routes: FunctionComponent = () => (
       <Route path="/characters" exact component={Characters} />
       <Route path="/guide" component={Guide} /> {/* Guide has subroutes so we do not use exact */}
       <Route path="/news" exact component={News} />
-      <Route path="/store" exact component={Store} />
+      <Route path="/store" component={Store} /> {/* Store has subroutes so we do not use exact */}
       <Route path="/privacy" exact component={PrivacyPolicy} />
       <Route path="/tos" exact component={TermsOfService} />
       <Route component={PageNotFound} />

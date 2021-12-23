@@ -1,5 +1,121 @@
-.register-page {
-  justify-content: center;
-  align-items: center;
-  flex: 1; /* for max height */
+.store {
+  padding-bottom: 24px;
+}
+
+.store .sub-list {
+  padding: 18px 0 8px 40px;
+  width: 100%;
+  max-height: 300px;
+  background-color: var(--color-base);
+}
+
+.store .sub-list li {
+  list-style-type: none;
+  padding: 64px 45px;
+  display: inline;
+  float: left;
+}
+
+.store .sub-list li a {
+  background-color: var(--color-primary);
+  padding: 64px 128px;
+  border-radius: 9px;
+}
+
+.store .storeSubroute {
+  background-color: var(--color-base);
+}
+
+.store .banner-container {
+  padding: 20px 0;
+}
+
+.store .banner {
+  max-width: 70%;
+  margin: auto;
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 1000px) {
+  .store .sub-list {
+    max-height: none;
+  }
+}
+
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+  .store .subrouter {
+    max-width: 50em;
+    margin: 0 auto;
+  }
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@supports (display: grid) {
+  .store .sub-list {
+    grid-area: store-sub-list;
+  }
+
+  .store .storeSubroute {
+    grid-area: store-subroute;
+  }
+
+  .store .filler-1 {
+    grid-area: store-filler-1;
+  }
+
+  .store .filler-2 {
+    grid-area: store-filler-2;
+  }
+
+  @media screen and (min-width: 1400px) {
+    .store .subrouter {
+      display: grid;
+      grid-template-columns: 1fr 5fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        'store-filler-1 store-sub-list store-filler-2'
+        'store-filler-1 store-subroute store-filler-2';
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+
+    .store .sub-list,
+    .store .storeSubroute {
+      border-radius: 16px;
+    }
+  }
+}
+
+/* Subroutes */
+.storeSubroute {
+  padding-left: 8px;
+}
+.storeSubroute .store-page {
+  padding: 0 16px;
+}
+s .storeSubroute h1 {
+  padding-bottom: 0;
+  margin-bottom: 16px;
+  border-bottom: solid 2px var(--color-text);
+}
+
+.storeSubroute h2 span,
+.storeSubroute h3 span {
+  border-bottom: solid 1px var(--color-text);
+}
+
+.store-page h1,
+.store-page h2,
+.store-page h3 {
+  padding: 0;
+}
+
+.store-page .section {
+  padding-bottom: 20px;
 }
