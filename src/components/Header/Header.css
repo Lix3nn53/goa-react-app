@@ -6,21 +6,12 @@ header {
 header.homepage {
   background: linear-gradient(
       180deg,
-      rgba(33, 40, 59, 0) 0%,
-      rgba(33, 40, 59, 0.7) 66.67%,
-      #21283b 100%
+      #21283b 0%,
+      rgba(33, 40, 59, 0.4) 33.33%,
+      rgba(33, 40, 59, 1) 100%
     ),
     url('../../img/poster.jpg');
   background-attachment: fixed;
-}
-
-header.homepage a {
-  color: var(--color-black-dark);
-}
-
-header.homepage .Link.variant--Link:hover {
-  color: var(--color-black);
-  opacity: 0.8;
 }
 
 header img {
