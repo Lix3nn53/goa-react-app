@@ -3,23 +3,18 @@
 }
 
 .store .sub-list {
-  padding: 18px 0 8px 40px;
+  padding: 18px 20px 8px 20px;
   width: 100%;
-  max-height: 300px;
   background-color: var(--color-base);
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .store .sub-list li {
-  list-style-type: none;
-  padding: 64px 45px;
-  display: inline;
-  float: left;
+  flex: 1 1 auto;
 }
-
 .store .sub-list li a {
-  background-color: var(--color-primary);
-  padding: 64px 128px;
-  border-radius: 9px;
+  font-size: xx-large;
 }
 
 .store .storeSubroute {
@@ -118,4 +113,164 @@ s .storeSubroute h1 {
 
 .store-page .section {
   padding-bottom: 20px;
+}
+
+/* Button Reset */
+
+.store .subrouter .active {
+  color: var(--color-text);
+}
+
+/* Button Style */
+
+.store .sub-list li {
+  color: var(--color-white);
+  border: none;
+  padding: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.store .sub-list li:disabled {
+  cursor: default;
+}
+
+.store .sub-list li a {
+  display: block;
+  transform: translate(12px, -12px);
+  transition: all 0.2s ease;
+  position: relative;
+  z-index: 10;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding-top: 49px;
+  padding-right: 50px;
+  padding-bottom: 51px;
+  padding-left: 50px;
+}
+
+.store .sub-list li:before,
+.store .sub-list li:after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+.store .sub-list li:before {
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  transform: rotate(-45deg) scale(1);
+}
+
+.store .sub-list li:after {
+  right: 0;
+  bottom: 0;
+  transform-origin: bottom right;
+  transform: rotate(45deg) scale(1);
+}
+
+.store .sub-list li:hover a,
+.store .sub-list li a.active {
+  transform: translate(6px, -6px);
+}
+
+.store .sub-list li:hover:before,
+.store .sub-list li.active:before {
+  transform: rotate(-45deg) scale(0.5);
+}
+
+.store .sub-list li:hover:after,
+.store .sub-list li.active:after {
+  transform: rotate(45deg) scale(0.5);
+}
+
+.store .sub-list li:active:before {
+  transform: rotate(-45deg) scale(0);
+}
+
+.store .sub-list li:active:after {
+  transform: rotate(45deg) scale(0);
+}
+
+.store .sub-list li,
+.store .sub-list li:before,
+.store .sub-list li:after {
+  background-color: var(--color-third-darker);
+}
+
+.store .sub-list li:disabled,
+.store .sub-list li:disabled:before,
+.store .sub-list li:disabled:after {
+  background-color: var(--color-base-light);
+}
+
+.store .sub-list li:disabled a {
+  background-color: var(--color-divider);
+}
+
+.store .sub-list li.active,
+.store .sub-list li.active:before,
+.store .sub-list li.active:after {
+  background-color: var(--color-fourth-darker);
+}
+
+.store .sub-list li#\/ranks a {
+  background: url('../../img/store/ranks.png'),
+    linear-gradient(350deg, var(--color-third-dark) 5%, var(--color-third) 100%);
+
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.store .sub-list li#\/ranks a.active {
+  background: url('../../img/store/ranks.png'),
+    linear-gradient(350deg, var(--color-fourth-dark) 5%, var(--color-fourth) 100%);
+
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.store .sub-list li#\/crates a {
+  background: url('../../img/store/chest.png'),
+    linear-gradient(350deg, var(--color-third-dark) 5%, var(--color-third) 100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.store .sub-list li#\/crates a.active {
+  background: url('../../img/store/chest.png'),
+    linear-gradient(350deg, var(--color-fourth-dark) 5%, var(--color-fourth) 100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.store .sub-list li#\/boosts a {
+  background: url('../../img/store/boost.png'),
+    linear-gradient(350deg, var(--color-third-dark) 5%, var(--color-third) 100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.store .sub-list li#\/boosts a.active {
+  background: url('../../img/store/boost.png'),
+    linear-gradient(350deg, var(--color-fourth-dark) 5%, var(--color-fourth) 100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }

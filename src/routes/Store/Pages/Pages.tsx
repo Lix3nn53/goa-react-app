@@ -4,8 +4,8 @@ import Crates from './SubPages/Crates';
 
 export default [
   {
-    name: 'store.crates',
-    id: 'crates',
+    name: 'store.ranks',
+    id: 'ranks',
     component: <Crates />,
   },
   {
@@ -14,23 +14,8 @@ export default [
     component: <Crates />,
   },
   {
-    name: 'store.crates',
-    id: 'crates',
-    component: <Crates />,
-  },
-  {
-    name: 'store.crates',
-    id: 'crates',
-    component: <Crates />,
-  },
-  {
-    name: 'store.crates',
-    id: 'crates',
-    component: <Crates />,
-  },
-  {
-    name: 'store.crates',
-    id: 'crates',
+    name: 'store.boosts',
+    id: 'boosts',
     component: <Crates />,
   },
 ];

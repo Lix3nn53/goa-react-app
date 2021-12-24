@@ -14,9 +14,18 @@ export type Props = JSX.IntrinsicElements['div'] & {
   routes: Array<Subroute>;
   subcomponents: Array<ReactNode>;
   deep: number;
+  classSubrouter?: string;
 };
 
-const Subrouter: FC<Props> = ({ className, style, routes, subcomponents, deep, children }) => {
+const Subrouter: FC<Props> = ({
+  className,
+  style,
+  routes,
+  subcomponents,
+  deep,
+  classSubrouter,
+  children,
+}) => {
   const { url, path } = useRouteMatch();
   const { pathname } = useLocation();
   const { t } = useTranslation();
@@ -25,6 +34,7 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents, deep, c
 
   const baseStyle = 'subrouter';
   const classNames = className ? `${baseStyle} ${className}` : `${baseStyle}`;
+  const subRouterClassName = classSubrouter ? `sub-list ${classSubrouter}` : 'sub-list';
 
   const formLinks = (basePath: string, from: Array<Subroute>): ReactNode => {
     return from.map(({ name, id, subroute }) => {
@@ -32,7 +42,11 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents, deep, c
 
       if (subroute) {
         return (
-          <li className="has-subroute" id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
+          <li
+            className={`has-subroute ${active}`}
+            id={`${basePath}/${id}`}
+            key={`${basePath}/${id}`}
+          >
             <Link className={active} to={`${url}${basePath}/${id}`}>
               {t(name)}
             </Link>
@@ -49,7 +63,7 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents, deep, c
       }
 
       return (
-        <li className="no-subroute" id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
+        <li className={`has-subroute ${active}`} id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
           <Link className={active} to={`${url}${basePath}/${id}`}>
             {t(name)}
           </Link>
@@ -78,7 +92,7 @@ const Subrouter: FC<Props> = ({ className, style, routes, subcomponents, deep, c
 
   return (
     <div className={classNames} style={style}>
-      <ul className="sub-list">{formLinks('', routes)}</ul>
+      <ul className={subRouterClassName}>{formLinks('', routes)}</ul>
 
       {formRoutes()}
       {children}

@@ -9,6 +9,16 @@
   --color-secondary-dark: #f2a726;
   --color-secondary-darker: #c6690c;
 
+  --color-fourth-light: #b07fff;
+  --color-fourth: #854bf8;
+  --color-fourth-dark: #5d1ee6;
+  --color-fourth-darker: #4412a1;
+
+  --color-third-light: #967fff;
+  --color-third: #624bf8;
+  --color-third-dark: #351ee6;
+  --color-third-darker: #2a12a1;
+
   /* FEEDBACK */
 
   --color-danger: #ef476f;
