@@ -1,0 +1,68 @@
+.store .ranks {
+  justify-content: space-between;
+}
+
+.store .ranks .card {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.store .ranks .card ul {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.store .ranks .card ul li {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.store .ranks .card ul img {
+  display: inline;
+}
+
+.store .ranks .card p {
+  text-align: center;
+}
+
+.store .ranks .card .ranks-footer p {
+  font-weight: bold;
+}
+
+.ranks-footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  font-size: large;
+}
+
+.ranks-footer button {
+  max-width: 200px;
+  margin: auto;
+  margin-bottom: 16px;
+  font-size: large;
+}
+
+.store .ranks .card .card-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.store .ranks .card .card-content {
+  font-size: large;
+}
+
+.store .ranks .card .card-content i {
+  font-size: larger;
+  margin-left: 9px;
+}
+
+.store .ranks .card .card-content i.fa-check-circle {
+  color: var(--color-primary);
+}
+
+.store .ranks .card .card-content i.fa-times-circle {
+  color: var(--color-danger);
+}

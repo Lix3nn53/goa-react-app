@@ -31,3 +31,7 @@
 .card .small {
   max-width: 484px;
 }
+
+.card.flex-container {
+  width: auto;
+}

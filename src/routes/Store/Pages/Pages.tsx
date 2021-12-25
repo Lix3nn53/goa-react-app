@@ -1,12 +1,13 @@
 import React from 'react';
 
+import Ranks from './SubPages/Ranks';
 import Crates from './SubPages/Crates';
 
 export default [
   {
     name: 'store.ranks',
     id: 'ranks',
-    component: <Crates />,
+    component: <Ranks />,
   },
   {
     name: 'store.crates',
