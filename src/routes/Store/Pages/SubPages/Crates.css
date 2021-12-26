@@ -1,0 +1,71 @@
+.store .crates .card.flex-container {
+  margin-left: 8px;
+  margin-right: 8px;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+@media screen and (max-width: 1550px) {
+  .store .crates .card.flex-container {
+    flex-direction: column;
+  }
+}
+
+.store .crates .card-header img {
+  max-width: 210px;
+  margin: 32px;
+}
+
+.store .crates .card-header div {
+  align-items: center;
+  justify-content: center;
+}
+
+div.crate-card-body {
+  height: 100%;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.store .crates .crate-card-body .button-content {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.store .crates .crate-card-body .button-content p {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.store .crates .crate-card-body .button-content p.amount {
+  font-size: xx-large;
+  padding-bottom: 9px;
+}
+
+.store .crates .crate-card-body .button-content p.before-discount {
+  font-size: large;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.store .crates .crate-card-body .button-content p.after-discount {
+  font-size: larger;
+  padding-bottom: 16px;
+}
+
+.store .crates .crate-card-body .button-content p.buy {
+  font-size: large;
+}
+
+.store .crates .card-content {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+div.crate-card-buttons {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

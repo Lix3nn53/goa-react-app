@@ -11,7 +11,7 @@ export type Props = {
   bonus_slot: string;
 };
 
-const Ranks: FunctionComponent<Props> = ({ rank, price, chat_tag, bonus_slot }) => {
+const RankCard: FunctionComponent<Props> = ({ rank, price, chat_tag, bonus_slot }) => {
   const { t } = useTranslation();
 
   return (
@@ -43,4 +43,4 @@ const Ranks: FunctionComponent<Props> = ({ rank, price, chat_tag, bonus_slot }) 
   );
 };
 
-export default Ranks;
+export default RankCard;

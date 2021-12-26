@@ -244,7 +244,7 @@ s .storeSubroute h1 {
 }
 
 .store .sub-list li#\/crates a {
-  background: url('../../img/store/chest.png'),
+  background: url('../../img/store/crate_preview.png'),
     linear-gradient(350deg, var(--color-third-dark) 5%, var(--color-third) 100%);
   background-size: contain;
   background-repeat: no-repeat;
@@ -252,7 +252,7 @@ s .storeSubroute h1 {
 }
 
 .store .sub-list li#\/crates a.active {
-  background: url('../../img/store/chest.png'),
+  background: url('../../img/store/crate_preview.png'),
     linear-gradient(350deg, var(--color-fourth-dark) 5%, var(--color-fourth) 100%);
   background-size: contain;
   background-repeat: no-repeat;
