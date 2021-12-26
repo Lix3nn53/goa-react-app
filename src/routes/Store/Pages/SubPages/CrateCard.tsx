@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next';
 
 import Card from '../../../../components/Card';
 import Button from '../../../../components/Button';
+import ButtonBelt from '../../../../components/ButtonBelt';
+import ButtonBeltButton, {
+  ButtonBeltButtonType,
+} from '../../../../components/ButtonBelt/ButtonBeltButton';
 
 type ButtonProps = {
   amount: string;
@@ -14,14 +18,14 @@ const CrateCardButton: FunctionComponent<ButtonProps> = ({ amount, before, after
   const { t } = useTranslation();
 
   return (
-    <Button type="button" primary>
+    <ButtonBeltButton type="button">
       <p className="amount">{amount}x</p>
       {before ? <p className="before-discount">{before}</p> : <p className="before-discount">-</p>}
       <p className="after-discount">{after}</p>
       <p className="buy">
-        BUY NOW <i className="fas fa-shopping-cart" />
+        Buy Now <i className="fas fa-shopping-cart" />
       </p>
-    </Button>
+    </ButtonBeltButton>
   );
 };
 
@@ -35,8 +39,8 @@ export type Props = {
 const CrateCard: FunctionComponent<Props> = ({ name, image, buttons, description }) => {
   const { t } = useTranslation();
 
-  function renderButtons(): React.ReactNode {
-    const arr: React.ReactNode[] = [];
+  function renderButtons(): ButtonBeltButtonType[] {
+    const arr: ButtonBeltButtonType[] = [];
 
     buttons.forEach((button) => {
       arr.push(
@@ -48,11 +52,13 @@ const CrateCard: FunctionComponent<Props> = ({ name, image, buttons, description
   }
 
   return (
-    <Card className="flex-one" header={<div className="flex-container">{image}</div>}>
+    <Card className="flex-one" header={<div className="flex-container h-100">{image}</div>}>
       <div className="flex-container column crate-card-body">
         <h1>{name}</h1>
         <p>{description}</p>
-        <div className="flex-container row crate-card-buttons">{renderButtons()}</div>
+        <div className="flex-container row crate-card-buttons">
+          <ButtonBelt buttons={renderButtons()} secondary />
+        </div>
       </div>
     </Card>
   );

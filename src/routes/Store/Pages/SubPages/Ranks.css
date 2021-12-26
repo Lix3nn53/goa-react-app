@@ -42,6 +42,7 @@
   margin: auto;
   margin-bottom: 16px;
   font-size: large;
+  color: var(--color-secondary-darker);
 }
 
 .store .ranks .card .card-content {

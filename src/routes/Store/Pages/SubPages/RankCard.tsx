@@ -21,8 +21,8 @@ const RankCard: FunctionComponent<Props> = ({ rank, price, chat_tag, bonus_slot 
       footer={
         <div className="ranks-footer">
           <p>$ {price}</p>
-          <Button type="button" primary>
-            BUY NOW <i className="fas fa-shopping-cart" />
+          <Button type="button" primary={false}>
+            Buy Now <i className="fas fa-shopping-cart" />
           </Button>
         </div>
       }

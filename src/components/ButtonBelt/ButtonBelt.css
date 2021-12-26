@@ -1,0 +1,49 @@
+.button-belt {
+  width: auto;
+}
+
+.button-belt-button {
+  background-color: transparent;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid var(--color-divider);
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+
+.button-belt .button-belt-button:last-child {
+  border-right-width: 2px;
+}
+
+.button-belt .button-belt-button:first-child {
+  border-left-width: 2px;
+}
+
+button.button-belt-button {
+  text-decoration: none;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+button.button-belt-button:disabled {
+  cursor: default;
+  background-color: var(--color-divider);
+}
+
+button.button-belt-button:hover {
+  transform: translateY(-0.5rem);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-primary-darker);
+}
+
+.button-belt.secondary button.button-belt-button:hover {
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-secondary-darker);
+}
