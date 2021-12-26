@@ -5,6 +5,7 @@ import './Crates.css';
 import Gallery from '../../../../components/Gallery';
 import CrateCard from './CrateCard';
 import cosmeticImg from '../../../../img/store/crate_cosmetic.png';
+import legendaryImg from '../../../../img/store/crate_legendary.png';
 
 const Crates: FunctionComponent = () => {
   const { t } = useTranslation();
@@ -24,7 +25,7 @@ const Crates: FunctionComponent = () => {
       />
       <CrateCard
         name="Legendary Crate"
-        image={<img src={cosmeticImg} alt="cosmetic" />}
+        image={<img src={legendaryImg} alt="legendary" />}
         buttons={[
           { amount: '20', before: '$80.00', after: '$60.00' },
           { amount: '10', before: '$40.00', after: '$30.00' },
@@ -35,7 +36,7 @@ const Crates: FunctionComponent = () => {
       />
       <CrateCard
         name="Rare Crate"
-        image={<img src={cosmeticImg} alt="cosmetic" />}
+        image={<img src={cosmeticImg} alt="rare" />}
         buttons={[
           { amount: '20', before: '$60.00', after: '$40.00' },
           { amount: '10', before: '$30.00', after: '$20.00' },

@@ -9,6 +9,12 @@
   --color-secondary-dark: #f2a726;
   --color-secondary-darker: #c6690c;
 
+  --color-secondary-extra-light: #e5f41a;
+  --color-secondary-extra: #efe524;
+  --color-secondary-extra-dark: #f2cf25;
+  --color-secondary-extra-darker: #c68e0b;
+
+  /* 
   --color-fourth-light: #b07fff;
   --color-fourth: #854bf8;
   --color-fourth-dark: #5d1ee6;
@@ -17,7 +23,8 @@
   --color-third-light: #967fff;
   --color-third: #624bf8;
   --color-third-dark: #351ee6;
-  --color-third-darker: #2a12a1;
+  --color-third-darker: #2a12a1; 
+  */
 
   /* FEEDBACK */
 

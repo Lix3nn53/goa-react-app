@@ -118,7 +118,7 @@ s .storeSubroute h1 {
 /* Button Reset */
 
 .store .subrouter .active {
-  color: var(--color-text);
+  color: var(--color-secondary-darker);
 }
 
 /* Button Style */
@@ -162,8 +162,8 @@ s .storeSubroute h1 {
 .store .sub-list li:after {
   content: '';
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   position: absolute;
   transition: all 0.2s ease;
 }
@@ -197,18 +197,10 @@ s .storeSubroute h1 {
   transform: rotate(45deg) scale(0.5);
 }
 
-.store .sub-list li:active:before {
-  transform: rotate(-45deg) scale(0);
-}
-
-.store .sub-list li:active:after {
-  transform: rotate(45deg) scale(0);
-}
-
 .store .sub-list li,
 .store .sub-list li:before,
 .store .sub-list li:after {
-  background-color: var(--color-third-darker);
+  background-color: var(--color-secondary-darker);
 }
 
 .store .sub-list li:disabled,
@@ -224,12 +216,12 @@ s .storeSubroute h1 {
 .store .sub-list li.active,
 .store .sub-list li.active:before,
 .store .sub-list li.active:after {
-  background-color: var(--color-fourth-darker);
+  background-color: var(--color-secondary-extra-darker);
 }
 
 .store .sub-list li#\/ranks a {
   background: url('../../img/store/ranks.png'),
-    linear-gradient(350deg, var(--color-third-dark) 5%, var(--color-third) 100%);
+    linear-gradient(350deg, var(--color-secondary-dark) 5%, var(--color-secondary) 100%);
 
   background-repeat: no-repeat;
   background-position: right;
@@ -237,7 +229,7 @@ s .storeSubroute h1 {
 
 .store .sub-list li#\/ranks a.active {
   background: url('../../img/store/ranks.png'),
-    linear-gradient(350deg, var(--color-fourth-dark) 5%, var(--color-fourth) 100%);
+    linear-gradient(350deg, var(--color-secondary-extra-dark) 5%, var(--color-secondary-extra) 100%);
 
   background-repeat: no-repeat;
   background-position: right;
@@ -245,7 +237,7 @@ s .storeSubroute h1 {
 
 .store .sub-list li#\/crates a {
   background: url('../../img/store/crate_preview.png'),
-    linear-gradient(350deg, var(--color-third-dark) 5%, var(--color-third) 100%);
+    linear-gradient(350deg, var(--color-secondary-dark) 5%, var(--color-secondary) 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -253,7 +245,7 @@ s .storeSubroute h1 {
 
 .store .sub-list li#\/crates a.active {
   background: url('../../img/store/crate_preview.png'),
-    linear-gradient(350deg, var(--color-fourth-dark) 5%, var(--color-fourth) 100%);
+    linear-gradient(350deg, var(--color-secondary-extra-dark) 5%, var(--color-secondary-extra) 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -261,7 +253,7 @@ s .storeSubroute h1 {
 
 .store .sub-list li#\/boosts a {
   background: url('../../img/store/boost.png'),
-    linear-gradient(350deg, var(--color-third-dark) 5%, var(--color-third) 100%);
+    linear-gradient(350deg, var(--color-secondary-dark) 5%, var(--color-secondary) 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -269,7 +261,7 @@ s .storeSubroute h1 {
 
 .store .sub-list li#\/boosts a.active {
   background: url('../../img/store/boost.png'),
-    linear-gradient(350deg, var(--color-fourth-dark) 5%, var(--color-fourth) 100%);
+    linear-gradient(350deg, var(--color-secondary-extra-dark) 5%, var(--color-secondary-extra) 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
