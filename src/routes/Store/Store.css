@@ -200,7 +200,7 @@ s .storeSubroute h1 {
 .store .sub-list li,
 .store .sub-list li:before,
 .store .sub-list li:after {
-  background-color: var(--color-secondary-darker);
+  background-color: var(--color-primary-darker);
 }
 
 .store .sub-list li:disabled,
@@ -216,12 +216,12 @@ s .storeSubroute h1 {
 .store .sub-list li.active,
 .store .sub-list li.active:before,
 .store .sub-list li.active:after {
-  background-color: var(--color-secondary-extra-darker);
+  background-color: var(--color-secondary-darker);
 }
 
 .store .sub-list li#\/ranks a {
   background: url('../../img/store/ranks.png'),
-    linear-gradient(350deg, var(--color-secondary-dark) 5%, var(--color-secondary) 100%);
+    linear-gradient(350deg, var(--color-primary-dark) 5%, var(--color-primary) 100%);
 
   background-repeat: no-repeat;
   background-position: right;
@@ -229,7 +229,7 @@ s .storeSubroute h1 {
 
 .store .sub-list li#\/ranks a.active {
   background: url('../../img/store/ranks.png'),
-    linear-gradient(350deg, var(--color-secondary-extra-dark) 5%, var(--color-secondary-extra) 100%);
+    linear-gradient(350deg, var(--color-secondary-dark) 5%, var(--color-secondary) 100%);
 
   background-repeat: no-repeat;
   background-position: right;
@@ -237,7 +237,7 @@ s .storeSubroute h1 {
 
 .store .sub-list li#\/crates a {
   background: url('../../img/store/crate_preview.png'),
-    linear-gradient(350deg, var(--color-secondary-dark) 5%, var(--color-secondary) 100%);
+    linear-gradient(350deg, var(--color-primary-dark) 5%, var(--color-primary) 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -245,7 +245,7 @@ s .storeSubroute h1 {
 
 .store .sub-list li#\/crates a.active {
   background: url('../../img/store/crate_preview.png'),
-    linear-gradient(350deg, var(--color-secondary-extra-dark) 5%, var(--color-secondary-extra) 100%);
+    linear-gradient(350deg, var(--color-secondary-dark) 5%, var(--color-secondary) 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -253,7 +253,7 @@ s .storeSubroute h1 {
 
 .store .sub-list li#\/boosts a {
   background: url('../../img/store/boost.png'),
-    linear-gradient(350deg, var(--color-secondary-dark) 5%, var(--color-secondary) 100%);
+    linear-gradient(350deg, var(--color-primary-dark) 5%, var(--color-primary) 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -261,7 +261,7 @@ s .storeSubroute h1 {
 
 .store .sub-list li#\/boosts a.active {
   background: url('../../img/store/boost.png'),
-    linear-gradient(350deg, var(--color-secondary-extra-dark) 5%, var(--color-secondary-extra) 100%);
+    linear-gradient(350deg, var(--color-secondary-dark) 5%, var(--color-secondary) 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
