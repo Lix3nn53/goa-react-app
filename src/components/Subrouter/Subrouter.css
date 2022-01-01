@@ -33,3 +33,7 @@ ul.sub-list li:last-child {
 .subrouter .active {
   color: var(--color-primary-light);
 }
+
+.subrouter ul li.active li::marker {
+  color: var(--color-text);
+}

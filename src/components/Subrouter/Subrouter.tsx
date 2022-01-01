@@ -63,7 +63,7 @@ const Subrouter: FC<Props> = ({
       }
 
       return (
-        <li className={`has-subroute ${active}`} id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
+        <li className={`${active}`} id={`${basePath}/${id}`} key={`${basePath}/${id}`}>
           <Link className={active} to={`${url}${basePath}/${id}`}>
             {t(name)}
           </Link>
