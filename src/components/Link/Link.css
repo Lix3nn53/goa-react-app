@@ -38,7 +38,7 @@ a.Link {
 }
 
 .Link.variant--Link.secondary:hover {
-  color: var(--color-secondary-light);
+  color: var(--color-secondary);
 }
 
 [data-theme='light'] .Link.variant--Link:hover {
