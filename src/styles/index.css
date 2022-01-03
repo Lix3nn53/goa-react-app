@@ -123,7 +123,7 @@ CSS Flexbox layout for wider screens, when browser supports flexbox:
 --------------------------------------------------------------*/
 
 .flex-one {
-  flex: 1 1 auto;
+  flex: 1 1 0;
 }
 
 @supports (display: flex) {
