@@ -24,9 +24,9 @@ const Dropdown: FC<Props> = ({ className, style, text, elements, keys }) => {
       style={style}
       onBlur={() => setShowDropdown(false)}
     >
-      <span onClick={handleClick} onKeyDown={handleClick} role="button" tabIndex={0}>
+      <div onClick={handleClick} onKeyDown={handleClick} role="button" tabIndex={0}>
         {text}
-      </span>
+      </div>
       <ul className="dropdown-content">
         {elements.map((element, i) => {
           return <li key={keys[i]}>{element}</li>;
