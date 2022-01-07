@@ -1,27 +1,27 @@
 {
-  "subject": "NPCs",
+  "subject": "NPC'ler",
   "merchants": "Tüccarlar",
   "guide": {
-    "p0": "An NPC (Non-Player Character) is any character you encounter and interact with that is not controlled by other human players — they are generated and controlled by the game server.",
-    "p1": "Player type NPCs are often gives quests while villager type NPCs are merchants. You can interract with them with right click.",
+    "p0": "NPC'ler (Oyuncu olmayan karakterler) görev alabildiğiniz veya alışveriş yapabilidiğiniz herhangi bir karakterdir. Oyuncular tarafından kontrol edilemez — sunucu tarafından oluşturulur ve kontrol edilirler. ",
+    "p1": "Oyuncu tipi NPC'ler genelde görev verirken, köylü tipi NPC'ler genelde tüccardırlar. Onlara sağ tıklayarak etkileşime girebilirsiniz.",
     "merchant": {
-      "p0": "Merchants are NPCs which you can buy and sell items from. There are 5 types of merchants: weaponsmith, armorsmith, storage keeper, tool merchant and magical item merchant. You can sell items to and convert coins from all types of merchants.",
-      "h1": "Weaponsmith",
+      "p0": "Tüccarlar, eşya alıp satabileceğiniz NPC'lerdir. 5 çeşit tüccar vardır: Silah ustası, zırh ustası, depo bekçisi, alet tüccarı ve büyülü eşya tüccarı. Her türden tüccara ürün satabilir ve madeni paralara dönüştürebilirsiniz. ",
+      "h1": "Silah Ustası",
       "p1": {
-        "part1": "Apart from the basic sell and convert coin operations, you can buy weapons and enchant items. See ",
-        "part2": " for more information."
+        "part1": "Silah satın alabilir ve büyülü eşyalar satın alabilmenin dışında eşyalarınızı satabilir veya para işlemlerinizi yapabilirsiniz. Daha fazla bilgi için ",
+        "part2": "'a bakınız."
       },
-      "h2": "Armorsmith",
+      "h2": "Zırh Ustası",
       "p2": {
-        "part1": "Apart from the basic sell and convert coin operations, you can buy armors & shields and enchant items. See ",
-        "part2": " for more information."
+        "part1": "Zırh, kalkan satın alabilir ve efsunlu eşyalar satın alabilmenin dışında eşyalarınızı satabilir veya para işlemlerinizi yapabilirsiniz. Daha fazla bilgi için ",
+        "part2": "'a bakınız."
       },
-      "h3": "Storage Keeper",
-      "p3": "Apart from the basic sell and convert coin operations, you can open your storages. There are 4 types of storages: personal, guild, bazaar, premium.",
-      "h4": "Tool Merchant",
-      "p4": "Apart from the basic sell and convert coin operations, you can buy gathering tools and utility items.",
-      "h5": "Magical Item Merchant",
-      "p5": "Apart from the basic sell and convert coin operations, you can buy potions."
+      "h3": "Depo Bekçisi",
+      "p3": "Eşyalarınızı satabilmeniz ve para işlemleri yapabilmeniz dışında depolarınızı kullanabilirsiniz. 4 çeşit depo vardır: Kişisel depo, lonca deposu, pazar deposu ve premium deposu.",
+      "h4": "Alet Tüccarı",
+      "p4": "Meslek eşyalarınızı satın alabilir veya utility items satın alabilmeniz dışında eşyalarınızı satabilir veya para işlemlerinizi yapabilirsiniz.",
+      "h5": "Büyülü Eşya Tüccarı",
+      "p5": "İksir satın alabilmeniz dışında eşyalarınızı satabilir veya para işlemlerinizi yapabilirsiniz."
     }
   }
 }
