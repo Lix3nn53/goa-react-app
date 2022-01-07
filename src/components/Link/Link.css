@@ -38,7 +38,7 @@ a.Link {
 }
 
 .Link.variant--Link.secondary:hover {
-  color: var(--color-primary-light);
+  color: var(--color-secondary);
 }
 
 [data-theme='light'] .Link.variant--Link:hover {
@@ -83,4 +83,24 @@ p .Link.variant--Link {
 
 p .Link.variant--Link:hover {
   color: var(--color-primary-light);
+}
+
+.Link.variant--Magical {
+  background: url('../../img/util/stars256.png'),
+    linear-gradient(180deg, rgba(240, 189, 36, 0) 12%, rgba(240, 189, 36, 0.2) 100%);
+  background-size: contain;
+}
+
+.Link.variant--LargeSlim {
+  padding-top: 20px;
+  padding-right: 35px;
+  padding-bottom: 22px;
+  padding-left: 35px;
+}
+
+.Link.variant--Link.variant--LargeSlim {
+  padding-top: 19px;
+  padding-right: 34px;
+  padding-bottom: 21px;
+  padding-left: 34px;
 }

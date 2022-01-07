@@ -16,15 +16,29 @@ const Home: FunctionComponent = () => {
 
   return (
     <div className="home flex-container column">
-      <div className="top flex-one">
+      <div className="top">
         <img src={logo} alt="logo" className="top logo" />
+        <div className="welcome flex-one">
+          <p className="slogan">{t('guide.slogan')}</p>
+          <p className="online">
+            <span>20</span>
+            {t('guide.online')}
+          </p>
+          <div className="info">
+            <p>
+              <span className="ip">{t('guide.server-ip')}</span>
+            </p>
+            <p>
+              <span>
+                <a href="https://discord.gg/qpqCSNH" target="_blank" rel="noreferrer">
+                  {t('guide.join')}
+                </a>
+              </span>
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="info flex-one">
-        <p>
-          <span>{t('guide.server-ip')}</span>
-        </p>
-      </div>
-      <div className="grid main flex-one">
+      <div className="grid main">
         <div className="posts">
           <div className="flex-container column">
             <CardWide header={<p>{t('home.h1')}</p>} image={twoh}>

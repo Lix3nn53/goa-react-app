@@ -18,6 +18,10 @@ ul.sub-list {
   font-size: 24px;
 }
 
+ul.sub-list li:last-child {
+  margin-bottom: 16px;
+}
+
 .has-subroute {
   font-weight: 900;
 }
@@ -28,4 +32,8 @@ ul.sub-list {
 
 .subrouter .active {
   color: var(--color-primary-light);
+}
+
+.subrouter ul li.active li::marker {
+  color: var(--color-text);
 }

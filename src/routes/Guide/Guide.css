@@ -14,11 +14,6 @@
   background-color: var(--color-base);
 }
 
-.guide .filler-1,
-.guide .filler-2 {
-  background-color: var(--color-background);
-}
-
 .guide .banner-container {
   padding: 20px 0;
 }

@@ -22,12 +22,11 @@ const Dropdown: FC<Props> = ({ className, style, text, elements, keys }) => {
     <div
       className={showDropdown ? `${classNames} show` : classNames}
       style={style}
-      onClick={handleClick}
-      onKeyDown={handleClick}
-      role="button"
-      tabIndex={0}
+      onBlur={() => setShowDropdown(false)}
     >
-      <span>{text}</span>
+      <span onClick={handleClick} onKeyDown={handleClick} role="button" tabIndex={0}>
+        {text}
+      </span>
       <ul className="dropdown-content">
         {elements.map((element, i) => {
           return <li key={keys[i]}>{element}</li>;

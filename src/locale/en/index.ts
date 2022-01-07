@@ -17,6 +17,7 @@ import quest from './quest.json';
 import revive from './revive.json';
 import skill from './skill.json';
 import social from './social.json';
+import store from './store.json';
 
 export default {
   translation: {
@@ -38,5 +39,6 @@ export default {
     revive,
     skill,
     social,
+    store,
   },
 };

@@ -1,25 +1,60 @@
 .home .top {
-  background: url('../../img/poster.jpg') no-repeat center/cover;
-  background-attachment: fixed;
-  margin-bottom: 20px;
+  margin-bottom: 64px;
+  height: 75vh;
+  flex: 1 1 0%;
 }
 
-.home .info {
+.home .main {
+  flex: 1 1 0%;
+}
+
+.home .welcome {
   text-align: center;
-  margin: 24px;
   font-weight: 600;
 }
 
+.home .welcome .slogan {
+  font-size: 24px;
+  padding: 0;
+  color: #ad73e8;
+}
+
+.home .welcome .online {
+  margin-bottom: 64px;
+  color: #f0bd24;
+}
+
+.home .welcome .online span {
+  color: #8ce830;
+  margin-right: 6px;
+}
+
+/* 
+.home .welcome span.ip {
+  background-color: #f5d470;
+} 
+*/
+
+.home .welcome span.join {
+  background-color: #ffc61a;
+}
+
 .home .info p span {
-  padding: 16px;
+  color: var(--color-base);
+  padding: 9px 16px;
   border-radius: 12px;
-  background-color: var(--color-base);
+  background-color: var(--color-text-dark);
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
+  opacity: 0.6;
+}
+
+.home .info p span a {
+  color: var(--color-base);
 }
 
 .home .logo {
   width: auto;
-  height: 540px;
+  height: 420px;
   display: block;
   margin: 0 auto;
 }
