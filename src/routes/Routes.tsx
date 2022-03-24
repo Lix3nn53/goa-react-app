@@ -6,6 +6,7 @@ import Loading from '../components/Loading';
 const Home = lazy(() => import('./Home'));
 const Guide = lazy(() => import('./Guide'));
 const News = lazy(() => import('./News'));
+const Map = lazy(() => import('./Map'));
 
 // User
 const Profile = lazy(() => import('./Profile'));
@@ -36,6 +37,7 @@ const Routes: FunctionComponent = () => (
       <Route path="/characters" exact component={Characters} />
       <Route path="/guide" component={Guide} /> {/* Guide has subroutes so we do not use exact */}
       <Route path="/news" exact component={News} />
+      <Route path="/map" exact component={Map} />
       <Route path="/store" component={Store} /> {/* Store has subroutes so we do not use exact */}
       <Route path="/privacy" exact component={PrivacyPolicy} />
       <Route path="/tos" exact component={TermsOfService} />

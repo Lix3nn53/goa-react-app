@@ -11,7 +11,10 @@ export default function (t: any) {
       <Link to="/news" key="12" largeSlim>
         {t('header.news')}
       </Link>,
-      <Link to="/store" key="13" largeSlim magical secondary>
+      <Link to="/map" key="13" largeSlim>
+        {t('header.map')}
+      </Link>,
+      <Link to="/store" key="14" largeSlim magical secondary>
         {t('header.store')}
       </Link>,
     ],
