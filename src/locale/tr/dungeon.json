@@ -2,10 +2,10 @@
   "subject": "Zindanlar",
   "guide": {
     "p0": "Zindanlar 4 oyuncuyu Adelia'nın en karanlık köşelerine götürür. Zindanlar her zaman bir ve ya daha fazla patron içerir, Çokça düşman ve hazine içerir.",
-    "h1": "Diyarlar",
-    "p1": "Her zindan bir diyara sahiptir SOL tık tuşuyla etkileşime geçebilirsiniz. Zindana katılma menüsü etkileşime geçtiğinizde açılacaktır",
+    "h1": "Portallar",
+    "p1": "Her zindan bir portala sahiptir SOL tık tuşuyla etkileşime geçebilirsiniz. Zindana katılma menüsü etkileşime geçtiğinizde açılacaktır.",
     "h2": "Katılma Menüsü",
-    "p2": "Her zindan 4 farklı örneğe sahiptir Eğer başlamadıysa bunlardan birine katılabilirsin. Zindan hakkında bilgilere bakabilirsin örneğin; gereken seviye gibi, süre kısıtlaması ve Patronun Zayıflıkları & Dayanınklılıkları hakkında bilgi edinebilirsin. Zindana 1 kişi katıldığında geri sayım başlar, geri sayım bitmeden önce 3 kişi daha katılabilir. Eğer minimum bir oyuncu varsa geri sayım bittiğinde zindan başlar.",
+    "p2": "Her zindan 4 farklı odaya sahiptir Eğer başlamadıysa bunlardan birine katılabilirsin. Zindan hakkında bilgilere bakabilirsin ; gereken seviye, süre kısıtlaması ve boss'un Zayıflıkları & Dayanınklılıkları hakkında bilgi edinebilirsin. Zindana 1 kişi katıldığında geri sayım başlar, geri sayım bitmeden önce 3 kişi daha katılabilir. Eğer minimum bir oyuncu varsa geri sayım bittiğinde zindan başlar.",
     "h3": "Skor Tablosu",
     "p3": "Zindan başladığında Skor Tablosu belirir. Patronun ismini görebilirsin, kalan zaman saniye ile belirtilir, 'Karanlık', kalan odalar ve parti üyelerinin kalan sağlıkları.",
     "h4": "Karanlık",
