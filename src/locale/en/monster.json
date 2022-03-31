@@ -3,9 +3,9 @@
   "guide": {
     "p0": "Mob'ların (Canavarın terimsel olarak kısaltılması), temel olarak deneyim kazanmak, görev hedefi gerçekleştirmek veya ganimet düşürmek için öldürülen, oyuncu olmayan bir varlıktır.Tüm oyunculara karşı agresif tutum sergilerler.",
     "h1": "Ganimet Koruması",
-    "p1": "Bir canavar öldürüldüğünde, öldüren kişi en son vuruşu yapan değil, en fazla hasarı veren olur.Bir partideyseniz hasarınız artar.Canavarı öldüren kişi tecrübe puanı,görev hedefi ve varsa ganimet düşüşlerinde 30 saniyelik koruma kazanır.",
+    "p1": "Bir canavar öldürüldüğünde, öldüren kişi en son vuruşu yapan değil, en fazla hasarı veren olur.Bir partideyseniz hasarınız toplanır.Canavarı öldüren kişi tecrübe puanı,görev hedefi ve varsa ganimet düşüşlerinde 30 saniyelik koruma kazanır.",
     "h2": "Yetenekler",
-    "p2": "Canavarlar, tıpkı oyuncular gibi yetenekler kullanabilir.Normal canavarlar genellikle sadece 1 beceri veya daha azına sahiptir, bölüm sonu canavarları (boss) ise 5'ten fazla beceriye sahiptir.",
+    "p2": "Canavarlar, tıpkı oyuncular gibi yetenekler kullanabilir.Normal canavarlar genellikle sadece 1 beceri veya daha azına sahiptir, bölüm sonu canavarları(boss) ise 5'ten fazla beceriye sahiptir.",
     "h3": "Bölüm Sonu Canavarı",
     "p3": "Bölüm sonu canavarları öldürülmesi en zor olanlardır. Tüm bölüm sonu canavarlarının ortak özelliği, benzersiz bir isme sahip olmaları ve her seferinde bir kez görünmeleridir. Zindanlarda genellikle son odada zindanı tamamlamak için yenmeniz gereken son canavar olarak yer alır."
   }
