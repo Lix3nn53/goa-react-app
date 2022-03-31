@@ -1,7 +1,7 @@
 {
   "subject": "Sosyal",
   "guide": {
-    "p0": "Bir oyuncuyla interaksiyona geçmek için SHIFT - SAĞ TIK tuşlarına basabilirsin. İnteraksiyonda açılan arayüzde oyuncunun özelliklerini görebilir veya Parti/Lonca/Takas isteği gönderebilirsin.",
+    "p0": "Bir oyuncuyla interaksiyona geçmek için SHIFT + SAĞ TIK tuşlarına basabilirsin. İnteraksiyonda açılan arayüzde oyuncunun özelliklerini görebilir veya Parti/Lonca/Takas isteği gönderebilirsin.",
     "h1": "Parti",
     "p1": "Partiler kurabileceğin veya katılabileceğin takımlardır. Tüm grup üyelerinin kendisi ve canı 'scoreboard'da gözükür. Grup üyeleri canavar öldürmelerini paylaşır, yani bir üye bir canavarı öldüğü zaman kazanılan deneyim paylaştırılır, herhangi bir üye düşen eşyaları ve görev objektifi ilerlemesini grup için alabilir.",
     "h2": "Lonca",
