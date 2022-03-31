@@ -1,12 +1,12 @@
 {
-  "subject": "Monsters",
+  "subject": "Canavarlar",
   "guide": {
-    "p0": "A mob (short for 'Monster Or Beast') is a generic term for any non-player entity whose primary purpose is to be killed for experience, quest objective, or loot. They tend to be aggressive to all players.",
-    "h1": "Loot Protection",
-    "p1": "When a monster dies, the killer is determined by most damage dealt instead of the last hit. If you're at a party, your damages add up. Killers gain experience, quest objective, and 30 seconds of protection on item drops if any.",
-    "h2": "Skills",
-    "p2": "Monsters can cast skills just like players. Basic monsters usually have only 1 skill or no skill at all, while boss monsters have more than 5 skills.",
-    "h3": "Boss Monster",
-    "p3": "Boss type monsters are the hardest to kill. A common characteristic for all bosses is that they have a unique name and appear once at a time. Dungeons usually have a boss in the last room that you must defeat to complete the dungeon."
+    "p0": "Mob'ların (Canavarın terimsel olarak kısaltılması), temel olarak deneyim kazanmak, görev hedefi gerçekleştirmek veya ganimet düşürmek için öldürülen, oyuncu olmayan bir varlıktır.Tüm oyunculara karşı agresif tutum sergilerler.",
+    "h1": "Ganimet Koruması",
+    "p1": "Bir canavar öldürüldüğünde, öldüren kişi en son vuruşu yapan değil, en fazla hasarı veren olur.Bir partideyseniz hasarınız toplanır.Canavarı öldüren kişi tecrübe puanı,görev hedefi ve varsa ganimet düşüşlerinde 30 saniyelik koruma kazanır.",
+    "h2": "Yetenekler",
+    "p2": "Canavarlar, tıpkı oyuncular gibi yetenekler kullanabilir.Normal canavarlar genellikle sadece 1 beceri veya daha azına sahiptir, bölüm sonu canavarları(boss) ise 5'ten fazla beceriye sahiptir.",
+    "h3": "Bölüm Sonu Canavarı",
+    "p3": "Bölüm sonu canavarları öldürülmesi en zor olanlardır. Tüm bölüm sonu canavarlarının ortak özelliği, benzersiz bir isme sahip olmaları ve her seferinde bir kez görünmeleridir. Zindanlarda genellikle son odada zindanı tamamlamak için yenmeniz gereken son canavar olarak yer alır."
   }
 }
