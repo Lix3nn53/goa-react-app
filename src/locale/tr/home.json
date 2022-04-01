@@ -1,11 +1,11 @@
 {
-  "h1": "An Epic Fantasy Adventure",
-  "p1": "Experience an immersive campaign. As a guardian, you will discover lands of Adelia and destroy your foes with the power of elements.",
-  "h2": "Challenging Dungeons",
-  "p2": "Lands of Adelia is being consumed by darkness coming from dungeons. Enter the dungeon gates with your party to fight the boss and claim your prize.",
-  "h3": "And Much More!",
+  "h1": "Destansı bir kurgu macerası.",
+  "p1": "Sürükleyici bir mücadeleyi deneyimle. Bir gardiyan olarak, Adelia'nın Topraklarını keşfet ve rakiplerini elementlerin gücüyle yerle bir et. ",
+  "h2": "Zorlu Zindanlar",
+  "p2": "Lands of Adelia zindanlardan gelen karanlık tarafından kül edilmiş. Bos ile savaşıp ödül kazanmak için partinle zindan geçitlerine gir.",
+  "h3": "Ve daha fazlası!",
   "p3": {
-    "text": "There is so much to Guardians of Adelia, and we're still developing it! Take a look at guide to start playing or learn more: ",
-    "link": "Introduction"
+    "text": "Guardians of Adelia'da daha çok fazlası var, ve hala geliştiriyoruz! Kılavuza bir göz at ve oynamaya başla yada daha fazlasını öğren: ",
+    "link": "Tanıtım"
   }
 }
